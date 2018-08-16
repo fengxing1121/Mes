@@ -1,0 +1,30 @@
+﻿<table cellspacing="0" cellpadding="0" style="margin-left:5px;width:6cm;min-height:4cm;max-height:4cm;">
+    <tr>
+        <td colspan="3" style="border-bottom:1px dashed "><div align="center">板件标识卡</div></td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;width:0.9cm;">编号：</td>
+        <td style="font-size:10px;width:3cm;">{BarcodeNo}</td>
+        <td rowspan="5"><img src="/ashx/QRcodehandler.ashx?code={BarcodeNo}&w=70&h=70" width="70" height="70" /></td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">板件组：</td>
+        <td style="font-size:10px;">{ItemGroup}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">板件名：</td>
+        <td style="font-size:10px;">{ItemName}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">材质：</td>
+        <td style="font-size:10px;">{MaterialType}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">订单：</td>
+        <td style="font-size:10px;">{OrderNo}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">客户：</td>
+        <td colspan="2" style="font-size:10px;">{CustomerName}</td>
+    </tr>
+</table>

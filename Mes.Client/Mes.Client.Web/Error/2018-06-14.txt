@@ -1,0 +1,272 @@
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 11:52:56
+错误消息:errorVerifyCode
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&f=12|01|34&r=1528948376593&username=admin2018&password=admin123123&verifycode=wayq
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:45:54
+错误消息:未将对象引用设置到对象的实例。
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951549452
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:46:31
+错误消息:未将对象引用设置到对象的实例。
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951590055
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:46:58
+错误消息:未将对象引用设置到对象的实例。
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951615202
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:49:26
+错误消息:未将对象引用设置到对象的实例。
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951713879
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:50:49
+错误消息:未将对象引用设置到对象的实例。
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951842406
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:52:11
+错误消息:errorVerifyCode
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528951920172
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 12:52:27
+错误消息:用户不存在
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/partnetLoginHandler.ashx?Method=Login&r=1528951946582
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:01:39
+错误消息:errorVerifyCode
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528952496511
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:03:40
+错误消息:errorVerifyCode
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528952619325
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:23:41
+错误消息:errorVerifyCode
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528953821804
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:24:54
+错误消息:验证码不正确
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528953894325
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:25:25
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528953925049
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:28:06
+错误消息:验证码不正确
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528954086845
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:32:19
+错误消息:验证码错误
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/partnetLoginHandler.ashx?Method=Login&r=1528954339220
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:32:31
+错误消息:验证码不正确
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528954351515
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 13:32:35
+错误消息:验证码不正确
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/loginhandler.ashx?Method=Login&r=1528954355358
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:14:46
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/partnetLoginHandler.ashx?Method=Login&r=1528967663889
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:15:42
+错误消息:验证码错误
+导致错误的应用程序或对象的名称:
+堆栈内容:
+引发异常的方法:
+错误页面/Ashx/partnetLoginHandler.ashx?Method=Login&r=1528967742334
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:16:57
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528967817099
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:17:02
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528967817099
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:17:07
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528967826943
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/14 17:32:29
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528968749213
+--------------------------------------------------------------------------------------------------------------------------
+

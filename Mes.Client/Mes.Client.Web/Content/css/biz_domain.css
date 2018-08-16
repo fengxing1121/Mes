@@ -1,0 +1,1263 @@
+/**
+ * @author peinazhou
+ * 2016-03-15
+ * 
+ */
+
+/*free_signup_domain*/
+.register_domain .domain_panel
+{
+    font-size: 13px;
+}
+
+    .register_domain .domain_panel .item_l
+    {
+        float: left;
+        display: inline-block;
+        color: #4F5357;
+    }
+
+    .register_domain .domain_panel .item_r
+    {
+        display: block;
+    }
+
+        .register_domain .domain_panel .item_r .item_r_1
+        {
+        }
+
+        .register_domain .domain_panel .item_r .item_r_2
+        {
+            padding-left: 65px;
+        }
+
+        .register_domain .domain_panel .item_r .check_notice
+        {
+            margin-top: 6px;
+        }
+
+        .register_domain .domain_panel .item_r .domain_select_panel
+        {
+            margin-left: 81px;
+        }
+
+        .register_domain .domain_panel .item_r label
+        {
+            color: #4F5357;
+        }
+
+        .register_domain .domain_panel .item_r .txt_gray
+        {
+            color: #898989;
+        }
+
+        .register_domain .domain_panel .item_r .domain_advice .txt_gray
+        {
+            line-height: 1.0;
+            color: #AAAAAA;
+        }
+
+.register_domain .submit_panel .btn_submit
+{
+    /*margin-left: 90px;*/
+}
+
+.register_domain .domain_panel .own_domain_panel
+{
+    margin-left: 82px;
+}
+
+.register_domain .submit_panel
+{
+    margin-top: 24px;
+    margin-left: 66px;
+}
+
+.register_domain .domain_panel .input_default
+{
+    box-sizing: content-box;
+    vertical-align: top;
+    font-family: Verdana;
+    font-size: 14px;
+    line-height: 14px;
+    width: 162px;
+    height: 18px;
+    padding: 4px 5px;
+}
+/*table*/
+.register_main .content_table h1
+{
+    margin: 0 0 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #D4D4D4;
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    zoom: 1;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.register_main .content_table .table_box
+{
+    border: 1px solid #D4D4D4;
+    width: 870px;
+    padding: 0 10px;
+    background: #F9F9F9;
+    margin: auto;
+}
+
+    .register_main .content_table .table_box table .first_line
+    {
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .register_main .content_table .table_box table th
+    {
+        font-weight: normal;
+        padding: 10px 20px;
+        color: #7A7A7A;
+        width: 240px;
+        text-align: left;
+        background: #F9F9F9;
+    }
+
+    .register_main .content_table .table_box table td
+    {
+        padding: 10px 20px;
+    }
+
+td, input, button, select, body, article, section, header, p, menu
+{
+    font: 13px/1.5 "Microsoft YaHei","lucida Grande",Verdana;
+}
+
+.num_bar
+{
+    display: inline-flex;
+}
+
+    .num_bar a
+    {
+        border: #C9C9C9 1px solid;
+        height: 28px;
+        width: 22px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .num_bar span
+    {
+        margin-top: 8px;
+    }
+
+    .num_bar input
+    {
+        box-sizing: content-box;
+        border: #C9C9C9 1px solid;
+        width: 80px;
+        text-align: center;
+        vertical-align: middle;
+        border-left: 0;
+        border-right: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Verdana;
+        height: 18px;
+    }
+
+.onlinesell_commonImg
+{
+    display: inline-block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/onlinesell_icons2a7a85.png');
+    background-size: 674px 149px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi)
+{
+    /* line 29, /sass/images.scss */
+    .onlinesell_commonImg
+    {
+        background-image: url('../images/onlinesell_icons_2x2a7a85.png');
+    }
+}
+
+.onlinesell_commonImg_icon_add
+{
+    background-position: 0 -48px;
+    height: 12px;
+    width: 12px;
+}
+
+.onlinesell_commonImg_icon_minus
+{
+    background-position: 0 -72px;
+    height: 8px;
+    width: 12px;
+}
+
+.content_table .txt_green
+{
+    color: #0AC265;
+}
+
+.lineThrough
+{
+    text-decoration: line-through;
+}
+
+.content_table .invoice_tips
+{
+    background: #FFF;
+    color: #7A7A7A;
+    margin: 14px 119px 0 0;
+    text-align: left;
+}
+
+.register_main .order_confirm_panel
+{
+    width: 886px;
+    text-align: left;
+    margin: 25px auto;
+    margin-bottom: 75px;
+}
+
+    .register_main .order_confirm_panel p, .register_main .register_domain p
+    {
+        line-height: 1.7;
+        margin: 0.4em 0;
+    }
+
+    .register_main .order_confirm_panel label
+    {
+        color: #7A7A7A;
+    }
+
+    .register_main .order_confirm_panel .total_price
+    {
+        color: #0AC265;
+        font-size: 24px;
+    }
+
+.btn_big_blue
+{
+    display: inline-block;
+    height: 38px;
+    width: 138px;
+    border: 1px solid #2B7DC8;
+    background: #4096E5;
+    color: #FFF;
+    line-height: 38px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+    .btn_big_blue:hover
+    {
+        background-color: #6DB0FF;
+        border: 1px solid #5FA7FA;
+        text-decoration: none;
+    }
+
+    .btn_big_blue.btn_blue_disabled
+    {
+        background: #98c3e2;
+        filter: none;
+        border-color: #a2b6c5;
+        color: #f9fcfe!important;
+        box-shadow: none;
+        cursor: default;
+    }
+
+.register_main .order_confirm_panel .txt_blue
+{
+    color: #3591D2;
+}
+
+.register_main .order_confirm_panel .txt_gray, .register_main .register_domain .txt_gray
+{
+    color: #898989;
+}
+
+.domain_user_info
+{
+    padding-top: 4px;
+}
+
+.register_step_box .register_domain
+{
+    width: 500px;
+    min-height: 300px;
+    _height: 300px;
+    /*background-color: #f3f7fa;*/
+    border-radius: 4px;
+    /*border: 1px solid #c5d3e3;*/
+    /*box-shadow: 0 0 3px rgba(0,0,0,0.1);*/
+    font-size: 14px;
+    color: #666666;
+}
+
+.btn_normal_gray
+{
+    width: 30px;
+    background: #FAFAFA;
+    border: 1px solid #BBBBBB;
+    width: 68px;
+    display: inline-block;
+    padding: 5px 0;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+    .btn_normal_gray:hover
+    {
+        background: #F7F7F7;
+        border: 1px solid #B7B7B7;
+        text-decoration: none;
+    }
+
+/*注册页*/
+.register_content .register_box
+{
+    width: 395px;
+    margin: auto;
+    position: relative;
+}
+
+    .register_content .register_box .items
+    {
+        padding: 40px 60px;
+        font-size: 14px;
+    }
+
+        .register_content .register_box .items .item
+        {
+            margin-bottom: 28px;
+            position: relative;
+        }
+
+        .register_content .register_box .items .input_tip, .register_content .domain_container .input_tip
+        {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #AAAAAA;
+        }
+
+
+        .register_content .register_box .items .item input
+        {
+            box-sizing: content-box;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 10px;
+            width: 256px;
+        }
+
+        .register_content .register_box .items .item .input_l
+        {
+            width: 136px;
+        }
+
+        .register_content .register_box .items .item .btn_dycode
+        {
+            font-size: 12px;
+            color: #535353;
+            background: #FAFAFC;
+            width: 108px;
+            height: 38px;
+            box-sizing: content-box;
+            display: inline-block;
+            line-height: 36px;
+            text-align: center;
+            float: right;
+            text-decoration: none;
+            border: 1px solid #BBBBBC;
+        }
+
+        .register_content .register_box .items .item .btn_blue
+        {
+            font-size: 16px;
+            color: #FFF;
+            background: #4490D6;
+            width: 100%;
+            height: 38px;
+            box-sizing: content-box;
+            display: inline-block;
+            line-height: 36px;
+            text-align: center;
+            text-decoration: none;
+            border: 1px solid #107FCD;
+        }
+
+            .register_content .register_box .items .item .btn_blue.btn_blue_disabled
+            {
+                background: #98c3e2;
+                filter: none;
+                border-color: #a2b6c5;
+                color: #f9fcfe!important;
+                box-shadow: none;
+                cursor: default;
+            }
+
+        .register_content .register_box .items .item .chkb
+        {
+            width: 20px;
+            height: 16px;
+        }
+
+        .register_content .register_box .items .item .check_eula
+        {
+            color: #898989;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .register_content .register_box .items .item .img_vc
+        {
+            width: 102px;
+            height: 40px;
+            float: right;
+        }
+
+        .register_content .register_box .items .item .disabled
+        {
+            color: #B7AEAE!important;
+            border: 1px solid #E5E5EF;
+        }
+
+        .register_content .register_box .items .item .dlg_chg_img
+        {
+            float: right;
+            margin-top: 2px;
+        }
+
+        .register_content .register_box .items .item .err
+        {
+            position: absolute;
+            color: #EC2020;
+            font-size: 14px;
+            top: 42px;
+            left: 10px;
+        }
+/*head*/
+.main_header .header_help
+{
+    float: right;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.main_header .txt_blue
+{
+    color: #3D70B2;
+}
+
+.onlinesell_commonImg_iconTel
+{
+    background-position: 0 -24px;
+    height: 24px;
+    width: 18px;
+}
+
+.main_header .icon_sel_tel
+{
+    margin-bottom: -8px;
+    margin-left: 30px;
+    margin-right: 3px;
+}
+
+.main_header span
+{
+    font: 13px/1.5 "Microsoft YaHei","lucida Grande",Verdana;
+}
+
+/*维持旧样式--start*/
+.register_content .progress_bar
+{
+    margin: auto;
+    width: 447px;
+}
+
+    .register_content .progress_bar .reg_Img
+    {
+        display: inline-block;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-image: url('../images/bizmail_reg_icons2c7c3a.gif');
+        background-size: 447px 60px;
+    }
+
+    .register_content .progress_bar .reg_step_1
+    {
+        background-position: 0 0;
+        height: 27px;
+        width: 447px;
+    }
+
+    .register_content .progress_bar .reg_step_2
+    {
+        background-position: 0 -29px;
+        height: 24px;
+        width: 447px;
+    }
+
+    .register_content .progress_bar .steps_line
+    {
+        margin-top: 4px;
+    }
+
+        .register_content .progress_bar .steps_line .step1
+        {
+            margin-right: 213px;
+            margin-left: 33px;
+        }
+/*维持旧样式--end*/
+
+.register_content .progress_bar1
+{
+    margin: auto;
+    width: 479px;
+}
+
+    .register_content .progress_bar1 .reg_Img
+    {
+        display: inline-block;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-image: url('../images/free_reg_1x2de2e9.png');
+        background-size: 481px 77px;
+    }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 192dpi)
+{
+    .register_content .progress_bar1 .reg_Img
+    {
+        background-image: url('../images/free_reg_2x2de2e9.png');
+    }
+}
+
+.register_content .progress_bar1 .reg_step_1
+{
+    background-position: 0 0;
+    height: 26px;
+    width: 481px;
+}
+
+.register_content .progress_bar1 .reg_step_2
+{
+    background-position: 0 -27px;
+    height: 24.5px;
+    width: 481px;
+}
+
+.register_content .progress_bar1 .reg_step_3
+{
+    background-position: 0 -52px;
+    height: 25px;
+    width: 481px;
+}
+
+.register_content .progress_bar1 .steps_line
+{
+    margin-top: 4px;
+}
+
+    .register_content .progress_bar1 .steps_line .step1
+    {
+        margin-right: 125px;
+        margin-left: 15px;
+    }
+
+    .register_content .progress_bar1 .steps_line .step2
+    {
+        margin-right: 109px;
+    }
+
+
+.register_content .domain_container .input_default
+{
+    box-sizing: content-box;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 15px;
+    width: 236px;
+    height: 18px;
+    padding: 4px 5px;
+}
+
+.register_content .domain_container
+{
+    margin: 45px 0 0 134px;
+    /*width: 420px;*/
+}
+
+    .register_content .domain_container .item_l
+    {
+        float: left;
+        margin-top: 11px;
+        color: #64676B;
+    }
+
+    .register_content .domain_container .domain_submit
+    {
+        margin: 25px 95px;
+    }
+
+.register_content .content_block
+{
+    margin-top: 30px;
+}
+
+.header_logo .logo
+{
+    margin-top: 0px;
+}
+
+.tips
+{
+    left: 45.5%;
+    background-color: #68AF02;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    z-index: 10000;
+    border-radius: 3px;
+}
+
+.top_pos
+{
+    top: 33px;
+    padding: 5px 20px 6px;
+    line-height: 1em;
+    font-size: 12px!important;
+}
+
+.ico_loading_dotted
+{
+    display: inline-block;
+    width: 11px;
+    height: 12px;
+    overflow: hidden;
+    margin-left: 2px;
+    background: url(../images/bizmail/ico_loading_dotted098d46.gif) no-repeat scroll 0 9px;
+}
+
+/*免费注册页2*/
+.register_qrcode
+{
+    margin-top: 40px;
+}
+
+.register_box .register_top
+{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.register_box .register_phone_top
+{
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.register_box .register_btm
+{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.register_box .register_phone_btm
+{
+    font-size: 13px;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.register_box .btm_phone
+{
+    font-size: 13px;
+    margin-top: 7px;
+    color: #707070;
+}
+
+.register_box .afterScanBox .afterScanIcon
+{
+    background: url(../images/common/icon_tick.png) 0 0 no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+}
+
+.register_box .afterScanBox .afterScanTxt
+{
+    font-size: 20px;
+    vertical-align: super;
+}
+
+.register_box .afterScanBox
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register_box .qr_invalid
+{
+    cursor: pointer;
+}
+
+.register_box .qr_mengban
+{
+    background: #000;
+    width: 261px;
+    height: 260px;
+    position: absolute;
+    top: 37px;
+    left: 67px;
+    filter: Alpha(opacity=70);
+    opacity: .7;
+    z-index: 1000;
+}
+
+.register_box .qr_invalid_tips
+{
+    color: #fff;
+    left: 137px;
+    line-height: 25px;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    top: 139px;
+    width: 117px;
+    z-index: 1000;
+}
+
+.register_box .register_qr
+{
+    margin: auto;
+    width: 260px;
+    height: 260px;
+    border: 1px solid #E2E2E2;
+}
+
+/* dnspod域名 add by nicolahuang */
+.bfc
+{
+    overflow: hidden;
+    zoom: 1;
+}
+
+.bfc_table
+{
+    display: table;
+}
+
+.clearfix
+{
+    overflow: hidden;
+    zoom: 1;
+}
+
+.form_domain
+{
+    padding-top: 11px;
+}
+
+    .form_domain .form_domain_group
+    {
+        overflow: hidden;
+        zoom: 1;
+        padding-bottom: 10px;
+    }
+
+    .form_domain label, .form_domain button, .form_domain input
+    {
+        vertical-align: middle;
+    }
+
+
+.form_domain_input, .form_none_domain_input, .form_none_domain_input_ext, .form_id_name
+{
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+.form_domain_input
+{
+    width: 200px;
+}
+
+.form_none_domain_input
+{
+    width: 150px;
+}
+
+.form_none_domain_input_ext
+{
+    width: 100px;
+    margin-left: 5px;
+}
+
+.form_id_name
+{
+    width: 150px;
+    margin-top: 5px;
+}
+
+.w_domain_left, .w_domain_right
+{
+    float: left;
+}
+
+.w_domain_left
+{
+    width: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.w_domain_left_offset
+{
+    margin-left: 30px;
+}
+
+.search_domain_btn
+{
+    /*color: #999;*/
+    padding: 6px;
+    margin-left: 5px;
+}
+
+.domain_tips
+{
+}
+
+.domain_tips_text
+{
+    margin-left: 5px;
+}
+
+.domain_hide
+{
+    display: none !important;
+}
+
+.domain_hidden
+{
+    visibility: hidden;
+}
+
+.domain_triangle_down
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #000;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.form_domain_ext
+{
+    display: inline-block;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.form_domain_ext_layer
+{
+    position: absolute;
+    margin-left: -144px;
+    margin-top: 36px;
+    height: 248px;
+    overflow-y: scroll;
+}
+
+.form_domain_ext_layer_animate
+{
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    height: 0;
+}
+
+    .form_domain_ext_layer_animate.active
+    {
+        opacity: 1;
+        height: 248px;
+    }
+
+
+.domain_ext_item
+{
+    cursor: pointer;
+    width: 120px;
+    padding: 6px 9px;
+}
+
+.form_domain_ext_layer .domain_ext_item_price
+{
+    padding-right: 15px;
+}
+
+.form_domain_ext_layer .domain_ext_item:hover
+{
+    background-color: #D0DDEB;
+}
+
+
+.domain_ext_item_left, .domain_ext_item_right
+{
+    float: left;
+    width: 50%;
+}
+
+.domain_ext_item_left
+{
+    text-align: left;
+}
+
+.domain_ext_item_right
+{
+    text-align: right;
+}
+
+.v_middle
+{
+    vertical-align: middle;
+}
+
+.pay_succ_content_left
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.pay_succ_content_right
+{
+}
+
+    .pay_succ_content_right h1
+    {
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+    .pay_succ_content_right p
+    {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 2px;
+    }
+
+    .pay_succ_content_right .dnspod_gray_tip
+    {
+        font-size: 14px;
+        color: #7A7A7A;
+    }
+
+.dnspod_order_content
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.dnspod_order_notice_tip
+{
+    margin-top: 10px;
+}
+
+.btn_big_dnspod_gray
+{
+    display: inline-block;
+    height: 38px;
+    width: 138px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    background-image: linear-gradient(-180deg, #F7F7F7 8%, #EFEFEF 100%);
+    border: 1px solid #BBBBBB;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #535353;
+    outline: none;
+    margin-left: 15px;
+}
+
+    .btn_big_dnspod_gray:hover
+    {
+        text-decoration: none;
+    }
+
+.domain_ext_triangle_down
+{
+    margin-left: 5px;
+}
+
+#domain_ext_item_wrap.disabled
+{
+    background-color: rgb(235,235,228);
+}
+
+input:disabled
+{
+    background-color: rgb(235,235,228);
+    color: rgb(84,84,84);
+}
+
+input[disabled]
+{
+    background-color: rgb(235,235,228);
+    color: rgb(84,84,84);
+}
+
+/* dnspod域名 add by nicolahuang */
+
+
+
+
+/* =====================
+ * 公用弹窗
+ * ===================== */
+.dialog
+{
+    z-index: 2001;
+    position: fixed;
+    left: 40%;
+    width: 400px;
+    top: 160px;
+}
+
+    .dialog .header
+    {
+        background: #2B7DC8;
+        color: #FFF;
+        padding: 7px 13px;
+    }
+
+        .dialog .header .btn_close
+        {
+            float: right;
+            float: right;
+            margin-top: 0px;
+            width: 18px;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+            .dialog .header .btn_close:hover
+            {
+                background: #8BBDF7;
+                border: #979797 1px solid;
+            }
+
+    .dialog .content
+    {
+        background: #FFF;
+        padding: 51px 28px;
+        color: #4B4B4B;
+    }
+
+        .dialog .content .icon_info
+        {
+            float: left;
+            overflow: hidden;
+            margin-right: 8px;
+        }
+
+    .dialog .footer
+    {
+        background: #FFF;
+        padding: 12px 14px;
+        text-align: right;
+    }
+
+        .dialog .footer .btn_confirm
+        {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 12px;
+            display: inline-block;
+            width: 66px;
+            background: #4096E5;
+            text-align: center;
+            line-height: 26px;
+            border: #2B7DC8 1px solid;
+            border-radius: 1px;
+        }
+
+            .dialog .footer .btn_confirm:hover
+            {
+                background: #6DB0FF;
+                border: #5FA7FA 1px solid;
+            }
+
+        .dialog .footer .btn_cancel
+        {
+            text-decoration: none;
+            color: #828282;
+            font-size: 12px;
+            display: inline-block;
+            width: 66px;
+            background: #FAFAFA;
+            text-align: center;
+            line-height: 26px;
+            border: #BFBABA 1px solid;
+        }
+
+            .dialog .footer .btn_cancel:hover
+            {
+                background: #F7F7F7;
+                border: #B7B7B7 1px solid;
+            }
+
+.bom_10
+{
+    margin-bottom: 10px;
+}
+
+.dialog .dlg_header
+{
+    background: #2B7DC8;
+    color: #FFF;
+    padding: 7px 13px;
+}
+
+    .dialog .dlg_header .btn_close
+    {
+        float: right;
+        float: right;
+        margin-top: 0px;
+        width: 18px;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+        .dialog .dlg_header .btn_close:hover
+        {
+            background: #8BBDF7;
+            border: #979797 1px solid;
+        }
+
+.dialog .dlg_content
+{
+    background: #FFF;
+    padding: 51px 28px;
+    color: #4B4B4B;
+}
+
+    .dialog .dlg_content .icon_info
+    {
+        float: left;
+        overflow: hidden;
+        margin-right: 8px;
+    }
+
+.dialog .dlg_footer
+{
+    background: #FFF;
+    padding: 12px 14px;
+    text-align: right;
+}
+
+    .dialog .dlg_footer .btn_confirm
+    {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 12px;
+        display: inline-block;
+        width: 66px;
+        background: #4096E5;
+        text-align: center;
+        line-height: 26px;
+        border: #2B7DC8 1px solid;
+        border-radius: 1px;
+    }
+
+        .dialog .dlg_footer .btn_confirm:hover
+        {
+            background: #6DB0FF;
+            border: #5FA7FA 1px solid;
+        }
+
+    .dialog .dlg_footer .btn_cancel
+    {
+        text-decoration: none;
+        color: #828282;
+        font-size: 12px;
+        display: inline-block;
+        width: 66px;
+        background: #FAFAFA;
+        text-align: center;
+        line-height: 26px;
+        border: #BFBABA 1px solid;
+    }
+
+        .dialog .dlg_footer .btn_cancel:hover
+        {
+            background: #F7F7F7;
+            border: #B7B7B7 1px solid;
+        }
+
+.dialog .dlg_chg_img
+{
+    float: right;
+    margin-top: 2px;
+}
+
+.biz_video_commonImg
+{
+    display: block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons-begin_video_s6393fbc106.png');
+    background-size: 123px 369px;
+    background-position: 0 -123px;
+    height: 123px;
+    width: 123px;
+    margin: 200px auto;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+    /* line 43, /sass/images.scss */
+    .biz_video_commonImg:hover
+    {
+        background-position: 0 0;
+    }
+
+    /* line 43, /sass/images.scss */
+    .biz_video_commonImg:active
+    {
+        background-position: 0 -246px;
+    }
+
+.mx_helper_video .mx_shadow
+{
+    position: absolute;
+    width: 720px;
+    height: 540px;
+    z-index: 90;
+    background: #000;
+    -webkit-opacity: .2;
+    -moz-opacity: .2;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    -khtml-opacity: .2;
+    text-align: center;
+}

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2ECC21DD-A721-4C60-87D8-5BEE50B37229}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mes.BE.Services</RootNamespace>
+    <AssemblyName>Mes.BE.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MES.Libraries">
+      <HintPath>..\..\Libs\MES.Libraries.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IData\IComponentMaterial.cs" />
+    <Compile Include="IData\IComponentMaterialExtension.cs" />
+    <Compile Include="IData\IComponentType.cs" />
+    <Compile Include="IData\IOrderProduct.cs" />
+    <Compile Include="IData\IOrderStep.cs" />
+    <Compile Include="IData\IPartnerOrderProduct.cs" />
+    <Compile Include="IData\IProductBOM.cs" />
+    <Compile Include="IData\IProductComponent.cs" />
+    <Compile Include="IData\IProductionOrder.cs" />
+    <Compile Include="IData\IReviewDetail.cs" />
+    <Compile Include="IData\IPartnerOrder.cs" />
+    <Compile Include="IData\IProductionSet.cs" />
+    <Compile Include="IData\IWorkOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IData\IBattchFile.cs" />
+    <Compile Include="IData\ICabinet2Door.cs" />
+    <Compile Include="IData\ICar.cs" />
+    <Compile Include="IData\ICategory.cs" />
+    <Compile Include="IData\ICustomer.cs" />
+    <Compile Include="IData\ICustomerFollowUp.cs" />
+    <Compile Include="IData\ICustomerTransDetail.cs" />
+    <Compile Include="IData\ICutTemplate.cs" />
+    <Compile Include="IData\IDepartment.cs" />
+    <Compile Include="IData\IFavorite.cs" />
+    <Compile Include="IData\IKeyValue.cs" />
+    <Compile Include="IData\ILocation.cs" />
+    <Compile Include="IData\ILogisticsEnterprise.cs" />
+    <Compile Include="IData\IMaterial.cs" />
+    <Compile Include="IData\IMaterial2Supplier.cs" />
+    <Compile Include="IData\IMaterialQuotePrice.cs" />
+    <Compile Include="IData\INotice.cs" />
+    <Compile Include="IData\IOrder.cs" />
+    <Compile Include="IData\IOrder2Cabinet.cs" />
+    <Compile Include="IData\IOrder2CabinetLog.cs" />
+    <Compile Include="IData\IOrder2Hardware.cs" />
+    <Compile Include="IData\IOrderDetail.cs" />
+    <Compile Include="IData\IOrderLog.cs" />
+    <Compile Include="IData\IOrderMadeSate.cs" />
+    <Compile Include="IData\IOrderProcessFile.cs" />
+    <Compile Include="IData\IOrderScheduling.cs" />
+    <Compile Include="IData\IOrderStepLog.cs" />
+    <Compile Include="IData\IOrderWorkflow.cs" />
+    <Compile Include="IData\IPackage.cs" />
+    <Compile Include="IData\IPackageDetail.cs" />
+    <Compile Include="IData\IPartner.cs" />
+    <Compile Include="IData\IPartnerRole.cs" />
+    <Compile Include="IData\IPartnerRole2PrivilegeItem.cs" />
+    <Compile Include="IData\IPartnerTask.cs" />
+    <Compile Include="IData\IPartnerTransDetail.cs" />
+    <Compile Include="IData\IPartnerUser.cs" />
+    <Compile Include="IData\IPartnerUser2Role.cs" />
+    <Compile Include="IData\IPartnerUserGroup.cs" />
+    <Compile Include="IData\IPrivilege.cs" />
+    <Compile Include="IData\IPrivilegeItem.cs" />
+    <Compile Include="IData\IProduct.cs" />
+    <Compile Include="IData\IQuoteMain.cs" />
+    <Compile Include="IData\IRole.cs" />
+    <Compile Include="IData\IRoomDesigner.cs" />
+    <Compile Include="IData\IRoomDesignerFile.cs" />
+    <Compile Include="IData\IRoomDesignerKJLRelation.cs" />
+    <Compile Include="IData\ISMSLog.cs" />
+    <Compile Include="IData\ISolution.cs" />
+    <Compile Include="IData\ISolution2Cabinet.cs" />
+    <Compile Include="IData\ISolutionDetail.cs" />
+    <Compile Include="IData\ISolutionFile.cs" />
+    <Compile Include="IData\ISolutionHardware.cs" />
+    <Compile Include="IData\ISolutionOthers.cs" />
+    <Compile Include="IData\ISpecialCompanent.cs" />
+    <Compile Include="IData\ISupplier.cs" />
+    <Compile Include="IData\ISysLog.cs" />
+    <Compile Include="IData\ITransportMain.cs" />
+    <Compile Include="IData\IUser.cs" />
+    <Compile Include="IData\IUser2Role.cs" />
+    <Compile Include="IData\IUserGroup.cs" />
+    <Compile Include="IData\IWarehouseInMain.cs" />
+    <Compile Include="IData\IWarehouseOutDetail.cs" />
+    <Compile Include="IData\IWarehouseOutMain.cs" />
+    <Compile Include="IData\IWorkCenter.cs" />
+    <Compile Include="IData\IWorkCenterScheduling.cs" />
+    <Compile Include="IData\IWorkFlow.cs" />
+    <Compile Include="IData\IWorkingLine.cs" />
+    <Compile Include="IData\IWorkShift.cs" />
+    <Compile Include="IData\IWorkShift2WorkShop.cs" />
+    <Compile Include="IData\IWorkShop.cs" />
+    <Compile Include="ServiceBE\BattchFileBE.cs" />
+    <Compile Include="ServiceBE\Cabinet2DoorBE.cs" />
+    <Compile Include="ServiceBE\CarBE.cs" />
+    <Compile Include="ServiceBE\CategoryBE.cs" />
+    <Compile Include="ServiceBE\ComponentMaterialBE.cs" />
+    <Compile Include="ServiceBE\ComponentMaterialExtensionSE.cs" />
+    <Compile Include="ServiceBE\ComponentTypeBE.cs" />
+    <Compile Include="ServiceBE\CustomerBE.cs" />
+    <Compile Include="ServiceBE\CustomerFollowUpBE.cs" />
+    <Compile Include="ServiceBE\CustomerTransDetailBE.cs" />
+    <Compile Include="ServiceBE\CutTemplateBE.cs" />
+    <Compile Include="ServiceBE\DepartmentBE.cs" />
+    <Compile Include="ServiceBE\FavoriteBE.cs" />
+    <Compile Include="ServiceBE\KeyValueBE.cs" />
+    <Compile Include="ServiceBE\LocationBE.cs" />
+    <Compile Include="ServiceBE\LogisticsEnterpriseBE.cs" />
+    <Compile Include="ServiceBE\MaterialBE.cs" />
+    <Compile Include="ServiceBE\Material2SupplierBE.cs" />
+    <Compile Include="ServiceBE\MaterialQuotePriceBE.cs" />
+    <Compile Include="ServiceBE\NoticeBE.cs" />
+    <Compile Include="ServiceBE\OrderProductBE.cs" />
+    <Compile Include="ServiceBE\OrderStepBE.cs" />
+    <Compile Include="ServiceBE\PartnerOrderProductBE.cs" />
+    <Compile Include="ServiceBE\ProductBOMBE.cs" />
+    <Compile Include="ServiceBE\ProductComponentBE.cs" />
+    <Compile Include="ServiceBE\ProductionOrderBE.cs" />
+    <Compile Include="ServiceBE\ProductionSetBE.cs" />
+    <Compile Include="ServiceBE\ReviewDetailBE.cs" />
+    <Compile Include="ServiceBE\PartnerOrderBE.cs" />
+    <Compile Include="ServiceBE\OrderBE.cs" />
+    <Compile Include="ServiceBE\Order2CabinetBE.cs" />
+    <Compile Include="ServiceBE\Order2CabinetLogBE.cs" />
+    <Compile Include="ServiceBE\Order2HardwareBE.cs" />
+    <Compile Include="ServiceBE\OrderDetailBE.cs" />
+    <Compile Include="ServiceBE\OrderLogBE.cs" />
+    <Compile Include="ServiceBE\OrderMadeSateBE.cs" />
+    <Compile Include="ServiceBE\OrderProcessFileBE.cs" />
+    <Compile Include="ServiceBE\OrderSchedulingBE.cs" />
+    <Compile Include="ServiceBE\OrderStepLogBE.cs" />
+    <Compile Include="ServiceBE\OrderWorkflowBE.cs" />
+    <Compile Include="ServiceBE\PackageBE.cs" />
+    <Compile Include="ServiceBE\PackageDetailBE.cs" />
+    <Compile Include="ServiceBE\PartnerBE.cs" />
+    <Compile Include="ServiceBE\PartnerRoleBE.cs" />
+    <Compile Include="ServiceBE\PartnerRole2PrivilegeItemBE.cs" />
+    <Compile Include="ServiceBE\PartnerTaskBE.cs" />
+    <Compile Include="ServiceBE\PartnerTransDetailBE.cs" />
+    <Compile Include="ServiceBE\PartnerUserBE.cs" />
+    <Compile Include="ServiceBE\PartnerUser2RoleBE.cs" />
+    <Compile Include="ServiceBE\PartnerUserGroupBE.cs" />
+    <Compile Include="ServiceBE\PrivilegeBE.cs" />
+    <Compile Include="ServiceBE\PrivilegeItemBE.cs" />
+    <Compile Include="ServiceBE\ProductBE.cs" />
+    <Compile Include="ServiceBE\QuoteMainBE.cs" />
+    <Compile Include="ServiceBE\RoleBE.cs" />
+    <Compile Include="ServiceBE\RoomDesignerBE.cs" />
+    <Compile Include="ServiceBE\RoomDesignerFileBE.cs" />
+    <Compile Include="ServiceBE\RoomDesignerKJLRelationBE.cs" />
+    <Compile Include="ServiceBE\SMSLogBE.cs" />
+    <Compile Include="ServiceBE\SolutionBE.cs" />
+    <Compile Include="ServiceBE\Solution2CabinetBE.cs" />
+    <Compile Include="ServiceBE\SolutionDetailBE.cs" />
+    <Compile Include="ServiceBE\SolutionFileBE.cs" />
+    <Compile Include="ServiceBE\SolutionHardwareBE.cs" />
+    <Compile Include="ServiceBE\SolutionOthersBE.cs" />
+    <Compile Include="ServiceBE\SpecialCompanentBE.cs" />
+    <Compile Include="ServiceBE\SupplierBE.cs" />
+    <Compile Include="ServiceBE\SysLogBE.cs" />
+    <Compile Include="ServiceBE\TransportMainBE.cs" />
+    <Compile Include="ServiceBE\UserBE.cs" />
+    <Compile Include="ServiceBE\User2RoleBE.cs" />
+    <Compile Include="ServiceBE\UserGroupBE.cs" />
+    <Compile Include="ServiceBE\WarehouseInMainBE.cs" />
+    <Compile Include="ServiceBE\WarehouseOutDetailBE.cs" />
+    <Compile Include="ServiceBE\WarehouseOutMainBE.cs" />
+    <Compile Include="ServiceBE\WorkCenterBE.cs" />
+    <Compile Include="ServiceBE\WorkCenterSchedulingBE.cs" />
+    <Compile Include="ServiceBE\WorkFlowBE.cs" />
+    <Compile Include="ServiceBE\WorkingLineBE.cs" />
+    <Compile Include="ServiceBE\WorkOrderBE.cs" />
+    <Compile Include="ServiceBE\WorkShiftBE.cs" />
+    <Compile Include="ServiceBE\WorkShift2WorkShopBE.cs" />
+    <Compile Include="ServiceBE\WorkShopBE.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mes.BE.Objects\Mes.BE.Objects.csproj">
+      <Project>{f943db6f-b41f-4999-9e4c-52ddac13fcc0}</Project>
+      <Name>Mes.BE.Objects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

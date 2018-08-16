@@ -1,0 +1,28 @@
+.account-bind-list
+{
+    line-height: 24px;
+}
+
+    .account-bind-list li
+    {
+        padding: 30px 20px;
+        border: 1px solid #ddd;
+    }
+
+    .account-bind-list p
+    {
+        margin: 0 !important;
+    }
+
+    .account-bind-list .img-wrap
+    {
+        width: 45px;
+        height: 40px;
+        margin-right: 22px;
+    }
+
+        .account-bind-list .img-wrap img
+        {
+            width: 45px;
+            height: 40px;
+        }

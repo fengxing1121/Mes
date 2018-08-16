@@ -1,0 +1,28 @@
+.icon-image
+{
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    background: #fff;
+    background: url(./images/icons.png) no-repeat;
+}
+
+.icon-account-alipay
+{
+    background-position: 0 0;
+}
+
+.icon-beian
+{
+    background-position: 0 -55px;
+}
+
+.icon-domain
+{
+    background-position: 0 -110px;
+}
+
+.icon-aliyun
+{
+    background-position: 0 -163px;
+}

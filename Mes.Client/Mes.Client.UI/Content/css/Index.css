@@ -1,0 +1,107 @@
+﻿.panel .panel-header {
+    border-top: 0;
+    border-bottom: 0;
+}
+.tabs-header-noborder {
+    border-top: 5px solid #0e90d2;
+}
+.layout-panel-west {
+    background-color: #20222A;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    color: rgba(255,255,255,.7);
+}
+
+#nav {
+    background-color: #20222A;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+    color: rgba(255,255,255,.7);
+}
+
+    #nav ul, li {
+        float: none;
+        list-style: none;
+    }
+
+    #nav a {
+        text-decoration: none;
+        font-size: 11pt;
+        line-height: 22px;
+        color: rgba(255,255,255,.7);
+        display: block;
+    }
+
+        #nav a:visited, #nav a:focus {
+            color: rgba(255,255,255,1);
+        }
+
+        #nav a:hover {
+            color: #fff;
+        }
+
+.deskmenu .item {
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+    .deskmenu .item .item_body {
+        width: 300px;
+        height: 300px;
+        padding-right: 15px;
+    }
+
+    .deskmenu .item .item_title {
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+        .deskmenu .item .item_title img {
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+
+.huanyin {
+    width: 310px;
+    height: 80px;
+    position: relative;
+    top: 40%;
+    left: 45%;
+    display: none;
+}
+
+    .huanyin span {
+        display: block;
+        width: 74px;
+        height: 80px;
+        background: url("../images/1_7.jpg");
+        float: left;
+        margin-right: 10px;
+    }
+
+.p_1 {
+    font-size: 18px;
+    color: #F2450D;
+    font-weight: 600;
+}
+
+.p_1, .p_2 {
+    padding: 9px 0;
+    text-align: center !important;
+}
+
+.p_2 {
+    text-align: center;
+    color: #F2450D;
+    font-weight: 600;
+    width: 220px;
+    margin-top: -10px;
+}
+
+#content_right {
+    display: block;
+    height: 100%;
+    width: 100%;
+    float: right;
+}

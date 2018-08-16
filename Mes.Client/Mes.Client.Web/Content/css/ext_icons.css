@@ -1,0 +1,5004 @@
+.anchor
+{
+    background: url('exticons/anchor.png') no-repeat center center;
+}
+
+.arrow_green
+{
+    background: url('exticons/arrow_green.png') no-repeat center center;
+}
+
+.asterisk_orange
+{
+    background: url('exticons/asterisk_orange.png') no-repeat center center;
+}
+
+.asterisk_yellow
+{
+    background: url('exticons/asterisk_yellow.png') no-repeat center center;
+}
+
+.attach
+{
+    background: url('exticons/attach.png') no-repeat center center;
+}
+
+.bell
+{
+    background: url('exticons/bell.png') no-repeat center center;
+}
+
+.bell_add
+{
+    background: url('exticons/bell_add.png') no-repeat center center;
+}
+
+.bell_delete
+{
+    background: url('exticons/bell_delete.png') no-repeat center center;
+}
+
+.bell_error
+{
+    background: url('exticons/bell_error.png') no-repeat center center;
+}
+
+.bell_go
+{
+    background: url('exticons/bell_go.png') no-repeat center center;
+}
+
+.bell_link
+{
+    background: url('exticons/bell_link.png') no-repeat center center;
+}
+
+.bin
+{
+    background: url('exticons/bin.png') no-repeat center center;
+}
+
+.bin_closed
+{
+    background: url('exticons/bin_closed.png') no-repeat center center;
+}
+
+.bin_empty
+{
+    background: url('exticons/bin_empty.png') no-repeat center center;
+}
+
+.bomb
+{
+    background: url('exticons/bomb.png') no-repeat center center;
+}
+
+.book
+{
+    background: url('exticons/book.png') no-repeat center center;
+}
+
+.book_add
+{
+    background: url('exticons/book_add.png') no-repeat center center;
+}
+
+.book_addresses
+{
+    background: url('exticons/book_addresses.png') no-repeat center center;
+}
+
+.book_delete
+{
+    background: url('exticons/book_delete.png') no-repeat center center;
+}
+
+.book_edit
+{
+    background: url('exticons/book_edit.png') no-repeat center center;
+}
+
+.book_error
+{
+    background: url('exticons/book_error.png') no-repeat center center;
+}
+
+.book_go
+{
+    background: url('exticons/book_go.png') no-repeat center center;
+}
+
+.book_key
+{
+    background: url('exticons/book_key.png') no-repeat center center;
+}
+
+.book_link
+{
+    background: url('exticons/book_link.png') no-repeat center center;
+}
+
+.book_next
+{
+    background: url('exticons/book_next.png') no-repeat center center;
+}
+
+.book_open
+{
+    background: url('exticons/book_open.png') no-repeat center center;
+}
+
+.book_previous
+{
+    background: url('exticons/book_previous.png') no-repeat center center;
+}
+
+.box
+{
+    background: url('exticons/box.png') no-repeat center center;
+}
+
+.brick
+{
+    background: url('exticons/brick.png') no-repeat center center;
+}
+
+.bricks
+{
+    background: url('exticons/bricks.png') no-repeat center center;
+}
+
+.brick_add
+{
+    background: url('exticons/brick_add.png') no-repeat center center;
+}
+
+.brick_delete
+{
+    background: url('exticons/brick_delete.png') no-repeat center center;
+}
+
+.brick_edit
+{
+    background: url('exticons/brick_edit.png') no-repeat center center;
+}
+
+.brick_error
+{
+    background: url('exticons/brick_error.png') no-repeat center center;
+}
+
+.brick_go
+{
+    background: url('exticons/brick_go.png') no-repeat center center;
+}
+
+.brick_link
+{
+    background: url('exticons/brick_link.png') no-repeat center center;
+}
+
+.briefcase
+{
+    background: url('exticons/briefcase.png') no-repeat center center;
+}
+
+.building
+{
+    background: url('exticons/building.png') no-repeat center center;
+}
+
+.building_add
+{
+    background: url('exticons/building_add.png') no-repeat center center;
+}
+
+.building_delete
+{
+    background: url('exticons/building_delete.png') no-repeat center center;
+}
+
+.building_edit
+{
+    background: url('exticons/building_edit.png') no-repeat center center;
+}
+
+.building_error
+{
+    background: url('exticons/building_error.png') no-repeat center center;
+}
+
+.building_go
+{
+    background: url('exticons/building_go.png') no-repeat center center;
+}
+
+.building_key
+{
+    background: url('exticons/building_key.png') no-repeat center center;
+}
+
+.building_link
+{
+    background: url('exticons/building_link.png') no-repeat center center;
+}
+
+.bullet_add
+{
+    background: url('exticons/bullet_add.png') no-repeat center center;
+}
+
+.bullet_arrow_bottom
+{
+    background: url('exticons/bullet_arrow_bottom.png') no-repeat center center;
+}
+
+.bullet_arrow_down
+{
+    background: url('exticons/bullet_arrow_down.png') no-repeat center center;
+}
+
+.bullet_arrow_top
+{
+    background: url('exticons/bullet_arrow_top.png') no-repeat center center;
+}
+
+.bullet_arrow_up
+{
+    background: url('exticons/bullet_arrow_up.png') no-repeat center center;
+}
+
+.bullet_black
+{
+    background: url('exticons/bullet_black.png') no-repeat center center;
+}
+
+.bullet_blue
+{
+    background: url('exticons/bullet_blue.png') no-repeat center center;
+}
+
+.bullet_delete
+{
+    background: url('exticons/bullet_delete.png') no-repeat center center;
+}
+
+.bullet_disk
+{
+    background: url('exticons/bullet_disk.png') no-repeat center center;
+}
+
+.bullet_error
+{
+    background: url('exticons/bullet_error.png') no-repeat center center;
+}
+
+.bullet_feed
+{
+    background: url('exticons/bullet_feed.png') no-repeat center center;
+}
+
+.bullet_go
+{
+    background: url('exticons/bullet_go.png') no-repeat center center;
+}
+
+.bullet_green
+{
+    background: url('exticons/bullet_green.png') no-repeat center center;
+}
+
+.bullet_key
+{
+    background: url('exticons/bullet_key.png') no-repeat center center;
+}
+
+.bullet_orange
+{
+    background: url('exticons/bullet_orange.png') no-repeat center center;
+}
+
+.bullet_picture
+{
+    background: url('exticons/bullet_picture.png') no-repeat center center;
+}
+
+.bullet_pink
+{
+    background: url('exticons/bullet_pink.png') no-repeat center center;
+}
+
+.bullet_purple
+{
+    background: url('exticons/bullet_purple.png') no-repeat center center;
+}
+
+.bullet_red
+{
+    background: url('exticons/bullet_red.png') no-repeat center center;
+}
+
+.bullet_star
+{
+    background: url('exticons/bullet_star.png') no-repeat center center;
+}
+
+.bullet_toggle_minus
+{
+    background: url('exticons/bullet_toggle_minus.png') no-repeat center center;
+}
+
+.bullet_toggle_plus
+{
+    background: url('exticons/bullet_toggle_plus.png') no-repeat center center;
+}
+
+.bullet_white
+{
+    background: url('exticons/bullet_white.png') no-repeat center center;
+}
+
+.bullet_wrench
+{
+    background: url('exticons/bullet_wrench.png') no-repeat center center;
+}
+
+.bullet_yellow
+{
+    background: url('exticons/bullet_yellow.png') no-repeat center center;
+}
+
+.cake
+{
+    background: url('exticons/cake.png') no-repeat center center;
+}
+
+.cancel
+{
+    background: url('exticons/cancel.png') no-repeat center center;
+}
+
+.clock
+{
+    background: url('exticons/clock.png') no-repeat center center;
+}
+
+.clock_add
+{
+    background: url('exticons/clock_add.png') no-repeat center center;
+}
+
+.clock_delete
+{
+    background: url('exticons/clock_delete.png') no-repeat center center;
+}
+
+.clock_edit
+{
+    background: url('exticons/clock_edit.png') no-repeat center center;
+}
+
+.clock_error
+{
+    background: url('exticons/clock_error.png') no-repeat center center;
+}
+
+.clock_go
+{
+    background: url('exticons/clock_go.png') no-repeat center center;
+}
+
+.clock_link
+{
+    background: url('exticons/clock_link.png') no-repeat center center;
+}
+
+.clock_pause
+{
+    background: url('exticons/clock_pause.png') no-repeat center center;
+}
+
+.clock_play
+{
+    background: url('exticons/clock_play.png') no-repeat center center;
+}
+
+.clock_red
+{
+    background: url('exticons/clock_red.png') no-repeat center center;
+}
+
+.clock_stop
+{
+    background: url('exticons/clock_stop.png') no-repeat center center;
+}
+
+.cog
+{
+    background: url('exticons/cog.png') no-repeat center center;
+}
+
+.cog_add
+{
+    background: url('exticons/cog_add.png') no-repeat center center;
+}
+
+.cog_delete
+{
+    background: url('exticons/cog_delete.png') no-repeat center center;
+}
+
+.cog_edit
+{
+    background: url('exticons/cog_edit.png') no-repeat center center;
+}
+
+.cog_error
+{
+    background: url('exticons/cog_error.png') no-repeat center center;
+}
+
+.cog_go
+{
+    background: url('exticons/cog_go.png') no-repeat center center;
+}
+
+.coins
+{
+    background: url('exticons/coins.png') no-repeat center center;
+}
+
+.coins_add
+{
+    background: url('exticons/coins_add.png') no-repeat center center;
+}
+
+.coins_delete
+{
+    background: url('exticons/coins_delete.png') no-repeat center center;
+}
+
+.color_swatch
+{
+    background: url('exticons/color_swatch.png') no-repeat center center;
+}
+
+.color_wheel
+{
+    background: url('exticons/color_wheel.png') no-repeat center center;
+}
+
+.comment
+{
+    background: url('exticons/comment.png') no-repeat center center;
+}
+
+.comments
+{
+    background: url('exticons/comments.png') no-repeat center center;
+}
+
+.comments_add
+{
+    background: url('exticons/comments_add.png') no-repeat center center;
+}
+
+.comments_delete
+{
+    background: url('exticons/comments_delete.png') no-repeat center center;
+}
+
+.comment_add
+{
+    background: url('exticons/comment_add.png') no-repeat center center;
+}
+
+.comment_delete
+{
+    background: url('exticons/comment_delete.png') no-repeat center center;
+}
+
+.comment_edit
+{
+    background: url('exticons/comment_edit.png') no-repeat center center;
+}
+
+.compress
+{
+    background: url('exticons/compress.png') no-repeat center center;
+}
+
+.computer
+{
+    background: url('exticons/computer.png') no-repeat center center;
+}
+
+.computer_add
+{
+    background: url('exticons/computer_add.png') no-repeat center center;
+}
+
+.computer_delete
+{
+    background: url('exticons/computer_delete.png') no-repeat center center;
+}
+
+.computer_edit
+{
+    background: url('exticons/computer_edit.png') no-repeat center center;
+}
+
+.computer_error
+{
+    background: url('exticons/computer_error.png') no-repeat center center;
+}
+
+.computer_go
+{
+    background: url('exticons/computer_go.png') no-repeat center center;
+}
+
+.computer_key
+{
+    background: url('exticons/computer_key.png') no-repeat center center;
+}
+
+.computer_link
+{
+    background: url('exticons/computer_link.png') no-repeat center center;
+}
+
+.connect
+{
+    background: url('exticons/connect.png') no-repeat center center;
+}
+
+.contrast
+{
+    background: url('exticons/contrast.png') no-repeat center center;
+}
+
+.contrast_decrease
+{
+    background: url('exticons/contrast_decrease.png') no-repeat center center;
+}
+
+.contrast_high
+{
+    background: url('exticons/contrast_high.png') no-repeat center center;
+}
+
+.contrast_increase
+{
+    background: url('exticons/contrast_increase.png') no-repeat center center;
+}
+
+.contrast_low
+{
+    background: url('exticons/contrast_low.png') no-repeat center center;
+}
+
+.controller
+{
+    background: url('exticons/controller.png') no-repeat center center;
+}
+
+.controller_add
+{
+    background: url('exticons/controller_add.png') no-repeat center center;
+}
+
+.controller_delete
+{
+    background: url('exticons/controller_delete.png') no-repeat center center;
+}
+
+.controller_error
+{
+    background: url('exticons/controller_error.png') no-repeat center center;
+}
+
+.creditcards
+{
+    background: url('exticons/creditcards.png') no-repeat center center;
+}
+
+.cup
+{
+    background: url('exticons/cup.png') no-repeat center center;
+}
+
+.cup_add
+{
+    background: url('exticons/cup_add.png') no-repeat center center;
+}
+
+.cup_delete
+{
+    background: url('exticons/cup_delete.png') no-repeat center center;
+}
+
+.cup_edit
+{
+    background: url('exticons/cup_edit.png') no-repeat center center;
+}
+
+.cup_error
+{
+    background: url('exticons/cup_error.png') no-repeat center center;
+}
+
+.cup_go
+{
+    background: url('exticons/cup_go.png') no-repeat center center;
+}
+
+.cup_key
+{
+    background: url('exticons/cup_key.png') no-repeat center center;
+}
+
+.cup_link
+{
+    background: url('exticons/cup_link.png') no-repeat center center;
+}
+
+.cursor
+{
+    background: url('exticons/cursor.png') no-repeat center center;
+}
+
+.cut
+{
+    background: url('exticons/cut.png') no-repeat center center;
+}
+
+.cut_red
+{
+    background: url('exticons/cut_red.png') no-repeat center center;
+}
+
+.database
+{
+    background: url('exticons/database.png') no-repeat center center;
+}
+
+.database_add
+{
+    background: url('exticons/database_add.png') no-repeat center center;
+}
+
+.database_connect
+{
+    background: url('exticons/database_connect.png') no-repeat center center;
+}
+
+.database_delete
+{
+    background: url('exticons/database_delete.png') no-repeat center center;
+}
+
+.database_edit
+{
+    background: url('exticons/database_edit.png') no-repeat center center;
+}
+
+.database_error
+{
+    background: url('exticons/database_error.png') no-repeat center center;
+}
+
+.database_gear
+{
+    background: url('exticons/database_gear.png') no-repeat center center;
+}
+
+.database_go
+{
+    background: url('exticons/database_go.png') no-repeat center center;
+}
+
+.database_key
+{
+    background: url('exticons/database_key.png') no-repeat center center;
+}
+
+.database_lightning
+{
+    background: url('exticons/database_lightning.png') no-repeat center center;
+}
+
+.database_link
+{
+    background: url('exticons/database_link.png') no-repeat center center;
+}
+
+.database_refresh
+{
+    background: url('exticons/database_refresh.png') no-repeat center center;
+}
+
+.database_save
+{
+    background: url('exticons/database_save.png') no-repeat center center;
+}
+
+.database_table
+{
+    background: url('exticons/database_table.png') no-repeat center center;
+}
+
+.delete
+{
+    background: url('exticons/delete.png') no-repeat center center;
+}
+
+.disconnect
+{
+    background: url('exticons/disconnect.png') no-repeat center center;
+}
+
+.disk
+{
+    background: url('exticons/disk.png') no-repeat center center;
+}
+
+.disk_multiple
+{
+    background: url('exticons/disk_multiple.png') no-repeat center center;
+}
+
+.door
+{
+    background: url('exticons/door.png') no-repeat center center;
+}
+
+.door_in
+{
+    background: url('exticons/door_in.png') no-repeat center center;
+}
+
+.door_open
+{
+    background: url('exticons/door_open.png') no-repeat center center;
+}
+
+.door_out
+{
+    background: url('exticons/door_out.png') no-repeat center center;
+}
+
+.drink
+{
+    background: url('exticons/drink.png') no-repeat center center;
+}
+
+.drink_empty
+{
+    background: url('exticons/drink_empty.png') no-repeat center center;
+}
+
+.dvd
+{
+    background: url('exticons/dvd.png') no-repeat center center;
+}
+
+.dvd_add
+{
+    background: url('exticons/dvd_add.png') no-repeat center center;
+}
+
+.dvd_delete
+{
+    background: url('exticons/dvd_delete.png') no-repeat center center;
+}
+
+.dvd_edit
+{
+    background: url('exticons/dvd_edit.png') no-repeat center center;
+}
+
+.dvd_error
+{
+    background: url('exticons/dvd_error.png') no-repeat center center;
+}
+
+.dvd_go
+{
+    background: url('exticons/dvd_go.png') no-repeat center center;
+}
+
+.dvd_key
+{
+    background: url('exticons/dvd_key.png') no-repeat center center;
+}
+
+.dvd_link
+{
+    background: url('exticons/dvd_link.png') no-repeat center center;
+}
+
+.emoticon_evilgrin
+{
+    background: url('exticons/emoticon_evilgrin.png') no-repeat center center;
+}
+
+.emoticon_grin
+{
+    background: url('exticons/emoticon_grin.png') no-repeat center center;
+}
+
+.emoticon_happy
+{
+    background: url('exticons/emoticon_happy.png') no-repeat center center;
+}
+
+.emoticon_smile
+{
+    background: url('exticons/emoticon_smile.png') no-repeat center center;
+}
+
+.emoticon_surprised
+{
+    background: url('exticons/emoticon_surprised.png') no-repeat center center;
+}
+
+.emoticon_tongue
+{
+    background: url('exticons/emoticon_tongue.png') no-repeat center center;
+}
+
+.emoticon_unhappy
+{
+    background: url('exticons/emoticon_unhappy.png') no-repeat center center;
+}
+
+.emoticon_waii
+{
+    background: url('exticons/emoticon_waii.png') no-repeat center center;
+}
+
+.emoticon_wink
+{
+    background: url('exticons/emoticon_wink.png') no-repeat center center;
+}
+
+.error
+{
+    background: url('exticons/error.png') no-repeat center center;
+}
+
+.error_add
+{
+    background: url('exticons/error_add.png') no-repeat center center;
+}
+
+.error_delete
+{
+    background: url('exticons/error_delete.png') no-repeat center center;
+}
+
+.error_go
+{
+    background: url('exticons/error_go.png') no-repeat center center;
+}
+
+.exclamation
+{
+    background: url('exticons/exclamation.png') no-repeat center center;
+}
+
+.eye
+{
+    background: url('exticons/eye.png') no-repeat center center;
+}
+
+.female
+{
+    background: url('exticons/female.png') no-repeat center center;
+}
+
+.find
+{
+    background: url('exticons/find.png') no-repeat center center;
+}
+
+.font
+{
+    background: url('exticons/font.png') no-repeat center center;
+}
+
+.font_add
+{
+    background: url('exticons/font_add.png') no-repeat center center;
+}
+
+.font_delete
+{
+    background: url('exticons/font_delete.png') no-repeat center center;
+}
+
+.font_go
+{
+    background: url('exticons/font_go.png') no-repeat center center;
+}
+
+.heart
+{
+    background: url('exticons/heart.png') no-repeat center center;
+}
+
+.heart_add
+{
+    background: url('exticons/heart_add.png') no-repeat center center;
+}
+
+.heart_delete
+{
+    background: url('exticons/heart_delete.png') no-repeat center center;
+}
+
+.help
+{
+    background: url('exticons/help.png') no-repeat center center;
+}
+
+.hourglass
+{
+    background: url('exticons/hourglass.png') no-repeat center center;
+}
+
+.hourglass_add
+{
+    background: url('exticons/hourglass_add.png') no-repeat center center;
+}
+
+.hourglass_delete
+{
+    background: url('exticons/hourglass_delete.png') no-repeat center center;
+}
+
+.hourglass_go
+{
+    background: url('exticons/hourglass_go.png') no-repeat center center;
+}
+
+.hourglass_link
+{
+    background: url('exticons/hourglass_link.png') no-repeat center center;
+}
+
+.house
+{
+    background: url('exticons/house.png') no-repeat center center;
+}
+
+.house_go
+{
+    background: url('exticons/house_go.png') no-repeat center center;
+}
+
+.house_link
+{
+    background: url('exticons/house_link.png') no-repeat center center;
+}
+
+.html
+{
+    background: url('exticons/html.png') no-repeat center center;
+}
+
+.html_add
+{
+    background: url('exticons/html_add.png') no-repeat center center;
+}
+
+.html_delete
+{
+    background: url('exticons/html_delete.png') no-repeat center center;
+}
+
+.html_go
+{
+    background: url('exticons/html_go.png') no-repeat center center;
+}
+
+.html_valid
+{
+    background: url('exticons/html_valid.png') no-repeat center center;
+}
+
+.image
+{
+    background: url('exticons/image.png') no-repeat center center;
+}
+
+.images
+{
+    background: url('exticons/images.png') no-repeat center center;
+}
+
+.images_send
+{
+    background: url('exticons/images_send.png') no-repeat center center;
+}
+
+.image_add
+{
+    background: url('exticons/image_add.png') no-repeat center center;
+}
+
+.image_delete
+{
+    background: url('exticons/image_delete.png') no-repeat center center;
+}
+
+.image_edit
+{
+    background: url('exticons/image_edit.png') no-repeat center center;
+}
+
+.image_link
+{
+    background: url('exticons/image_link.png') no-repeat center center;
+}
+
+.information
+{
+    background: url('exticons/information.png') no-repeat center center;
+}
+
+.joystick
+{
+    background: url('exticons/joystick.png') no-repeat center center;
+}
+
+.joystick_add
+{
+    background: url('exticons/joystick_add.png') no-repeat center center;
+}
+
+.joystick_delete
+{
+    background: url('exticons/joystick_delete.png') no-repeat center center;
+}
+
+.joystick_error
+{
+    background: url('exticons/joystick_error.png') no-repeat center center;
+}
+
+.key
+{
+    background: url('exticons/key.png') no-repeat center center;
+}
+
+.key_add
+{
+    background: url('exticons/key_add.png') no-repeat center center;
+}
+
+.key_delete
+{
+    background: url('exticons/key_delete.png') no-repeat center center;
+}
+
+.key_go
+{
+    background: url('exticons/key_go.png') no-repeat center center;
+}
+
+.layers
+{
+    background: url('exticons/layers.png') no-repeat center center;
+}
+
+.lightbulb
+{
+    background: url('exticons/lightbulb.png') no-repeat center center;
+}
+
+.lightbulb_add
+{
+    background: url('exticons/lightbulb_add.png') no-repeat center center;
+}
+
+.lightbulb_delete
+{
+    background: url('exticons/lightbulb_delete.png') no-repeat center center;
+}
+
+.lightbulb_off
+{
+    background: url('exticons/lightbulb_off.png') no-repeat center center;
+}
+
+.lightning
+{
+    background: url('exticons/lightning.png') no-repeat center center;
+}
+
+.lightning_add
+{
+    background: url('exticons/lightning_add.png') no-repeat center center;
+}
+
+.lightning_delete
+{
+    background: url('exticons/lightning_delete.png') no-repeat center center;
+}
+
+.lightning_go
+{
+    background: url('exticons/lightning_go.png') no-repeat center center;
+}
+
+.link
+{
+    background: url('exticons/link.png') no-repeat center center;
+}
+
+.link_add
+{
+    background: url('exticons/link_add.png') no-repeat center center;
+}
+
+.link_break
+{
+    background: url('exticons/link_break.png') no-repeat center center;
+}
+
+.link_delete
+{
+    background: url('exticons/link_delete.png') no-repeat center center;
+}
+
+.link_edit
+{
+    background: url('exticons/link_edit.png') no-repeat center center;
+}
+
+.link_error
+{
+    background: url('exticons/link_error.png') no-repeat center center;
+}
+
+.link_go
+{
+    background: url('exticons/link_go.png') no-repeat center center;
+}
+
+.lorry
+{
+    background: url('exticons/lorry.png') no-repeat center center;
+}
+
+.lorry_add
+{
+    background: url('exticons/lorry_add.png') no-repeat center center;
+}
+
+.lorry_delete
+{
+    background: url('exticons/lorry_delete.png') no-repeat center center;
+}
+
+.lorry_error
+{
+    background: url('exticons/lorry_error.png') no-repeat center center;
+}
+
+.lorry_flatbed
+{
+    background: url('exticons/lorry_flatbed.png') no-repeat center center;
+}
+
+.lorry_go
+{
+    background: url('exticons/lorry_go.png') no-repeat center center;
+}
+
+.lorry_link
+{
+    background: url('exticons/lorry_link.png') no-repeat center center;
+}
+
+.male
+{
+    background: url('exticons/male.png') no-repeat center center;
+}
+
+.medal_bronze_1
+{
+    background: url('exticons/medal_bronze_1.png') no-repeat center center;
+}
+
+.medal_bronze_2
+{
+    background: url('exticons/medal_bronze_2.png') no-repeat center center;
+}
+
+.medal_bronze_3
+{
+    background: url('exticons/medal_bronze_3.png') no-repeat center center;
+}
+
+.medal_bronze_add
+{
+    background: url('exticons/medal_bronze_add.png') no-repeat center center;
+}
+
+.medal_bronze_delete
+{
+    background: url('exticons/medal_bronze_delete.png') no-repeat center center;
+}
+
+.medal_gold_1
+{
+    background: url('exticons/medal_gold_1.png') no-repeat center center;
+}
+
+.medal_gold_2
+{
+    background: url('exticons/medal_gold_2.png') no-repeat center center;
+}
+
+.medal_gold_3
+{
+    background: url('exticons/medal_gold_3.png') no-repeat center center;
+}
+
+.medal_gold_add
+{
+    background: url('exticons/medal_gold_add.png') no-repeat center center;
+}
+
+.medal_gold_delete
+{
+    background: url('exticons/medal_gold_delete.png') no-repeat center center;
+}
+
+.medal_silver_1
+{
+    background: url('exticons/medal_silver_1.png') no-repeat center center;
+}
+
+.medal_silver_2
+{
+    background: url('exticons/medal_silver_2.png') no-repeat center center;
+}
+
+.medal_silver_3
+{
+    background: url('exticons/medal_silver_3.png') no-repeat center center;
+}
+
+.medal_silver_add
+{
+    background: url('exticons/medal_silver_add.png') no-repeat center center;
+}
+
+.medal_silver_delete
+{
+    background: url('exticons/medal_silver_delete.png') no-repeat center center;
+}
+
+.money
+{
+    background: url('exticons/money.png') no-repeat center center;
+}
+
+.money_add
+{
+    background: url('exticons/money_add.png') no-repeat center center;
+}
+
+.money_delete
+{
+    background: url('exticons/money_delete.png') no-repeat center center;
+}
+
+.money_dollar
+{
+    background: url('exticons/money_dollar.png') no-repeat center center;
+}
+
+.money_euro
+{
+    background: url('exticons/money_euro.png') no-repeat center center;
+}
+
+.money_pound
+{
+    background: url('exticons/money_pound.png') no-repeat center center;
+}
+
+.money_yen
+{
+    background: url('exticons/money_yen.png') no-repeat center center;
+}
+
+.mouse
+{
+    background: url('exticons/mouse.png') no-repeat center center;
+}
+
+.mouse_add
+{
+    background: url('exticons/mouse_add.png') no-repeat center center;
+}
+
+.mouse_delete
+{
+    background: url('exticons/mouse_delete.png') no-repeat center center;
+}
+
+.mouse_error
+{
+    background: url('exticons/mouse_error.png') no-repeat center center;
+}
+
+.music
+{
+    background: url('exticons/music.png') no-repeat center center;
+}
+
+.new
+{
+    background: url('exticons/new.png') no-repeat center center;
+}
+
+.package
+{
+    background: url('exticons/package.png') no-repeat center center;
+}
+
+.package_add
+{
+    background: url('exticons/package_add.png') no-repeat center center;
+}
+
+.package_delete
+{
+    background: url('exticons/package_delete.png') no-repeat center center;
+}
+
+.package_go
+{
+    background: url('exticons/package_go.png') no-repeat center center;
+}
+
+.package_green
+{
+    background: url('exticons/package_green.png') no-repeat center center;
+}
+
+.package_link
+{
+    background: url('exticons/package_link.png') no-repeat center center;
+}
+
+.paintbrush
+{
+    background: url('exticons/paintbrush.png') no-repeat center center;
+}
+
+.paintcan
+{
+    background: url('exticons/paintcan.png') no-repeat center center;
+}
+
+.palette
+{
+    background: url('exticons/palette.png') no-repeat center center;
+}
+
+.pencil
+{
+    background: url('exticons/pencil.png') no-repeat center center;
+}
+
+.pencil_add
+{
+    background: url('exticons/pencil_add.png') no-repeat center center;
+}
+
+.pencil_delete
+{
+    background: url('exticons/pencil_delete.png') no-repeat center center;
+}
+
+.pencil_go
+{
+    background: url('exticons/pencil_go.png') no-repeat center center;
+}
+
+.phone
+{
+    background: url('exticons/phone.png') no-repeat center center;
+}
+
+.phone_add
+{
+    background: url('exticons/phone_add.png') no-repeat center center;
+}
+
+.phone_delete
+{
+    background: url('exticons/phone_delete.png') no-repeat center center;
+}
+
+.phone_sound
+{
+    background: url('exticons/phone_sound.png') no-repeat center center;
+}
+
+.pilcrow
+{
+    background: url('exticons/pilcrow.png') no-repeat center center;
+}
+
+.pill
+{
+    background: url('exticons/pill.png') no-repeat center center;
+}
+
+.pill_add
+{
+    background: url('exticons/pill_add.png') no-repeat center center;
+}
+
+.pill_delete
+{
+    background: url('exticons/pill_delete.png') no-repeat center center;
+}
+
+.pill_go
+{
+    background: url('exticons/pill_go.png') no-repeat center center;
+}
+
+.plugin
+{
+    background: url('exticons/plugin.png') no-repeat center center;
+}
+
+.plugin_add
+{
+    background: url('exticons/plugin_add.png') no-repeat center center;
+}
+
+.plugin_delete
+{
+    background: url('exticons/plugin_delete.png') no-repeat center center;
+}
+
+.plugin_disabled
+{
+    background: url('exticons/plugin_disabled.png') no-repeat center center;
+}
+
+.plugin_edit
+{
+    background: url('exticons/plugin_edit.png') no-repeat center center;
+}
+
+.plugin_error
+{
+    background: url('exticons/plugin_error.png') no-repeat center center;
+}
+
+.plugin_go
+{
+    background: url('exticons/plugin_go.png') no-repeat center center;
+}
+
+.plugin_link
+{
+    background: url('exticons/plugin_link.png') no-repeat center center;
+}
+
+.rainbow
+{
+    background: url('exticons/rainbow.png') no-repeat center center;
+}
+
+.resultset_first
+{
+    background: url('exticons/resultset_first.png') no-repeat center center;
+}
+
+.resultset_last
+{
+    background: url('exticons/resultset_last.png') no-repeat center center;
+}
+
+.resultset_next
+{
+    background: url('exticons/resultset_next.png') no-repeat center center;
+}
+
+.resultset_previous
+{
+    background: url('exticons/resultset_previous.png') no-repeat center center;
+}
+
+.rosette
+{
+    background: url('exticons/rosette.png') no-repeat center center;
+}
+
+.rss
+{
+    background: url('exticons/rss.png') no-repeat center center;
+}
+
+.rss_add
+{
+    background: url('exticons/rss_add.png') no-repeat center center;
+}
+
+.rss_delete
+{
+    background: url('exticons/rss_delete.png') no-repeat center center;
+}
+
+.rss_go
+{
+    background: url('exticons/rss_go.png') no-repeat center center;
+}
+
+.rss_valid
+{
+    background: url('exticons/rss_valid.png') no-repeat center center;
+}
+
+.ruby
+{
+    background: url('exticons/ruby.png') no-repeat center center;
+}
+
+.ruby_add
+{
+    background: url('exticons/ruby_add.png') no-repeat center center;
+}
+
+.ruby_delete
+{
+    background: url('exticons/ruby_delete.png') no-repeat center center;
+}
+
+.ruby_gear
+{
+    background: url('exticons/ruby_gear.png') no-repeat center center;
+}
+
+.ruby_get
+{
+    background: url('exticons/ruby_get.png') no-repeat center center;
+}
+
+.ruby_go
+{
+    background: url('exticons/ruby_go.png') no-repeat center center;
+}
+
+.ruby_key
+{
+    background: url('exticons/ruby_key.png') no-repeat center center;
+}
+
+.ruby_link
+{
+    background: url('exticons/ruby_link.png') no-repeat center center;
+}
+
+.ruby_put
+{
+    background: url('exticons/ruby_put.png') no-repeat center center;
+}
+
+.server
+{
+    background: url('exticons/server.png') no-repeat center center;
+}
+
+.server_add
+{
+    background: url('exticons/server_add.png') no-repeat center center;
+}
+
+.server_chart
+{
+    background: url('exticons/server_chart.png') no-repeat center center;
+}
+
+.server_compressed
+{
+    background: url('exticons/server_compressed.png') no-repeat center center;
+}
+
+.server_connect
+{
+    background: url('exticons/server_connect.png') no-repeat center center;
+}
+
+.server_database
+{
+    background: url('exticons/server_database.png') no-repeat center center;
+}
+
+.server_delete
+{
+    background: url('exticons/server_delete.png') no-repeat center center;
+}
+
+.server_edit
+{
+    background: url('exticons/server_edit.png') no-repeat center center;
+}
+
+.server_error
+{
+    background: url('exticons/server_error.png') no-repeat center center;
+}
+
+.server_go
+{
+    background: url('exticons/server_go.png') no-repeat center center;
+}
+
+.server_key
+{
+    background: url('exticons/server_key.png') no-repeat center center;
+}
+
+.server_lightning
+{
+    background: url('exticons/server_lightning.png') no-repeat center center;
+}
+
+.server_link
+{
+    background: url('exticons/server_link.png') no-repeat center center;
+}
+
+.server_uncompressed
+{
+    background: url('exticons/server_uncompressed.png') no-repeat center center;
+}
+
+.shading
+{
+    background: url('exticons/shading.png') no-repeat center center;
+}
+
+.shape_align_bottom
+{
+    background: url('exticons/shape_align_bottom.png') no-repeat center center;
+}
+
+.shape_align_center
+{
+    background: url('exticons/shape_align_center.png') no-repeat center center;
+}
+
+.shape_align_left
+{
+    background: url('exticons/shape_align_left.png') no-repeat center center;
+}
+
+.shape_align_middle
+{
+    background: url('exticons/shape_align_middle.png') no-repeat center center;
+}
+
+.shape_align_right
+{
+    background: url('exticons/shape_align_right.png') no-repeat center center;
+}
+
+.shape_align_top
+{
+    background: url('exticons/shape_align_top.png') no-repeat center center;
+}
+
+.shape_flip_horizontal
+{
+    background: url('exticons/shape_flip_horizontal.png') no-repeat center center;
+}
+
+.shape_flip_vertical
+{
+    background: url('exticons/shape_flip_vertical.png') no-repeat center center;
+}
+
+.shape_group
+{
+    background: url('exticons/shape_group.png') no-repeat center center;
+}
+
+.shape_handles
+{
+    background: url('exticons/shape_handles.png') no-repeat center center;
+}
+
+.shape_move_back
+{
+    background: url('exticons/shape_move_back.png') no-repeat center center;
+}
+
+.shape_move_backwards
+{
+    background: url('exticons/shape_move_backwards.png') no-repeat center center;
+}
+
+.shape_move_forwards
+{
+    background: url('exticons/shape_move_forwards.png') no-repeat center center;
+}
+
+.shape_move_front
+{
+    background: url('exticons/shape_move_front.png') no-repeat center center;
+}
+
+.shape_rotate_anticlockwise
+{
+    background: url('exticons/shape_rotate_anticlockwise.png') no-repeat center center;
+}
+
+.shape_rotate_clockwise
+{
+    background: url('exticons/shape_rotate_clockwise.png') no-repeat center center;
+}
+
+.shape_square
+{
+    background: url('exticons/shape_square.png') no-repeat center center;
+}
+
+.shape_square_add
+{
+    background: url('exticons/shape_square_add.png') no-repeat center center;
+}
+
+.shape_square_delete
+{
+    background: url('exticons/shape_square_delete.png') no-repeat center center;
+}
+
+.shape_square_edit
+{
+    background: url('exticons/shape_square_edit.png') no-repeat center center;
+}
+
+.shape_square_error
+{
+    background: url('exticons/shape_square_error.png') no-repeat center center;
+}
+
+.shape_square_go
+{
+    background: url('exticons/shape_square_go.png') no-repeat center center;
+}
+
+.shape_square_key
+{
+    background: url('exticons/shape_square_key.png') no-repeat center center;
+}
+
+.shape_square_link
+{
+    background: url('exticons/shape_square_link.png') no-repeat center center;
+}
+
+.shape_ungroup
+{
+    background: url('exticons/shape_ungroup.png') no-repeat center center;
+}
+
+.shield
+{
+    background: url('exticons/shield.png') no-repeat center center;
+}
+
+.shield_add
+{
+    background: url('exticons/shield_add.png') no-repeat center center;
+}
+
+.shield_delete
+{
+    background: url('exticons/shield_delete.png') no-repeat center center;
+}
+
+.shield_go
+{
+    background: url('exticons/shield_go.png') no-repeat center center;
+}
+
+.sitemap
+{
+    background: url('exticons/sitemap.png') no-repeat center center;
+}
+
+.sitemap_color
+{
+    background: url('exticons/sitemap_color.png') no-repeat center center;
+}
+
+.sound
+{
+    background: url('exticons/sound.png') no-repeat center center;
+}
+
+.sound_add
+{
+    background: url('exticons/sound_add.png') no-repeat center center;
+}
+
+.sound_delete
+{
+    background: url('exticons/sound_delete.png') no-repeat center center;
+}
+
+.sound_low
+{
+    background: url('exticons/sound_low.png') no-repeat center center;
+}
+
+.sound_mute
+{
+    background: url('exticons/sound_mute.png') no-repeat center center;
+}
+
+.sound_none
+{
+    background: url('exticons/sound_none.png') no-repeat center center;
+}
+
+.spellcheck
+{
+    background: url('exticons/spellcheck.png') no-repeat center center;
+}
+
+.sport_8ball
+{
+    background: url('exticons/sport_8ball.png') no-repeat center center;
+}
+
+.sport_basketball
+{
+    background: url('exticons/sport_basketball.png') no-repeat center center;
+}
+
+.sport_football
+{
+    background: url('exticons/sport_football.png') no-repeat center center;
+}
+
+.sport_golf
+{
+    background: url('exticons/sport_golf.png') no-repeat center center;
+}
+
+.sport_raquet
+{
+    background: url('exticons/sport_raquet.png') no-repeat center center;
+}
+
+.sport_shuttlecock
+{
+    background: url('exticons/sport_shuttlecock.png') no-repeat center center;
+}
+
+.sport_soccer
+{
+    background: url('exticons/sport_soccer.png') no-repeat center center;
+}
+
+.sport_tennis
+{
+    background: url('exticons/sport_tennis.png') no-repeat center center;
+}
+
+.star
+{
+    background: url('exticons/star.png') no-repeat center center;
+}
+
+.status_away
+{
+    background: url('exticons/status_away.png') no-repeat center center;
+}
+
+.status_busy
+{
+    background: url('exticons/status_busy.png') no-repeat center center;
+}
+
+.status_offline
+{
+    background: url('exticons/status_offline.png') no-repeat center center;
+}
+
+.status_online
+{
+    background: url('exticons/status_online.png') no-repeat center center;
+}
+
+.stop
+{
+    background: url('exticons/stop.png') no-repeat center center;
+}
+
+.style
+{
+    background: url('exticons/style.png') no-repeat center center;
+}
+
+.style_add
+{
+    background: url('exticons/style_add.png') no-repeat center center;
+}
+
+.style_delete
+{
+    background: url('exticons/style_delete.png') no-repeat center center;
+}
+
+.style_edit
+{
+    background: url('exticons/style_edit.png') no-repeat center center;
+}
+
+.style_go
+{
+    background: url('exticons/style_go.png') no-repeat center center;
+}
+
+.sum
+{
+    background: url('exticons/sum.png') no-repeat center center;
+}
+
+.tab
+{
+    background: url('exticons/tab.png') no-repeat center center;
+}
+
+.tab_add
+{
+    background: url('exticons/tab_add.png') no-repeat center center;
+}
+
+.tab_delete
+{
+    background: url('exticons/tab_delete.png') no-repeat center center;
+}
+
+.tab_edit
+{
+    background: url('exticons/tab_edit.png') no-repeat center center;
+}
+
+.tab_go
+{
+    background: url('exticons/tab_go.png') no-repeat center center;
+}
+
+.tag
+{
+    background: url('exticons/tag.png') no-repeat center center;
+}
+
+.telephone
+{
+    background: url('exticons/telephone.png') no-repeat center center;
+}
+
+.telephone_add
+{
+    background: url('exticons/telephone_add.png') no-repeat center center;
+}
+
+.telephone_delete
+{
+    background: url('exticons/telephone_delete.png') no-repeat center center;
+}
+
+.telephone_edit
+{
+    background: url('exticons/telephone_edit.png') no-repeat center center;
+}
+
+.telephone_error
+{
+    background: url('exticons/telephone_error.png') no-repeat center center;
+}
+
+.telephone_go
+{
+    background: url('exticons/telephone_go.png') no-repeat center center;
+}
+
+.telephone_key
+{
+    background: url('exticons/telephone_key.png') no-repeat center center;
+}
+
+.telephone_link
+{
+    background: url('exticons/telephone_link.png') no-repeat center center;
+}
+
+.textfield
+{
+    background: url('exticons/textfield.png') no-repeat center center;
+}
+
+.textfield_add
+{
+    background: url('exticons/textfield_add.png') no-repeat center center;
+}
+
+.textfield_delete
+{
+    background: url('exticons/textfield_delete.png') no-repeat center center;
+}
+
+.textfield_key
+{
+    background: url('exticons/textfield_key.png') no-repeat center center;
+}
+
+.textfield_rename
+{
+    background: url('exticons/textfield_rename.png') no-repeat center center;
+}
+
+.text_align_center
+{
+    background: url('exticons/text_align_center.png') no-repeat center center;
+}
+
+.text_align_justify
+{
+    background: url('exticons/text_align_justify.png') no-repeat center center;
+}
+
+.text_align_left
+{
+    background: url('exticons/text_align_left.png') no-repeat center center;
+}
+
+.text_align_right
+{
+    background: url('exticons/text_align_right.png') no-repeat center center;
+}
+
+.text_allcaps
+{
+    background: url('exticons/text_allcaps.png') no-repeat center center;
+}
+
+.text_bold
+{
+    background: url('exticons/text_bold.png') no-repeat center center;
+}
+
+.text_columns
+{
+    background: url('exticons/text_columns.png') no-repeat center center;
+}
+
+.text_dropcaps
+{
+    background: url('exticons/text_dropcaps.png') no-repeat center center;
+}
+
+.text_heading_1
+{
+    background: url('exticons/text_heading_1.png') no-repeat center center;
+}
+
+.text_heading_2
+{
+    background: url('exticons/text_heading_2.png') no-repeat center center;
+}
+
+.text_heading_3
+{
+    background: url('exticons/text_heading_3.png') no-repeat center center;
+}
+
+.text_heading_4
+{
+    background: url('exticons/text_heading_4.png') no-repeat center center;
+}
+
+.text_heading_5
+{
+    background: url('exticons/text_heading_5.png') no-repeat center center;
+}
+
+.text_heading_6
+{
+    background: url('exticons/text_heading_6.png') no-repeat center center;
+}
+
+.text_horizontalrule
+{
+    background: url('exticons/text_horizontalrule.png') no-repeat center center;
+}
+
+.text_indent
+{
+    background: url('exticons/text_indent.png') no-repeat center center;
+}
+
+.text_indent_remove
+{
+    background: url('exticons/text_indent_remove.png') no-repeat center center;
+}
+
+.text_italic
+{
+    background: url('exticons/text_italic.png') no-repeat center center;
+}
+
+.text_kerning
+{
+    background: url('exticons/text_kerning.png') no-repeat center center;
+}
+
+.text_letterspacing
+{
+    background: url('exticons/text_letterspacing.png') no-repeat center center;
+}
+
+.text_letter_omega
+{
+    background: url('exticons/text_letter_omega.png') no-repeat center center;
+}
+
+.text_linespacing
+{
+    background: url('exticons/text_linespacing.png') no-repeat center center;
+}
+
+.text_list_bullets
+{
+    background: url('exticons/text_list_bullets.png') no-repeat center center;
+}
+
+.text_list_numbers
+{
+    background: url('exticons/text_list_numbers.png') no-repeat center center;
+}
+
+.text_lowercase
+{
+    background: url('exticons/text_lowercase.png') no-repeat center center;
+}
+
+.text_padding_bottom
+{
+    background: url('exticons/text_padding_bottom.png') no-repeat center center;
+}
+
+.text_padding_left
+{
+    background: url('exticons/text_padding_left.png') no-repeat center center;
+}
+
+.text_padding_right
+{
+    background: url('exticons/text_padding_right.png') no-repeat center center;
+}
+
+.text_padding_top
+{
+    background: url('exticons/text_padding_top.png') no-repeat center center;
+}
+
+.text_replace
+{
+    background: url('exticons/text_replace.png') no-repeat center center;
+}
+
+.text_signature
+{
+    background: url('exticons/text_signature.png') no-repeat center center;
+}
+
+.text_smallcaps
+{
+    background: url('exticons/text_smallcaps.png') no-repeat center center;
+}
+
+.text_strikethrough
+{
+    background: url('exticons/text_strikethrough.png') no-repeat center center;
+}
+
+.text_subscript
+{
+    background: url('exticons/text_subscript.png') no-repeat center center;
+}
+
+.text_superscript
+{
+    background: url('exticons/text_superscript.png') no-repeat center center;
+}
+
+.text_underline
+{
+    background: url('exticons/text_underline.png') no-repeat center center;
+}
+
+.text_uppercase
+{
+    background: url('exticons/text_uppercase.png') no-repeat center center;
+}
+
+.thumb_down
+{
+    background: url('exticons/thumb_down.png') no-repeat center center;
+}
+
+.thumb_up
+{
+    background: url('exticons/thumb_up.png') no-repeat center center;
+}
+
+.tick
+{
+    background: url('exticons/tick.png') no-repeat center center;
+}
+
+.time
+{
+    background: url('exticons/time.png') no-repeat center center;
+}
+
+.timeline_marker
+{
+    background: url('exticons/timeline_marker.png') no-repeat center center;
+}
+
+.time_add
+{
+    background: url('exticons/time_add.png') no-repeat center center;
+}
+
+.time_delete
+{
+    background: url('exticons/time_delete.png') no-repeat center center;
+}
+
+.time_go
+{
+    background: url('exticons/time_go.png') no-repeat center center;
+}
+
+.transmit
+{
+    background: url('exticons/transmit.png') no-repeat center center;
+}
+
+.transmit_add
+{
+    background: url('exticons/transmit_add.png') no-repeat center center;
+}
+
+.transmit_blue
+{
+    background: url('exticons/transmit_blue.png') no-repeat center center;
+}
+
+.transmit_delete
+{
+    background: url('exticons/transmit_delete.png') no-repeat center center;
+}
+
+.transmit_edit
+{
+    background: url('exticons/transmit_edit.png') no-repeat center center;
+}
+
+.transmit_error
+{
+    background: url('exticons/transmit_error.png') no-repeat center center;
+}
+
+.transmit_go
+{
+    background: url('exticons/transmit_go.png') no-repeat center center;
+}
+
+.tux
+{
+    background: url('exticons/tux.png') no-repeat center center;
+}
+
+.vector
+{
+    background: url('exticons/vector.png') no-repeat center center;
+}
+
+.vector_add
+{
+    background: url('exticons/vector_add.png') no-repeat center center;
+}
+
+.vector_delete
+{
+    background: url('exticons/vector_delete.png') no-repeat center center;
+}
+
+.wand
+{
+    background: url('exticons/wand.png') no-repeat center center;
+}
+
+.weather_clouds
+{
+    background: url('exticons/weather_clouds.png') no-repeat center center;
+}
+
+.weather_cloudy
+{
+    background: url('exticons/weather_cloudy.png') no-repeat center center;
+}
+
+.weather_lightning
+{
+    background: url('exticons/weather_lightning.png') no-repeat center center;
+}
+
+.weather_rain
+{
+    background: url('exticons/weather_rain.png') no-repeat center center;
+}
+
+.weather_snow
+{
+    background: url('exticons/weather_snow.png') no-repeat center center;
+}
+
+.weather_sun
+{
+    background: url('exticons/weather_sun.png') no-repeat center center;
+}
+
+.webcam
+{
+    background: url('exticons/webcam.png') no-repeat center center;
+}
+
+.webcam_add
+{
+    background: url('exticons/webcam_add.png') no-repeat center center;
+}
+
+.webcam_delete
+{
+    background: url('exticons/webcam_delete.png') no-repeat center center;
+}
+
+.webcam_error
+{
+    background: url('exticons/webcam_error.png') no-repeat center center;
+}
+
+.wrench
+{
+    background: url('exticons/wrench.png') no-repeat center center;
+}
+
+.wrench_orange
+{
+    background: url('exticons/wrench_orange.png') no-repeat center center;
+}
+
+.xhtml
+{
+    background: url('exticons/xhtml.png') no-repeat center center;
+}
+
+.xhtml_add
+{
+    background: url('exticons/xhtml_add.png') no-repeat center center;
+}
+
+.xhtml_delete
+{
+    background: url('exticons/xhtml_delete.png') no-repeat center center;
+}
+
+.xhtml_go
+{
+    background: url('exticons/xhtml_go.png') no-repeat center center;
+}
+
+.xhtml_valid
+{
+    background: url('exticons/xhtml_valid.png') no-repeat center center;
+}
+
+.application
+{
+    background: url('exticons/application/application.png') no-repeat center center;
+}
+
+.application_add
+{
+    background: url('exticons/application/application_add.png') no-repeat center center;
+}
+
+.application_cascade
+{
+    background: url('exticons/application/application_cascade.png') no-repeat center center;
+}
+
+.application_delete
+{
+    background: url('exticons/application/application_delete.png') no-repeat center center;
+}
+
+.application_double
+{
+    background: url('exticons/application/application_double.png') no-repeat center center;
+}
+
+.application_edit
+{
+    background: url('exticons/application/application_edit.png') no-repeat center center;
+}
+
+.application_error
+{
+    background: url('exticons/application/application_error.png') no-repeat center center;
+}
+
+.application_form
+{
+    background: url('exticons/application/application_form.png') no-repeat center center;
+}
+
+.application_form_add
+{
+    background: url('exticons/application/application_form_add.png') no-repeat center center;
+}
+
+.application_form_delete
+{
+    background: url('exticons/application/application_form_delete.png') no-repeat center center;
+}
+
+.application_form_edit
+{
+    background: url('exticons/application/application_form_edit.png') no-repeat center center;
+}
+
+.application_form_magnify
+{
+    background: url('exticons/application/application_form_magnify.png') no-repeat center center;
+}
+
+.application_get
+{
+    background: url('exticons/application/application_get.png') no-repeat center center;
+}
+
+.application_go
+{
+    background: url('exticons/application/application_go.png') no-repeat center center;
+}
+
+.application_home
+{
+    background: url('exticons/application/application_home.png') no-repeat center center;
+}
+
+.application_key
+{
+    background: url('exticons/application/application_key.png') no-repeat center center;
+}
+
+.application_lightning
+{
+    background: url('exticons/application/application_lightning.png') no-repeat center center;
+}
+
+.application_link
+{
+    background: url('exticons/application/application_link.png') no-repeat center center;
+}
+
+.application_osx
+{
+    background: url('exticons/application/application_osx.png') no-repeat center center;
+}
+
+.application_osx_terminal
+{
+    background: url('exticons/application/application_osx_terminal.png') no-repeat center center;
+}
+
+.application_put
+{
+    background: url('exticons/application/application_put.png') no-repeat center center;
+}
+
+.application_side_boxes
+{
+    background: url('exticons/application/application_side_boxes.png') no-repeat center center;
+}
+
+.application_side_contract
+{
+    background: url('exticons/application/application_side_contract.png') no-repeat center center;
+}
+
+.application_side_expand
+{
+    background: url('exticons/application/application_side_expand.png') no-repeat center center;
+}
+
+.application_side_list
+{
+    background: url('exticons/application/application_side_list.png') no-repeat center center;
+}
+
+.application_side_tree
+{
+    background: url('exticons/application/application_side_tree.png') no-repeat center center;
+}
+
+.application_split
+{
+    background: url('exticons/application/application_split.png') no-repeat center center;
+}
+
+.application_tile_horizontal
+{
+    background: url('exticons/application/application_tile_horizontal.png') no-repeat center center;
+}
+
+.application_tile_vertical
+{
+    background: url('exticons/application/application_tile_vertical.png') no-repeat center center;
+}
+
+.application_view_columns
+{
+    background: url('exticons/application/application_view_columns.png') no-repeat center center;
+}
+
+.application_view_detail
+{
+    background: url('exticons/application/application_view_detail.png') no-repeat center center;
+}
+
+.application_view_gallery
+{
+    background: url('exticons/application/application_view_gallery.png') no-repeat center center;
+}
+
+.application_view_icons
+{
+    background: url('exticons/application/application_view_icons.png') no-repeat center center;
+}
+
+.application_view_list
+{
+    background: url('exticons/application/application_view_list.png') no-repeat center center;
+}
+
+.application_view_tile
+{
+    background: url('exticons/application/application_view_tile.png') no-repeat center center;
+}
+
+.application_xp
+{
+    background: url('exticons/application/application_xp.png') no-repeat center center;
+}
+
+.application_xp_terminal
+{
+    background: url('exticons/application/application_xp_terminal.png') no-repeat center center;
+}
+
+.accept
+{
+    background: url('exticons/arrow/accept.png') no-repeat center center;
+}
+
+.add
+{
+    background: url('exticons/arrow/add.png') no-repeat center center;
+}
+
+.arrow_branch
+{
+    background: url('exticons/arrow/arrow_branch.png') no-repeat center center;
+}
+
+.arrow_divide
+{
+    background: url('exticons/arrow/arrow_divide.png') no-repeat center center;
+}
+
+.arrow_down
+{
+    background: url('exticons/arrow/arrow_down.png') no-repeat center center;
+}
+
+.arrow_in
+{
+    background: url('exticons/arrow/arrow_in.png') no-repeat center center;
+}
+
+.arrow_inout
+{
+    background: url('exticons/arrow/arrow_inout.png') no-repeat center center;
+}
+
+.arrow_join
+{
+    background: url('exticons/arrow/arrow_join.png') no-repeat center center;
+}
+
+.arrow_left
+{
+    background: url('exticons/arrow/arrow_left.png') no-repeat center center;
+}
+
+.arrow_merge
+{
+    background: url('exticons/arrow/arrow_merge.png') no-repeat center center;
+}
+
+.arrow_out
+{
+    background: url('exticons/arrow/arrow_out.png') no-repeat center center;
+}
+
+.arrow_redo
+{
+    background: url('exticons/arrow/arrow_redo.png') no-repeat center center;
+}
+
+.arrow_refresh
+{
+    background: url('exticons/arrow/arrow_refresh.png') no-repeat center center;
+}
+
+.arrow_refresh_small
+{
+    background: url('exticons/arrow/arrow_refresh_small.png') no-repeat center center;
+}
+
+.arrow_rotate_anticlockwise
+{
+    background: url('exticons/arrow/arrow_rotate_anticlockwise.png') no-repeat center center;
+}
+
+.arrow_rotate_clockwise
+{
+    background: url('exticons/arrow/arrow_rotate_clockwise.png') no-repeat center center;
+}
+
+.arrow_switch
+{
+    background: url('exticons/arrow/arrow_switch.png') no-repeat center center;
+}
+
+.arrow_turn_left
+{
+    background: url('exticons/arrow/arrow_turn_left.png') no-repeat center center;
+}
+
+.arrow_turn_right
+{
+    background: url('exticons/arrow/arrow_turn_right.png') no-repeat center center;
+}
+
+.arrow_undo
+{
+    background: url('exticons/arrow/arrow_undo.png') no-repeat center center;
+}
+
+.arrow_up
+{
+    background: url('exticons/arrow/arrow_up.png') no-repeat center center;
+}
+
+.cross
+{
+    background: url('exticons/arrow/cross.png') no-repeat center center;
+}
+
+.award_star_add
+{
+    background: url('exticons/award-start/award_star_add.png') no-repeat center center;
+}
+
+.award_star_bronze_1
+{
+    background: url('exticons/award-start/award_star_bronze_1.png') no-repeat center center;
+}
+
+.award_star_bronze_2
+{
+    background: url('exticons/award-start/award_star_bronze_2.png') no-repeat center center;
+}
+
+.award_star_bronze_3
+{
+    background: url('exticons/award-start/award_star_bronze_3.png') no-repeat center center;
+}
+
+.award_star_delete
+{
+    background: url('exticons/award-start/award_star_delete.png') no-repeat center center;
+}
+
+.award_star_gold_1
+{
+    background: url('exticons/award-start/award_star_gold_1.png') no-repeat center center;
+}
+
+.award_star_gold_2
+{
+    background: url('exticons/award-start/award_star_gold_2.png') no-repeat center center;
+}
+
+.award_star_gold_3
+{
+    background: url('exticons/award-start/award_star_gold_3.png') no-repeat center center;
+}
+
+.award_star_silver_1
+{
+    background: url('exticons/award-start/award_star_silver_1.png') no-repeat center center;
+}
+
+.award_star_silver_2
+{
+    background: url('exticons/award-start/award_star_silver_2.png') no-repeat center center;
+}
+
+.award_star_silver_3
+{
+    background: url('exticons/award-start/award_star_silver_3.png') no-repeat center center;
+}
+
+.bug
+{
+    background: url('exticons/bug/bug.png') no-repeat center center;
+}
+
+.bug_add
+{
+    background: url('exticons/bug/bug_add.png') no-repeat center center;
+}
+
+.bug_delete
+{
+    background: url('exticons/bug/bug_delete.png') no-repeat center center;
+}
+
+.bug_edit
+{
+    background: url('exticons/bug/bug_edit.png') no-repeat center center;
+}
+
+.bug_error
+{
+    background: url('exticons/bug/bug_error.png') no-repeat center center;
+}
+
+.bug_go
+{
+    background: url('exticons/bug/bug_go.png') no-repeat center center;
+}
+
+.bug_link
+{
+    background: url('exticons/bug/bug_link.png') no-repeat center center;
+}
+
+.calculator
+{
+    background: url('exticons/calendar/calculator.png') no-repeat center center;
+}
+
+.calculator_add
+{
+    background: url('exticons/calendar/calculator_add.png') no-repeat center center;
+}
+
+.calculator_delete
+{
+    background: url('exticons/calendar/calculator_delete.png') no-repeat center center;
+}
+
+.calculator_edit
+{
+    background: url('exticons/calendar/calculator_edit.png') no-repeat center center;
+}
+
+.calculator_error
+{
+    background: url('exticons/calendar/calculator_error.png') no-repeat center center;
+}
+
+.calculator_link
+{
+    background: url('exticons/calendar/calculator_link.png') no-repeat center center;
+}
+
+.calendar
+{
+    background: url('exticons/calendar/calendar.png') no-repeat center center;
+}
+
+.calendar_add
+{
+    background: url('exticons/calendar/calendar_add.png') no-repeat center center;
+}
+
+.calendar_delete
+{
+    background: url('exticons/calendar/calendar_delete.png') no-repeat center center;
+}
+
+.calendar_edit
+{
+    background: url('exticons/calendar/calendar_edit.png') no-repeat center center;
+}
+
+.calendar_link
+{
+    background: url('exticons/calendar/calendar_link.png') no-repeat center center;
+}
+
+.calendar_view_day
+{
+    background: url('exticons/calendar/calendar_view_day.png') no-repeat center center;
+}
+
+.calendar_view_month
+{
+    background: url('exticons/calendar/calendar_view_month.png') no-repeat center center;
+}
+
+.calendar_view_week
+{
+    background: url('exticons/calendar/calendar_view_week.png') no-repeat center center;
+}
+
+.camera
+{
+    background: url('exticons/camera/camera.png') no-repeat center center;
+}
+
+.camera_add
+{
+    background: url('exticons/camera/camera_add.png') no-repeat center center;
+}
+
+.camera_delete
+{
+    background: url('exticons/camera/camera_delete.png') no-repeat center center;
+}
+
+.camera_edit
+{
+    background: url('exticons/camera/camera_edit.png') no-repeat center center;
+}
+
+.camera_error
+{
+    background: url('exticons/camera/camera_error.png') no-repeat center center;
+}
+
+.camera_go
+{
+    background: url('exticons/camera/camera_go.png') no-repeat center center;
+}
+
+.camera_link
+{
+    background: url('exticons/camera/camera_link.png') no-repeat center center;
+}
+
+.camera_small
+{
+    background: url('exticons/camera/camera_small.png') no-repeat center center;
+}
+
+.basket
+{
+    background: url('exticons/car and cart  and basket/basket.png') no-repeat center center;
+}
+
+.basket_add
+{
+    background: url('exticons/car and cart  and basket/basket_add.png') no-repeat center center;
+}
+
+.basket_delete
+{
+    background: url('exticons/car and cart  and basket/basket_delete.png') no-repeat center center;
+}
+
+.basket_edit
+{
+    background: url('exticons/car and cart  and basket/basket_edit.png') no-repeat center center;
+}
+
+.basket_error
+{
+    background: url('exticons/car and cart  and basket/basket_error.png') no-repeat center center;
+}
+
+.basket_go
+{
+    background: url('exticons/car and cart  and basket/basket_go.png') no-repeat center center;
+}
+
+.basket_put
+{
+    background: url('exticons/car and cart  and basket/basket_put.png') no-repeat center center;
+}
+
+.basket_remove
+{
+    background: url('exticons/car and cart  and basket/basket_remove.png') no-repeat center center;
+}
+
+.car
+{
+    background: url('exticons/car and cart  and basket/car.png') no-repeat center center;
+}
+
+.cart
+{
+    background: url('exticons/car and cart  and basket/cart.png') no-repeat center center;
+}
+
+.cart_add
+{
+    background: url('exticons/car and cart  and basket/cart_add.png') no-repeat center center;
+}
+
+.cart_delete
+{
+    background: url('exticons/car and cart  and basket/cart_delete.png') no-repeat center center;
+}
+
+.cart_edit
+{
+    background: url('exticons/car and cart  and basket/cart_edit.png') no-repeat center center;
+}
+
+.cart_error
+{
+    background: url('exticons/car and cart  and basket/cart_error.png') no-repeat center center;
+}
+
+.cart_go
+{
+    background: url('exticons/car and cart  and basket/cart_go.png') no-repeat center center;
+}
+
+.cart_put
+{
+    background: url('exticons/car and cart  and basket/cart_put.png') no-repeat center center;
+}
+
+.cart_remove
+{
+    background: url('exticons/car and cart  and basket/cart_remove.png') no-repeat center center;
+}
+
+.car_add
+{
+    background: url('exticons/car and cart  and basket/car_add.png') no-repeat center center;
+}
+
+.car_delete
+{
+    background: url('exticons/car and cart  and basket/car_delete.png') no-repeat center center;
+}
+
+.cd
+{
+    background: url('exticons/cd/cd.png') no-repeat center center;
+}
+
+.cd_add
+{
+    background: url('exticons/cd/cd_add.png') no-repeat center center;
+}
+
+.cd_burn
+{
+    background: url('exticons/cd/cd_burn.png') no-repeat center center;
+}
+
+.cd_delete
+{
+    background: url('exticons/cd/cd_delete.png') no-repeat center center;
+}
+
+.cd_edit
+{
+    background: url('exticons/cd/cd_edit.png') no-repeat center center;
+}
+
+.cd_eject
+{
+    background: url('exticons/cd/cd_eject.png') no-repeat center center;
+}
+
+.cd_go
+{
+    background: url('exticons/cd/cd_go.png') no-repeat center center;
+}
+
+.chart_bar
+{
+    background: url('exticons/chart/chart_bar.png') no-repeat center center;
+}
+
+.chart_bar_add
+{
+    background: url('exticons/chart/chart_bar_add.png') no-repeat center center;
+}
+
+.chart_bar_delete
+{
+    background: url('exticons/chart/chart_bar_delete.png') no-repeat center center;
+}
+
+.chart_bar_edit
+{
+    background: url('exticons/chart/chart_bar_edit.png') no-repeat center center;
+}
+
+.chart_bar_error
+{
+    background: url('exticons/chart/chart_bar_error.png') no-repeat center center;
+}
+
+.chart_bar_link
+{
+    background: url('exticons/chart/chart_bar_link.png') no-repeat center center;
+}
+
+.chart_curve
+{
+    background: url('exticons/chart/chart_curve.png') no-repeat center center;
+}
+
+.chart_curve_add
+{
+    background: url('exticons/chart/chart_curve_add.png') no-repeat center center;
+}
+
+.chart_curve_delete
+{
+    background: url('exticons/chart/chart_curve_delete.png') no-repeat center center;
+}
+
+.chart_curve_edit
+{
+    background: url('exticons/chart/chart_curve_edit.png') no-repeat center center;
+}
+
+.chart_curve_error
+{
+    background: url('exticons/chart/chart_curve_error.png') no-repeat center center;
+}
+
+.chart_curve_go
+{
+    background: url('exticons/chart/chart_curve_go.png') no-repeat center center;
+}
+
+.chart_curve_link
+{
+    background: url('exticons/chart/chart_curve_link.png') no-repeat center center;
+}
+
+.chart_line
+{
+    background: url('exticons/chart/chart_line.png') no-repeat center center;
+}
+
+.chart_line_add
+{
+    background: url('exticons/chart/chart_line_add.png') no-repeat center center;
+}
+
+.chart_line_delete
+{
+    background: url('exticons/chart/chart_line_delete.png') no-repeat center center;
+}
+
+.chart_line_edit
+{
+    background: url('exticons/chart/chart_line_edit.png') no-repeat center center;
+}
+
+.chart_line_error
+{
+    background: url('exticons/chart/chart_line_error.png') no-repeat center center;
+}
+
+.chart_line_link
+{
+    background: url('exticons/chart/chart_line_link.png') no-repeat center center;
+}
+
+.chart_organisation
+{
+    background: url('exticons/chart/chart_organisation.png') no-repeat center center;
+}
+
+.chart_organisation_add
+{
+    background: url('exticons/chart/chart_organisation_add.png') no-repeat center center;
+}
+
+.chart_organisation_delete
+{
+    background: url('exticons/chart/chart_organisation_delete.png') no-repeat center center;
+}
+
+.chart_pie
+{
+    background: url('exticons/chart/chart_pie.png') no-repeat center center;
+}
+
+.chart_pie_add
+{
+    background: url('exticons/chart/chart_pie_add.png') no-repeat center center;
+}
+
+.chart_pie_delete
+{
+    background: url('exticons/chart/chart_pie_delete.png') no-repeat center center;
+}
+
+.chart_pie_edit
+{
+    background: url('exticons/chart/chart_pie_edit.png') no-repeat center center;
+}
+
+.chart_pie_error
+{
+    background: url('exticons/chart/chart_pie_error.png') no-repeat center center;
+}
+
+.chart_pie_link
+{
+    background: url('exticons/chart/chart_pie_link.png') no-repeat center center;
+}
+
+.control_eject
+{
+    background: url('exticons/control/control_eject.png') no-repeat center center;
+}
+
+.control_eject_blue
+{
+    background: url('exticons/control/control_eject_blue.png') no-repeat center center;
+}
+
+.control_end
+{
+    background: url('exticons/control/control_end.png') no-repeat center center;
+}
+
+.control_end_blue
+{
+    background: url('exticons/control/control_end_blue.png') no-repeat center center;
+}
+
+.control_equalizer
+{
+    background: url('exticons/control/control_equalizer.png') no-repeat center center;
+}
+
+.control_equalizer_blue
+{
+    background: url('exticons/control/control_equalizer_blue.png') no-repeat center center;
+}
+
+.control_fastforward
+{
+    background: url('exticons/control/control_fastforward.png') no-repeat center center;
+}
+
+.control_fastforward_blue
+{
+    background: url('exticons/control/control_fastforward_blue.png') no-repeat center center;
+}
+
+.control_pause
+{
+    background: url('exticons/control/control_pause.png') no-repeat center center;
+}
+
+.control_pause_blue
+{
+    background: url('exticons/control/control_pause_blue.png') no-repeat center center;
+}
+
+.control_play
+{
+    background: url('exticons/control/control_play.png') no-repeat center center;
+}
+
+.control_play_blue
+{
+    background: url('exticons/control/control_play_blue.png') no-repeat center center;
+}
+
+.control_repeat
+{
+    background: url('exticons/control/control_repeat.png') no-repeat center center;
+}
+
+.control_repeat_blue
+{
+    background: url('exticons/control/control_repeat_blue.png') no-repeat center center;
+}
+
+.control_rewind
+{
+    background: url('exticons/control/control_rewind.png') no-repeat center center;
+}
+
+.control_rewind_blue
+{
+    background: url('exticons/control/control_rewind_blue.png') no-repeat center center;
+}
+
+.control_start
+{
+    background: url('exticons/control/control_start.png') no-repeat center center;
+}
+
+.control_start_blue
+{
+    background: url('exticons/control/control_start_blue.png') no-repeat center center;
+}
+
+.control_stop
+{
+    background: url('exticons/control/control_stop.png') no-repeat center center;
+}
+
+.control_stop_blue
+{
+    background: url('exticons/control/control_stop_blue.png') no-repeat center center;
+}
+
+.css
+{
+    background: url('exticons/css/css.png') no-repeat center center;
+}
+
+.css_add
+{
+    background: url('exticons/css/css_add.png') no-repeat center center;
+}
+
+.css_delete
+{
+    background: url('exticons/css/css_delete.png') no-repeat center center;
+}
+
+.css_go
+{
+    background: url('exticons/css/css_go.png') no-repeat center center;
+}
+
+.css_valid
+{
+    background: url('exticons/css/css_valid.png') no-repeat center center;
+}
+
+.date
+{
+    background: url('exticons/Date/date.png') no-repeat center center;
+}
+
+.date_add
+{
+    background: url('exticons/Date/date_add.png') no-repeat center center;
+}
+
+.date_delete
+{
+    background: url('exticons/Date/date_delete.png') no-repeat center center;
+}
+
+.date_edit
+{
+    background: url('exticons/Date/date_edit.png') no-repeat center center;
+}
+
+.date_error
+{
+    background: url('exticons/Date/date_error.png') no-repeat center center;
+}
+
+.date_go
+{
+    background: url('exticons/Date/date_go.png') no-repeat center center;
+}
+
+.date_link
+{
+    background: url('exticons/Date/date_link.png') no-repeat center center;
+}
+
+.date_magnify
+{
+    background: url('exticons/Date/date_magnify.png') no-repeat center center;
+}
+
+.date_next
+{
+    background: url('exticons/Date/date_next.png') no-repeat center center;
+}
+
+.date_previous
+{
+    background: url('exticons/Date/date_previous.png') no-repeat center center;
+}
+
+.drive
+{
+    background: url('exticons/driver/drive.png') no-repeat center center;
+}
+
+.drive_add
+{
+    background: url('exticons/driver/drive_add.png') no-repeat center center;
+}
+
+.drive_burn
+{
+    background: url('exticons/driver/drive_burn.png') no-repeat center center;
+}
+
+.drive_cd
+{
+    background: url('exticons/driver/drive_cd.png') no-repeat center center;
+}
+
+.drive_cd_empty
+{
+    background: url('exticons/driver/drive_cd_empty.png') no-repeat center center;
+}
+
+.drive_delete
+{
+    background: url('exticons/driver/drive_delete.png') no-repeat center center;
+}
+
+.drive_disk
+{
+    background: url('exticons/driver/drive_disk.png') no-repeat center center;
+}
+
+.drive_edit
+{
+    background: url('exticons/driver/drive_edit.png') no-repeat center center;
+}
+
+.drive_error
+{
+    background: url('exticons/driver/drive_error.png') no-repeat center center;
+}
+
+.drive_go
+{
+    background: url('exticons/driver/drive_go.png') no-repeat center center;
+}
+
+.drive_key
+{
+    background: url('exticons/driver/drive_key.png') no-repeat center center;
+}
+
+.drive_link
+{
+    background: url('exticons/driver/drive_link.png') no-repeat center center;
+}
+
+.drive_magnify
+{
+    background: url('exticons/driver/drive_magnify.png') no-repeat center center;
+}
+
+.drive_network
+{
+    background: url('exticons/driver/drive_network.png') no-repeat center center;
+}
+
+.drive_rename
+{
+    background: url('exticons/driver/drive_rename.png') no-repeat center center;
+}
+
+.drive_user
+{
+    background: url('exticons/driver/drive_user.png') no-repeat center center;
+}
+
+.drive_web
+{
+    background: url('exticons/driver/drive_web.png') no-repeat center center;
+}
+
+.email
+{
+    background: url('exticons/email/email.png') no-repeat center center;
+}
+
+.email_add
+{
+    background: url('exticons/email/email_add.png') no-repeat center center;
+}
+
+.email_attach
+{
+    background: url('exticons/email/email_attach.png') no-repeat center center;
+}
+
+.email_delete
+{
+    background: url('exticons/email/email_delete.png') no-repeat center center;
+}
+
+.email_edit
+{
+    background: url('exticons/email/email_edit.png') no-repeat center center;
+}
+
+.email_error
+{
+    background: url('exticons/email/email_error.png') no-repeat center center;
+}
+
+.email_go
+{
+    background: url('exticons/email/email_go.png') no-repeat center center;
+}
+
+.email_link
+{
+    background: url('exticons/email/email_link.png') no-repeat center center;
+}
+
+.email_open
+{
+    background: url('exticons/email/email_open.png') no-repeat center center;
+}
+
+.email_open_image
+{
+    background: url('exticons/email/email_open_image.png') no-repeat center center;
+}
+
+.feed
+{
+    background: url('exticons/feed/feed.png') no-repeat center center;
+}
+
+.feed_add
+{
+    background: url('exticons/feed/feed_add.png') no-repeat center center;
+}
+
+.feed_delete
+{
+    background: url('exticons/feed/feed_delete.png') no-repeat center center;
+}
+
+.feed_disk
+{
+    background: url('exticons/feed/feed_disk.png') no-repeat center center;
+}
+
+.feed_edit
+{
+    background: url('exticons/feed/feed_edit.png') no-repeat center center;
+}
+
+.feed_error
+{
+    background: url('exticons/feed/feed_error.png') no-repeat center center;
+}
+
+.feed_go
+{
+    background: url('exticons/feed/feed_go.png') no-repeat center center;
+}
+
+.feed_key
+{
+    background: url('exticons/feed/feed_key.png') no-repeat center center;
+}
+
+.feed_link
+{
+    background: url('exticons/feed/feed_link.png') no-repeat center center;
+}
+
+.feed_magnify
+{
+    background: url('exticons/feed/feed_magnify.png') no-repeat center center;
+}
+
+.film
+{
+    background: url('exticons/film/film.png') no-repeat center center;
+}
+
+.film_add
+{
+    background: url('exticons/film/film_add.png') no-repeat center center;
+}
+
+.film_delete
+{
+    background: url('exticons/film/film_delete.png') no-repeat center center;
+}
+
+.film_edit
+{
+    background: url('exticons/film/film_edit.png') no-repeat center center;
+}
+
+.film_error
+{
+    background: url('exticons/film/film_error.png') no-repeat center center;
+}
+
+.film_go
+{
+    background: url('exticons/film/film_go.png') no-repeat center center;
+}
+
+.film_key
+{
+    background: url('exticons/film/film_key.png') no-repeat center center;
+}
+
+.film_link
+{
+    background: url('exticons/film/film_link.png') no-repeat center center;
+}
+
+.film_save
+{
+    background: url('exticons/film/film_save.png') no-repeat center center;
+}
+
+.flag_blue
+{
+    background: url('exticons/flag/flag_blue.png') no-repeat center center;
+}
+
+.flag_green
+{
+    background: url('exticons/flag/flag_green.png') no-repeat center center;
+}
+
+.flag_orange
+{
+    background: url('exticons/flag/flag_orange.png') no-repeat center center;
+}
+
+.flag_pink
+{
+    background: url('exticons/flag/flag_pink.png') no-repeat center center;
+}
+
+.flag_purple
+{
+    background: url('exticons/flag/flag_purple.png') no-repeat center center;
+}
+
+.flag_red
+{
+    background: url('exticons/flag/flag_red.png') no-repeat center center;
+}
+
+.flag_yellow
+{
+    background: url('exticons/flag/flag_yellow.png') no-repeat center center;
+}
+
+.folder
+{
+    background: url('exticons/folder/folder.png') no-repeat center center;
+}
+
+.folder_add
+{
+    background: url('exticons/folder/folder_add.png') no-repeat center center;
+}
+
+.folder_bell
+{
+    background: url('exticons/folder/folder_bell.png') no-repeat center center;
+}
+
+.folder_brick
+{
+    background: url('exticons/folder/folder_brick.png') no-repeat center center;
+}
+
+.folder_bug
+{
+    background: url('exticons/folder/folder_bug.png') no-repeat center center;
+}
+
+.folder_camera
+{
+    background: url('exticons/folder/folder_camera.png') no-repeat center center;
+}
+
+.folder_database
+{
+    background: url('exticons/folder/folder_database.png') no-repeat center center;
+}
+
+.folder_delete
+{
+    background: url('exticons/folder/folder_delete.png') no-repeat center center;
+}
+
+.folder_edit
+{
+    background: url('exticons/folder/folder_edit.png') no-repeat center center;
+}
+
+.folder_error
+{
+    background: url('exticons/folder/folder_error.png') no-repeat center center;
+}
+
+.folder_explore
+{
+    background: url('exticons/folder/folder_explore.png') no-repeat center center;
+}
+
+.folder_feed
+{
+    background: url('exticons/folder/folder_feed.png') no-repeat center center;
+}
+
+.folder_find
+{
+    background: url('exticons/folder/folder_find.png') no-repeat center center;
+}
+
+.folder_go
+{
+    background: url('exticons/folder/folder_go.png') no-repeat center center;
+}
+
+.folder_heart
+{
+    background: url('exticons/folder/folder_heart.png') no-repeat center center;
+}
+
+.folder_image
+{
+    background: url('exticons/folder/folder_image.png') no-repeat center center;
+}
+
+.folder_key
+{
+    background: url('exticons/folder/folder_key.png') no-repeat center center;
+}
+
+.folder_lightbulb
+{
+    background: url('exticons/folder/folder_lightbulb.png') no-repeat center center;
+}
+
+.folder_link
+{
+    background: url('exticons/folder/folder_link.png') no-repeat center center;
+}
+
+.folder_magnify
+{
+    background: url('exticons/folder/folder_magnify.png') no-repeat center center;
+}
+
+.folder_page
+{
+    background: url('exticons/folder/folder_page.png') no-repeat center center;
+}
+
+.folder_page_white
+{
+    background: url('exticons/folder/folder_page_white.png') no-repeat center center;
+}
+
+.folder_palette
+{
+    background: url('exticons/folder/folder_palette.png') no-repeat center center;
+}
+
+.folder_picture
+{
+    background: url('exticons/folder/folder_picture.png') no-repeat center center;
+}
+
+.folder_star
+{
+    background: url('exticons/folder/folder_star.png') no-repeat center center;
+}
+
+.folder_table
+{
+    background: url('exticons/folder/folder_table.png') no-repeat center center;
+}
+
+.folder_user
+{
+    background: url('exticons/folder/folder_user.png') no-repeat center center;
+}
+
+.folder_wrench
+{
+    background: url('exticons/folder/folder_wrench.png') no-repeat center center;
+}
+
+.group
+{
+    background: url('exticons/group/group.png') no-repeat center center;
+}
+
+.group_add
+{
+    background: url('exticons/group/group_add.png') no-repeat center center;
+}
+
+.group_delete
+{
+    background: url('exticons/group/group_delete.png') no-repeat center center;
+}
+
+.group_edit
+{
+    background: url('exticons/group/group_edit.png') no-repeat center center;
+}
+
+.group_error
+{
+    background: url('exticons/group/group_error.png') no-repeat center center;
+}
+
+.group_gear
+{
+    background: url('exticons/group/group_gear.png') no-repeat center center;
+}
+
+.group_go
+{
+    background: url('exticons/group/group_go.png') no-repeat center center;
+}
+
+.group_key
+{
+    background: url('exticons/group/group_key.png') no-repeat center center;
+}
+
+.group_link
+{
+    background: url('exticons/group/group_link.png') no-repeat center center;
+}
+
+.ipod
+{
+    background: url('exticons/ipod/ipod.png') no-repeat center center;
+}
+
+.ipod_cast
+{
+    background: url('exticons/ipod/ipod_cast.png') no-repeat center center;
+}
+
+.ipod_cast_add
+{
+    background: url('exticons/ipod/ipod_cast_add.png') no-repeat center center;
+}
+
+.ipod_cast_delete
+{
+    background: url('exticons/ipod/ipod_cast_delete.png') no-repeat center center;
+}
+
+.ipod_sound
+{
+    background: url('exticons/ipod/ipod_sound.png') no-repeat center center;
+}
+
+.keyboard
+{
+    background: url('exticons/keyboard/keyboard.png') no-repeat center center;
+}
+
+.keyboard_add
+{
+    background: url('exticons/keyboard/keyboard_add.png') no-repeat center center;
+}
+
+.keyboard_delete
+{
+    background: url('exticons/keyboard/keyboard_delete.png') no-repeat center center;
+}
+
+.keyboard_magnify
+{
+    background: url('exticons/keyboard/keyboard_magnify.png') no-repeat center center;
+}
+
+.layout
+{
+    background: url('exticons/layout/layout.png') no-repeat center center;
+}
+
+.layout_add
+{
+    background: url('exticons/layout/layout_add.png') no-repeat center center;
+}
+
+.layout_content
+{
+    background: url('exticons/layout/layout_content.png') no-repeat center center;
+}
+
+.layout_delete
+{
+    background: url('exticons/layout/layout_delete.png') no-repeat center center;
+}
+
+.layout_edit
+{
+    background: url('exticons/layout/layout_edit.png') no-repeat center center;
+}
+
+.layout_error
+{
+    background: url('exticons/layout/layout_error.png') no-repeat center center;
+}
+
+.layout_header
+{
+    background: url('exticons/layout/layout_header.png') no-repeat center center;
+}
+
+.layout_link
+{
+    background: url('exticons/layout/layout_link.png') no-repeat center center;
+}
+
+.layout_sidebar
+{
+    background: url('exticons/layout/layout_sidebar.png') no-repeat center center;
+}
+
+.overlays
+{
+    background: url('exticons/layout/overlays.png') no-repeat center center;
+}
+
+.lock
+{
+    background: url('exticons/lock/lock.png') no-repeat center center;
+}
+
+.lock_add
+{
+    background: url('exticons/lock/lock_add.png') no-repeat center center;
+}
+
+.lock_break
+{
+    background: url('exticons/lock/lock_break.png') no-repeat center center;
+}
+
+.lock_delete
+{
+    background: url('exticons/lock/lock_delete.png') no-repeat center center;
+}
+
+.lock_edit
+{
+    background: url('exticons/lock/lock_edit.png') no-repeat center center;
+}
+
+.lock_go
+{
+    background: url('exticons/lock/lock_go.png') no-repeat center center;
+}
+
+.lock_open
+{
+    background: url('exticons/lock/lock_open.png') no-repeat center center;
+}
+
+.magifier_zoom_out
+{
+    background: url('exticons/map/magifier_zoom_out.png') no-repeat center center;
+}
+
+.magnifier
+{
+    background: url('exticons/map/magnifier.png') no-repeat center center;
+}
+
+.magnifier_zoom_in
+{
+    background: url('exticons/map/magnifier_zoom_in.png') no-repeat center center;
+}
+
+.map
+{
+    background: url('exticons/map/map.png') no-repeat center center;
+}
+
+.map_add
+{
+    background: url('exticons/map/map_add.png') no-repeat center center;
+}
+
+.map_delete
+{
+    background: url('exticons/map/map_delete.png') no-repeat center center;
+}
+
+.map_edit
+{
+    background: url('exticons/map/map_edit.png') no-repeat center center;
+}
+
+.map_go
+{
+    background: url('exticons/map/map_go.png') no-repeat center center;
+}
+
+.map_magnify
+{
+    background: url('exticons/map/map_magnify.png') no-repeat center center;
+}
+
+.monitor
+{
+    background: url('exticons/monitor/monitor.png') no-repeat center center;
+}
+
+.monitor_add
+{
+    background: url('exticons/monitor/monitor_add.png') no-repeat center center;
+}
+
+.monitor_delete
+{
+    background: url('exticons/monitor/monitor_delete.png') no-repeat center center;
+}
+
+.monitor_edit
+{
+    background: url('exticons/monitor/monitor_edit.png') no-repeat center center;
+}
+
+.monitor_error
+{
+    background: url('exticons/monitor/monitor_error.png') no-repeat center center;
+}
+
+.monitor_go
+{
+    background: url('exticons/monitor/monitor_go.png') no-repeat center center;
+}
+
+.monitor_lightning
+{
+    background: url('exticons/monitor/monitor_lightning.png') no-repeat center center;
+}
+
+.monitor_link
+{
+    background: url('exticons/monitor/monitor_link.png') no-repeat center center;
+}
+
+.newspaper
+{
+    background: url('exticons/newspaper/newspaper.png') no-repeat center center;
+}
+
+.newspaper_add
+{
+    background: url('exticons/newspaper/newspaper_add.png') no-repeat center center;
+}
+
+.newspaper_delete
+{
+    background: url('exticons/newspaper/newspaper_delete.png') no-repeat center center;
+}
+
+.newspaper_go
+{
+    background: url('exticons/newspaper/newspaper_go.png') no-repeat center center;
+}
+
+.newspaper_link
+{
+    background: url('exticons/newspaper/newspaper_link.png') no-repeat center center;
+}
+
+.note
+{
+    background: url('exticons/notes/note.png') no-repeat center center;
+}
+
+.note_add
+{
+    background: url('exticons/notes/note_add.png') no-repeat center center;
+}
+
+.note_delete
+{
+    background: url('exticons/notes/note_delete.png') no-repeat center center;
+}
+
+.note_edit
+{
+    background: url('exticons/notes/note_edit.png') no-repeat center center;
+}
+
+.note_error
+{
+    background: url('exticons/notes/note_error.png') no-repeat center center;
+}
+
+.note_go
+{
+    background: url('exticons/notes/note_go.png') no-repeat center center;
+}
+
+.page
+{
+    background: url('exticons/page/page.png') no-repeat center center;
+}
+
+.page_add
+{
+    background: url('exticons/page/page_add.png') no-repeat center center;
+}
+
+.page_attach
+{
+    background: url('exticons/page/page_attach.png') no-repeat center center;
+}
+
+.page_code
+{
+    background: url('exticons/page/page_code.png') no-repeat center center;
+}
+
+.page_copy
+{
+    background: url('exticons/page/page_copy.png') no-repeat center center;
+}
+
+.page_delete
+{
+    background: url('exticons/page/page_delete.png') no-repeat center center;
+}
+
+.page_edit
+{
+    background: url('exticons/page/page_edit.png') no-repeat center center;
+}
+
+.page_error
+{
+    background: url('exticons/page/page_error.png') no-repeat center center;
+}
+
+.page_excel
+{
+    background: url('exticons/page/page_excel.png') no-repeat center center;
+}
+
+.page_find
+{
+    background: url('exticons/page/page_find.png') no-repeat center center;
+}
+
+.page_gear
+{
+    background: url('exticons/page/page_gear.png') no-repeat center center;
+}
+
+.page_go
+{
+    background: url('exticons/page/page_go.png') no-repeat center center;
+}
+
+.page_green
+{
+    background: url('exticons/page/page_green.png') no-repeat center center;
+}
+
+.page_key
+{
+    background: url('exticons/page/page_key.png') no-repeat center center;
+}
+
+.page_lightning
+{
+    background: url('exticons/page/page_lightning.png') no-repeat center center;
+}
+
+.page_link
+{
+    background: url('exticons/page/page_link.png') no-repeat center center;
+}
+
+.page_paintbrush
+{
+    background: url('exticons/page/page_paintbrush.png') no-repeat center center;
+}
+
+.page_paste
+{
+    background: url('exticons/page/page_paste.png') no-repeat center center;
+}
+
+.page_red
+{
+    background: url('exticons/page/page_red.png') no-repeat center center;
+}
+
+.page_refresh
+{
+    background: url('exticons/page/page_refresh.png') no-repeat center center;
+}
+
+.page_save
+{
+    background: url('exticons/page/page_save.png') no-repeat center center;
+}
+
+.page_white
+{
+    background: url('exticons/page/page_white.png') no-repeat center center;
+}
+
+.page_white_acrobat
+{
+    background: url('exticons/page/page_white_acrobat.png') no-repeat center center;
+}
+
+.page_white_actionscript
+{
+    background: url('exticons/page/page_white_actionscript.png') no-repeat center center;
+}
+
+.page_white_add
+{
+    background: url('exticons/page/page_white_add.png') no-repeat center center;
+}
+
+.page_white_c
+{
+    background: url('exticons/page/page_white_c.png') no-repeat center center;
+}
+
+.page_white_camera
+{
+    background: url('exticons/page/page_white_camera.png') no-repeat center center;
+}
+
+.page_white_cd
+{
+    background: url('exticons/page/page_white_cd.png') no-repeat center center;
+}
+
+.page_white_code
+{
+    background: url('exticons/page/page_white_code.png') no-repeat center center;
+}
+
+.page_white_code_red
+{
+    background: url('exticons/page/page_white_code_red.png') no-repeat center center;
+}
+
+.page_white_coldfusion
+{
+    background: url('exticons/page/page_white_coldfusion.png') no-repeat center center;
+}
+
+.page_white_compressed
+{
+    background: url('exticons/page/page_white_compressed.png') no-repeat center center;
+}
+
+.page_white_copy
+{
+    background: url('exticons/page/page_white_copy.png') no-repeat center center;
+}
+
+.page_white_cplusplus
+{
+    background: url('exticons/page/page_white_cplusplus.png') no-repeat center center;
+}
+
+.page_white_csharp
+{
+    background: url('exticons/page/page_white_csharp.png') no-repeat center center;
+}
+
+.page_white_cup
+{
+    background: url('exticons/page/page_white_cup.png') no-repeat center center;
+}
+
+.page_white_database
+{
+    background: url('exticons/page/page_white_database.png') no-repeat center center;
+}
+
+.page_white_delete
+{
+    background: url('exticons/page/page_white_delete.png') no-repeat center center;
+}
+
+.page_white_dvd
+{
+    background: url('exticons/page/page_white_dvd.png') no-repeat center center;
+}
+
+.page_white_edit
+{
+    background: url('exticons/page/page_white_edit.png') no-repeat center center;
+}
+
+.page_white_error
+{
+    background: url('exticons/page/page_white_error.png') no-repeat center center;
+}
+
+.page_white_excel
+{
+    background: url('exticons/page/page_white_excel.png') no-repeat center center;
+}
+
+.page_white_find
+{
+    background: url('exticons/page/page_white_find.png') no-repeat center center;
+}
+
+.page_white_flash
+{
+    background: url('exticons/page/page_white_flash.png') no-repeat center center;
+}
+
+.page_white_freehand
+{
+    background: url('exticons/page/page_white_freehand.png') no-repeat center center;
+}
+
+.page_white_gear
+{
+    background: url('exticons/page/page_white_gear.png') no-repeat center center;
+}
+
+.page_white_get
+{
+    background: url('exticons/page/page_white_get.png') no-repeat center center;
+}
+
+.page_white_go
+{
+    background: url('exticons/page/page_white_go.png') no-repeat center center;
+}
+
+.page_white_h
+{
+    background: url('exticons/page/page_white_h.png') no-repeat center center;
+}
+
+.page_white_horizontal
+{
+    background: url('exticons/page/page_white_horizontal.png') no-repeat center center;
+}
+
+.page_white_key
+{
+    background: url('exticons/page/page_white_key.png') no-repeat center center;
+}
+
+.page_white_lightning
+{
+    background: url('exticons/page/page_white_lightning.png') no-repeat center center;
+}
+
+.page_white_link
+{
+    background: url('exticons/page/page_white_link.png') no-repeat center center;
+}
+
+.page_white_magnify
+{
+    background: url('exticons/page/page_white_magnify.png') no-repeat center center;
+}
+
+.page_white_medal
+{
+    background: url('exticons/page/page_white_medal.png') no-repeat center center;
+}
+
+.page_white_office
+{
+    background: url('exticons/page/page_white_office.png') no-repeat center center;
+}
+
+.page_white_paint
+{
+    background: url('exticons/page/page_white_paint.png') no-repeat center center;
+}
+
+.page_white_paintbrush
+{
+    background: url('exticons/page/page_white_paintbrush.png') no-repeat center center;
+}
+
+.page_white_paste
+{
+    background: url('exticons/page/page_white_paste.png') no-repeat center center;
+}
+
+.page_white_php
+{
+    background: url('exticons/page/page_white_php.png') no-repeat center center;
+}
+
+.page_white_picture
+{
+    background: url('exticons/page/page_white_picture.png') no-repeat center center;
+}
+
+.page_white_powerpoint
+{
+    background: url('exticons/page/page_white_powerpoint.png') no-repeat center center;
+}
+
+.page_white_put
+{
+    background: url('exticons/page/page_white_put.png') no-repeat center center;
+}
+
+.page_white_ruby
+{
+    background: url('exticons/page/page_white_ruby.png') no-repeat center center;
+}
+
+.page_white_stack
+{
+    background: url('exticons/page/page_white_stack.png') no-repeat center center;
+}
+
+.page_white_star
+{
+    background: url('exticons/page/page_white_star.png') no-repeat center center;
+}
+
+.page_white_swoosh
+{
+    background: url('exticons/page/page_white_swoosh.png') no-repeat center center;
+}
+
+.page_white_text
+{
+    background: url('exticons/page/page_white_text.png') no-repeat center center;
+}
+
+.page_white_text_width
+{
+    background: url('exticons/page/page_white_text_width.png') no-repeat center center;
+}
+
+.page_white_tux
+{
+    background: url('exticons/page/page_white_tux.png') no-repeat center center;
+}
+
+.page_white_vector
+{
+    background: url('exticons/page/page_white_vector.png') no-repeat center center;
+}
+
+.page_white_visualstudio
+{
+    background: url('exticons/page/page_white_visualstudio.png') no-repeat center center;
+}
+
+.page_white_width
+{
+    background: url('exticons/page/page_white_width.png') no-repeat center center;
+}
+
+.page_white_word
+{
+    background: url('exticons/page/page_white_word.png') no-repeat center center;
+}
+
+.page_white_world
+{
+    background: url('exticons/page/page_white_world.png') no-repeat center center;
+}
+
+.page_white_wrench
+{
+    background: url('exticons/page/page_white_wrench.png') no-repeat center center;
+}
+
+.page_white_zip
+{
+    background: url('exticons/page/page_white_zip.png') no-repeat center center;
+}
+
+.page_word
+{
+    background: url('exticons/page/page_word.png') no-repeat center center;
+}
+
+.page_world
+{
+    background: url('exticons/page/page_world.png') no-repeat center center;
+}
+
+.paste_plain
+{
+    background: url('exticons/page/paste_plain.png') no-repeat center center;
+}
+
+.paste_word
+{
+    background: url('exticons/page/paste_word.png') no-repeat center center;
+}
+
+.report
+{
+    background: url('exticons/page/report.png') no-repeat center center;
+}
+
+.report_add
+{
+    background: url('exticons/page/report_add.png') no-repeat center center;
+}
+
+.report_delete
+{
+    background: url('exticons/page/report_delete.png') no-repeat center center;
+}
+
+.report_disk
+{
+    background: url('exticons/page/report_disk.png') no-repeat center center;
+}
+
+.report_edit
+{
+    background: url('exticons/page/report_edit.png') no-repeat center center;
+}
+
+.report_go
+{
+    background: url('exticons/page/report_go.png') no-repeat center center;
+}
+
+.report_key
+{
+    background: url('exticons/page/report_key.png') no-repeat center center;
+}
+
+.report_link
+{
+    background: url('exticons/page/report_link.png') no-repeat center center;
+}
+
+.report_magnify
+{
+    background: url('exticons/page/report_magnify.png') no-repeat center center;
+}
+
+.report_picture
+{
+    background: url('exticons/page/report_picture.png') no-repeat center center;
+}
+
+.report_user
+{
+    background: url('exticons/page/report_user.png') no-repeat center center;
+}
+
+.report_word
+{
+    background: url('exticons/page/report_word.png') no-repeat center center;
+}
+
+.photo
+{
+    background: url('exticons/photo and pic/photo.png') no-repeat center center;
+}
+
+.photos
+{
+    background: url('exticons/photo and pic/photos.png') no-repeat center center;
+}
+
+.photo_add
+{
+    background: url('exticons/photo and pic/photo_add.png') no-repeat center center;
+}
+
+.photo_delete
+{
+    background: url('exticons/photo and pic/photo_delete.png') no-repeat center center;
+}
+
+.photo_link
+{
+    background: url('exticons/photo and pic/photo_link.png') no-repeat center center;
+}
+
+.picture
+{
+    background: url('exticons/photo and pic/picture.png') no-repeat center center;
+}
+
+.pictures
+{
+    background: url('exticons/photo and pic/pictures.png') no-repeat center center;
+}
+
+.picture_add
+{
+    background: url('exticons/photo and pic/picture_add.png') no-repeat center center;
+}
+
+.picture_delete
+{
+    background: url('exticons/photo and pic/picture_delete.png') no-repeat center center;
+}
+
+.picture_edit
+{
+    background: url('exticons/photo and pic/picture_edit.png') no-repeat center center;
+}
+
+.picture_empty
+{
+    background: url('exticons/photo and pic/picture_empty.png') no-repeat center center;
+}
+
+.picture_error
+{
+    background: url('exticons/photo and pic/picture_error.png') no-repeat center center;
+}
+
+.picture_go
+{
+    background: url('exticons/photo and pic/picture_go.png') no-repeat center center;
+}
+
+.picture_key
+{
+    background: url('exticons/photo and pic/picture_key.png') no-repeat center center;
+}
+
+.picture_link
+{
+    background: url('exticons/photo and pic/picture_link.png') no-repeat center center;
+}
+
+.picture_save
+{
+    background: url('exticons/photo and pic/picture_save.png') no-repeat center center;
+}
+
+.printer
+{
+    background: url('exticons/printer/printer.png') no-repeat center center;
+}
+
+.printer_add
+{
+    background: url('exticons/printer/printer_add.png') no-repeat center center;
+}
+
+.printer_delete
+{
+    background: url('exticons/printer/printer_delete.png') no-repeat center center;
+}
+
+.printer_empty
+{
+    background: url('exticons/printer/printer_empty.png') no-repeat center center;
+}
+
+.printer_error
+{
+    background: url('exticons/printer/printer_error.png') no-repeat center center;
+}
+
+.script
+{
+    background: url('exticons/script/script.png') no-repeat center center;
+}
+
+.script_add
+{
+    background: url('exticons/script/script_add.png') no-repeat center center;
+}
+
+.script_code
+{
+    background: url('exticons/script/script_code.png') no-repeat center center;
+}
+
+.script_code_red
+{
+    background: url('exticons/script/script_code_red.png') no-repeat center center;
+}
+
+.script_delete
+{
+    background: url('exticons/script/script_delete.png') no-repeat center center;
+}
+
+.script_edit
+{
+    background: url('exticons/script/script_edit.png') no-repeat center center;
+}
+
+.script_error
+{
+    background: url('exticons/script/script_error.png') no-repeat center center;
+}
+
+.script_gear
+{
+    background: url('exticons/script/script_gear.png') no-repeat center center;
+}
+
+.script_go
+{
+    background: url('exticons/script/script_go.png') no-repeat center center;
+}
+
+.script_key
+{
+    background: url('exticons/script/script_key.png') no-repeat center center;
+}
+
+.script_lightning
+{
+    background: url('exticons/script/script_lightning.png') no-repeat center center;
+}
+
+.script_link
+{
+    background: url('exticons/script/script_link.png') no-repeat center center;
+}
+
+.script_palette
+{
+    background: url('exticons/script/script_palette.png') no-repeat center center;
+}
+
+.script_save
+{
+    background: url('exticons/script/script_save.png') no-repeat center center;
+}
+
+.table
+{
+    background: url('exticons/table/table.png') no-repeat center center;
+}
+
+.table_add
+{
+    background: url('exticons/table/table_add.png') no-repeat center center;
+}
+
+.table_delete
+{
+    background: url('exticons/table/table_delete.png') no-repeat center center;
+}
+
+.table_edit
+{
+    background: url('exticons/table/table_edit.png') no-repeat center center;
+}
+
+.table_error
+{
+    background: url('exticons/table/table_error.png') no-repeat center center;
+}
+
+.table_gear
+{
+    background: url('exticons/table/table_gear.png') no-repeat center center;
+}
+
+.table_go
+{
+    background: url('exticons/table/table_go.png') no-repeat center center;
+}
+
+.table_key
+{
+    background: url('exticons/table/table_key.png') no-repeat center center;
+}
+
+.table_lightning
+{
+    background: url('exticons/table/table_lightning.png') no-repeat center center;
+}
+
+.table_link
+{
+    background: url('exticons/table/table_link.png') no-repeat center center;
+}
+
+.table_multiple
+{
+    background: url('exticons/table/table_multiple.png') no-repeat center center;
+}
+
+.table_refresh
+{
+    background: url('exticons/table/table_refresh.png') no-repeat center center;
+}
+
+.table_relationship
+{
+    background: url('exticons/table/table_relationship.png') no-repeat center center;
+}
+
+.table_row_delete
+{
+    background: url('exticons/table/table_row_delete.png') no-repeat center center;
+}
+
+.table_row_insert
+{
+    background: url('exticons/table/table_row_insert.png') no-repeat center center;
+}
+
+.table_save
+{
+    background: url('exticons/table/table_save.png') no-repeat center center;
+}
+
+.table_sort
+{
+    background: url('exticons/table/table_sort.png') no-repeat center center;
+}
+
+.tag_blue
+{
+    background: url('exticons/tag/tag_blue.png') no-repeat center center;
+}
+
+.tag_blue_add
+{
+    background: url('exticons/tag/tag_blue_add.png') no-repeat center center;
+}
+
+.tag_blue_delete
+{
+    background: url('exticons/tag/tag_blue_delete.png') no-repeat center center;
+}
+
+.tag_blue_edit
+{
+    background: url('exticons/tag/tag_blue_edit.png') no-repeat center center;
+}
+
+.tag_green
+{
+    background: url('exticons/tag/tag_green.png') no-repeat center center;
+}
+
+.tag_orange
+{
+    background: url('exticons/tag/tag_orange.png') no-repeat center center;
+}
+
+.tag_pink
+{
+    background: url('exticons/tag/tag_pink.png') no-repeat center center;
+}
+
+.tag_purple
+{
+    background: url('exticons/tag/tag_purple.png') no-repeat center center;
+}
+
+.tag_red
+{
+    background: url('exticons/tag/tag_red.png') no-repeat center center;
+}
+
+.tag_yellow
+{
+    background: url('exticons/tag/tag_yellow.png') no-repeat center center;
+}
+
+.television
+{
+    background: url('exticons/television/television.png') no-repeat center center;
+}
+
+.television_add
+{
+    background: url('exticons/television/television_add.png') no-repeat center center;
+}
+
+.television_delete
+{
+    background: url('exticons/television/television_delete.png') no-repeat center center;
+}
+
+.user
+{
+    background: url('exticons/user/user.png') no-repeat center center;
+}
+
+.user_add
+{
+    background: url('exticons/user/user_add.png') no-repeat center center;
+}
+
+.user_comment
+{
+    background: url('exticons/user/user_comment.png') no-repeat center center;
+}
+
+.user_delete
+{
+    background: url('exticons/user/user_delete.png') no-repeat center center;
+}
+
+.user_edit
+{
+    background: url('exticons/user/user_edit.png') no-repeat center center;
+}
+
+.user_female
+{
+    background: url('exticons/user/user_female.png') no-repeat center center;
+}
+
+.user_go
+{
+    background: url('exticons/user/user_go.png') no-repeat center center;
+}
+
+.user_gray
+{
+    background: url('exticons/user/user_gray.png') no-repeat center center;
+}
+
+.user_green
+{
+    background: url('exticons/user/user_green.png') no-repeat center center;
+}
+
+.user_orange
+{
+    background: url('exticons/user/user_orange.png') no-repeat center center;
+}
+
+.user_red
+{
+    background: url('exticons/user/user_red.png') no-repeat center center;
+}
+
+.user_suit
+{
+    background: url('exticons/user/user_suit.png') no-repeat center center;
+}
+
+.vcard
+{
+    background: url('exticons/vcard/vcard.png') no-repeat center center;
+}
+
+.vcard_add
+{
+    background: url('exticons/vcard/vcard_add.png') no-repeat center center;
+}
+
+.vcard_delete
+{
+    background: url('exticons/vcard/vcard_delete.png') no-repeat center center;
+}
+
+.vcard_edit
+{
+    background: url('exticons/vcard/vcard_edit.png') no-repeat center center;
+}
+
+.world
+{
+    background: url('exticons/world/world.png') no-repeat center center;
+}
+
+.world_add
+{
+    background: url('exticons/world/world_add.png') no-repeat center center;
+}
+
+.world_delete
+{
+    background: url('exticons/world/world_delete.png') no-repeat center center;
+}
+
+.world_edit
+{
+    background: url('exticons/world/world_edit.png') no-repeat center center;
+}
+
+.world_go
+{
+    background: url('exticons/world/world_go.png') no-repeat center center;
+}
+
+.world_link
+{
+    background: url('exticons/world/world_link.png') no-repeat center center;
+}
+
+.zoom
+{
+    background: url('exticons/zoom/zoom.png') no-repeat center center;
+}
+
+.zoom_in
+{
+    background: url('exticons/zoom/zoom_in.png') no-repeat center center;
+}
+
+.zoom_out
+{
+    background: url('exticons/zoom/zoom_out.png') no-repeat center center;
+}

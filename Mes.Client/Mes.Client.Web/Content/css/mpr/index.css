@@ -1,0 +1,12 @@
+﻿* { margin: 0; padding: 0; }
+html, body { height: 100%; width: 100%; }
+
+#edit_panel_context {
+	width: 400px;
+	height: 300px;
+}
+
+#btn_show {
+	width: 100px;
+	height: 25px;
+}

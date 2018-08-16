@@ -1,0 +1,3961 @@
+td, input, button, select, body, article, section, header, p, menu
+{
+    font-family: "lucida Grande",Verdana;
+    margin: 0;
+    padding: 0;
+}
+
+textarea
+{
+    font-family: "lucida Grande",Verdana;
+}
+
+a
+{
+    color: #3e5776;
+    text-decoration: none;
+    outline: none;
+}
+
+img
+{
+    border: 0;
+}
+
+.index_box a
+{
+    color: #213e62;
+}
+
+    .index_box a:hover
+    {
+        text-decoration: underline;
+    }
+/* link需要:hover underline */
+.link-underl:hover
+{
+    text-decoration: underline;
+}
+
+.link-nounderl:hover
+{
+    text-decoration: none;
+}
+
+ul, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.tbody
+{
+    text-align: center;
+    background: #f8f9fc;
+    min-width: 980px;
+}
+
+.bd
+{
+    border: 1px solid #e7e7e7;
+}
+
+.bg
+{
+    background: #f8f9fc;
+}
+
+.info
+{
+    color: #676666;
+    font-size: 12px;
+}
+
+.none
+{
+    display: none;
+}
+
+.f_size
+{
+    font-size: 12px!important;
+}
+
+.b_size
+{
+    font-size: 14px;
+}
+
+.normal
+{
+    font-weight: normal;
+}
+
+.txt_red
+{
+    color: #a91118;
+}
+
+.gray
+{
+    color: #a0a0a0;
+}
+
+.header
+{
+    width: 100%;
+    height: 60px;
+    background: #144883 url(../images/bizmail/v2/bg_header0cb570.png) repeat-x 0 0;
+}
+
+    .header .logo
+    {
+        float: left;
+        margin: 12px 0 0 0;
+    }
+
+        .header .logo img
+        {
+            border: 0 none;
+        }
+
+    .header .navBar
+    {
+        float: left;
+        margin: 0 0 0 140px;
+        background: url(../images/bizmail/v2/bg_nav0cb570.png) no-repeat right 0;
+    }
+
+    .header li
+    {
+        list-style: none;
+        float: left;
+        width: 105px;
+        height: 68px;
+        line-height: 68px;
+        background: url(../images/bizmail/v2/bg_nav0cb570.png) no-repeat 1px 0;
+        margin-left: -1px;
+    }
+
+        .header li a
+        {
+            color: #fff;
+            font-size: 14px;
+            height: 68px;
+            line-height: 68px;
+            display: block;
+            text-align: center;
+            outline: none;
+        }
+
+            .header li a:hover
+            {
+                background: #1a4a81;
+            }
+
+            .header li a.on
+            {
+                background: #153d6b;
+            }
+
+    .header .setinfo
+    {
+        float: right;
+        width: 160px;
+        height: 31px;
+        background: url(../images/bizmail/v2/bg_signup0cb570.png) no-repeat 0 0;
+    }
+
+        .header .setinfo a
+        {
+            color: #DFDFDF;
+            font-size: 12px;
+            margin: 0 15px 0 0;
+            text-align: center;
+            display: inline-block;
+            line-height: 26px;
+        }
+
+        .header .setinfo .sign_up
+        {
+            width: 80px;
+            margin: 0 0 0 15px;
+        }
+
+        .header .setinfo .logoin
+        {
+            width: 50px;
+        }
+
+/*index*/
+.index_box
+{
+    background: #fff;
+    margin: 0;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+#banners
+{
+    height: 330px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner ul, .banner li
+{
+    height: 330px;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.banner li
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .line
+{
+    position: absolute;
+    top: 398px;
+    width: 980px;
+    height: 2px;
+    overflow: hidden;
+    background-image: -moz-linear-gradient(50% 180px 110deg, #FFFFFF 0%, #839dbd 55%, #FFFFFF 90%);
+    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#fff), to(#FFF), color-stop(0.5, #839dbd));
+}
+
+.banner .page_bar
+{
+    position: relative;
+    top: -26px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    _top: -20px;
+}
+
+    .banner .page_bar a
+    {
+        height: 12px;
+        width: 12px;
+        overflow: hidden;
+        line-height: 50px;
+        font-size: 0;
+        float: left;
+        margin: 0 2px;
+        background: url(../images/bizmail/v2/cur_page0fffef.png) no-repeat 0 0;
+        _background: url(../images/bizmail/v2/bg_page19638d.png) no-repeat 0 0;
+    }
+
+        .banner .page_bar a.on
+        {
+            background-position: -32px 0;
+        }
+
+.min_box
+{
+    width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    _overflow: hidden;
+}
+
+.focus_obj
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1460px;
+    height: 330px;
+    margin-left: -730px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.btn_signUp,
+.btn_join
+{
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    width: 132px;
+    height: 42px;
+    margin-left: -66px;
+    background: url(../images/bizmail/v2/bg_page19638d.png) no-repeat;
+}
+
+.btn_signUp
+{
+    background-position: 0 -52px;
+}
+
+    .btn_signUp:hover
+    {
+        background-position: 0 -94px;
+        text-decoration: none;
+    }
+
+.btn_join
+{
+    background-position: 0 -304px;
+}
+
+    .btn_join:hover
+    {
+        background-position: 0 -346px;
+    }
+
+/**
+ * 顶部下拉大广告banner结构
+ * @html div.top_banner > a.banner_wrapper + img.banner_inner[width][height]
+ */
+.top_banner
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    *left: 0;
+}
+
+.banner_wrapper
+{
+    display: block;
+    text-align: center;
+    font-size: 0;
+    line-height: 0;
+}
+
+.ad_51buy .banner_wrapper
+{
+    background: #e1dfe2 url(../images/bizmail/v2/ad_51buy_bg1189b5.png) repeat-x 0 0;
+}
+
+.float_tip
+{
+    position: absolute;
+    top: 68px;
+    right: 0;
+    z-index: 1000;
+}
+
+.function_01
+{
+    background: url(../images/bizmail/v2/bg_banner01102f32.jpg) repeat-x 0 0;
+}
+
+.function_02
+{
+    background: url(../images/bizmail/v2/bg_banner02102f32.jpg) repeat-x 0 0;
+}
+
+.function_03
+{
+    background: url(../images/bizmail/v2/bg_banner03102f32.jpg) repeat-x 0 0;
+}
+
+.function_04
+{
+    background: url(../images/bizmail/v2/bg_banner040fffef.png) repeat-x 0 0;
+}
+
+.function_05
+{
+    background: url(../images/bizmail/v2/bg_banner05102f32.jpg) repeat-x 0 0;
+}
+
+.function_01 .focus_obj
+{
+    background-image: url(../images/bizmail/v2/bg_banner_text0119639f.jpg);
+}
+
+.function_02 .focus_obj
+{
+    background-image: url(../images/bizmail/v2/bg_banner_text02102f32.jpg);
+}
+
+.function_03 .focus_obj
+{
+    background-image: url(../images/bizmail/v2/bg_banner_text03102f32.jpg);
+}
+
+.function_04 .focus_obj
+{
+    background-image: url(../images/bizmail/v2/bg_banner_text0414dbd6.png);
+}
+
+.function_05 .focus_obj
+{
+    background-image: url(../images/bizmail/v2/bg_banner_text05102f32.jpg);
+}
+
+.function_01 .btn_signUp
+{
+    top: 157px;
+    background-position: 0 -136px;
+}
+
+    .function_01 .btn_signUp:hover
+    {
+        background-position: 0 -178px;
+    }
+
+.function_04 .btn_signUp
+{
+    top: 185px;
+    margin-left: -66px;
+}
+
+.function_05 .btn_signUp
+{
+    top: 123px;
+}
+
+.function_01 .btn_join
+{
+    top: 130px;
+}
+
+.feature_list
+{
+    border-radius: 3px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .feature_list li
+    {
+        list-style: none;
+        width: 232px;
+        height: 260px;
+        text-align: center;
+        float: left;
+        margin-right: 14px;
+        overflow: hidden;
+        zoom: 1;
+        -moz-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .feature_list .ico_obj
+    {
+        width: 72px;
+        height: 72px;
+        overflow: hidden;
+        margin: 30px auto 15px auto;
+    }
+
+    .feature_list .title
+    {
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .feature_list .info
+    {
+        width: 185px;
+        height: 70px;
+        margin: 10px auto 0 auto;
+        text-align: left;
+        line-height: 20px;
+    }
+
+.feature_move
+{
+    margin: 15px 14px 0 0;
+    width: 335px;
+    padding: 0 15px;
+    height: 140px;
+    float: left;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+
+    .feature_move .ico_move, .feature_move .ico_firefox, .feature_move .ico_m_outlook, .ico_ascloud
+    {
+        float: left;
+        margin: 5px 10px 0 0;
+    }
+
+    .feature_move .title
+    {
+        margin: 0;
+        line-height: 20px;
+        padding-bottom: 4px;
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+    }
+
+.feature_move_li
+{
+    display: block;
+    padding: 10px 5px 10px 20px;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+    .feature_move_li span
+    {
+        display: block;
+    }
+
+        .feature_move_li span.pre_link
+        {
+            display: inline;
+            color: #3E5776;
+        }
+
+a.feature_move_li:hover .pre_link
+{
+    text-decoration: underline;
+}
+
+.feature_move_li_first
+{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.feature_move_li .info
+{
+    padding: 8px 0 0 30px;
+    color: #213E62;
+}
+
+.feature_phone
+{
+    margin: 15px 0 0 14px;
+    width: 246px;
+    height: 140px;
+    float: left;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    background: #f7fbfe;
+    background-image: -moz-linear-gradient( center top, #edf7fe 0%, #fbfdfe 100% );
+    background-image: -o-linear-gradient( center top, #edf7fe 0%, #fbfdfe 100% );
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #edf7fe), color-stop(1, #fbfdfe) );
+}
+
+    .feature_phone .ico_phone
+    {
+        position: absolute;
+        top: 40px;
+        left: 70px;
+        background: url(../images/bizmail/v2/ico_index121d8e.png) no-repeat -400px 0;
+    }
+
+    .feature_phone .title
+    {
+        padding: 0;
+        font-size: 18px;
+        line-height: 38px;
+        *line-height: 40px;
+        text-align: center;
+        margin: 30px 0 0 0;
+    }
+
+    .feature_phone strong
+    {
+        font-size: 25px;
+        font-weight: normal;
+        color: #1C8B7D;
+        text-align: center;
+        display: block;
+        width: 100%; /* remove by molicechen font-family:Corbel,Georgia,"lucida Grande",Verdana;*/
+        text-shadow: 0 1px 0 #c9cdcf;
+    }
+
+.feature_diary
+{
+    margin-top: 15px;
+    width: 334px;
+    height: 140px;
+    overflow: hidden;
+    float: left;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+    .feature_diary .title
+    {
+        float: left;
+        margin: 15px 0 0 20px;
+        font-size: 14px;
+        display: inline;
+    }
+
+    .feature_diary ul
+    {
+        clear: both;
+        float: left;
+        margin: 10px 0 0 0;
+        font-size: 12px;
+    }
+
+    .feature_diary li
+    {
+        line-height: 26px;
+        width: 280px;
+        position: relative;
+        color: #c1c1c3;
+        margin-left: 35px;
+        zoom: 1;
+    }
+
+    .feature_diary .time
+    {
+        position: absolute;
+        right: 0;
+    }
+
+.copyright
+{
+    width: 100%;
+    clear: both;
+    font-size: 12px;
+    border-top: 1px solid #dfdede;
+}
+
+.copyright_con
+{
+    border-top: 1px solid #ebebeb;
+    padding: 25px 0;
+}
+
+.copyright a
+{
+}
+
+.copyright .info
+{
+    font-size: 11px;
+    margin: 5px 0;
+}
+
+.ico_cost, .ico_efficiency, .ico_work, .ico_control, .ico_move, .ico_firefox, .ico_phone, .ico_m_outlook, .ico_ascloud
+{
+    display: block;
+    background: url(../images/bizmail/v2/ico_index121d8e.png) no-repeat 0 0;
+}
+
+.ico_cost
+{
+    background-position: 0 0;
+}
+
+.ico_efficiency
+{
+    background-position: -80px 0;
+}
+
+.ico_work
+{
+    background-position: -160px 0;
+}
+
+.ico_control
+{
+    background-position: -240px 0;
+}
+
+.ico_move, .ico_firefox, .ico_m_outlook, .ico_ascloud
+{
+    width: 20px;
+    height: 20px;
+}
+
+.ico_move
+{
+    background-position: -320px 0;
+}
+
+.ico_ascloud
+{
+    background-position: -360px -40px;
+}
+
+.ico_firefox
+{
+    background-position: -360px 0;
+}
+
+.ico_m_outlook
+{
+    background-position: -319px -40px;
+    width: 24px;
+    position: relative;
+    left: -2px;
+}
+
+.ico_phone
+{
+    background-position: -400px 0;
+    width: 15px;
+    height: 20px;
+}
+
+/*learnmore*/
+.con_body
+{
+    background: #fff;
+    margin: 0;
+    padding: 30px 0 50px 0;
+    overflow: hidden;
+}
+
+.txt_slogon
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+
+.fun_box
+{
+    padding: 10px 0 20px 0;
+    min-height: 240px;
+    /*background:#f1f3f4;border:1px solid #f0f0f0;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;*/
+}
+
+.fun_list
+{
+    margin: 0 0 0 100px;
+    overflow: hidden;
+}
+
+    .fun_list li
+    {
+        list-style: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 15px 0 20px 70px;
+        zoom: 1;
+        background: #fff;
+    }
+
+    .fun_list .img_obj
+    {
+        float: left;
+        width: 270px;
+        height: 128px;
+        background: url(../images/bizmail/v2/icon_learnmore14e1e2.png) no-repeat 0 0;
+    }
+
+    .fun_list .txt_info
+    {
+        float: left;
+        margin: 15px 40px 0 0;
+        line-height: 48px;
+    }
+
+        .fun_list .txt_info h3
+        {
+            font-size: 26px;
+            font-weight: lighter;
+            color: #21528b;
+            margin: 0;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+        }
+
+        .fun_list .txt_info p, .more_list .txt_info p
+        {
+            color: #676666;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+    .fun_list .ico_capacity
+    {
+        background-position: 0 0;
+    }
+
+    .fun_list .ico_email
+    {
+        background-position: -319px 0;
+        margin-right: 50px;
+    }
+
+    .fun_list .ico_access
+    {
+        background-position: 0 -160px;
+    }
+
+    .fun_list .ico_security
+    {
+        background-position: -319px -160px;
+    }
+
+.more_box
+{
+    overflow: hidden;
+    margin: 15px 0 0 0;
+}
+
+    .more_box .title
+    {
+        color: #676666;
+        font-size: 14px;
+        font-weight: lighter;
+        height: 30px;
+        border-bottom: 1px solid #e3e8f0;
+        margin: 0 80px 0 100px;
+        padding: 0 0 0 65px;
+    }
+
+    .more_box .more_list
+    {
+        margin: 0 0 0 160px;
+        overflow: hidden;
+    }
+
+.more_list li
+{
+    width: 400px;
+    float: left;
+    margin: 15px 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+    .more_list li.num01
+    {
+        width: 400px;
+    }
+
+.more_list .img_obj
+{
+    float: left;
+    width: 75px;
+    height: 70px;
+}
+
+.more_list .txt_info
+{
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+    .more_list .txt_info h4
+    {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+.lm_box .img_obj
+{
+    background: url(../images/bizmail/v2/icon_learnmore14e1e2.png) no-repeat 0 0;
+}
+
+.lm_box .ico_customize
+{
+    background-position: 0 -320px;
+}
+
+.lm_box .ico_application
+{
+    background-position: -80px -320px;
+}
+
+.lm_box .ico_management
+{
+    background-position: 0 -400px;
+}
+
+.lm_box .ico_communicate
+{
+    background-position: 0 -480px;
+}
+
+.lm_box .ico_client
+{
+    background-position: -80px -400px;
+}
+
+.lm_box .ico_s_remind
+{
+    background-position: -80px -480px;
+}
+
+.lm_link p
+{
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    margin: 0;
+    text-align: center;
+    clear: both;
+}
+
+
+.table_obj
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+    .table_obj th
+    {
+        background: #f1f1f1;
+        border-bottom: 1px solid #d6d6d6;
+        height: 45px;
+        line-height: 45px;
+        text-indent: 60px;
+    }
+
+    .table_obj td
+    {
+        line-height: 45px;
+        text-indent: 60px;
+    }
+
+    .table_obj .c_n
+    {
+        border-right: 1px solid #d6d6d6;
+    }
+
+    .table_obj .c_n
+    {
+        *border-right: 1px solid #e6e6e6;
+    }
+
+        .table_obj .c_n span
+        {
+            margin-right: 60px;
+            text-align: right;
+            display: block;
+        }
+
+    .table_obj td.c_n span
+    {
+        color: #666;
+    }
+
+    .table_obj .col_name
+    {
+        width: 260px;
+        border-right: 1px solid #e6e6e6;
+    }
+
+    .table_obj .col_detail
+    {
+        text-align: left;
+    }
+
+.l_bg
+{
+    background: #f3f6fa;
+}
+
+
+
+.f_list li
+{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 18px 0;
+    position: relative;
+}
+
+    .f_list li .title
+    {
+        display: block;
+        font-weight: bold;
+        color: #000;
+        padding-left: 70px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .f_list li .info
+    {
+        display: block;
+        padding-left: 70px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .f_list li .ico_obj
+    {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+    }
+
+    .f_list li.noline
+    {
+        border-bottom: 0 none;
+    }
+
+    .f_list li .pre_link
+    {
+        color: #3E5776;
+    }
+
+    .f_list li a.block_back
+    {
+        display: block;
+        background: #fff;
+    }
+
+    .f_list li a:hover .pre_link
+    {
+        text-decoration: underline;
+    }
+
+.announce_belong
+{
+    margin-bottom: 22px;
+    font-size: 12px;
+}
+
+.announce_intro
+{
+    font-size: 12px;
+    color: #494949;
+}
+
+    .announce_intro a
+    {
+        text-decoration: underline;
+    }
+
+.announce_li
+{
+    padding: 18px 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.announce_li_last
+{
+    border-bottom-width: 0px;
+    padding-bottom: 0;
+}
+
+.announce_li h2
+{
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 0 8px;
+}
+
+.announce_li p
+{
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.announce_li img
+{
+    margin-left: 22px;
+}
+
+.announce_li h2 span
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    background: #759cd0;
+    float: left;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-shadow: 0 -1px 1px #59769d;
+    background: url(../images/bizmail/v2/announce/linked0d6fa0.gif) no-repeat\9;
+}
+
+.outlook_li .info
+{
+    line-height: 24px;
+}
+
+.outlook_li .img_obj
+{
+    margin: 10px 0 0 40px;
+}
+/*pay for*/
+.menu_pay
+{
+    width: 210px;
+    float: left;
+}
+
+    .menu_pay li
+    {
+        list-style: none;
+    }
+
+        .menu_pay li.first .item
+        {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+        }
+        /*.menu_pay li.sec .item{border-top:1px solid #f1f3f4;}*/
+        .menu_pay li a.item, .menu_pay li span.item
+        {
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            background: #fff;
+            border-bottom: 1px solid #e0e2e2;
+            text-align: left;
+            text-indent: 65px;
+        }
+
+            .menu_pay li a.item:hover
+            {
+                background: #e2e2e2;
+            }
+
+        .menu_pay li.on span.item
+        {
+            background: #f1f3f4;
+            border-bottom: 1px solid #e0e2e2;
+            font-weight: bold;
+        }
+
+.pay_box
+{
+    min-width: 640px;
+    margin-left: 205px;
+    padding: 30px 30px 50px 30px;
+    overflow: hidden;
+    zoom: 1;
+    background: #f1f3f4;
+    border: 1px solid #f0f0f0;
+    min-height: 240px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    _position: relative;
+    _left: -4px;
+    _width: 660px;
+}
+
+    .pay_box .title
+    {
+        font-size: 16px;
+        margin: 0 0 12px 0;
+    }
+
+    .pay_box .m_title
+    {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .pay_box .m_info
+    {
+        font-size: 12px;
+        margin: 0 0 15px 0;
+        color: #636363;
+    }
+
+    .pay_box .overview
+    {
+        margin: 0;
+        padding: 0 30px 30px 30px;
+        border-bottom: 1px solid #e0e1e2;
+    }
+
+        .pay_box .overview .title
+        {
+            font-size: 22px;
+            color: #21528b;
+            margin: 0;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+        }
+
+        .pay_box .overview p
+        {
+            font-size: 12px;
+            line-height: 22px;
+            padding: 10px 0;
+            overflow: hidden;
+        }
+
+    .pay_box .btn_pay
+    {
+        height: 30px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
+.py_box
+{
+    margin: 10px 0 0 40px;
+}
+
+    .py_box .more_list
+    {
+        margin: 0;
+    }
+
+    .py_box li
+    {
+        margin: 25px 0;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .py_box h4
+    {
+        line-height: 26px;
+    }
+
+    .py_box .img_obj
+    {
+        background: url(../images/bizmail/v2/icon_fun_pay14e1e2.png) no-repeat 0 0;
+    }
+
+    .py_box .ico_unlimited
+    {
+        background-position: 0 0;
+    }
+
+    .py_box .ico_5GB
+    {
+        background-position: -80px 5px;
+    }
+
+    .py_box .ico_character
+    {
+        background-position: 0 -80px;
+    }
+
+    .py_box .ico_image
+    {
+        background-position: -80px -70px;
+    }
+
+    .py_box .ico_assistant
+    {
+        background-position: 0 -160px;
+    }
+
+    .py_box .ico_backup
+    {
+        background-position: -80px -150px;
+    }
+
+    .py_box .ico_iplimited
+    {
+        background-position: 0 -240px;
+    }
+
+    .py_box .ico_limitsend
+    {
+        background-position: -80px -230px;
+    }
+
+    .py_box .ico_buy
+    {
+        background-position: 0 -320px;
+    }
+
+    .py_box .ico_service
+    {
+        background-position: -80px -320px;
+    }
+
+.table_pay
+{
+    background: #fff;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .table_pay th
+    {
+        background: #ebedef;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .table_pay td
+    {
+        height: 38px;
+        line-height: 38px;
+        color: #646464;
+    }
+
+    .table_pay .col_name
+    {
+        width: 160px!important;
+    }
+
+    .table_pay .col_free
+    {
+        width: 155px!important;
+    }
+
+    .table_pay .l_bg
+    {
+        background: #f3f6fa;
+    }
+
+.table_price th
+{
+    text-align: center;
+    text-indent: 0;
+}
+
+.table_price td
+{
+    text-align: center;
+    text-indent: 0;
+    color: #646464;
+}
+
+.table_obj .col_free
+{
+    border-right: 1px solid #e6e6e6;
+}
+
+.table_obj .col_pay
+{
+    width: auto;
+}
+
+.table_obj .col_no1
+{
+    width: 33%;
+    border-right: 1px solid #e6e6e6;
+}
+
+.table_obj .col_no2
+{
+    width: 33%;
+    border-right: 1px solid #e6e6e6;
+}
+
+.table_obj .col_no3
+{
+    width: 33%;
+}
+
+.address_box
+{
+    overflow: hidden;
+    zoom: 1;
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+    border-bottom: 1px dashed #d2d1d1;
+}
+
+    .address_box .title
+    {
+        float: left;
+        margin-top: 5px;
+    }
+
+    .address_box .address_con .ico_obj
+    {
+        height: 15px;
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        *top: 2px;
+    }
+
+    .address_box .address_con
+    {
+        clear: both;
+        background: #fff url(../images/bizmail/v2/bg_pay14ecbc.png) no-repeat 540px -100px;
+        padding: 30px 0;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+        .address_box .address_con .name
+        {
+            padding-left: 90px;
+            font-size: 16px;
+            line-height: 28px;
+            margin: 0;
+        }
+
+        .address_box .address_con .l_info
+        {
+            margin-left: 15px;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        .address_box .address_con .info
+        {
+            padding-left: 90px;
+            line-height: 26px;
+            _margin-top: 8px;
+            font-size: 14px;
+        }
+
+            .address_box .address_con .info .phone
+            {
+                margin: 0 20px 0 0;
+            }
+
+    .address_box .l_more
+    {
+        float: right;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .address_box .address_list
+    {
+        clear: both;
+        background: #fff;
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+        .address_box .address_list li
+        {
+            list-style: none;
+            overflow: hidden;
+            zoom: 1;
+            padding: 10px 0;
+            margin: 0 20px;
+            border-bottom: 1px dashed #e9e9e9;
+        }
+
+            .address_box .address_list li.last
+            {
+                border: 0 none;
+            }
+
+        .address_box .address_list .name
+        {
+            font-size: 14px;
+            padding-left: 70px;
+        }
+
+        .address_box .address_list .info
+        {
+            padding-left: 70px;
+        }
+
+.search_franchiser
+{
+    font-size: 12px;
+    float: right;
+    margin: 11px 0 0 0;
+}
+
+    .search_franchiser:hover
+    {
+        text-decoration: underline;
+    }
+
+.m_info
+{
+    color: #666;
+    margin-top: -10px;
+}
+
+.o_list
+{
+    margin-top: 20px;
+    padding: 0 20px;
+    background: #fff;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .o_list li
+    {
+        list-style: none;
+        padding: 18px 0;
+        border-bottom: 1px solid #e9e9e9;
+        position: relative;
+        overflow: hidden;
+        zoom: 1;
+    }
+
+        .o_list li.last
+        {
+            border: 0 none;
+        }
+
+        .o_list li .m_title
+        {
+            font-size: 14px;
+            margin: 0;
+            line-height: 28px;
+            padding-left: 120px;
+        }
+
+        .o_list li .info
+        {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 0 50px 0 120px;
+        }
+
+        .o_list li span.btn_detail
+        {
+            margin: 10px 0 5px 120px;
+            font-size: 14px;
+            float: left;
+            display: inline-block;
+        }
+
+        .o_list li a.btn_detail, .announce_link a.btn_detail, .btn_search, .btn_query
+        {
+            font-size: 12px;
+            display: inline-block;
+            height: 26px;
+            line-height: 26px;
+            line-height: 28px\9;
+            padding: 0 18px;
+            color: #fff;
+            overflow: hidden;
+            border: 1px solid #0069ac;
+            background: url(../images/bizmail/v2/bg_btn0cb570.png) repeat-x 0 -1px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+            .o_list li a.btn_detail:hover, .announce_link a.btn_detail:hover
+            {
+                background-position: 0 -36px;
+            }
+
+        .o_list li a.btn_detail
+        {
+            float: left;
+            margin: 10px 0 5px 120px;
+        }
+
+.announce_link
+{
+    padding-top: 20px;
+}
+
+.o_list li .ico_obj
+{
+    position: absolute;
+    top: 25px;
+    width: 98px;
+    height: 65px;
+}
+
+.shadow
+{
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+}
+
+.ico_box, .ico_phone, .ico_maddress, .ico_info, .ico_rtx, .ico_qq, .ico_ec, .address_con
+{
+    display: block;
+    background: url(../images/bizmail/v2/bg_pay14ecbc.png) no-repeat 0 0;
+}
+
+.ico_box
+{
+    width: 80px;
+    height: 65px;
+    background-position: -300px 0;
+}
+
+.ico_phone
+{
+    background-position: -400px 0;
+    width: 12px;
+}
+
+.ico_maddress
+{
+    background-position: -415px 0;
+    margin: 0 4px 0 0;
+    width: 12px;
+}
+
+.ico_info
+{
+    background-position: -428px 0;
+    width: 20px;
+}
+
+.ico_rtx
+{
+    background-position: 0 0;
+    left: 10px;
+}
+
+.ico_qq
+{
+    background-position: -98px 0;
+    left: 20px;
+}
+
+.ico_ec
+{
+    background-position: -200px 0;
+    left: 20px;
+}
+
+.address_con
+{
+    background-position: 0 -100px;
+}
+
+/*  成功案例页  */
+.case_box
+{
+    width: 908px;
+    margin: 0 auto;
+    font-family: Microsoft YaHei;
+    text-align: left;
+}
+
+.case_change li
+{
+    list-style: none;
+    background: #eff2f6;
+    padding: 34px 60px;
+    color: #565656;
+    font-size: 14px;
+    line-height: 26px;
+    border-radius: 5px;
+    overflow: hidden;
+    _zoom: 1;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 788px;
+    height: 132px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: none\9;
+    -moz-transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.case_change .case_hide
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: none\9;
+}
+
+.case_change .case_show
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    display: block\9;
+}
+
+.case_change li img
+{
+    float: left;
+    border: 1px solid #e2e2e2;
+}
+
+.com_intro
+{
+    padding: 24px 0 0 290px;
+}
+
+.com_from
+{
+    text-align: right;
+}
+
+.com_intro p
+{
+    position: relative;
+    text-indent: 56px;
+}
+
+    .com_intro p span
+    {
+        font-family: Microsoft YaHei,Microsoft JhengHei;
+        position: absolute;
+        display: block;
+        width: 94px;
+        height: 36px;
+        padding-top: 10px;
+        padding-top: 14px\9;
+        background: url(../images/bizmail/v2/case/com_intro_bg14e1cd.png) 0 0 no-repeat;
+        top: -16px;
+        top: -19px\9;
+        *top: -23px;
+        _top: -21px;
+        left: -24px;
+        _left: -85px;
+        font-size: 26px;
+        text-indent: 50px;
+    }
+
+.case_info
+{
+    color: #7a7a7a;
+    padding: 35px 0 10px 10px;
+}
+
+.com_list
+{
+    border-top: 1px solid #e3e8f0;
+    overflow: hidden;
+    _zoom: 1;
+    padding-top: 3px;
+}
+
+.com_l_td
+{
+    width: 225px;
+    border-right: 1px dashed #e4e4e4;
+    float: left;
+    padding-bottom: 60px;
+}
+
+.com_list .com_l_last
+{
+    border-right: 0px dotted #afacac;
+}
+
+.com_l_td div
+{
+    padding: 5px 0;
+    border-bottom: 1px dashed #e4e4e4;
+}
+
+.com_l_td img
+{
+    width: 160px;
+    height: 75px;
+    margin: 0 0 0 30px;
+}
+
+.case_change
+{
+    position: relative;
+    height: 908px;
+    height: 200px;
+}
+
+#change_contro
+{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.change_arrow
+{
+    width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+    cursor: pointer;
+    outline: none;
+    background: url(../images/spacer087795.gif);
+}
+
+    .change_arrow span
+    {
+        display: block;
+        width: 15px;
+        height: 18px;
+        background: url(../images/bizmail/v2/case/change_arrow14e1cd.png) no-repeat;
+        text-indent: -9999px;
+        margin-top: 92px;
+    }
+
+a#page_front:hover span
+{
+    background-position: 0 -18px;
+}
+
+#page_front span
+{
+    margin-left: 22px;
+}
+
+a#page_next:hover span
+{
+    background-position: 0 -54px;
+}
+
+#page_next span
+{
+    margin-right: 22px;
+    _margin-right: 11px;
+    float: right;
+    background-position: 0 -36px;
+}
+
+/* ==============面包屑导航============= */
+.breadcrumbs
+{
+    height: 26px;
+    overflow: hidden;
+    border: 1px solid #bebebe;
+    border-width: 0 0 0 1px;
+    border-radius: 2px 0 0 2px;
+}
+
+    .breadcrumbs li
+    {
+        float: left;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        cursor: default;
+        margin-left: -8px;
+    }
+
+        .breadcrumbs li a
+        {
+            position: relative;
+            background: url(../images/newicon/breadcrumbs0caf61.png) no-repeat right 0;
+            color: #494949;
+            float: left;
+            padding: 0 1.5em;
+            line-height: 26px;
+            line-height: 28px\9;
+            outline: none;
+            _background-image: url(../images/newicon/breadcrumbs80d706c.png);
+        }
+
+            .breadcrumbs li a:hover, .breadcrumbs li a:focus
+            {
+                background-position: right -32px;
+                color: #000;
+                text-decoration: none;
+            }
+
+            .breadcrumbs li a:active
+            {
+                background-position: right -64px;
+            }
+
+        .breadcrumbs li .crumb_last
+        {
+            background: url(../images/newicon/breadcrumbs0caf61.png) no-repeat right -96px;
+            padding: 0 1.5em;
+            color: #808080;
+            line-height: 26px;
+            max-width: 460px;
+            white-space: nowrap;
+            overflow: hidden;
+            _background-image: url(../images/newicon/breadcrumbs80d706c.png);
+        }
+
+        .breadcrumbs li.crumb1
+        {
+            z-index: 10;
+            margin-left: 0;
+        }
+
+            .breadcrumbs li.crumb1 a
+            {
+                z-index: 10;
+                padding-left: 1em;
+            }
+
+        .breadcrumbs li.crumb2 a
+        {
+            z-index: 9;
+        }
+
+        .breadcrumbs li.crumb3 a
+        {
+            z-index: 8;
+        }
+
+        .breadcrumbs li.crumb4 a
+        {
+            z-index: 7;
+        }
+
+        .breadcrumbs li.crumb5 a
+        {
+            z-index: 6;
+        }
+
+        .breadcrumbs li.crumb6 a
+        {
+            z-index: 5;
+        }
+
+        .breadcrumbs li.crumb7 a
+        {
+            z-index: 4;
+        }
+
+        .breadcrumbs li.crumb8 a
+        {
+            z-index: 3;
+        }
+
+.search_box
+{
+    float: right;
+    margin: 0;
+}
+
+    .search_box .input_search
+    {
+        color: #a0a0a0;
+        height: 21px;
+        line-height: 22px;
+        width: 160px;
+        margin: 0 3px 0 0;
+        padding: 0 0 0 3px;
+    }
+
+    .search_box .btn_search
+    {
+        padding: 0 5px;
+    }
+
+.join_box
+{
+    margin-top: 30px;
+    padding: 15px 0 0 0;
+    overflow: hidden;
+    zoom: 1;
+    border-top: 1px dashed #D2D1D1;
+}
+
+.join_list
+{
+    list-style: none;
+    overflow: hidden;
+    zoom: 1;
+    background: #fff;
+    padding: 0 20px 20px 20px;
+    margin: 0 0 30px 0;
+}
+
+    .join_list li
+    {
+        padding: 20px 0 12px 55px;
+        overflow: hidden;
+        zoom: 1;
+        position: relative;
+    }
+
+        .join_list li.line
+        {
+            background: #f7f9fc;
+        }
+
+        .join_list li .m_title
+        {
+            font-size: 12px;
+            color: #3f6492;
+            margin: 0 0 10px 0;
+        }
+        /*.join_list li .m_title strong{font-size:20px;font-family:"微软雅黑";margin:0 5px 0 0;}*/
+        .join_list li .info
+        {
+            color: #a0a0a0;
+        }
+
+        .join_list li .num
+        {
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 28px;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: normal;
+            background: #9cb8dd;
+            border-radius: 20px;
+            text-shadow: 0 -1px 1px #59769d;
+            background: url(../images/bizmail/v2/announce/linked0d6fa0.gif) no-repeat\9;
+            text-indent: 4px\9;
+        }
+
+.join_way
+{
+    overflow: hidden;
+    zoom: 1;
+    background: #fff;
+    padding: 20px 25px;
+    font-size: 12px;
+}
+
+    .join_way a
+    {
+        text-decoration: underline;
+    }
+
+.query_box
+{
+    margin-bottom: 6px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+    .query_box .condition
+    {
+        font-size: 14px;
+        padding: 15px 10px;
+        border: 1px dashed #D2D1D1;
+    }
+
+    .query_box .price
+    {
+        margin: 10px 0;
+    }
+
+    .query_box .input_txt
+    {
+        width: 100px;
+        height: 22px;
+        margin: 0 8px;
+        text-indent: 5px;
+    }
+
+    .query_box .btn_query
+    {
+        width: 80px;
+        margin: 0 5px;
+    }
+
+.table_price
+{
+    border: 1px solid #D6D6D6;
+}
+
+    .table_price th
+    {
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .table_price .col_num
+    {
+        width: 80px;
+    }
+
+/* 收费版本 */
+.button_blue
+{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 17px;
+    vertical-align: middle;
+    border: 1px solid #093e81;
+    border-radius: 4px;
+    border-radius: 0\9;
+    box-shadow: 0 1px 1px rgba(172,192,218,.7);
+    color: #fff;
+    text-shadow: 0 -1px #08223b;
+    text-align: center;
+    cursor: pointer;
+    background-color: #0c5fce;
+    background-image: -moz-linear-gradient(top,#107ddc,#0a4dc6);
+    background-image: -webkit-linear-gradient(top,#107ddc,#0a4dc6);
+    background-image: linear-gradient(top,#107ddc,#0a4dc6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#107ddc,endColorstr=#0a4dc6,GradientType=0);
+}
+
+    .button_blue:hover
+    {
+        background-color: #1861e5;
+        background-image: -moz-linear-gradient(top,#2697ef,#175be4);
+        background-image: -webkit-linear-gradient(top,#2697ef,#175be4);
+        background-image: linear-gradient(top,#2697ef,#175be4);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2697ef,endColorstr=#175be4,GradientType=0);
+    }
+
+.button_small
+{
+    height: 24px;
+    line-height: 22px;
+    *line-height: 24px;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+.button_small_fixpos
+{
+    margin-top: -1px;
+    *margin-top: -10px;
+    margin-top: 1px\0;
+    padding: 0 10px;
+}
+
+:root .button_small_fixpos
+{
+    margin-top: -3px\9;
+}
+
+:root .button_blue
+{
+    line-height: 44px\9;
+}
+
+:root .btn_pay
+{
+    line-height: 30px\9;
+}
+
+:root .button_small
+{
+    line-height: 24px\9;
+}
+
+.button_transparent
+{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+    *color: #fff;
+}
+
+.button_small .button_transparent
+{
+    *line-height: 22px;
+}
+
+.hoverline:hover
+{
+    text-decoration: underline;
+}
+
+.f-horizontal
+{
+    width: 500px;
+}
+
+.f-item
+{
+    margin-bottom: 12px;
+}
+
+.f-tips
+{
+    margin: 2px 1px 0;
+    padding: 0;
+    color: #aaa;
+    visibility: hidden;
+}
+
+.error .f-tips
+{
+    visibility: visible;
+    color: #a91118;
+}
+
+.f-horizontal .f-label
+{
+    float: left;
+    width: 120px;
+    padding-top: 5px;
+    text-align: right;
+    color: #494949;
+    *padding-top: 8px;
+}
+
+.f-horizontal .f-content
+{
+    padding: 0 14px 14px 140px;
+    *padding-left: 10px;
+    *zoom: 1;
+    _padding-right: 0;
+    _width: 350px;
+}
+
+.f-horizontal .f-content-select
+{
+    padding-right: 0;
+    _width: 362px;
+}
+
+.f-horizontal .f-text, .f-horizontal .f-textarea
+{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #bbb;
+    *padding: 5px 5px 3px;
+    _padding-top: 6px;
+}
+
+.f-horizontal .f-select
+{
+    padding: 4px;
+    *padding: 0;
+    *margin-top: 4px;
+}
+
+.f-horizontal .f-select-half
+{
+    width: 177px;
+    +width:182px;
+    _width: 179px;
+}
+
+.f-textarea
+{
+    overflow-y: auto;
+}
+
+.f-actions
+{
+    padding-left: 140px;
+    *padding-left: 130px;
+    _padding-left: 133px;
+}
+
+.f-link
+{
+    margin-left: 10px;
+    vertical-align: 0;
+    *vertical-align: 2px;
+    _vertical-align: -1px;
+}
+
+.f-content.f-nopadding-b
+{
+    padding-bottom: 0;
+}
+
+.customerinfo
+{
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    padding: 15px 0 0 0;
+    margin: 0 0 30px 0;
+}
+
+    .customerinfo .m_title
+    {
+        margin-bottom: 14px;
+    }
+
+    .customerinfo .f-horizontal
+    {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .customerinfo .f-label
+    {
+        width: 91px;
+    }
+
+    .customerinfo .f-content
+    {
+        padding-left: 102px;
+        *padding-left: 10px;
+        _width: 346px;
+    }
+
+    .customerinfo .f-content-select
+    {
+        _width: 358px;
+    }
+
+    .customerinfo .f-item
+    {
+        margin-bottom: 0;
+        padding: 0 0 0 100px;
+        width: 100%;
+    }
+
+    .customerinfo .f-text
+    {
+        width: 346px;
+    }
+
+    .customerinfo .f-actions
+    {
+        padding-left: 102px;
+    }
+
+    .customerinfo .f-select-half
+    {
+        +width:178px;
+        _width: 177px;
+    }
+
+.customerinfo_success
+{
+    margin: 35px 0 30px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    _padding-bottom: 16px;
+}
+
+    .customerinfo_success .blocktip_icon
+    {
+        margin-left: 150px;
+    }
+
+    .customerinfo_success .blocktip_content
+    {
+        color: #4A8F00;
+        font-weight: bold;
+    }
+
+.customerinfo .b_tool_bar
+{
+    border-top: 1px dashed #d6d6d6;
+    margin-top: 10px;
+    padding: 25px 0 30px 290px;
+}
+
+/* 新版注册流程 add by zhoon at 2013-7-3 */
+
+/*icon*/
+.ico_premium,
+.ico_free,
+.rv_arrow,
+.ra_succeed
+{
+    background: url(../images/register/register173b76.png) no-repeat 0 0;
+}
+
+.ico_hook
+{
+    background: url(../images/register/icon173b76.png) no-repeat 0 0;
+}
+
+.ra_failded
+{
+    background: url(../images/bizmail/manage/prompt0fc00c.gif) no-repeat -32px 0;
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-left: 60px;
+}
+/*btn*/
+.btn_checkin,
+.btn_selfhelp,
+.register_form_handmsg,
+.register_form_next,
+.register_form_confirm,
+.register_form_finish,
+.register_setting_finish,
+.register_login
+{
+    background: url(../images/register/btn173b76.png) no-repeat 0 0;
+    cursor: pointer;
+    height: 30px;
+    border: none;
+    text-indent: -9999px;
+    display: block;
+}
+
+    .btn_checkin:hover,
+    .btn_selfhelp:hover,
+    .register_form_handmsg:hover,
+    .register_form_next:hover,
+    .register_form_confirm:hover,
+    .register_form_finish:hover,
+    .register_setting_finish:hover,
+    .register_login:hover
+    {
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+    }
+
+.register_login
+{
+    width: 87px;
+    background-position: 0 -210px;
+    margin-left: 100px;
+}
+/*global*/
+.p-register
+{
+    background-color: #f8f9fc;
+}
+
+.register_content
+{
+    text-align: left;
+    min-height: 300px;
+}
+
+.register_main
+{
+    background-color: #fff;
+}
+    /*content*/
+    .register_main .register_content_1
+    {
+        width: 760px;
+        margin: 0 auto;
+        padding: 90px 0 80px;
+    }
+
+    .register_main .register_content_2
+    {
+        padding: 50px 0 25px;
+    }
+
+.register_content_1 .register_version
+{
+    width: 680px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f0f4f7;
+    border: 1px solid #f0f4f7;
+    border-radius: 3px;
+    overflow: hidden;
+    _zoom: 1;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.register_version .rv_premium
+{
+    width: 340px;
+    height: 100%;
+    float: left;
+    _display: inline;
+    background-color: #fdfefe;
+    text-align: center;
+}
+
+.register_version .rv_free
+{
+    width: 338px;
+    float: right;
+    _display: inline;
+    text-align: center;
+}
+
+.register_version .ico_premium, .register_version .ico_free
+{
+    width: 67px;
+    height: 66px;
+    display: inline-block;
+    margin: 25px 0 18px;
+}
+
+.register_version .ico_premium
+{
+    background-position: -72px 0;
+}
+
+.register_version .ico_free
+{
+    background-position: -139px 0;
+}
+
+.register_version .rv_header
+{
+    padding: 0 0 25px 0;
+}
+
+.register_version .rv_title
+{
+    font-size: 20px;
+    color: #1d67a0;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.MacOs .register_version .rv_title
+{
+    font-weight: normal;
+}
+
+.register_version .rv_btn
+{
+    padding: 0 0 20px 0;
+}
+
+.register_version .btn_checkin, .register_version .btn_selfhelp
+{
+    width: 122px;
+    display: block;
+    margin: 0 auto;
+}
+
+.register_version .btn_checkin
+{
+    background-position: 0 0;
+}
+
+.register_version .btn_selfhelp
+{
+    background-position: 0 -30px;
+}
+
+.register_version .rv_foot
+{
+    text-align: left;
+    line-height: 1.8;
+    padding-left: 70px;
+}
+
+.register_version .rv_arrow
+{
+    width: 72px;
+    height: 71px;
+    position: absolute;
+    background-position: 0 0;
+    left: 304px;
+    top: 110px;
+}
+
+.register_content_1 .register_function
+{
+    width: 680px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #a0a0a0;
+    padding: 25px 0 0 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.register_function .rf_premium
+{
+    width: 295px;
+    float: left;
+    margin-left: 10px;
+    _display: inline;
+}
+
+.register_function .rf_free
+{
+    width: 295px;
+    float: right;
+    margin-right: 10px;
+    _display: inline;
+}
+
+.register_function .rf_title
+{
+    font-size: 16px;
+    color: #636363;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 42px;
+}
+
+.register_function ul
+{
+    list-style: none;
+}
+
+    .register_function ul li
+    {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0;
+    }
+
+    .register_function ul .ico_hook
+    {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background-position: 0 0;
+        margin: 0 10px 0 20px;
+        vertical-align: -2px;
+        _vertical-align: 0px;
+    }
+
+.register_content_1 .register_try
+{
+    margin: 38px auto 20px;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f4f7f9;
+    font-size: 12px;
+    color: #a0a0a0;
+    width: 680px;
+    border-radius: 3px;
+}
+
+.register_copyright
+{
+    font-size: 12px;
+    border-top: 1px solid #dfdede;
+    background-color: #f8f9fc;
+}
+
+    .register_copyright p
+    {
+        padding: 30px 0;
+        text-align: center;
+        margin: 0;
+        border-top: 1px solid #ebebeb;
+        color: #67666e;
+    }
+
+.register_content .register_step
+{
+    width: 544px;
+    height: 32px;
+    overflow: hidden;
+    margin: 20px 0 50px 40px;
+}
+
+.register_content .rs_1
+{
+    background: url(../images/register/step1173b76.png) 0 0 no-repeat;
+}
+
+.register_content .rs_2
+{
+    background: url(../images/register/step2173b76.png) 0 0 no-repeat;
+}
+
+.register_content_1 .register_step_box
+{
+    width: 735px;
+    margin: 0 0 30px 40px;
+    background: url(../images/register/register_bg1173b76.png) right center no-repeat;
+    position: relative;
+}
+
+.register_content_2 .register_step_box
+{
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 430px;
+    background: url(../images/register/register_bg2173b76.png) no-repeat;
+}
+
+.register_step_box .register_form_1
+{
+    width: 400px;
+    min-height: 300px;
+    _height: 300px;
+    background-color: #f3f7fa;
+    border-radius: 4px;
+    border: 1px solid #c5d3e3;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    font-size: 14px;
+    color: #666666;
+}
+
+.register_step_box .register_form_2
+{
+    width: 434px;
+    min-height: 364px;
+    _height: 364px;
+    background-color: #f3f7fa;
+    border-radius: 4px;
+    border: 1px solid #c5d3e3;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    font-size: 14px;
+    color: #666666;
+    margin-left: 464px; /*overflow:hidden;*/
+}
+
+.register_step_box .register_form_title
+{
+    padding: 15px 25px;
+    color: #000;
+    font-size: 16px;
+    background-color: #ebf2f6;
+    border-bottom: 1px solid #d9e4eb;
+    border-radius: 4px 4px 0 0;
+}
+
+    .register_step_box .register_form_title span
+    {
+        color: #999;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+.register_step_box form
+{
+    padding: 28px 0;
+    margin: 0; /*form在IE6下margin不为0*/
+}
+
+.register_step_box .register_form_item
+{
+    padding: 2px 0 12px 0;
+    overflow: hidden;
+    _zoom: 1;
+    _padding: 2px 0 10px 0;
+}
+
+.register_form_item .register_require
+{
+    font-size: 12px;
+    margin: 0 3px 0 0;
+}
+
+.register_form_item .register_error_tips
+{
+    display: block;
+    margin-top: 3px;
+    font-size: 0px;
+    line-height: 0;
+}
+
+    .register_form_item .register_error_tips .valid_icon
+    {
+        display: none;
+    }
+
+    .register_form_item .register_error_tips .valid_msg
+    {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+/*为了解决蛋疼的IE6下弄标签有高度问题*/
+.register_form_item .register_form_label
+{
+    width: 110px;
+    float: left;
+    line-height: 30px;
+    text-align: right;
+}
+
+.register_form_item .register_form_content
+{
+    margin-left: 110px;
+}
+
+    .register_form_item .register_form_content .icon_info_m
+    {
+        margin-left: 6px;
+    }
+
+.register_form_item .register_form_input
+{
+    height: 20px;
+    line-height: 20px;
+    padding: 4px;
+    border: 1px solid #9caec6;
+    border-radius: 3px;
+    outline: none;
+}
+/*.rules_check_error .register_form_input{border-color:#c00;}*/
+.register_form_item .register_form_select
+{
+    line-height: 30px;
+    padding: 4px;
+    border: 1px solid #9caec6;
+    border-radius: 3px;
+    width: 128px;
+    outline: none;
+    vertical-align: middle;
+    _font-size: 18px; /*IE6下只能用font-size来撑搞select的高度*/
+}
+
+.MacOS .register_form_item .register_form_select
+{
+    margin-top: 4px;
+}
+
+.register_form_item .register_form_pw1
+{
+    position: absolute;
+    z-index: 1;
+}
+
+.register_form_item .register_form_pw2
+{
+    position: absolute;
+    z-index: 2;
+}
+
+.register_form_item .register_deal
+{
+    font-size: 12px;
+}
+
+.register_form_item .register_checkbox
+{
+    margin-right: 3px;
+    vertical-align: -2px;
+}
+
+.MacOS .register_form_item .register_checkbox
+{
+    vertical-align: 0px;
+}
+
+.register_form_item .register_form_handmsg
+{
+    width: 102px;
+    background-position: 0 -60px;
+}
+
+.register_content_1 .register_form_tip
+{
+    float: right;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #949eaa;
+    margin: 20px 85px 0 0;
+    _display: inline;
+}
+
+.register_content_1 .register_form_domain
+{
+    padding: 50px 0;
+}
+
+.register_form_domain .register_form_www
+{
+    width: 90px;
+    float: left;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "lucida Grande",Verdana;
+    text-align: right;
+    color: #000;
+}
+
+.register_form_domain .register_form_content
+{
+    margin-left: 100px;
+}
+
+.register_form_next
+{
+    width: 82px;
+    background-position: 0 -90px;
+}
+
+.register_form_item .register_qq_name
+{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 30px;
+}
+
+.register_form_item .register_form_confirm
+{
+    width: 87px;
+    background-position: 0 -120px;
+}
+
+.register_step_box .register_active
+{
+    padding: 45px 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.register_active .ra_succeed
+{
+    width: 52px;
+    height: 52px;
+    float: left;
+    background-position: 0 -71px;
+    margin: 0 0 0 40px;
+}
+
+.register_active .ra_content
+{
+    padding-left: 100px;
+}
+
+.register_content_2 .register_active .ra_succeed
+{
+    margin-left: 65px;
+}
+
+.register_content_2 .register_active .ra_content
+{
+    padding-left: 125px;
+}
+
+.register_active .ra_content .ra_title
+{
+    color: #14528a;
+    font-size: 16px;
+    margin: 5px 0;
+    display: block;
+}
+
+.register_active .ra_content .ra_text
+{
+    font-size: 14px;
+    color: #5d5d5d;
+    display: block;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.register_active .ra_content .ra_mail
+{
+    color: #14528a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.register_active .register_form_finish
+{
+    width: 83px;
+    background-position: 0 -150px;
+}
+
+.register_content_3
+{
+    width: 640px;
+    margin: 0 auto;
+    padding: 25px 0 40px;
+}
+
+.register_setting_info
+{
+    padding: 0 0 0 40px;
+}
+
+.register_setting_title
+{
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+    _zoom: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.register_setting_tool
+{
+    padding: 40px 0 0 0;
+}
+
+.register_setting_finish
+{
+    width: 102px;
+    background-position: 0 -180px;
+}
+
+.register_domain_panel
+{
+    margin: -20px 0 0 0;
+}
+
+.register_domain_item
+{
+    padding: 20px 15px;
+    _zoom: 1;
+    position: relative;
+    border-bottom: 1px dashed #dfdfdf;
+    font-size: 12px;
+    color: #707070;
+}
+
+    .register_domain_item .register_domain_name
+    {
+        margin-right: 6px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 32px;
+        color: #5a5a5a;
+        font-weight: bold;
+    }
+
+    .register_domain_item .register_verify_status
+    {
+        line-height: 1.8;
+    }
+
+    .register_domain_item .register_operation
+    {
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
+.register_content a
+{
+    color: #1e5494;
+    cursor: pointer;
+}
+
+    .register_content a.register_qywx_exmail_router
+    {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+.nav_logined
+{
+    float: right;
+    font-size: 12px;
+    color: #333;
+    line-height: 65px;
+}
+
+    .nav_logined a
+    {
+        color: #333;
+    }
+
+        .nav_logined a:hover
+        {
+            text-decoration: underline;
+        }
+
+    .nav_logined .nav_username
+    {
+        max-width: 200px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: middle;
+        _vertical-align: baseline;
+    }
+
+.example_helplink
+{
+    font-size: 13px;
+}
+/*免费使用*/
+.register_free_main
+{
+    width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: left;
+    min-height: 350px;
+    _height: 350px;
+}
+
+    .register_free_main .register_free_step
+    {
+        padding: 30px 0 0 194px;
+        overflow: hidden;
+    }
+
+.register_free_content
+{
+    padding: 30px 0;
+}
+
+    .register_free_content .reg_without_domain
+    {
+        padding: 0 130px;
+    }
+
+        .register_free_content .reg_without_domain h2
+        {
+            font-size: 14px;
+        }
+
+    .register_free_content .reg_tip
+    {
+        font-size: 12px;
+        padding: 0 0 12px;
+        color: #adadad;
+    }
+
+    .register_free_content .register_free_title
+    {
+        margin: 0 50px;
+        border-bottom: 1px solid #ccc;
+        font-size: 14px;
+        padding: 0 0 10px 0;
+    }
+
+    .register_free_content .register_free_big_input
+    {
+        width: 519px;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        color: #9c9c9c;
+        padding: 7px 10px;
+        border: 1px solid #bfbfbf;
+        background-color: #fff;
+        border-radius: 3px;
+    }
+
+    .register_free_content .register_free_valid
+    {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        _right: 135px;
+        _top: 2px;
+        border-radius: 0 3px 3px 0;
+        cursor: pointer;
+    }
+
+    .register_free_content .register_free_output
+    {
+        font-size: 24px;
+        color: #9c9c9c;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    .register_free_content .register_free_example
+    {
+        color: green;
+    }
+
+    .register_free_content .register_free_bottom_control
+    {
+        padding: 20px 0;
+        border-top: 1px solid #ccc;
+        font-size: 12px;
+        overflow: hidden;
+        _zoom: 1;
+        margin: 0 50px;
+    }
+
+    .register_free_content .register_free_setting_pw .tr
+    {
+        padding: 5px 0 15px 0;
+        overflow: hidden;
+        _zoom: 1;
+    }
+
+    .register_free_content .register_free_setting_pw .colum
+    {
+        width: 120px;
+        float: left;
+        text-align: right;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .register_free_content .register_free_setting_pw .txt
+    {
+        width: 230px;
+        height: 20px;
+        line-height: 20px;
+        padding: 2px 3px;
+        border: 1px solid #bfbfbf;
+        outline: none;
+        background-color: #fff;
+    }
+
+.reg_without_step_first
+{
+    padding-left: 10px;
+}
+
+.register_free_step li
+{
+    height: 21px;
+    line-height: 21px;
+    line-height: 24px \9\0;
+    font-size: 12px;
+    color: #666;
+    _color: #666;
+    width: 110px;
+    text-align: center;
+    float: left;
+    margin-left: 18px;
+    background: #cbddfb;
+    _background: #99bff9;
+    position: relative;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+.register_free_step .reg_without_step_on
+{
+    background: #5895f3;
+    color: #fff;
+}
+
+.reg_without_step_before, .reg_without_step_after
+{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 12px;
+    height: 21px;
+    background-image: url(../images/bizmail/reg_step_bg0b6ef0.png);
+    _background-image: url(../images/bizmail/reg_step_bg_ie0b6ef0.gif);
+}
+
+.reg_without_step_before
+{
+    background-position: 0 0;
+    left: -12px;
+}
+
+.reg_without_step_after
+{
+    background-position: -120px 0;
+    right: -12px;
+}
+
+.reg_without_step_on .reg_without_step_after
+{
+    background-position: -120px -23px;
+}
+
+.reg_without_step_on .reg_without_step_before
+{
+    background-position: 0 -23px;
+    left: -12px;
+}
+
+.reg_suc_t .icon_finish_b
+{
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+/*校验提示框样式*/
+.rules_check_relative
+{
+}
+
+.rules_check_wrap
+{
+    position: absolute;
+    top: 274px;
+    left: 50%;
+    margin-left: -14px;
+    padding: 10px;
+    text-align: left;
+    background: #fff;
+    font-size: 12px;
+    color: #494949;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+    .rules_check_wrap h3
+    {
+        font-weight: bold;
+        color: #232323;
+        margin: 0;
+        padding: 5px 0 5px 19px;
+        font-size: 12px;
+        height: 14px;
+        line-height: 14px;
+    }
+
+    .rules_check_wrap li
+    {
+        height: 14px;
+        line-height: 14px;
+        padding: 4px 0;
+        list-style-type: none;
+    }
+
+.icon_rules_check
+{
+    float: left;
+    height: 12px;
+    width: 12px;
+    margin: 1px 5px 0 0;
+    background: url(../images/bizmail/manage/icon_rules_check0fbfdd.png) no-repeat;
+}
+
+.rules_check_pass .icon_rules_check
+{
+    background: url(../images/bizmail/manage/prompt0fc00c.gif) 0px -48px no-repeat;
+}
+
+.rules_check_fail
+{
+    color: #c00;
+}
+
+    .rules_check_fail .icon_rules_check
+    {
+        background: url(../images/bizmail/manage/prompt0fc00c.gif) -12px -48px no-repeat;
+    }
+
+.rules_check_pass
+{
+    opacity: .6; /* filter:alpha(opacity=60); */
+}
+
+.rules_check_arrow
+{ /*position:absolute; top:0; left:0; margin-top:54px; margin-left:-10px; display:inline-block;*/
+}
+
+.arrow_l, .arrow_r
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 54px;
+    margin-left: -20px;
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border: 10px solid transparent;
+    _border-color: tomato;
+    _filter: chroma(color=tomato);
+}
+
+.arrow_l
+{
+    border-right-color: #bbb;
+}
+
+.arrow_r
+{
+    border-right-color: #fff;
+    margin-left: -19px;
+}
+
+.register_form_item .w220
+{
+    width: 220px;
+}
+
+.register_form_item .w240
+{
+    width: 240px;
+}
+
+.register_form_item .w250
+{
+    width: 250px;
+}
+
+/*prompt.gif 图片样式*/
+.icon_info_m, .icon_finish_b
+{
+    display: inline-block;
+    overflow: hidden;
+    background: url(../images/bizmail/manage/prompt0fc00c.gif) no-repeat;
+    vertical-align: middle;
+}
+
+.icon_info_m
+{
+    background-position: -32px -32px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon_finish_b
+{
+    bckground-position: 0 0;
+    height: 32px;
+    width: 32px;
+}
+
+.icon_info_m_ie6
+{
+    _margin-top: -10px;
+}
+
+/*table样式*/
+.comm_table
+{
+    width: 100%;
+    table-layout: fixed;
+}
+
+    .comm_table td, .comm_table th
+    {
+        text-align: left;
+    }
+
+    .comm_table th
+    {
+        background-color: #f1f1f1;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        padding: 6px 10px;
+        font-weight: normal;
+        color: #707070;
+    }
+
+    .comm_table td
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-bottom: 1px solid #e1e1e1;
+        vertical-align: middle;
+        padding: 0 10px;
+        height: 34px;
+    }
+
+    .comm_table tr:hover
+    {
+        background-color: #f4f7fa;
+    }
+
+    .comm_table a
+    {
+        cursor: pointer;
+        color: #1e5494;
+    }
+
+        .comm_table a:hover
+        {
+            text-decoration: underline;
+        }
+
+/*icon 样式*/
+.biz_icon_help_s, .biz_icon_wait_m
+{
+    display: inline-block;
+    background: url(../images/bizmail/manage/prompt0fc00c.gif) no-repeat;
+}
+
+.biz_icon_help_s
+{
+    background-position: -60px -48px;
+    height: 12px;
+    width: 12px;
+}
+
+.biz_icon_wait_m
+{
+    background-position: -48px -32px;
+    height: 16px;
+    width: 16px;
+}
+
+/**/
+.toggle-arrow
+{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 2px -1px 0;
+    background: url(../images/newicon/mail16f25f.png) no-repeat -80px -64px;
+}
+
+    .toggle-arrow.toggle-up
+    {
+        background-position: -80px -78px;
+    }
+
+/*font*/
+.biz_font_yahei
+{
+    font-family: "Microsoft YaHei";
+}
+
+.MacOS .biz_font_yahei
+{
+    font-family: "lucida Grande",Verdana;
+}
+
+/* 从biz.css迁移过来的顶部tips */
+.tips
+{
+    left: 45.5%;
+    background-color: #68AF02;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    z-index: 10000;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.top_pos
+{
+    top: 33px;
+    padding: 5px 20px 6px;
+    line-height: 1em;
+    font-size: 12px!important;
+}
+
+.tips_center
+{
+    top: 40%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    line-height: 22px;
+    padding: 10px 25px;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.tips img
+{
+    margin-right: 8px;
+}
+
+.error_tips
+{
+    color: #c60505;
+    font-size: 12px;
+}
+/* 从biz.css迁移过来的表单验证组件 */
+.valid_icon
+{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: -2px 3px 0 0;
+    vertical-align: middle;
+    background-image: url(../images/newicon/prompt087793.png);
+    background-repeat: no-repeat;
+}
+
+.valid_msg
+{
+    font-size: 12px;
+}
+
+.valid_error
+{
+    color: #cc0000;
+}
+
+    .valid_error .valid_icon
+    {
+        background-position: -128px -32px;
+    }
+
+.valid_ok
+{
+    display: none;
+}
+
+    .valid_ok .valid_icon
+    {
+        background-position: 0 -32px;
+    }
+
+.f-horizontal .valid_error, .f-horizontal .valid_ok
+{
+    display: inline-block;
+    margin: 3px 0 0 2px;
+}
+
+.btn_gray
+{
+    border: 1px solid #888;
+    color: #000000;
+    color: #000000!important;
+    background: #F3F3F3;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ebebeb 90%, #F3F3F3 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #ebebeb 90%, #F3F3F3 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #ebebeb 90%, #F3F3F3 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #ebebeb 90%, #F3F3F3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d7d7d7',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%, #ebebeb 90%, #F3F3F3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#d2d2d2');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#d2d2d2')";
+}
+
+border-radius:4px;border-radius:0\9;box-shadow:0 1px 1px rgba(172,192,218,.7);
+}
+
+.btn_gray:active, .btn_gray_active
+{
+    border-color: #7e7e7e;
+    background: #F3F3F3;
+    background: -moz-linear-gradient(top, #ebebeb, #F3F3F3);
+    background: -webkit-linear-gradient(top, #ebebeb, #F3F3F3);
+    background: -o-linear-gradient(top, #ebebeb, #F3F3F3);
+    background: -ms-linear-gradient(top, #ebebeb, #F3F3F3);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#F3F3F3',GradientType=0 );
+    background: linear-gradient(top, #ebebeb, #F3F3F3);
+    border-radius: 4px;
+    border-radius: 0\9;
+    box-shadow: 0 1px 1px rgba(172,192,218,.7);
+}
+
+.center
+{
+    text-align: center;
+}
+
+
+/*modified by pepegao*/
+.font16
+{
+    font-size: 16px;
+}
+
+.font18
+{
+    font-size: 18px;
+}
+
+.orderTitle
+{
+    margin: 0px 0px 20px -15px;
+}
+
+    .orderTitle h2
+    {
+        width: 30%;
+        display: inline;
+    }
+
+    .orderTitle .editTip
+    {
+        width: 16px;
+        height: 16px;
+        margin: -2px 3px 0 0;
+        vertical-align: middle;
+        background: url(/zh_CN/htmledition/images/newicon/icon_editorder.png) #FAFAFA no-repeat center;
+        background-size: 16px 16px;
+        cursor: pointer;
+        border: 1px solid #DDD;
+    }
+
+.orderItem
+{
+    display: block;
+    margin-bottom: 15px;
+}
+
+    .orderItem label
+    {
+        display: inline-block;
+    }
+
+        .orderItem label.hide
+        {
+            display: none;
+        }
+
+        .orderItem label.orderItemLabel
+        {
+            width: 120px;
+            text-align: right;
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .orderItem label.orderItemContent
+        {
+            width: 230px;
+        }
+
+        .orderItem label.orderItemDisplay
+        {
+            width: auto;
+        }
+
+.orderPanel label.error
+{
+    display: inline;
+    color: #c00;
+    padding-left: 15px;
+    margin-left: 5px;
+    font-size: 12px;
+    background: url(/zh_CN/htmledition/images/newicon/icon_valid.ico) no-repeat left;
+    background-size: 14px 14px;
+}
+
+div#charge .orderItemDisplay
+{
+    font-size: 18px;
+    margin: 0 4px;
+    font-weight: bold;
+    color: #000;
+}
+
+.orderHead
+{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.orderConfirmed
+{
+    width: 50px;
+    height: 50px;
+    margin: -14px 10px 0px -10px;
+    display: inline-block;
+    float: left;
+    background: url(/zh_CN/htmledition/images/newicon/orderconfirmd.png) #FFFFFF no-repeat center;
+    background-size: 50px 50px;
+}
+
+.orderOption
+{
+    height: 50px;
+    margin: 15px 0px 0px 150px;
+}
+
+    .orderOption .tenpayLogo
+    {
+        width: 80px;
+        height: 30px;
+        display: inline-block;
+        float: left;
+        background: url(/zh_CN/htmledition/images/newicon/tenpay_logo.png) #FFFFFF no-repeat center;
+        background-size: 80px 30px;
+    }
+
+    .orderOption .btnSubmit
+    {
+        float: left;
+    }
+
+.orderTips
+{
+    margin-bottom: 50px;
+}
+
+.orderAnnounce p
+{
+    margin: 10px 0;
+}
+
+.floatDiv
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    alpha(opacity=95);
+    z-index: 1;
+    background: #EFEFEF;
+}
+
+.floatContent
+{
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 500px;
+    height: 300px;
+    z-index: 9999;
+    background: white;
+    border: 1px solid rgb(168, 168, 182);
+}
+
+.floatHead
+{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(168, 168, 182);
+}
+
+    .floatHead label
+    {
+        float: left;
+        margin-left: 28px;
+    }
+
+    .floatHead input
+    {
+        width: 30px;
+        height: 100%;
+        background: url(/zh_CN/htmledition/images/newicon/close_float.jpg) #FAFAFA no-repeat center;
+        background-size: 30px 30px;
+        border: none;
+        float: right;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+.floatOption
+{
+    width: 100%;
+    height: 200px;
+}
+
+.floatOptionContent
+{
+    margin: 50px 30px;
+    height: 150px;
+}
+
+#payTip
+{
+    height: 55px;
+    font-size: 16px;
+}
+
+#paySuccess, #payFailed
+{
+    height: 35px;
+    font-size: 14px;
+}
+
+.mask
+{
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2000;
+    position: fixed;
+}
+
+.dialog
+{
+    z-index: 2001;
+    position: fixed;
+    left: 40%;
+    width: 400px;
+    top: 160px;
+}
+
+    .dialog .reg_header
+    {
+        background: #2B7DC8;
+        color: #FFF;
+        padding: 7px 13px;
+    }
+
+        .dialog .reg_header .btn_close
+        {
+            float: right;
+            float: right;
+            margin-top: 0px;
+            width: 18px;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+.onlinesell_commonImg_icon_close
+{
+    background-position: 0 -60px;
+    height: 12px;
+    width: 12px;
+}
+
+.onlinesell_commonImg
+{
+    display: inline-block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-image: url('../images/onlinesell_icons2a7a85.png');
+    background-size: 674px 149px;
+}
+
+.dialog .content
+{
+    background: #FFF;
+    padding: 51px 23px;
+    color: #4B4B4B;
+}
+
+    .dialog .content .icon_info
+    {
+        float: left;
+        overflow: hidden;
+        margin-right: 8px;
+    }
+
+.onlinesell_commonImg_info
+{
+    background-position: 0 -84px;
+    height: 38px;
+    width: 38px;
+}
+
+.dialog .footer
+{
+    background: #FFF;
+    padding: 12px 14px;
+    text-align: right;
+}
+
+    .dialog .footer .btn_confirm
+    {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 12px;
+        display: inline-block;
+        width: 66px;
+        background: #4096E5;
+        text-align: center;
+        line-height: 26px;
+        border: #2B7DC8 1px solid;
+        border-radius: 1px;
+    }
+
+    .dialog .footer .btn_cancel
+    {
+        text-decoration: none;
+        color: #828282;
+        font-size: 12px;
+        display: inline-block;
+        width: 66px;
+        background: #FAFAFA;
+        text-align: center;
+        line-height: 26px;
+        border: #BFBABA 1px solid;
+    }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="88541faf-7de3-40a7-9563-3c4621e702cd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9000/ServiceBE" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceBE.wsdl" MetadataType="Wsdl" ID="e4e97b4d-96f7-41ff-b4d1-66b1ce6d96f2" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?wsdl" />
+    <MetadataFile FileName="ServiceBE.xsd" MetadataType="Schema" ID="86a926f6-dbd7-447a-a452-ee16ae858c86" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd0" />
+    <MetadataFile FileName="ServiceBE1.xsd" MetadataType="Schema" ID="3b04a497-24bb-4151-a0a1-8e4e66338436" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd5" />
+    <MetadataFile FileName="ServiceBE2.xsd" MetadataType="Schema" ID="16493346-93e9-43e8-bb09-e40e7aec0dbb" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd2" />
+    <MetadataFile FileName="ServiceBE.disco" MetadataType="Disco" ID="b94d24b3-007e-405e-9c15-1a4e7987d340" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?disco" />
+    <MetadataFile FileName="ServiceBE3.xsd" MetadataType="Schema" ID="069d8450-6c84-49d7-8ffa-d6b286735721" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd1" />
+    <MetadataFile FileName="ServiceBE4.xsd" MetadataType="Schema" ID="b024abd2-c255-4e4e-abe8-3fecf86ece48" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd3" />
+    <MetadataFile FileName="ServiceBE5.xsd" MetadataType="Schema" ID="229d6364-c835-4cd0-bbda-e4420de3fc07" SourceId="1" SourceUrl="http://localhost:9000/ServiceBE?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

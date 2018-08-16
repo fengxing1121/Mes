@@ -1,0 +1,373 @@
+﻿*
+{
+    /*font-size: 12px;
+    font-family: Tahoma,Verdana,微软雅黑,新宋体;*/
+    font:14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif
+}
+
+img
+{
+    border: 0px;
+}
+
+a
+{
+    color: Black;
+    text-decoration: none;
+}
+
+    a:hover
+    {
+        color: #0e90d2;
+        text-decoration: none;
+    }
+
+.lbl_caption
+{
+    text-align: right;
+}
+
+input, textarea
+{
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius:3px;   
+}
+
+    input[type=checkbox]
+    {
+        border: 0px solid #ccc;
+        padding: 2px;
+        text-align:left;
+    }
+
+    input[type=text]
+    {
+        width: 120px;
+        height: 22px;
+    }
+    input[type=textarea]
+    {
+        width: 100%;
+        height: 50px;
+    }
+.head a
+{
+    color: rgba(255,255,255,.7);
+    text-decoration: none;
+}
+.head a:hover{
+    color:#fff;
+}
+
+.easyui-accordion ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px 0;
+}
+
+    .easyui-accordion ul li
+    {
+        padding: 0px;
+    }
+
+        .easyui-accordion ul li a
+        {
+            line-height: 24px;
+        }
+
+        .easyui-accordion ul li div
+        {
+            /*margin: 2px 0px;
+            padding-left: 10px;
+            padding-top: 2px;*/
+            padding:10px 0 10px 40px
+        }
+
+            .easyui-accordion ul li div.hover
+            {
+                border: 0px dashed #99BBE8;
+                /*background: #F2450D;*/
+                color:#fff;
+                cursor: pointer;
+            }
+
+                .easyui-accordion ul li div.hover a
+                {
+                    color: #416AA3;
+                }
+
+            .easyui-accordion ul li div.selected
+            {
+                border: 0px solid #99BBE8;
+                background: #0e90d2;
+                cursor: default;
+            }
+
+                .easyui-accordion ul li div.selected a
+                {
+                    color:#fff;
+                    font-weight: bold;
+                }
+
+
+
+.icon
+{
+    background: url(./default/images/tabicons.png) no-repeat;
+    width: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+.icon-sys
+{
+    background-position: 0px -200px;
+}
+
+.icon-set
+{
+    background-position: -380px -200px;
+}
+
+.icon-add
+{
+    background-position: 0px 0px;
+}
+
+.icon-add1
+{
+    background: url('/icon/edit_add.png') no-repeat;
+}
+
+.icon-nav
+{
+    background-position: -100px -20px;
+}
+
+.icon-users
+{
+    background-position: -100px -480px;
+}
+
+.icon-role
+{
+    background-position: -360px -200px;
+}
+
+.icon-set
+{
+    background-position: -380px -200px;
+}
+
+.icon-log
+{
+    background-position: -380px -80px;
+}
+
+.icon-delete16
+{
+    background: url('/icon/delete.gif') no-repeat;
+    width: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+.icon-delete
+{
+    background-position: -140px -120px;
+}
+
+.icon-edit
+{
+}
+
+.icon-magic
+{
+    background-position: 0px -500px;
+}
+
+.icon-database
+{
+    background-position: -20px -140px;
+}
+
+.icon-lock
+{
+    background-position: -40px -140px;
+}
+
+.icon-unlock
+{
+    background-position: 0px 0px;
+}
+
+.icon-expand
+{
+    background: url('/Content/images/coll2.gif') no-repeat;
+}
+
+.icon-collapse
+{
+    background: url('/Content/images/coll3.gif') no-repeat;
+}
+
+.datagrid-cell
+{
+    overflow: visible;
+}
+
+
+/*流程审批*/
+.process_box
+{
+    border: 1px solid #ebebeb;
+}
+
+    .process_box h3
+    {
+        margin: 0 10px;
+        /*font-size: 12px;*/
+        font-weight: normal;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+.process_flow
+{
+    margin: 0 auto;
+    padding: 0;
+    /*font-size: 12px;*/
+    font-weight: normal;
+    padding-bottom: 4px;
+}
+
+.process_flow_left, .process_flow_arrive, .process_flow_wait, .process_flow_right_arrive, .process_flow_right_wait
+{
+    margin: 0;
+    padding: 0;
+    background: url(/Content/images/process_speed.gif) no-repeat scroll 0 0;
+    float: left;
+    /*font-family: Arial;*/
+    line-height: 16px;
+    text-align: center;
+    width: 90px;
+}
+
+.process_flow div span
+{
+    margin: 0;
+    padding: 0;
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: block;
+}
+
+    .process_flow div span p
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+.process_flow .name
+{
+    margin: 0;
+    padding: 0 0 4px 0;
+}
+
+.process_flow_arrive
+{
+    background-position: 0 -40px;
+}
+
+.process_flow_wait
+{
+    background-position: 0 -20px;
+    color: #878787;
+}
+
+.process_flow_right_arrive
+{
+    background-position: 0 -80px;
+}
+
+.process_flow_right_wait
+{
+    background-position: 0 -60px;
+    color: #878787;
+}
+
+.process_flow_input
+{
+    display: block;
+    margin: 2px auto;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    text-indent: -999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.easyui-validatebox
+{
+    height: 22px;
+    width: 120px;
+}
+
+.lbl-caption
+{
+    width:120px;
+    text-align:right !important;
+    padding-right:5px;
+}
+
+.my97-wrap{
+    border: 1px solid #95B8E7;
+    background-color: #ffffff;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.my97-text{
+    /*font-size: 12px;*/
+    border: 0px;
+    line-height: 20px;
+    width:109px;
+    height: 20px;
+    margin: 0;
+    padding: 0px 2px;
+    *margin-top: -1px;
+    *height: 18px;
+    *line-height: 18px;
+    _height: 18px;
+    _line-height: 18px;
+    vertical-align: baseline;
+}
+.my97-arrow{
+    background: url('../images/datebox_arrow.png') no-repeat center center;
+    background-color: #E0ECFF;
+    width: 18px;
+    height: 20px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.my97-arrow-hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.Wdate
+{
+    width:120px;
+}
+input[readonly="true"]
+        {
+            background: #f0f0f0;
+        }

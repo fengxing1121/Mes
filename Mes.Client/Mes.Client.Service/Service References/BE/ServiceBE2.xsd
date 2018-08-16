@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MES.Libraries" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MES.Libraries" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Sender">
+    <xs:sequence>
+      <xs:element name="_x003C_IPAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdentityHostName_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_MACAddress_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_UserCode_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_UserName_x003E_k__BackingField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sender" nillable="true" type="tns:Sender" />
+  <xs:complexType name="SearchResult">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="DataSet" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element ref="xs:schema" />
+            <xs:any />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchResult" nillable="true" type="tns:SearchResult" />
+</xs:schema>

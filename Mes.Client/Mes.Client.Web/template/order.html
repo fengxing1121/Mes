@@ -1,0 +1,31 @@
+﻿
+<table cellspacing="0" cellpadding="0" style="margin-left:5px;width:6cm;min-height:4cm;max-height:4cm;">
+    <tr>
+        <td colspan="3" style="border-bottom:1px dashed "><div align="center">订单标识卡</div></td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;width:1.5cm;">订单编号：</td>
+        <td style="font-size:10px;width:3cm;">{OutOrderNo}</td>
+        <td rowspan="5"><img src="/ashx/QRcodehandler.ashx?code={BarcodeNo}&w=70&h=70" width="70" height="70" /></td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">订单类型：</td>
+        <td style="font-size:10px;">{OrderType}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">产品类型：</td>
+        <td style="font-size:10px;">{CabinetType}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">客户名称：</td>
+        <td style="font-size:10px;">{CustomerName}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">订货日期：</td>
+        <td style="font-size:10px;">{BookingDate}</td>
+    </tr>
+    <tr>
+        <td style="font-size:10px;">交货日期：</td>
+        <td colspan="2" style="font-size:10px;">{ShipDate}</td>
+    </tr>
+</table>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{635DB332-C818-4514-B9F4-09FAAB779B06}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mes.Client.Model</RootNamespace>
+    <AssemblyName>Mes.Client.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Const.cs" />
+    <Compile Include="Calendar.cs" />
+    <Compile Include="ExcelColumName.cs" />
+    <Compile Include="Pages\OnlineUser.cs" />
+    <Compile Include="Pages\SessionUser.cs" />
+    <Compile Include="Parm\ProductBOMParm.cs" />
+    <Compile Include="Parm\BattchFileParm.cs" />
+    <Compile Include="Parm\CarParm.cs" />
+    <Compile Include="Parm\CategoryParm.cs" />
+    <Compile Include="Parm\CompanyParm.cs" />
+    <Compile Include="Parm\CustomerFollowUpParm.cs" />
+    <Compile Include="Parm\CustomerParm.cs" />
+    <Compile Include="Parm\CustomerTransDetailParm.cs" />
+    <Compile Include="Parm\ComponentTypeParm.cs" />
+    <Compile Include="Parm\DepartmentParm.cs" />
+    <Compile Include="Parm\KeyValueParm.cs" />
+    <Compile Include="Parm\KuJiaLeDesignParm.cs" />
+    <Compile Include="Parm\LocationParm.cs" />
+    <Compile Include="Parm\LogisticsEnterpriseParm.cs" />
+    <Compile Include="Parm\Material2SupplierParm.cs" />
+    <Compile Include="Parm\MaterialParm.cs" />
+    <Compile Include="Parm\MaterialQuotePriceParm.cs" />
+    <Compile Include="Parm\Order2CabinetParm.cs" />
+    <Compile Include="Parm\Order2HardwareParm.cs" />
+    <Compile Include="Parm\OrderDetailParm.cs" />
+    <Compile Include="Parm\OrderLogParm.cs" />
+    <Compile Include="Parm\OrderMadeStateParm.cs" />
+    <Compile Include="Parm\ProduceOrderParm.cs" />
+    <Compile Include="Parm\PartnerOrderParm.cs" />
+    <Compile Include="Parm\OrderParm.cs" />
+    <Compile Include="Parm\OrderProcessFileParm.cs" />
+    <Compile Include="Parm\OrderResourceParm.cs" />
+    <Compile Include="Parm\OrderSchedulingParm.cs" />
+    <Compile Include="Parm\OrderSchedulingTime.cs" />
+    <Compile Include="Parm\OrderStepParm.cs" />
+    <Compile Include="Parm\OrderWorkFlowParm.cs" />
+    <Compile Include="Parm\PackageDetailParm.cs" />
+    <Compile Include="Parm\PackageParm.cs" />
+    <Compile Include="Parm\PartnerParm.cs" />
+    <Compile Include="Parm\PartnerRoleParm.cs" />
+    <Compile Include="Parm\PartnerTransDetailParm.cs" />
+    <Compile Include="Parm\PartnerUserGroupParm.cs" />
+    <Compile Include="Parm\PartnerUserParm.cs" />
+    <Compile Include="Parm\PrivilegeCategoryParm.cs" />
+    <Compile Include="Parm\PrivilegeItemParm.cs" />
+    <Compile Include="Parm\PrivilegeParm.cs" />
+    <Compile Include="Parm\ProductionSetParm.cs" />
+    <Compile Include="Parm\ProductMainParm.cs" />
+    <Compile Include="Parm\ProductWarehouseDetailParm.cs" />
+    <Compile Include="Parm\ProductWarehouseMainParm.cs" />
+    <Compile Include="Parm\QuoteDetailParm.cs" />
+    <Compile Include="Parm\QuoteMainParm.cs" />
+    <Compile Include="Parm\Role2PrivilegeItemParm.cs" />
+    <Compile Include="Parm\RoleParm.cs" />
+    <Compile Include="Parm\RoomDesignerKJLRelationParm.cs" />
+    <Compile Include="Parm\RoomDesignerParm.cs" />
+    <Compile Include="Parm\Solution2CabinetParm.cs" />
+    <Compile Include="Parm\Solution2HardwareParm.cs" />
+    <Compile Include="Parm\SolutionDetailParm.cs" />
+    <Compile Include="Parm\SolutionParm.cs" />
+    <Compile Include="Parm\SupplierParm.cs" />
+    <Compile Include="Parm\TransportDetailParm.cs" />
+    <Compile Include="Parm\TransportMainParm.cs" />
+    <Compile Include="Parm\User2RoleParm.cs" />
+    <Compile Include="Parm\UserGroupParm.cs" />
+    <Compile Include="Parm\UserParm.cs" />
+    <Compile Include="Parm\UserPasswordParm.cs" />
+    <Compile Include="Parm\WarehouseInDetailParm.cs" />
+    <Compile Include="Parm\WarehouseInMainParm.cs" />
+    <Compile Include="Parm\WarehouseOutDetailParm.cs" />
+    <Compile Include="Parm\WarehouseOutMainParm.cs" />
+    <Compile Include="Parm\WarehouseParm.cs" />
+    <Compile Include="Parm\WorkCenterParm.cs" />
+    <Compile Include="Parm\WorkCenterSchedulingParm.cs" />
+    <Compile Include="Parm\WorkFlowParm.cs" />
+    <Compile Include="Parm\WorkingLineParm.cs" />
+    <Compile Include="Parm\WorkOrderParm.cs" />
+    <Compile Include="Parm\WorkShift2WorkShopParm.cs" />
+    <Compile Include="Parm\WorkShiftParm.cs" />
+    <Compile Include="Parm\WorkShopParm.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UploadToken.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Mes.Client.Service\Mes.Client.Service.csproj">
+      <Project>{12bb5b36-2779-43ac-94b5-2f93a333c94e}</Project>
+      <Name>Mes.Client.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

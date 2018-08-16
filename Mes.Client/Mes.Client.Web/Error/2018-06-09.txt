@@ -1,0 +1,330 @@
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:08:56
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528477735671
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:23:05
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528478585799
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:23:15
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528478585799
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:28:34
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1528478914775
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:32:43
+错误消息:Timeout 时间已到。在操作完成之前超时时间已过或服务器未响应。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:06
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:07
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchFavorite(Sender sender, SearchFavoriteArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchFavorite(Sender sender, SearchFavoriteArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 42737
+   在 Mes.Client.Web.Ashx.IndexHandler.InitShortLink() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 130
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitShortLink
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:08
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:08
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchFavorite(Sender sender, SearchFavoriteArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchFavorite(Sender sender, SearchFavoriteArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 42737
+   在 Mes.Client.Web.Ashx.IndexHandler.InitShortLink() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 130
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitShortLink
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:09
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:55:09
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchFavorite(Sender sender, SearchFavoriteArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchFavorite(Sender sender, SearchFavoriteArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 42737
+   在 Mes.Client.Web.Ashx.IndexHandler.InitShortLink() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 130
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitShortLink
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:56:03
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:56:03
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchFavorite(Sender sender, SearchFavoriteArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchFavorite(Sender sender, SearchFavoriteArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 42737
+   在 Mes.Client.Web.Ashx.IndexHandler.InitShortLink() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 130
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitShortLink
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:56:04
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPrivilegeCategory(Sender sender, SearchPrivilegeCategoryArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44953
+   在 Mes.Client.Web.Ashx.IndexHandler.InitMenus() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 51
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitMenus
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/9 1:56:04
+错误消息:在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchFavorite(Sender sender, SearchFavoriteArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchFavorite(Sender sender, SearchFavoriteArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 42737
+   在 Mes.Client.Web.Ashx.IndexHandler.InitShortLink() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\IndexHandler.ashx.cs:行号 130
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/indexhandler.ashx?Method=InitShortLink
+--------------------------------------------------------------------------------------------------------------------------
+

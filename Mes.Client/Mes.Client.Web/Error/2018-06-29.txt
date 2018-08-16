@@ -1,0 +1,350 @@
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 15:49:07
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530258547357
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 15:49:11
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530258551478
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:15:36
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530260135747
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:15:38
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530260138116
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:51:53
+错误消息:“Eagle.Data.Database”的类型初始值设定项引发异常。
+导致错误的应用程序或对象的名称:DBProxy
+堆栈内容:   在 Eagle.Data.Database..ctor(String , String , Int32 , Int32 , String , String , String )
+   在 Mes.Client.Web.Ashx.PartnerHandler.GetCompanies() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerHandler.ashx.cs:行号 111
+引发异常的方法:Void .ctor(System.String, System.String, Int32, Int32, System.String, System.String, System.String)
+错误页面/ashx/partnerhandler.ashx?Method=GetCompanies
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:51:54
+错误消息:“Eagle.Data.Database”的类型初始值设定项引发异常。
+导致错误的应用程序或对象的名称:DBProxy
+堆栈内容:   在 Eagle.Data.Database..ctor(String , String , Int32 , Int32 , String , String , String )
+   在 Mes.Client.Web.Ashx.PartnerHandler.GetCompanies() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerHandler.ashx.cs:行号 111
+引发异常的方法:Void .ctor(System.String, System.String, Int32, Int32, System.String, System.String, System.String)
+错误页面/ashx/partnerhandler.ashx?Method=GetCompanies
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:53:04
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530262383981
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:53:05
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530262385073
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:53:16
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530262396414
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 16:53:42
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530262422267
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:07:44
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530263263972
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:07:47
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530263266707
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:07:48
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530263268610
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:35:09
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530264908744
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:36:10
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530264970539
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:39:27
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530265167026
+--------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------
+错误时间:2018/6/29 17:56:45
+错误消息:对象名 'dbo.f_split' 无效。
+导致错误的应用程序或对象的名称:mscorlib
+堆栈内容:
+Server stack trace: 
+   在 System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   在 System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 Mes.Client.Service.BE.IServiceBE.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args)
+   在 Mes.Client.Service.BE.ServiceBEClient.SearchPartnerTask(Sender sender, SearchPartnerTaskArgs args) 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Service\Service References\BE\Reference.cs:行号 44401
+   在 Mes.Client.Web.Ashx.PartnerTaskHandler.SearchPartnerTask() 位置 F:\Gitee\Mes\Mes.Client\Mes.Client.Web\Ashx\PartnerTaskHandler.ashx.cs:行号 90
+引发异常的方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+错误页面/ashx/PartnerTaskHandler.ashx?Method=SearchPartnerTask&nocache=1530266205231
+--------------------------------------------------------------------------------------------------------------------------
+

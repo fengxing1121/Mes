@@ -1,0 +1,123 @@
+.basicinfo-bd .label-width
+{
+    width: 150px;
+}
+
+.basicinfo-bd .text-position
+{
+    position: relative;
+    top: 7px;
+}
+
+.basicinfo-bd .select-w
+{
+    width: 160px;
+}
+
+.sub-industry-hd:hover
+{
+    text-decoration: none;
+}
+
+.sub-industry-list li
+{
+    width: 160px;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-left: 0px !important;
+    margin-right: 2px;
+}
+
+    .sub-industry-list li a
+    {
+        background: #eaedf1;
+        border: 1px solid #eaedf1;
+    }
+
+        .sub-industry-list li a.has-child .icon-updown
+        {
+            display: inline-block;
+        }
+
+        .sub-industry-list li a:hover
+        {
+            background: #eaedf1;
+            border: 1px solid #eaedf1;
+        }
+
+        .sub-industry-list li a .icon
+        {
+            display: none;
+        }
+
+    .sub-industry-list li.active a, .sub-industry-list li.active a:hover
+    {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-color: #33cc66;
+        background: #fff;
+        color: #333;
+    }
+
+    .sub-industry-list li.selected .icon-yes-1
+    {
+        display: inline-block;
+    }
+
+    .sub-industry-list li.selected a.has-child .icon-updown
+    {
+        display: none !important;
+    }
+
+    .sub-industry-list li.selected a, .sub-industry-list li.selected a:hover
+    {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border-color: #33cc66;
+        background: #fff;
+        color: #333;
+    }
+
+    .sub-industry-list li .indust-list-dropdown-menu
+    {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        top: 30px;
+        left: 1px;
+        border: 1px solid #c5c5c5;
+        background: #fff;
+        min-width: 110px;
+    }
+
+        .sub-industry-list li .indust-list-dropdown-menu li
+        {
+            text-align: left;
+            padding: 0 10px;
+            height: 32px;
+            line-height: 32px;
+        }
+
+            .sub-industry-list li .indust-list-dropdown-menu li label
+            {
+                cursor: pointer;
+                font-weight: normal;
+            }
+
+            .sub-industry-list li .indust-list-dropdown-menu li input
+            {
+                position: relative;
+                top: -1px;
+            }
+
+            .sub-industry-list li .indust-list-dropdown-menu li:hover
+            {
+                background: #f9f9f9;
+            }
+
+        .sub-industry-list li .indust-list-dropdown-menu.show
+        {
+            display: block;
+        }
