@@ -160,6 +160,7 @@
     <Content Include="Ashx\WorkflowHandler.ashx" />
     <Content Include="Ashx\WorkOrderHandler.ashx" />
     <None Include="Properties\PublishProfiles\1.pubxml" />
+    <None Include="Properties\PublishProfiles\555.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
