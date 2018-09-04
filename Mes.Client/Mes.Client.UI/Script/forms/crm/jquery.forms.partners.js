@@ -10,7 +10,6 @@
             partnerForm.controls.newpartner.on('click', partnerForm.events.newpartner);//新增
             partnerForm.controls.savepartner.on('click', partnerForm.events.savepartner);//保存    
             partnerForm.events.newpartner();
-            partnerForm.events.loadCompany();
             partnerForm.events.loadProvince();
             partnerForm.events.verifyright();
         },
@@ -143,37 +142,6 @@
                 }
                 return guid;
 
-            },
-            loadCompany: function () {
-                $.ajax({
-                    url: '/ashx/partnerhandler.ashx?Method=GetCompanies',
-                    success: function (data) {
-                        if (data) {
-                            partnerForm.controls.edit_form.find("#CompanyName").combobox({
-                                data: data,
-                                valueField: 'CompanyID',
-                                textField: 'CompanyName',
-                                //required: true,
-                                editable: false,
-                                loadFilter: function (data) {
-                                    // var defaultItem = [{ CompanyID: '4A8A1AC8-6807-49C1-B81F-D054B073426A', CompanyName: '广州美屋' }];
-                                    var defaultItem = [];
-                                    var Company_ = [];
-                                    $.each(data, function (i, val) {
-                                        var item = {};
-                                        item.CompanyID = val.CompanyID;
-                                        item.CompanyName = val.CompanyName;
-                                        Company_.push(item);
-                                    });
-                                    return defaultItem.concat(Company_);
-                                },
-                                onChange: function (newvalue, oldvalue) {
-                                    partnerForm.controls.edit_form.find("#CompanyID").val(newvalue);
-                                }
-                            });
-                        }
-                    }
-                });
             },
             loadProvince: function () {
                 partnerForm.controls.edit_form.find("#Province").combobox({
