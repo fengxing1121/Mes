@@ -33,6 +33,9 @@ namespace Mes.BE.Services
         List<ProductComponent> GetProductComponentByOrderID(Sender sender, Guid OrderID);
 
         [OperationContract]
+        List<ProductComponent> GetProductComponentByProductCode(Sender sender, string productCode);
+
+        [OperationContract]
         ProductComponent GetProductComponentByComponentTypeID(Sender sender, int ComponentID, string ProductCode);
     }
 }

@@ -94,6 +94,29 @@ namespace Mes.BE.Objects
             return cmd.ExecuteNonQuery();
         }
 
+        public int UpdateProductBOMStatusByBOMID(ProductBOM obj)
+        {
+            string sql = @"Update [ProductBOM] Set
+                             [Status]=@Status
+                          Where BOMID=@BOMID";
+
+            SqlCommand cmd = new SqlCommand(sql, this.conn, this.trans);
+
+            SqlParameter pBOMID = new SqlParameter("BOMID", Convert2DBnull(obj.BOMID));
+            pBOMID.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pBOMID);
+
+            SqlParameter pProductCode = new SqlParameter("ProductCode", Convert2DBnull(obj.ProductCode));
+            pProductCode.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pProductCode);
+
+            SqlParameter pStatus = new SqlParameter("Status", Convert2DBnull(obj.Status));
+            pStatus.SqlDbType = SqlDbType.Bit;
+            cmd.Parameters.Add(pStatus);
+
+            return cmd.ExecuteNonQuery();
+        }
+
         public int DeleteProductBOMByID(Int32 ID)
         {
             string sql = @"Delete [ProductBOM]  Where ID=@ID";

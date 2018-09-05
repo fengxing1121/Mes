@@ -98,6 +98,21 @@ namespace Mes.BE.Services
                 throw ex;
             }
         }
+        public List<ProductComponent> GetProductComponentByProductCode(Sender sender, string productCode)
+        {
+            try
+            {
+                using (ObjectProxy op = new ObjectProxy())
+                {
+                    return op.LoadProductComponentByProductCode(productCode);
+                }
+            }
+            catch (Exception ex)
+            {
+                PLogger.LogError(ex);
+                throw ex;
+            }
+        }
         public SearchResult SearchProductComponent(Sender sender, SearchProductComponentArgs args)
         {
             try
@@ -124,12 +139,14 @@ namespace Mes.BE.Services
                     {
                         obj.Created = DateTime.Now;
                         obj.CreatedBy = sender.UserCode + "." + sender.UserName;
+                        obj.Modified = DateTime.Now;
+                        obj.ModifiedBy = sender.UserCode + "." + sender.UserName;
                         op.InsertProductComponent(obj);
                     }
                     else
                     {
-                        obj.Created = DateTime.Now;
-                        obj.CreatedBy = sender.UserCode + "." + sender.UserName;
+                        obj.Modified = DateTime.Now;
+                        obj.ModifiedBy = sender.UserCode + "." + sender.UserName;
                         op.UpdateProductComponentByComponentID(obj);
                     }
                     op.CommitTransaction();
@@ -148,38 +165,24 @@ namespace Mes.BE.Services
             {
                 using (ObjectProxy op = new ObjectProxy(true))
                 {
-                    if (op.LoadProductComponent(args.ProductComponent) == 0)
+                    if (args.ProductComponents != null)
                     {
-                        string key = "S" + DateTime.Now.ToString("yy");
-                        int index = this.GetIncrease(sender, key);
-                        //args.ProductComponent.ProduceNo= key + DateTime.Now.Month.ToString("00") + index.ToString("00000");
-                        args.ProductComponent.Created = DateTime.Now;
-                        args.ProductComponent.CreatedBy = sender.UserCode + "." + sender.UserName;
-                        op.InsertProductComponent(args.ProductComponent);
+                        foreach (ProductComponent Item in args.ProductComponents)
+                        {
+                            Item.Created = DateTime.Now;
+                            Item.CreatedBy = sender.UserCode + "." + sender.UserName;
+                            Item.Modified = DateTime.Now;
+                            Item.ModifiedBy = sender.UserCode + "." + sender.UserName;
+                            if (op.LoadProductComponent(Item) == 0)
+                            {
+                                op.InsertProductComponent(Item);
+                            }
+                            else
+                            {
+                                op.UpdateProductComponentByComponentID(Item);
+                            }
+                        }
                     }
-                    else
-                    {
-                        args.ProductComponent.Created = DateTime.Now;
-                        args.ProductComponent.CreatedBy = sender.UserCode + "." + sender.UserName;
-                        op.UpdateProductComponentByComponentID(args.ProductComponent);
-                    }
-
-                    #region 订单产品
-                    //if (args.ProductComponents != null)
-                    //{
-                    //    foreach (ProductComponent Item in args.ProductComponents)
-                    //    {
-                    //        if (op.LoadProductComponent(args.ProductComponent) == 0)
-                    //        {
-                    //            op.InsertProductComponentComponent(Item);
-                    //        }
-                    //        else
-                    //        {
-                    //            op.UpdateProductComponentByComponentID(Item);
-                    //        }
-                    //    }
-                    //}
-                    #endregion
 
                     op.CommitTransaction();
                 }

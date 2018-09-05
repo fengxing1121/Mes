@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Mes.BE.Objects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfUserGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserGroup" nillable="true" type="tns:UserGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserGroup" nillable="true" type="tns:ArrayOfUserGroup" />
   <xs:complexType name="UserGroup">
     <xs:sequence>
       <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
@@ -17,6 +23,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UserGroup" nillable="true" type="tns:UserGroup" />
+  <xs:complexType name="SearchUserGroupArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="GroupName" nillable="true" type="xs:string" />
+      <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
+      <xs:element name="IsLocked" nillable="true" type="xs:boolean" />
+      <xs:element name="IsSystem" nillable="true" type="xs:boolean" />
+      <xs:element name="OrderBy" nillable="true" type="xs:string" />
+      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
+      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserGroupIDs" nillable="true" type="q1:ArrayOfguid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchUserGroupArgs" nillable="true" type="tns:SearchUserGroupArgs" />
   <xs:complexType name="SaveUserGroupArgs">
     <xs:annotation>
       <xs:appinfo>
@@ -532,7 +556,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="WorkShiftIDs" nillable="true" type="q1:ArrayOfguid" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="WorkShiftIDs" nillable="true" type="q2:ArrayOfguid" />
       <xs:element name="WorkShop" nillable="true" type="tns:WorkShop" />
     </xs:sequence>
   </xs:complexType>
@@ -555,12 +579,31 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchWorkShopArgs" nillable="true" type="tns:SearchWorkShopArgs" />
-  <xs:complexType name="ArrayOfSolution2Cabinet">
+  <xs:complexType name="SearchSolutionArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Solution2Cabinet" nillable="true" type="tns:Solution2Cabinet" />
+      <xs:element name="CompanyID" nillable="true" type="ser:guid" />
+      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
+      <xs:element name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element name="Designer" nillable="true" type="xs:string" />
+      <xs:element name="DesignerID" nillable="true" type="ser:guid" />
+      <xs:element name="OrderBy" nillable="true" type="xs:string" />
+      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
+      <xs:element name="PartnerIDs" nillable="true" type="xs:string" />
+      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
+      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
+      <xs:element name="SolutionCode" nillable="true" type="xs:string" />
+      <xs:element name="SolutionID" nillable="true" type="ser:guid" />
+      <xs:element name="SolutionName" nillable="true" type="xs:string" />
+      <xs:element name="Status" nillable="true" type="xs:string" />
+      <xs:element name="UserCodes" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfSolution2Cabinet" nillable="true" type="tns:ArrayOfSolution2Cabinet" />
+  <xs:element name="SearchSolutionArgs" nillable="true" type="tns:SearchSolutionArgs" />
   <xs:complexType name="Solution2Cabinet">
     <xs:sequence>
       <xs:element minOccurs="0" name="CabinetGroup" nillable="true" type="xs:string" />
@@ -583,6 +626,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Solution2Cabinet" nillable="true" type="tns:Solution2Cabinet" />
+  <xs:complexType name="ArrayOfSolution2Cabinet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Solution2Cabinet" nillable="true" type="tns:Solution2Cabinet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSolution2Cabinet" nillable="true" type="tns:ArrayOfSolution2Cabinet" />
   <xs:complexType name="SolutionDetail">
     <xs:sequence>
       <xs:element minOccurs="0" name="BackLabel" nillable="true" type="xs:string" />
@@ -906,7 +955,7 @@
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="SupplierCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SupplierIDs" nillable="true" type="q2:ArrayOfguid" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SupplierIDs" nillable="true" type="q3:ArrayOfguid" />
       <xs:element name="SupplierName" nillable="true" type="xs:string" />
       <xs:element name="Tel" nillable="true" type="xs:string" />
     </xs:sequence>
@@ -1078,13 +1127,13 @@
       <xs:element name="Mobile" nillable="true" type="xs:string" />
       <xs:element name="NotUsersByRoleID" type="ser:guid" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RKeyRoleIDs" nillable="true" type="q3:ArrayOfguid" />
-      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RKeyUserIDs" nillable="true" type="q4:ArrayOfguid" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RKeyRoleIDs" nillable="true" type="q4:ArrayOfguid" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RKeyUserIDs" nillable="true" type="q5:ArrayOfguid" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserCodes" nillable="true" type="q5:ArrayOfstring" />
-      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserIDs" nillable="true" type="q6:ArrayOfguid" />
-      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserNames" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserCodes" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserIDs" nillable="true" type="q7:ArrayOfguid" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserNames" nillable="true" type="q8:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchUserArgs" nillable="true" type="tns:SearchUserArgs" />
@@ -1101,7 +1150,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RoleIDs" nillable="true" type="q8:ArrayOfguid" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RoleIDs" nillable="true" type="q9:ArrayOfguid" />
       <xs:element name="User" nillable="true" type="tns:User" />
     </xs:sequence>
   </xs:complexType>
@@ -1182,39 +1231,15 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CategoryIDs" nillable="true" type="q9:ArrayOfguid" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CategoryIDs" nillable="true" type="q10:ArrayOfguid" />
       <xs:element name="CategoryName" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="PrivilegeIDs" nillable="true" type="q10:ArrayOfguid" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="PrivilegeIDs" nillable="true" type="q11:ArrayOfguid" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchPrivilegeCategoryArgs" nillable="true" type="tns:SearchPrivilegeCategoryArgs" />
-  <xs:complexType name="ArrayOfUserGroup">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserGroup" nillable="true" type="tns:UserGroup" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfUserGroup" nillable="true" type="tns:ArrayOfUserGroup" />
-  <xs:complexType name="SearchUserGroupArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="GroupName" nillable="true" type="xs:string" />
-      <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
-      <xs:element name="IsLocked" nillable="true" type="xs:boolean" />
-      <xs:element name="IsSystem" nillable="true" type="xs:boolean" />
-      <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="UserGroupIDs" nillable="true" type="q11:ArrayOfguid" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SearchUserGroupArgs" nillable="true" type="tns:SearchUserGroupArgs" />
   <xs:complexType name="ArrayOfPrivilegeItem">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="PrivilegeItem" nillable="true" type="tns:PrivilegeItem" />
@@ -1971,31 +1996,71 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfSolutionDetail" nillable="true" type="tns:ArrayOfSolutionDetail" />
-  <xs:complexType name="SearchSolutionArgs">
+  <xs:complexType name="SearchPackageArgs">
     <xs:annotation>
       <xs:appinfo>
         <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="CompanyID" nillable="true" type="ser:guid" />
+      <xs:element name="BattchNo" nillable="true" type="xs:string" />
+      <xs:element name="CabinetCode" nillable="true" type="xs:string" />
+      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
+      <xs:element name="CabinetName" nillable="true" type="xs:string" />
       <xs:element name="CustomerID" nillable="true" type="ser:guid" />
       <xs:element name="CustomerName" nillable="true" type="xs:string" />
-      <xs:element name="Designer" nillable="true" type="xs:string" />
-      <xs:element name="DesignerID" nillable="true" type="ser:guid" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
-      <xs:element name="PartnerIDs" nillable="true" type="xs:string" />
+      <xs:element name="OrderID" nillable="true" type="ser:guid" />
+      <xs:element name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
+      <xs:element name="PackageBarcode" nillable="true" type="xs:string" />
+      <xs:element name="PackageID" nillable="true" type="ser:guid" />
+      <xs:element name="PackageNum" nillable="true" type="xs:int" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-      <xs:element name="SolutionCode" nillable="true" type="xs:string" />
-      <xs:element name="SolutionID" nillable="true" type="ser:guid" />
-      <xs:element name="SolutionName" nillable="true" type="xs:string" />
-      <xs:element name="Status" nillable="true" type="xs:string" />
-      <xs:element name="UserCodes" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="SearchSolutionArgs" nillable="true" type="tns:SearchSolutionArgs" />
+  <xs:element name="SearchPackageArgs" nillable="true" type="tns:SearchPackageArgs" />
+  <xs:complexType name="SearchPackageDetailArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Barcode" nillable="true" type="xs:string" />
+      <xs:element name="BattchNo" nillable="true" type="xs:string" />
+      <xs:element name="CabinetCode" nillable="true" type="xs:string" />
+      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
+      <xs:element name="CabinetName" nillable="true" type="xs:string" />
+      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
+      <xs:element name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
+      <xs:element name="IsOptimized" nillable="true" type="xs:boolean" />
+      <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
+      <xs:element name="IsPackaged" nillable="true" type="xs:boolean" />
+      <xs:element name="IsPakaged" nillable="true" type="xs:boolean" />
+      <xs:element name="IsPlanning" nillable="true" type="xs:boolean" />
+      <xs:element name="IsSpecialShap" nillable="true" type="xs:boolean" />
+      <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
+      <xs:element name="ItemCategory" nillable="true" type="xs:string" />
+      <xs:element name="ItemName" nillable="true" type="xs:string" />
+      <xs:element name="ItemType" nillable="true" type="xs:string" />
+      <xs:element name="MaterialType" nillable="true" type="xs:string" />
+      <xs:element name="OrderBy" nillable="true" type="xs:string" />
+      <xs:element name="OrderID" nillable="true" type="ser:guid" />
+      <xs:element name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
+      <xs:element name="PackageBarcode" nillable="true" type="xs:string" />
+      <xs:element name="PackageCategory" nillable="true" type="xs:string" />
+      <xs:element name="PackageID" nillable="true" type="ser:guid" />
+      <xs:element name="PackageNum" nillable="true" type="xs:int" />
+      <xs:element name="PackageSizeType" nillable="true" type="xs:string" />
+      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
+      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchPackageDetailArgs" nillable="true" type="tns:SearchPackageDetailArgs" />
   <xs:complexType name="PackageDetail">
     <xs:sequence>
       <xs:element minOccurs="0" name="BattchNo" nillable="true" type="xs:string" />
@@ -2541,6 +2606,70 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SavePrivilegeArgs" nillable="true" type="tns:SavePrivilegeArgs" />
+  <xs:complexType name="ArrayOfOrder2CabinetLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order2CabinetLog" nillable="true" type="tns:Order2CabinetLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrder2CabinetLog" nillable="true" type="tns:ArrayOfOrder2CabinetLog" />
+  <xs:complexType name="Order2CabinetLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ActionType" type="xs:int" />
+      <xs:element minOccurs="0" name="CabinetID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Ended" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EndedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsFinish" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LogID" type="ser:guid" />
+      <xs:element minOccurs="0" name="OldColor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OldMaterialStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OldSize" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrderID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Started" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StartedBy" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Order2CabinetLog" nillable="true" type="tns:Order2CabinetLog" />
+  <xs:complexType name="SearchOrder2CabinetArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Address" nillable="true" type="xs:string" />
+      <xs:element name="BattchCode" nillable="true" type="xs:string" />
+      <xs:element name="BattchNo" nillable="true" type="xs:string" />
+      <xs:element name="BookingDateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element name="BookingDateTo" nillable="true" type="xs:dateTime" />
+      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
+      <xs:element name="CabinetName" nillable="true" type="xs:string" />
+      <xs:element name="CabinetStatus" nillable="true" type="xs:string" />
+      <xs:element name="CabinetType" nillable="true" type="xs:string" />
+      <xs:element name="Color" nillable="true" type="xs:string" />
+      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
+      <xs:element name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
+      <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
+      <xs:element name="MaterialStyle" nillable="true" type="xs:string" />
+      <xs:element name="Mobile" nillable="true" type="xs:string" />
+      <xs:element name="OrderBy" nillable="true" type="xs:string" />
+      <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q42:ArrayOfguid" />
+      <xs:element name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q43:ArrayOfstring" />
+      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
+      <xs:element name="PartnerName" nillable="true" type="xs:string" />
+      <xs:element name="PurchaseNo" nillable="true" type="xs:string" />
+      <xs:element name="Resource" nillable="true" type="xs:string" />
+      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
+      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
+      <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q44:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchOrder2CabinetArgs" nillable="true" type="tns:SearchOrder2CabinetArgs" />
   <xs:complexType name="SaveOrder2HardwareArgs">
     <xs:annotation>
       <xs:appinfo>
@@ -2669,14 +2798,14 @@
       <xs:element name="BattchCode" nillable="true" type="xs:string" />
       <xs:element name="BattchNum" nillable="true" type="xs:string" />
       <xs:element name="CabinetCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q42:ArrayOfguid" />
-      <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetNums" nillable="true" type="q43:ArrayOfstring" />
+      <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q45:ArrayOfguid" />
+      <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetNums" nillable="true" type="q46:ArrayOfstring" />
       <xs:element name="CabinetStatus" nillable="true" type="xs:string" />
       <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
       <xs:element name="IsSpecialShap" nillable="true" type="xs:boolean" />
       <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
       <xs:element name="ItemCategory" nillable="true" type="xs:string" />
-      <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ItemNames" nillable="true" type="q44:ArrayOfstring" />
+      <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="ItemNames" nillable="true" type="q47:ArrayOfstring" />
       <xs:element name="ItemType" nillable="true" type="xs:string" />
       <xs:element name="MadeLengthFrom" nillable="true" type="xs:int" />
       <xs:element name="MadeLengthTo" nillable="true" type="xs:int" />
@@ -2686,13 +2815,13 @@
       <xs:element name="MadeWidthTo" nillable="true" type="xs:int" />
       <xs:element name="MaterialType" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q45:ArrayOfguid" />
+      <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q48:ArrayOfguid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
       <xs:element name="OrderStatus" nillable="true" type="xs:string" />
       <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
       <xs:element name="PackageCategory" nillable="true" type="xs:string" />
       <xs:element name="PackageSizeType" nillable="true" type="xs:string" />
-      <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RemoveItems" nillable="true" type="q46:ArrayOfstring" />
+      <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RemoveItems" nillable="true" type="q49:ArrayOfstring" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
     </xs:sequence>
@@ -2708,8 +2837,8 @@
       <xs:element name="Barcode" nillable="true" type="xs:string" />
       <xs:element name="BattchNum" nillable="true" type="xs:string" />
       <xs:element name="CabinetCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q47:ArrayOfguid" />
-      <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetNums" nillable="true" type="q48:ArrayOfstring" />
+      <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q50:ArrayOfguid" />
+      <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetNums" nillable="true" type="q51:ArrayOfstring" />
       <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
       <xs:element name="IsSpecialShap" nillable="true" type="xs:boolean" />
       <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
@@ -2724,13 +2853,13 @@
       <xs:element name="MadeWidthTo" nillable="true" type="xs:int" />
       <xs:element name="MaterialType" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q49:ArrayOfguid" />
+      <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q52:ArrayOfguid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
       <xs:element name="OrderStatus" nillable="true" type="xs:string" />
       <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
       <xs:element name="PackageCategory" nillable="true" type="xs:string" />
       <xs:element name="PackageSizeType" nillable="true" type="xs:string" />
-      <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RemoveItems" nillable="true" type="q50:ArrayOfstring" />
+      <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="RemoveItems" nillable="true" type="q53:ArrayOfstring" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="ShipDate" nillable="true" type="xs:string" />
@@ -2859,7 +2988,7 @@
       <xs:element name="BattchNum" nillable="true" type="xs:string" />
       <xs:element name="CabinetID" nillable="true" type="ser:guid" />
       <xs:element name="CabinetName" nillable="true" type="xs:string" />
-      <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="FileType" nillable="true" type="q51:ArrayOfstring" />
+      <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="FileType" nillable="true" type="q54:ArrayOfstring" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
       <xs:element name="OrderID" nillable="true" type="ser:guid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
@@ -2877,7 +3006,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="BattchCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q52:ArrayOfguid" />
+      <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CabinetIDs" nillable="true" type="q55:ArrayOfguid" />
       <xs:element name="OrderSchedulings" nillable="true" type="tns:ArrayOfOrderScheduling" />
       <xs:element name="OrderWorkFlows" nillable="true" type="tns:ArrayOfOrderWorkFlow" />
       <xs:element name="PackageDetails" nillable="true" type="tns:ArrayOfPackageDetail" />
@@ -3073,71 +3202,50 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SavePackageDetailArgs" nillable="true" type="tns:SavePackageDetailArgs" />
-  <xs:complexType name="SearchPackageArgs">
+  <xs:complexType name="SearchDepartmentArgs">
     <xs:annotation>
       <xs:appinfo>
         <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="BattchNo" nillable="true" type="xs:string" />
-      <xs:element name="CabinetCode" nillable="true" type="xs:string" />
-      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
-      <xs:element name="CabinetName" nillable="true" type="xs:string" />
-      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
-      <xs:element name="CustomerName" nillable="true" type="xs:string" />
-      <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element name="OrderID" nillable="true" type="ser:guid" />
-      <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
-      <xs:element name="PackageBarcode" nillable="true" type="xs:string" />
-      <xs:element name="PackageID" nillable="true" type="ser:guid" />
-      <xs:element name="PackageNum" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SearchPackageArgs" nillable="true" type="tns:SearchPackageArgs" />
-  <xs:complexType name="SearchPackageDetailArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Barcode" nillable="true" type="xs:string" />
-      <xs:element name="BattchNo" nillable="true" type="xs:string" />
-      <xs:element name="CabinetCode" nillable="true" type="xs:string" />
-      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
-      <xs:element name="CabinetName" nillable="true" type="xs:string" />
-      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
-      <xs:element name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentCodes" nillable="true" type="q56:ArrayOfstring" />
+      <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentIDs" nillable="true" type="q57:ArrayOfguid" />
+      <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentNames" nillable="true" type="q58:ArrayOfstring" />
       <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
-      <xs:element name="IsOptimized" nillable="true" type="xs:boolean" />
-      <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
-      <xs:element name="IsPackaged" nillable="true" type="xs:boolean" />
-      <xs:element name="IsPakaged" nillable="true" type="xs:boolean" />
-      <xs:element name="IsPlanning" nillable="true" type="xs:boolean" />
-      <xs:element name="IsSpecialShap" nillable="true" type="xs:boolean" />
-      <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
-      <xs:element name="ItemCategory" nillable="true" type="xs:string" />
-      <xs:element name="ItemName" nillable="true" type="xs:string" />
-      <xs:element name="ItemType" nillable="true" type="xs:string" />
-      <xs:element name="MaterialType" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element name="OrderID" nillable="true" type="ser:guid" />
-      <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
-      <xs:element name="PackageBarcode" nillable="true" type="xs:string" />
-      <xs:element name="PackageCategory" nillable="true" type="xs:string" />
-      <xs:element name="PackageID" nillable="true" type="ser:guid" />
-      <xs:element name="PackageNum" nillable="true" type="xs:int" />
-      <xs:element name="PackageSizeType" nillable="true" type="xs:string" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="SearchPackageDetailArgs" nillable="true" type="tns:SearchPackageDetailArgs" />
+  <xs:element name="SearchDepartmentArgs" nillable="true" type="tns:SearchDepartmentArgs" />
+  <xs:complexType name="SaveDepartmentArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Department" nillable="true" type="tns:Department" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SaveDepartmentArgs" nillable="true" type="tns:SaveDepartmentArgs" />
+  <xs:complexType name="Department">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentID" type="ser:guid" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDisabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Department" nillable="true" type="tns:Department" />
   <xs:complexType name="SaveFavoriteArgs">
     <xs:annotation>
       <xs:appinfo>
@@ -3265,7 +3373,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="CabinetNum" nillable="true" type="xs:string" />
-      <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q53:ArrayOfstring" />
+      <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q59:ArrayOfstring" />
       <xs:element name="Color" nillable="true" type="xs:string" />
       <xs:element name="Deepth" nillable="true" type="xs:int" />
       <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
@@ -3279,7 +3387,7 @@
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="Style" nillable="true" type="xs:string" />
-      <xs:element xmlns:q54="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q54:ArrayOfstring" />
+      <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q60:ArrayOfstring" />
       <xs:element name="WarehouseID" nillable="true" type="ser:guid" />
     </xs:sequence>
   </xs:complexType>
@@ -3392,17 +3500,17 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q55:ArrayOfstring" />
+      <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q61:ArrayOfstring" />
       <xs:element name="Color" nillable="true" type="xs:string" />
       <xs:element name="Deepth" nillable="true" type="xs:int" />
       <xs:element name="MaterialCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q56:ArrayOfguid" />
+      <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q62:ArrayOfguid" />
       <xs:element name="MaterialName" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="Style" nillable="true" type="xs:string" />
-      <xs:element xmlns:q57="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q57:ArrayOfstring" />
+      <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q63:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchMaterialArgs" nillable="true" type="tns:SearchMaterialArgs" />
@@ -3424,17 +3532,17 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q58:ArrayOfstring" />
+      <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q64:ArrayOfstring" />
       <xs:element name="Color" nillable="true" type="xs:string" />
       <xs:element name="Deepth" nillable="true" type="xs:int" />
       <xs:element name="MaterialCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q59:ArrayOfguid" />
+      <xs:element xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q65:ArrayOfguid" />
       <xs:element name="MaterialName" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="Style" nillable="true" type="xs:string" />
-      <xs:element xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q60:ArrayOfstring" />
+      <xs:element xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q66:ArrayOfstring" />
       <xs:element name="SupplierCode" nillable="true" type="xs:string" />
       <xs:element name="SupplierID" nillable="true" type="ser:guid" />
       <xs:element name="SupplierName" nillable="true" type="xs:string" />
@@ -3466,17 +3574,17 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q61:ArrayOfstring" />
+      <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Categorys" nillable="true" type="q67:ArrayOfstring" />
       <xs:element name="Color" nillable="true" type="xs:string" />
       <xs:element name="Deepth" nillable="true" type="xs:int" />
       <xs:element name="MaterialCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q62:ArrayOfguid" />
+      <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="MaterialIDs" nillable="true" type="q68:ArrayOfguid" />
       <xs:element name="MaterialName" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="Style" nillable="true" type="xs:string" />
-      <xs:element xmlns:q63="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q63:ArrayOfstring" />
+      <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="SubCategorys" nillable="true" type="q69:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchMaterialQuotePriceArgs" nillable="true" type="tns:SearchMaterialQuotePriceArgs" />
@@ -3645,9 +3753,9 @@
       <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
       <xs:element name="Mobile" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q64:ArrayOfguid" />
+      <xs:element xmlns:q70="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q70:ArrayOfguid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q65:ArrayOfstring" />
+      <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q71:ArrayOfstring" />
       <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
       <xs:element name="PartnerID" nillable="true" type="ser:guid" />
       <xs:element name="PartnerName" nillable="true" type="xs:string" />
@@ -3657,7 +3765,7 @@
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
       <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element xmlns:q66="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q66:ArrayOfstring" />
+      <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q72:ArrayOfstring" />
       <xs:element name="StepNo" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
@@ -3717,45 +3825,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfOrder2Cabinet" nillable="true" type="tns:ArrayOfOrder2Cabinet" />
-  <xs:complexType name="SearchOrder2CabinetArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Address" nillable="true" type="xs:string" />
-      <xs:element name="BattchCode" nillable="true" type="xs:string" />
-      <xs:element name="BattchNo" nillable="true" type="xs:string" />
-      <xs:element name="BookingDateFrom" nillable="true" type="xs:dateTime" />
-      <xs:element name="BookingDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element name="CabinetID" nillable="true" type="ser:guid" />
-      <xs:element name="CabinetName" nillable="true" type="xs:string" />
-      <xs:element name="CabinetStatus" nillable="true" type="xs:string" />
-      <xs:element name="CabinetType" nillable="true" type="xs:string" />
-      <xs:element name="Color" nillable="true" type="xs:string" />
-      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
-      <xs:element name="CustomerName" nillable="true" type="xs:string" />
-      <xs:element name="IsOutsourcing" nillable="true" type="xs:boolean" />
-      <xs:element name="IsStandard" nillable="true" type="xs:boolean" />
-      <xs:element name="MaterialStyle" nillable="true" type="xs:string" />
-      <xs:element name="Mobile" nillable="true" type="xs:string" />
-      <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q67="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q67:ArrayOfguid" />
-      <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q68:ArrayOfstring" />
-      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
-      <xs:element name="PartnerName" nillable="true" type="xs:string" />
-      <xs:element name="PurchaseNo" nillable="true" type="xs:string" />
-      <xs:element name="Resource" nillable="true" type="xs:string" />
-      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-      <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
-      <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q69:ArrayOfstring" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SearchOrder2CabinetArgs" nillable="true" type="tns:SearchOrder2CabinetArgs" />
   <xs:simpleType name="OprationType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="applyUpdate" />
@@ -3767,31 +3836,36 @@
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="OprationType" nillable="true" type="tns:OprationType" />
-  <xs:complexType name="ArrayOfOrder2CabinetLog">
+  <xs:complexType name="SearchPartnerOrderArgs">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="Order2CabinetLog" nillable="true" type="tns:Order2CabinetLog" />
+      <xs:element name="Address" nillable="true" type="xs:string" />
+      <xs:element name="BookingDateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element name="BookingDateTo" nillable="true" type="xs:dateTime" />
+      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
+      <xs:element name="CustomerName" nillable="true" type="xs:string" />
+      <xs:element name="Mobile" nillable="true" type="xs:string" />
+      <xs:element name="OrderBy" nillable="true" type="xs:string" />
+      <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q73:ArrayOfguid" />
+      <xs:element name="OrderNo" nillable="true" type="xs:string" />
+      <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q74:ArrayOfstring" />
+      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
+      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
+      <xs:element name="PartnerName" nillable="true" type="xs:string" />
+      <xs:element name="Resource" nillable="true" type="xs:string" />
+      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
+      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
+      <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q75:ArrayOfstring" />
+      <xs:element name="StepNo" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="ArrayOfOrder2CabinetLog" nillable="true" type="tns:ArrayOfOrder2CabinetLog" />
-  <xs:complexType name="Order2CabinetLog">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ActionType" type="xs:int" />
-      <xs:element minOccurs="0" name="CabinetID" type="ser:guid" />
-      <xs:element minOccurs="0" name="Ended" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="EndedBy" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="IsFinish" type="xs:boolean" />
-      <xs:element minOccurs="0" name="LogID" type="ser:guid" />
-      <xs:element minOccurs="0" name="OldColor" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="OldMaterialStyle" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="OldSize" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="OrderID" type="ser:guid" />
-      <xs:element minOccurs="0" name="Remark" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Started" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="StartedBy" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Order2CabinetLog" nillable="true" type="tns:Order2CabinetLog" />
+  <xs:element name="SearchPartnerOrderArgs" nillable="true" type="tns:SearchPartnerOrderArgs" />
   <xs:complexType name="ProductionSet">
     <xs:sequence>
       <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
@@ -4063,9 +4137,9 @@
       <xs:element name="MaterialStyle" nillable="true" type="xs:string" />
       <xs:element name="Mobile" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q70="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q70:ArrayOfguid" />
+      <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q76:ArrayOfguid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element xmlns:q71="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q71:ArrayOfstring" />
+      <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q77:ArrayOfstring" />
       <xs:element name="PartnerID" nillable="true" type="ser:guid" />
       <xs:element name="PartnerName" nillable="true" type="xs:string" />
       <xs:element name="PurchaseNo" nillable="true" type="xs:string" />
@@ -4074,7 +4148,7 @@
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
       <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q72:ArrayOfstring" />
+      <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q78:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchCabinet2DoorArgs" nillable="true" type="tns:SearchCabinet2DoorArgs" />
@@ -4169,7 +4243,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="CategoryCode" nillable="true" type="xs:string" />
-      <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CategoryIDs" nillable="true" type="q73:ArrayOfguid" />
+      <xs:element xmlns:q79="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CategoryIDs" nillable="true" type="q79:ArrayOfguid" />
       <xs:element name="CategoryName" nillable="true" type="xs:string" />
       <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
@@ -4230,13 +4304,13 @@
     <xs:sequence>
       <xs:element name="Address" nillable="true" type="xs:string" />
       <xs:element name="City" nillable="true" type="xs:string" />
-      <xs:element xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CustomerIDs" nillable="true" type="q74:ArrayOfguid" />
+      <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CustomerIDs" nillable="true" type="q80:ArrayOfguid" />
       <xs:element name="CustomerName" nillable="true" type="xs:string" />
       <xs:element name="Fax" nillable="true" type="xs:string" />
       <xs:element name="LinkMan" nillable="true" type="xs:string" />
       <xs:element name="Mobile" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="PartnerIDs" nillable="true" type="q75:ArrayOfguid" />
+      <xs:element xmlns:q81="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="PartnerIDs" nillable="true" type="q81:ArrayOfguid" />
       <xs:element name="Position" nillable="true" type="xs:string" />
       <xs:element name="Province" nillable="true" type="xs:string" />
       <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
@@ -4409,56 +4483,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SearchCutTemplateArgs" nillable="true" type="tns:SearchCutTemplateArgs" />
-  <xs:complexType name="Department">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="DepartmentCode" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="DepartmentID" type="ser:guid" />
-      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="IsDisabled" type="xs:boolean" />
-      <xs:element minOccurs="0" name="Modified" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Tel" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Department" nillable="true" type="tns:Department" />
   <xs:complexType name="ArrayOfDepartment">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Department" nillable="true" type="tns:Department" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfDepartment" nillable="true" type="tns:ArrayOfDepartment" />
-  <xs:complexType name="SearchDepartmentArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentCodes" nillable="true" type="q76:ArrayOfstring" />
-      <xs:element xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentIDs" nillable="true" type="q77:ArrayOfguid" />
-      <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="DepartmentNames" nillable="true" type="q78:ArrayOfstring" />
-      <xs:element name="IsDisabled" nillable="true" type="xs:boolean" />
-      <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SearchDepartmentArgs" nillable="true" type="tns:SearchDepartmentArgs" />
-  <xs:complexType name="SaveDepartmentArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Department" nillable="true" type="tns:Department" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SaveDepartmentArgs" nillable="true" type="tns:SaveDepartmentArgs" />
   <xs:complexType name="ComponentMaterial">
     <xs:sequence>
       <xs:element minOccurs="0" name="Color" nillable="true" type="xs:string" />
@@ -4915,9 +4945,9 @@
       <xs:element name="Mobile" nillable="true" type="xs:string" />
       <xs:element name="OrderBy" nillable="true" type="xs:string" />
       <xs:element name="OrderID" type="ser:guid" />
-      <xs:element xmlns:q79="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q79:ArrayOfguid" />
+      <xs:element xmlns:q82="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q82:ArrayOfguid" />
       <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q80:ArrayOfstring" />
+      <xs:element xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q83:ArrayOfstring" />
       <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
       <xs:element name="PartnerID" nillable="true" type="ser:guid" />
       <xs:element name="PartnerName" nillable="true" type="xs:string" />
@@ -4930,7 +4960,7 @@
       <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
       <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
       <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element xmlns:q81="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q81:ArrayOfstring" />
+      <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q84:ArrayOfstring" />
       <xs:element name="StepNo" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
@@ -5045,34 +5075,4 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="SavePartnerOrderArgs" nillable="true" type="tns:SavePartnerOrderArgs" />
-  <xs:complexType name="SearchPartnerOrderArgs">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="Address" nillable="true" type="xs:string" />
-      <xs:element name="BookingDateFrom" nillable="true" type="xs:dateTime" />
-      <xs:element name="BookingDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element name="CustomerID" nillable="true" type="ser:guid" />
-      <xs:element name="CustomerName" nillable="true" type="xs:string" />
-      <xs:element name="Mobile" nillable="true" type="xs:string" />
-      <xs:element name="OrderBy" nillable="true" type="xs:string" />
-      <xs:element xmlns:q82="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderIDs" nillable="true" type="q82:ArrayOfguid" />
-      <xs:element name="OrderNo" nillable="true" type="xs:string" />
-      <xs:element xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="OrderTypes" nillable="true" type="q83:ArrayOfstring" />
-      <xs:element name="OutOrderNo" nillable="true" type="xs:string" />
-      <xs:element name="PartnerID" nillable="true" type="ser:guid" />
-      <xs:element name="PartnerName" nillable="true" type="xs:string" />
-      <xs:element name="Resource" nillable="true" type="xs:string" />
-      <xs:element name="RowNumberFrom" nillable="true" type="xs:int" />
-      <xs:element name="RowNumberTo" nillable="true" type="xs:int" />
-      <xs:element name="ShipDateFrom" nillable="true" type="xs:dateTime" />
-      <xs:element name="ShipDateTo" nillable="true" type="xs:dateTime" />
-      <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="Status" nillable="true" type="q84:ArrayOfstring" />
-      <xs:element name="StepNo" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="SearchPartnerOrderArgs" nillable="true" type="tns:SearchPartnerOrderArgs" />
 </xs:schema>

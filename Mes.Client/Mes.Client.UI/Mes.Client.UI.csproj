@@ -58,9 +58,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI">
-      <HintPath>..\DLL\NPOI.dll</HintPath>
-    </Reference>
     <Reference Include="SharpCompress">
       <HintPath>..\DLL\SharpCompress.dll</HintPath>
     </Reference>
@@ -3443,6 +3440,7 @@
     <Content Include="View\Account\ModifyPwd.aspx" />
     <Content Include="View\Account\ResetPwd.aspx" />
     <Content Include="View\BOM\BomList.aspx" />
+    <Content Include="View\BOM\download.aspx" />
     <Content Include="View\CRM\Customers.aspx" />
     <Content Include="View\CRM\PartnerRoles.aspx" />
     <Content Include="View\CRM\Partners.aspx" />
@@ -3604,6 +3602,13 @@
     </Compile>
     <Compile Include="View\BOM\BomList.aspx.designer.cs">
       <DependentUpon>BomList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\BOM\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\BOM\download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\CRM\Customers.aspx.cs">
       <DependentUpon>Customers.aspx</DependentUpon>

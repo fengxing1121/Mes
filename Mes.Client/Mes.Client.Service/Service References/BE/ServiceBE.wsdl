@@ -14,10 +14,22 @@
       <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MES.Libraries" />
       <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects" />
-      <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd4" />
-      <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:9000/ServiceBE?xsd=xsd5" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IServiceBE_GetAllUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_GetAllUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllUserGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_SearchUserGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserGroup" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_SearchUserGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchUserGroupResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceBE_UserGroupIsDuplicated_InputMessage">
     <wsdl:part name="parameters" element="tns:UserGroupIsDuplicated" />
   </wsdl:message>
@@ -293,6 +305,18 @@
   </wsdl:message>
   <wsdl:message name="IServiceBE_SearchWorkShop_OutputMessage">
     <wsdl:part name="parameters" element="tns:SearchWorkShopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_SearchSolution_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSolution" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_SearchSolution_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSolutionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_GetSolution2Cabinet_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolution2Cabinet" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_GetSolution2Cabinet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSolution2CabinetResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetSolution2CabinetsBySolutionID_InputMessage">
     <wsdl:part name="parameters" element="tns:GetSolution2CabinetsBySolutionID" />
@@ -666,17 +690,17 @@
   <wsdl:message name="IServiceBE_GetUserGroup_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetUserGroupResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetAllUserGroup_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetAllUserGroup" />
+  <wsdl:message name="IServiceBE_GetPrivilegeItemByPrivilegeID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByPrivilegeID" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetAllUserGroup_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetAllUserGroupResponse" />
+  <wsdl:message name="IServiceBE_GetPrivilegeItemByPrivilegeID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByPrivilegeIDResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchUserGroup_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchUserGroup" />
+  <wsdl:message name="IServiceBE_GetPrivilegeItemByRoleID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByRoleID" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchUserGroup_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchUserGroupResponse" />
+  <wsdl:message name="IServiceBE_GetPrivilegeItemByRoleID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByRoleIDResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetPrivilegeItemByUserID_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPrivilegeItemByUserID" />
@@ -1050,17 +1074,17 @@
   <wsdl:message name="IServiceBE_SaveSolution_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaveSolutionResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchSolution_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchSolution" />
+  <wsdl:message name="IServiceBE_SearchPackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPackage" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchSolution_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchSolutionResponse" />
+  <wsdl:message name="IServiceBE_SearchPackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPackageResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetSolution2Cabinet_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetSolution2Cabinet" />
+  <wsdl:message name="IServiceBE_SearchPackageDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPackageDetail" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetSolution2Cabinet_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetSolution2CabinetResponse" />
+  <wsdl:message name="IServiceBE_SearchPackageDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPackageDetailResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetPackageDetail_InputMessage">
     <wsdl:part name="parameters" element="tns:GetPackageDetail" />
@@ -1434,17 +1458,17 @@
   <wsdl:message name="IServiceBE_PrivilegeItemCodeIsDuplicated_OutputMessage">
     <wsdl:part name="parameters" element="tns:PrivilegeItemCodeIsDuplicatedResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetPrivilegeItemByPrivilegeID_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByPrivilegeID" />
+  <wsdl:message name="IServiceBE_GetOrder2CabinetLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder2CabinetLog" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetPrivilegeItemByPrivilegeID_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByPrivilegeIDResponse" />
+  <wsdl:message name="IServiceBE_GetOrder2CabinetLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOrder2CabinetLogResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetPrivilegeItemByRoleID_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByRoleID" />
+  <wsdl:message name="IServiceBE_SearchOrder2CabinetLogs_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOrder2CabinetLogs" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetPrivilegeItemByRoleID_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetPrivilegeItemByRoleIDResponse" />
+  <wsdl:message name="IServiceBE_SearchOrder2CabinetLogs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchOrder2CabinetLogsResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_SaveOrder2Hardware_InputMessage">
     <wsdl:part name="parameters" element="tns:SaveOrder2Hardware" />
@@ -1818,17 +1842,17 @@
   <wsdl:message name="IServiceBE_SavePackageDetail_OutputMessage">
     <wsdl:part name="parameters" element="tns:SavePackageDetailResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPackage_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPackage" />
+  <wsdl:message name="IServiceBE_SearchDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDepartment" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPackage_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPackageResponse" />
+  <wsdl:message name="IServiceBE_SearchDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDepartmentResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPackageDetail_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPackageDetail" />
+  <wsdl:message name="IServiceBE_SaveDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDepartment" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPackageDetail_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPackageDetailResponse" />
+  <wsdl:message name="IServiceBE_SaveDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDepartmentResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_SaveFavorite_InputMessage">
     <wsdl:part name="parameters" element="tns:SaveFavorite" />
@@ -2202,17 +2226,17 @@
   <wsdl:message name="IServiceBE_GetTotalOrderCabinetQty_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetTotalOrderCabinetQtyResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetOrder2CabinetLog_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetOrder2CabinetLog" />
+  <wsdl:message name="IServiceBE_SearchPartnerOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPartnerOrder" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_GetOrder2CabinetLog_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetOrder2CabinetLogResponse" />
+  <wsdl:message name="IServiceBE_SearchPartnerOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchPartnerOrderResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchOrder2CabinetLogs_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchOrder2CabinetLogs" />
+  <wsdl:message name="IServiceBE_UpdatePartnerOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOrder" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchOrder2CabinetLogs_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchOrder2CabinetLogsResponse" />
+  <wsdl:message name="IServiceBE_UpdatePartnerOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePartnerOrderResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetProductionSet_InputMessage">
     <wsdl:part name="parameters" element="tns:GetProductionSet" />
@@ -2586,18 +2610,6 @@
   <wsdl:message name="IServiceBE_DepartmentIsDuplicated_OutputMessage">
     <wsdl:part name="parameters" element="tns:DepartmentIsDuplicatedResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchDepartment_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchDepartment" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchDepartment_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchDepartmentResponse" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_SaveDepartment_InputMessage">
-    <wsdl:part name="parameters" element="tns:SaveDepartment" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_SaveDepartment_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SaveDepartmentResponse" />
-  </wsdl:message>
   <wsdl:message name="IServiceBE_GetComponentMaterial_InputMessage">
     <wsdl:part name="parameters" element="tns:GetComponentMaterial" />
   </wsdl:message>
@@ -2838,6 +2850,12 @@
   <wsdl:message name="IServiceBE_SaveProductBOMs_OutputMessage">
     <wsdl:part name="parameters" element="tns:SaveProductBOMsResponse" />
   </wsdl:message>
+  <wsdl:message name="IServiceBE_UpdateProductBOMStatusByBOMID_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProductBOMStatusByBOMID" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_UpdateProductBOMStatusByBOMID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateProductBOMStatusByBOMIDResponse" />
+  </wsdl:message>
   <wsdl:message name="IServiceBE_GetProductComponent_InputMessage">
     <wsdl:part name="parameters" element="tns:GetProductComponent" />
   </wsdl:message>
@@ -2879,6 +2897,12 @@
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetProductComponentByOrderID_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetProductComponentByOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_GetProductComponentByProductCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductComponentByProductCode" />
+  </wsdl:message>
+  <wsdl:message name="IServiceBE_GetProductComponentByProductCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductComponentByProductCodeResponse" />
   </wsdl:message>
   <wsdl:message name="IServiceBE_GetProductComponentByComponentTypeID_InputMessage">
     <wsdl:part name="parameters" element="tns:GetProductComponentByComponentTypeID" />
@@ -2970,19 +2994,15 @@
   <wsdl:message name="IServiceBE_SavePartnerOrder_OutputMessage">
     <wsdl:part name="parameters" element="tns:SavePartnerOrderResponse" />
   </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPartnerOrder_InputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPartnerOrder" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_SearchPartnerOrder_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SearchPartnerOrderResponse" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_UpdatePartnerOrder_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdatePartnerOrder" />
-  </wsdl:message>
-  <wsdl:message name="IServiceBE_UpdatePartnerOrder_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdatePartnerOrderResponse" />
-  </wsdl:message>
   <wsdl:portType name="IServiceBE">
+    <wsdl:operation name="GetAllUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetAllUserGroup" message="tns:IServiceBE_GetAllUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetAllUserGroupResponse" message="tns:IServiceBE_GetAllUserGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchUserGroup" message="tns:IServiceBE_SearchUserGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchUserGroupResponse" message="tns:IServiceBE_SearchUserGroup_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="UserGroupIsDuplicated">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/UserGroupIsDuplicated" message="tns:IServiceBE_UserGroupIsDuplicated_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/UserGroupIsDuplicatedResponse" message="tns:IServiceBE_UserGroupIsDuplicated_OutputMessage" />
@@ -3166,6 +3186,14 @@
     <wsdl:operation name="SearchWorkShop">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchWorkShop" message="tns:IServiceBE_SearchWorkShop_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchWorkShopResponse" message="tns:IServiceBE_SearchWorkShop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSolution">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchSolution" message="tns:IServiceBE_SearchSolution_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchSolutionResponse" message="tns:IServiceBE_SearchSolution_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSolution2Cabinet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetSolution2Cabinet" message="tns:IServiceBE_GetSolution2Cabinet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetSolution2CabinetResponse" message="tns:IServiceBE_GetSolution2Cabinet_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetSolution2CabinetsBySolutionID">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetSolution2CabinetsBySolutionID" message="tns:IServiceBE_GetSolution2CabinetsBySolutionID_InputMessage" />
@@ -3415,13 +3443,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetUserGroup" message="tns:IServiceBE_GetUserGroup_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetUserGroupResponse" message="tns:IServiceBE_GetUserGroup_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetAllUserGroup">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetAllUserGroup" message="tns:IServiceBE_GetAllUserGroup_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetAllUserGroupResponse" message="tns:IServiceBE_GetAllUserGroup_OutputMessage" />
+    <wsdl:operation name="GetPrivilegeItemByPrivilegeID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeID" message="tns:IServiceBE_GetPrivilegeItemByPrivilegeID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeIDResponse" message="tns:IServiceBE_GetPrivilegeItemByPrivilegeID_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchUserGroup">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchUserGroup" message="tns:IServiceBE_SearchUserGroup_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchUserGroupResponse" message="tns:IServiceBE_SearchUserGroup_OutputMessage" />
+    <wsdl:operation name="GetPrivilegeItemByRoleID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleID" message="tns:IServiceBE_GetPrivilegeItemByRoleID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleIDResponse" message="tns:IServiceBE_GetPrivilegeItemByRoleID_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPrivilegeItemByUserID">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByUserID" message="tns:IServiceBE_GetPrivilegeItemByUserID_InputMessage" />
@@ -3671,13 +3699,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveSolution" message="tns:IServiceBE_SaveSolution_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SaveSolutionResponse" message="tns:IServiceBE_SaveSolution_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchSolution">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchSolution" message="tns:IServiceBE_SearchSolution_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchSolutionResponse" message="tns:IServiceBE_SearchSolution_OutputMessage" />
+    <wsdl:operation name="SearchPackage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPackage" message="tns:IServiceBE_SearchPackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageResponse" message="tns:IServiceBE_SearchPackage_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetSolution2Cabinet">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetSolution2Cabinet" message="tns:IServiceBE_GetSolution2Cabinet_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetSolution2CabinetResponse" message="tns:IServiceBE_GetSolution2Cabinet_OutputMessage" />
+    <wsdl:operation name="SearchPackageDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageDetail" message="tns:IServiceBE_SearchPackageDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageDetailResponse" message="tns:IServiceBE_SearchPackageDetail_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPackageDetail">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPackageDetail" message="tns:IServiceBE_GetPackageDetail_InputMessage" />
@@ -3927,13 +3955,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicated" message="tns:IServiceBE_PrivilegeItemCodeIsDuplicated_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicatedResponse" message="tns:IServiceBE_PrivilegeItemCodeIsDuplicated_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetPrivilegeItemByPrivilegeID">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeID" message="tns:IServiceBE_GetPrivilegeItemByPrivilegeID_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeIDResponse" message="tns:IServiceBE_GetPrivilegeItemByPrivilegeID_OutputMessage" />
+    <wsdl:operation name="GetOrder2CabinetLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetOrder2CabinetLog" message="tns:IServiceBE_GetOrder2CabinetLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetOrder2CabinetLogResponse" message="tns:IServiceBE_GetOrder2CabinetLog_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetPrivilegeItemByRoleID">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleID" message="tns:IServiceBE_GetPrivilegeItemByRoleID_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleIDResponse" message="tns:IServiceBE_GetPrivilegeItemByRoleID_OutputMessage" />
+    <wsdl:operation name="SearchOrder2CabinetLogs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogs" message="tns:IServiceBE_SearchOrder2CabinetLogs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogsResponse" message="tns:IServiceBE_SearchOrder2CabinetLogs_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SaveOrder2Hardware">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveOrder2Hardware" message="tns:IServiceBE_SaveOrder2Hardware_InputMessage" />
@@ -4183,13 +4211,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SavePackageDetail" message="tns:IServiceBE_SavePackageDetail_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SavePackageDetailResponse" message="tns:IServiceBE_SavePackageDetail_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchPackage">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPackage" message="tns:IServiceBE_SearchPackage_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageResponse" message="tns:IServiceBE_SearchPackage_OutputMessage" />
+    <wsdl:operation name="SearchDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchDepartment" message="tns:IServiceBE_SearchDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchDepartmentResponse" message="tns:IServiceBE_SearchDepartment_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchPackageDetail">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageDetail" message="tns:IServiceBE_SearchPackageDetail_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPackageDetailResponse" message="tns:IServiceBE_SearchPackageDetail_OutputMessage" />
+    <wsdl:operation name="SaveDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveDepartment" message="tns:IServiceBE_SaveDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SaveDepartmentResponse" message="tns:IServiceBE_SaveDepartment_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SaveFavorite">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveFavorite" message="tns:IServiceBE_SaveFavorite_InputMessage" />
@@ -4439,13 +4467,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQty" message="tns:IServiceBE_GetTotalOrderCabinetQty_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQtyResponse" message="tns:IServiceBE_GetTotalOrderCabinetQty_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetOrder2CabinetLog">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetOrder2CabinetLog" message="tns:IServiceBE_GetOrder2CabinetLog_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetOrder2CabinetLogResponse" message="tns:IServiceBE_GetOrder2CabinetLog_OutputMessage" />
+    <wsdl:operation name="SearchPartnerOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPartnerOrder" message="tns:IServiceBE_SearchPartnerOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPartnerOrderResponse" message="tns:IServiceBE_SearchPartnerOrder_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchOrder2CabinetLogs">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogs" message="tns:IServiceBE_SearchOrder2CabinetLogs_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogsResponse" message="tns:IServiceBE_SearchOrder2CabinetLogs_OutputMessage" />
+    <wsdl:operation name="UpdatePartnerOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/UpdatePartnerOrder" message="tns:IServiceBE_UpdatePartnerOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/UpdatePartnerOrderResponse" message="tns:IServiceBE_UpdatePartnerOrder_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetProductionSet">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetProductionSet" message="tns:IServiceBE_GetProductionSet_InputMessage" />
@@ -4695,14 +4723,6 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicated" message="tns:IServiceBE_DepartmentIsDuplicated_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicatedResponse" message="tns:IServiceBE_DepartmentIsDuplicated_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchDepartment">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchDepartment" message="tns:IServiceBE_SearchDepartment_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchDepartmentResponse" message="tns:IServiceBE_SearchDepartment_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="SaveDepartment">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveDepartment" message="tns:IServiceBE_SaveDepartment_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SaveDepartmentResponse" message="tns:IServiceBE_SaveDepartment_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="GetComponentMaterial">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetComponentMaterial" message="tns:IServiceBE_GetComponentMaterial_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetComponentMaterialResponse" message="tns:IServiceBE_GetComponentMaterial_OutputMessage" />
@@ -4863,6 +4883,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SaveProductBOMs" message="tns:IServiceBE_SaveProductBOMs_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SaveProductBOMsResponse" message="tns:IServiceBE_SaveProductBOMs_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateProductBOMStatusByBOMID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/UpdateProductBOMStatusByBOMID" message="tns:IServiceBE_UpdateProductBOMStatusByBOMID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/UpdateProductBOMStatusByBOMIDResponse" message="tns:IServiceBE_UpdateProductBOMStatusByBOMID_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetProductComponent">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponent" message="tns:IServiceBE_GetProductComponent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentResponse" message="tns:IServiceBE_GetProductComponent_OutputMessage" />
@@ -4890,6 +4914,10 @@
     <wsdl:operation name="GetProductComponentByOrderID">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentByOrderID" message="tns:IServiceBE_GetProductComponentByOrderID_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentByOrderIDResponse" message="tns:IServiceBE_GetProductComponentByOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductComponentByProductCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentByProductCode" message="tns:IServiceBE_GetProductComponentByProductCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentByProductCodeResponse" message="tns:IServiceBE_GetProductComponentByProductCode_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetProductComponentByComponentTypeID">
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/GetProductComponentByComponentTypeID" message="tns:IServiceBE_GetProductComponentByComponentTypeID_InputMessage" />
@@ -4951,18 +4979,28 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SavePartnerOrder" message="tns:IServiceBE_SavePartnerOrder_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SavePartnerOrderResponse" message="tns:IServiceBE_SavePartnerOrder_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SearchPartnerOrder">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/SearchPartnerOrder" message="tns:IServiceBE_SearchPartnerOrder_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/SearchPartnerOrderResponse" message="tns:IServiceBE_SearchPartnerOrder_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="UpdatePartnerOrder">
-      <wsdl:input wsaw:Action="http://tempuri.org/IServiceBE/UpdatePartnerOrder" message="tns:IServiceBE_UpdatePartnerOrder_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IServiceBE/UpdatePartnerOrderResponse" message="tns:IServiceBE_UpdatePartnerOrder_OutputMessage" />
-    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IServiceBE" type="tns:IServiceBE">
     <wsp:PolicyReference URI="#NetTcpBinding_IServiceBE_policy" />
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetAllUserGroup">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetAllUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchUserGroup">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchUserGroup" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="UserGroupIsDuplicated">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/UserGroupIsDuplicated" style="document" />
       <wsdl:input>
@@ -5370,6 +5408,24 @@
     </wsdl:operation>
     <wsdl:operation name="SearchWorkShop">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchWorkShop" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSolution">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchSolution" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSolution2Cabinet">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetSolution2Cabinet" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -5935,8 +5991,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetAllUserGroup">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetAllUserGroup" style="document" />
+    <wsdl:operation name="GetPrivilegeItemByPrivilegeID">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeID" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -5944,8 +6000,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchUserGroup">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchUserGroup" style="document" />
+    <wsdl:operation name="GetPrivilegeItemByRoleID">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleID" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -6511,8 +6567,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchSolution">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchSolution" style="document" />
+    <wsdl:operation name="SearchPackage">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPackage" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -6520,8 +6576,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetSolution2Cabinet">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetSolution2Cabinet" style="document" />
+    <wsdl:operation name="SearchPackageDetail">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPackageDetail" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -7087,8 +7143,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetPrivilegeItemByPrivilegeID">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeID" style="document" />
+    <wsdl:operation name="GetOrder2CabinetLog">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetOrder2CabinetLog" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -7096,8 +7152,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetPrivilegeItemByRoleID">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetPrivilegeItemByRoleID" style="document" />
+    <wsdl:operation name="SearchOrder2CabinetLogs">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogs" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -7663,8 +7719,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchPackage">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPackage" style="document" />
+    <wsdl:operation name="SearchDepartment">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchDepartment" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -7672,8 +7728,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchPackageDetail">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPackageDetail" style="document" />
+    <wsdl:operation name="SaveDepartment">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SaveDepartment" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -8239,8 +8295,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetOrder2CabinetLog">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetOrder2CabinetLog" style="document" />
+    <wsdl:operation name="SearchPartnerOrder">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPartnerOrder" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -8248,8 +8304,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchOrder2CabinetLogs">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchOrder2CabinetLogs" style="document" />
+    <wsdl:operation name="UpdatePartnerOrder">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/UpdatePartnerOrder" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -8815,24 +8871,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SearchDepartment">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchDepartment" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SaveDepartment">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SaveDepartment" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="GetComponentMaterial">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetComponentMaterial" style="document" />
       <wsdl:input>
@@ -9193,6 +9231,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="UpdateProductBOMStatusByBOMID">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/UpdateProductBOMStatusByBOMID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetProductComponent">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetProductComponent" style="document" />
       <wsdl:input>
@@ -9249,6 +9296,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetProductComponentByOrderID">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetProductComponentByOrderID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductComponentByProductCode">
+      <soap12:operation soapAction="http://tempuri.org/IServiceBE/GetProductComponentByProductCode" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -9384,24 +9440,6 @@
     </wsdl:operation>
     <wsdl:operation name="SavePartnerOrder">
       <soap12:operation soapAction="http://tempuri.org/IServiceBE/SavePartnerOrder" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="SearchPartnerOrder">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/SearchPartnerOrder" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="UpdatePartnerOrder">
-      <soap12:operation soapAction="http://tempuri.org/IServiceBE/UpdatePartnerOrder" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

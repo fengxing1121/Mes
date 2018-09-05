@@ -162,6 +162,22 @@ namespace Mes.BE.Services
                 throw ex;
             }
         }
+
+        public int UpdateProductBOMStatusByBOMID(Sender sender, ProductBOM obj)
+        {
+            try
+            {
+                using (ObjectProxy op = new ObjectProxy())
+                {
+                    return op.UpdateProductBOMStatusByBOMID(obj);
+                }
+            }
+            catch (Exception ex)
+            {
+                PLogger.LogError(ex);
+                throw ex;
+            }
+        }
     }
 }
 

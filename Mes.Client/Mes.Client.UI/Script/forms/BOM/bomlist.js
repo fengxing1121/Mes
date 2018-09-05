@@ -29,8 +29,11 @@ var bomForm = {
                 columns: [[
                     {
                         field: 'BOMID', title: 'BOMID', width: 120, align: 'center', formatter: function (value, rowData, rowIndex) {
-                            var strReturn = '<a href="javascript:void(0)" class="l-btn-text" title="查看详细" onclick="bomForm.events.showdetail(\'' + rowData['BOMID'] + '\',\'' + rowData['BOMID'] + '\');"><span style="color:#0094ff;">' + rowData['BOMID'] + '</span></a>';
-                            return strReturn;
+                            if (rowData['Status'] == 'False') {
+                                return rowData['BOMID'];
+                            } else {
+                                return '<a href="javascript:void(0)" class="l-btn-text" title="查看详细" onclick="bomForm.events.showdetail(\'' + rowData['BOMID'] + '\',\'' + rowData['BOMID'] + '\');"><span style="color:#0094ff;">' + rowData['BOMID'] + '</span></a>';
+                            }
                         }
                     },
                     { field: 'ProductCode', title: '产品编号', width: 120, sortable: false, halign: 'center', align: 'center' },
@@ -39,13 +42,13 @@ var bomForm = {
                     { field: 'CreatedBy', title: '创建人', width: 110, sortable: false, halign: 'center', align: 'center' },
                     {
                         field: 'StatusName', title: '状态', width: 80, sortable: false, halign: 'center', align: 'center', formatter: function (value, rowData, rowIndex) {
-                            return rowData['Status'] == 'False' ? '待导入' : '已导入';
+                            return rowData['Status'] == 'False' ? '待导入' : '<font style="color:#158144">已导入</font>';
                         }
                     },
                     {
                         field: 'TODO', title: '操作', width: 80, sortable: false, align: 'center', formatter: function (value, rowData, rowIndex) {
                             if (rowData['Status'] == 'False') {
-                                return '<a href="#" class="l-btn l-btn-small" icon="icon-redo" onclick="importBOM(\'' + rowData["BOMID"] + '\')"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导入</span><span class="l-btn-icon icon-redo">&nbsp;</span></span></a>';
+                                return '<a href="#" class="l-btn l-btn-small" icon="icon-redo" onclick="importBOM(\'' + rowData["BOMID"] + '\',\'' + rowData["ProductCode"] + '\')"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导入</span><span class="l-btn-icon icon-redo">&nbsp;</span></span></a>';
                             } else {
                                 return '<a href="#" class="l-btn l-btn-small l-btn-disabled" icon="icon-redo"><span class="l-btn-left l-btn-icon-left"><span class="l-btn-text">导入</span><span class="l-btn-icon icon-redo">&nbsp;</span></span></a>';
                             }
@@ -127,6 +130,7 @@ $(function () {
 
     $("#btn_save").click(function () {
         var bomID = $("#hdnBOMID").val(),
+            productCode = $("#hdnProductCode").val(),
             attachmentFile = $("#hdnAttachmentFile").val();
         if (attachmentFile === undefined || attachmentFile === '') {
             showError('请先上传要导入的BOM文件');
@@ -138,6 +142,7 @@ $(function () {
         }
         var postData = {
             BOMID: bomID,
+            ProductCode: productCode,
             FilePath: attachmentFile
         };
         $.invokeApi("/Ashx/ProductBOMHandler.ashx?Method=ImportBOM", postData, false, 'POST', function (result) {
@@ -148,7 +153,7 @@ $(function () {
                     bomForm.events.initUploadWindow();
                     bomForm.controls.dgdetail.datagrid('reload');
                 } else {
-                    showError(returnData['Msg']);
+                    showError(result['Msg']);
                 }
             }
         });
@@ -199,7 +204,8 @@ $(function () {
     var _t = new Stream(config);
 });
 
-function importBOM(bomID) {
+function importBOM(bomID, productCode) {
     $('#Upload_window').find("#hdnBOMID").val(bomID);
+    $('#Upload_window').find('#hdnProductCode').val(productCode);
     $('#Upload_window').window('open');
 }

@@ -15,8 +15,7 @@ namespace Mes.BE.Objects
         public int InsertProductComponent(ProductComponent obj)
         {
             string sql = @"Insert Into [ProductComponent](
-                              [ComponentID]
-                             ,[ComponentCode]
+                              [ComponentCode]
                              ,[ProductCode]
                              ,[ComponentTypeID]
                              ,[ComponentTypeName]
@@ -28,8 +27,7 @@ namespace Mes.BE.Objects
                              ,[Modified]
                              ,[ModifiedBy]
             )Values (
-                              @ComponentID
-                             ,@ComponentCode
+                              @ComponentCode
                              ,@ProductCode
                              ,@ComponentTypeID
                              ,@ComponentTypeName
@@ -43,10 +41,6 @@ namespace Mes.BE.Objects
                     )";
 
             SqlCommand cmd = new SqlCommand(sql, this.conn, this.trans);
-
-            SqlParameter pComponentID = new SqlParameter("ComponentID", Convert2DBnull(obj.ComponentID));
-            pComponentID.SqlDbType = SqlDbType.Int;
-            cmd.Parameters.Add(pComponentID);
 
             SqlParameter pComponentCode = new SqlParameter("ComponentCode", Convert2DBnull(obj.ComponentCode));
             pComponentCode.SqlDbType = SqlDbType.NVarChar;
@@ -330,6 +324,70 @@ namespace Mes.BE.Objects
             SqlParameter pOrderID = new SqlParameter("OrderID", OrderID);
             pOrderID.SqlDbType = SqlDbType.UniqueIdentifier;
             cmd.Parameters.Add(pOrderID);
+
+            List<ProductComponent> ret = new List<ProductComponent>();
+            SqlDataReader dr = cmd.ExecuteReader();
+            try
+            {
+                while (dr.Read())
+                {
+                    ProductComponent iret = new ProductComponent();
+                    if (!Convert.IsDBNull(dr["ComponentID"]))
+                        iret.ComponentID = (int)dr["ComponentID"];
+                    if (!Convert.IsDBNull(dr["ComponentCode"]))
+                        iret.ComponentCode = (string)dr["ComponentCode"];
+                    if (!Convert.IsDBNull(dr["ProductCode"]))
+                        iret.ProductCode = (string)dr["ProductCode"];
+                    if (!Convert.IsDBNull(dr["ComponentTypeID"]))
+                        iret.ComponentTypeID = (int)dr["ComponentTypeID"];
+                    if (!Convert.IsDBNull(dr["ComponentTypeName"]))
+                        iret.ComponentTypeName = (string)dr["ComponentTypeName"];
+                    if (!Convert.IsDBNull(dr["Quantity"]))
+                        iret.Quantity = (decimal)dr["Quantity"];
+                    if (!Convert.IsDBNull(dr["Amount"]))
+                        iret.Amount = (decimal)dr["Amount"];
+                    if (!Convert.IsDBNull(dr["Status"]))
+                        iret.Status = (bool)dr["Status"];
+                    if (!Convert.IsDBNull(dr["Created"]))
+                        iret.Created = (DateTime)dr["Created"];
+                    if (!Convert.IsDBNull(dr["CreatedBy"]))
+                        iret.CreatedBy = (string)dr["CreatedBy"];
+                    if (!Convert.IsDBNull(dr["Modified"]))
+                        iret.Modified = (DateTime)dr["Modified"];
+                    if (!Convert.IsDBNull(dr["ModifiedBy"]))
+                        iret.ModifiedBy = (string)dr["ModifiedBy"];
+                    ret.Add(iret);
+                }
+            }
+            finally
+            {
+                dr.Close();
+            }
+            return ret;
+        }
+
+        public List<ProductComponent> LoadProductComponentByProductCode(string productCode)
+        {
+            string sql = @"Select 
+                              [ComponentID]
+                             ,[ComponentCode]
+                             ,[ProductCode]
+                             ,[ComponentTypeID]
+                             ,[ComponentTypeName]
+                             ,[Quantity]
+                             ,[Amount]
+                             ,[Status]
+                             ,[Created]
+                             ,[CreatedBy]
+                             ,[Modified]
+                             ,[ModifiedBy]
+                       From [ProductComponent] With(NoLock) Where ProductCode=@ProductCode";
+
+            SqlCommand cmd = new SqlCommand(sql, this.conn, this.trans);
+
+            SqlParameter pproductCode = new SqlParameter("ProductCode", Convert2DBnull(productCode));
+            pproductCode.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pproductCode);
 
             List<ProductComponent> ret = new List<ProductComponent>();
             SqlDataReader dr = cmd.ExecuteReader();

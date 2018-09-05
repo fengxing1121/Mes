@@ -62,6 +62,7 @@
                             <div id="i_stream_files_queue"></div>
                             <div region="south" border="false" style="text-align: center; padding: 2px; overflow: hidden; height: 50px; margin-top: 40px;">
                                 <input type="hidden" id="hdnBOMID" />
+                                <input type="hidden" id="hdnProductCode" />
                                 <input type="hidden" id="hdnAttachmentFile" />
                                 <a id="btn_save" icon="icon-ok" class="easyui-linkbutton" href="javascript:void(0)">保存</a>
                                 <a id="btn_cancel" icon="icon-reload" class="easyui-linkbutton" href="javascript:void(0)">取消</a>

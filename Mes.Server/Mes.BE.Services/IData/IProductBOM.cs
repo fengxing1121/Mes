@@ -28,5 +28,8 @@ namespace Mes.BE.Services
 
         [OperationContract]
         void SaveProductBOMs(Sender sender, SaveProductBOMArgs args);
+
+        [OperationContract]
+        int UpdateProductBOMStatusByBOMID(Sender sender, ProductBOM obj);
     }
 }
