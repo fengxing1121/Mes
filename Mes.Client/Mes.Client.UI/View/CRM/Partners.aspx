@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
     <script src="../../Script/forms/crm/jquery.forms.province.js"></script>
-    <script src="../../Script/forms/crm/jquery.forms.partners.js?ver=1.2"></script>
+    <script src="../../Script/forms/crm/jquery.forms.partners.js?ver=1.12"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div region="center" style="border: 0px;" border="false">

@@ -149,17 +149,17 @@
     </div>
     <div region="center" border="false">
         <div class="easyui-layout" fit="true">
-            <div region="north" border="false" title="产品列表" style="height: 70px;" collapsible="false">
+<%--            <div region="north" border="false" title="产品列表" style="height: 70px;" collapsible="false">
                 <div id="div_content">
                     <span style='width: 120px; height: 22px; float: left; padding: 5px; text-align: right;'>产品列表：</span><ul id="cabinets"></ul>
                 </div>
-            </div>
+            </div>--%>
             <div region="center" border="false">
                 <div class="easyui-tabs" fit="true" border="false" id="tt">
                     <div title="产品明细" fit="true" border="false">
                         <table id="dgorder"></table>
                     </div>
-                    <div title="订单明细" fit="true" border="false">                        
+                   <%-- <div title="订单明细" fit="true" border="false">                        
                         <table id="dgdetail"></table>
                     </div>
                     <div title="五金明细" fit="true" border="false">                       
@@ -183,7 +183,7 @@
                     </div> 
                     <div title="skp文件" fit="true" border="false">
                         <table id="skpFile"></table>
-                    </div>
+                    </div>--%>
                 </div>
             </div>
             <div region="south" border="false" style="text-align: center; padding: 2px; overflow: hidden; height: 50px;display:none;">
