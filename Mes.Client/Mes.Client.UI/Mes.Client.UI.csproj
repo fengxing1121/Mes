@@ -156,6 +156,7 @@
     <Content Include="Ashx\ProductBOMHandler.ashx" />
     <Content Include="Ashx\WorkflowHandler.ashx" />
     <Content Include="Ashx\WorkOrderHandler.ashx" />
+    <Content Include="Content\template\BOM模版.xls" />
     <None Include="Properties\PublishProfiles\1.pubxml" />
     <None Include="Properties\PublishProfiles\555.pubxml" />
     <None Include="Web.Debug.config">
