@@ -55,6 +55,9 @@ namespace Mes.BE.Objects
         [DataMember(Name = "Unit")]
         public string Unit { set; get; }
 
+        [DataMember(Name = "Amount")]
+        public decimal Amount { set; get; }
+
         /// <summary>
         ///数量、用量
         /// </summary>
@@ -193,5 +196,10 @@ namespace Mes.BE.Objects
         [DataMember(Name = "ModifiedBy")]
         public string ModifiedBy { set; get; }
 
+        /// <summary>
+        /// 扩展字段实体类
+        /// </summary>
+        [DataMember(Name = "ExtensionModel")]
+        public ComponentMaterialExtension ExtensionModel { set; get; }
     }
 }

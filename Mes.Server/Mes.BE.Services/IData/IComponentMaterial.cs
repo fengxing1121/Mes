@@ -32,6 +32,9 @@ namespace Mes.BE.Services
 
         [OperationContract]
         void SaveComponentMaterials(Sender sender, SaveComponentMaterialArgs args);
+
+        [OperationContract]
+        void SaveComponentMaterialAndExtension(Sender sender, SaveComponentMaterialArgs args);
     }
 }
 

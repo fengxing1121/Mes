@@ -21,6 +21,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]
                              ,[Specification]
                              ,[Unit]
+                             ,[Amount]
                              ,[Quantity]
                              ,[PlateName]
                              ,[Material]
@@ -51,6 +52,7 @@ namespace Mes.BE.Objects
                              ,@MaterialName
                              ,@Specification
                              ,@Unit
+                             ,@Amount
                              ,@Quantity
                              ,@PlateName
                              ,@Material
@@ -101,6 +103,10 @@ namespace Mes.BE.Objects
             SqlParameter pUnit = new SqlParameter("Unit", Convert2DBnull(obj.Unit));
             pUnit.SqlDbType = SqlDbType.NVarChar;
             cmd.Parameters.Add(pUnit);
+
+            SqlParameter pAmount = new SqlParameter("Amount", Convert2DBnull(obj.Amount));
+            pAmount.SqlDbType = SqlDbType.Decimal;
+            cmd.Parameters.Add(pAmount);
 
             SqlParameter pQuantity = new SqlParameter("Quantity", Convert2DBnull(obj.Quantity));
             pQuantity.SqlDbType = SqlDbType.Decimal;
@@ -196,6 +202,195 @@ namespace Mes.BE.Objects
 
             return cmd.ExecuteNonQuery();
         }
+
+        public int AddComponentMaterial(ComponentMaterial obj)
+        {
+            string sql = @"Insert Into [ComponentMaterial](
+                             [ComponentID]
+                             ,[MaterialCode]
+                             ,[MaterialName]
+                             ,[Specification]
+                             ,[Unit]
+                             ,[Amount]
+                             ,[Quantity]
+                             ,[PlateName]
+                             ,[Material]
+                             ,[Color]
+                             ,[Length]
+                             ,[Width]
+                             ,[Height]
+                             ,[CutLength]
+                             ,[CutWidth]
+                             ,[CutHeight]
+                             ,[CutArea]
+                             ,[EdgeFront]
+                             ,[EdgeBack]
+                             ,[EdgeLeft]
+                             ,[EdgeRight]
+                             ,[Veins]
+                             ,[Routing]
+                             ,[IsOptimization]
+                             ,[Status]
+                             ,[Created]
+                             ,[CreatedBy]
+                             ,[Modified]
+                             ,[ModifiedBy]
+            )Values (
+                             @ComponentID
+                             ,@MaterialCode
+                             ,@MaterialName
+                             ,@Specification
+                             ,@Unit
+                             ,@Amount
+                             ,@Quantity
+                             ,@PlateName
+                             ,@Material
+                             ,@Color
+                             ,@Length
+                             ,@Width
+                             ,@Height
+                             ,@CutLength
+                             ,@CutWidth
+                             ,@CutHeight
+                             ,@CutArea
+                             ,@EdgeFront
+                             ,@EdgeBack
+                             ,@EdgeLeft
+                             ,@EdgeRight
+                             ,@Veins
+                             ,@Routing
+                             ,@IsOptimization
+                             ,@Status
+                             ,@Created
+                             ,@CreatedBy
+                             ,@Modified
+                             ,@ModifiedBy
+                    );SELECT CAST(SCOPE_IDENTITY() as int)";
+
+            SqlCommand cmd = new SqlCommand(sql, this.conn, this.trans);
+
+            SqlParameter pID = new SqlParameter("ID", Convert2DBnull(obj.ID));
+            pID.SqlDbType = SqlDbType.Int;
+            cmd.Parameters.Add(pID);
+
+            SqlParameter pComponentID = new SqlParameter("ComponentID", Convert2DBnull(obj.ComponentID));
+            pComponentID.SqlDbType = SqlDbType.Int;
+            cmd.Parameters.Add(pComponentID);
+
+            SqlParameter pMaterialCode = new SqlParameter("MaterialCode", Convert2DBnull(obj.MaterialCode));
+            pMaterialCode.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pMaterialCode);
+
+            SqlParameter pMaterialName = new SqlParameter("MaterialName", Convert2DBnull(obj.MaterialName));
+            pMaterialName.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pMaterialName);
+
+            SqlParameter pSpecification = new SqlParameter("Specification", Convert2DBnull(obj.Specification));
+            pSpecification.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pSpecification);
+
+            SqlParameter pUnit = new SqlParameter("Unit", Convert2DBnull(obj.Unit));
+            pUnit.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pUnit);
+
+            SqlParameter pAmount = new SqlParameter("Amount", Convert2DBnull(obj.Amount));
+            pAmount.SqlDbType = SqlDbType.Decimal;
+            cmd.Parameters.Add(pAmount);
+
+            SqlParameter pQuantity = new SqlParameter("Quantity", Convert2DBnull(obj.Quantity));
+            pQuantity.SqlDbType = SqlDbType.Decimal;
+            cmd.Parameters.Add(pQuantity);
+
+            SqlParameter pPlateName = new SqlParameter("PlateName", Convert2DBnull(obj.PlateName));
+            pPlateName.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pPlateName);
+
+            SqlParameter pMaterial = new SqlParameter("Material", Convert2DBnull(obj.Material));
+            pMaterial.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pMaterial);
+
+            SqlParameter pColor = new SqlParameter("Color", Convert2DBnull(obj.Color));
+            pColor.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pColor);
+
+            SqlParameter pLength = new SqlParameter("Length", Convert2DBnull(obj.Length));
+            pLength.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pLength);
+
+            SqlParameter pWidth = new SqlParameter("Width", Convert2DBnull(obj.Width));
+            pWidth.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pWidth);
+
+            SqlParameter pHeight = new SqlParameter("Height", Convert2DBnull(obj.Height));
+            pHeight.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pHeight);
+
+            SqlParameter pCutLength = new SqlParameter("CutLength", Convert2DBnull(obj.CutLength));
+            pCutLength.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCutLength);
+
+            SqlParameter pCutWidth = new SqlParameter("CutWidth", Convert2DBnull(obj.CutWidth));
+            pCutWidth.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCutWidth);
+
+            SqlParameter pCutHeight = new SqlParameter("CutHeight", Convert2DBnull(obj.CutHeight));
+            pCutHeight.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCutHeight);
+
+            SqlParameter pCutArea = new SqlParameter("CutArea", Convert2DBnull(obj.CutArea));
+            pCutArea.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCutArea);
+
+            SqlParameter pEdgeFront = new SqlParameter("EdgeFront", Convert2DBnull(obj.EdgeFront));
+            pEdgeFront.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pEdgeFront);
+
+            SqlParameter pEdgeBack = new SqlParameter("EdgeBack", Convert2DBnull(obj.EdgeBack));
+            pEdgeBack.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pEdgeBack);
+
+            SqlParameter pEdgeLeft = new SqlParameter("EdgeLeft", Convert2DBnull(obj.EdgeLeft));
+            pEdgeLeft.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pEdgeLeft);
+
+            SqlParameter pEdgeRight = new SqlParameter("EdgeRight", Convert2DBnull(obj.EdgeRight));
+            pEdgeRight.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pEdgeRight);
+
+            SqlParameter pVeins = new SqlParameter("Veins", Convert2DBnull(obj.Veins));
+            pVeins.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pVeins);
+
+            SqlParameter pRouting = new SqlParameter("Routing", Convert2DBnull(obj.Routing));
+            pRouting.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pRouting);
+
+            SqlParameter pIsOptimization = new SqlParameter("IsOptimization", Convert2DBnull(obj.IsOptimization));
+            pIsOptimization.SqlDbType = SqlDbType.Bit;
+            cmd.Parameters.Add(pIsOptimization);
+
+            SqlParameter pStatus = new SqlParameter("Status", Convert2DBnull(obj.Status));
+            pStatus.SqlDbType = SqlDbType.Bit;
+            cmd.Parameters.Add(pStatus);
+
+            SqlParameter pCreated = new SqlParameter("Created", Convert2DBnull(obj.Created));
+            pCreated.SqlDbType = SqlDbType.DateTime;
+            cmd.Parameters.Add(pCreated);
+
+            SqlParameter pCreatedBy = new SqlParameter("CreatedBy", Convert2DBnull(obj.CreatedBy));
+            pCreatedBy.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCreatedBy);
+
+            SqlParameter pModified = new SqlParameter("Modified", Convert2DBnull(obj.Modified));
+            pModified.SqlDbType = SqlDbType.DateTime;
+            cmd.Parameters.Add(pModified);
+
+            SqlParameter pModifiedBy = new SqlParameter("ModifiedBy", Convert2DBnull(obj.ModifiedBy));
+            pModifiedBy.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pModifiedBy);
+
+            return Convert.ToInt32(cmd.ExecuteScalar());
+        }
         #endregion
 
         #region ComponentMaterial UpdateObject()、DeleteObject()
@@ -207,6 +402,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]=@MaterialName
                              ,[Specification]=@Specification
                              ,[Unit]=@Unit
+                             ,[Amount]=@Amount
                              ,[Quantity]=@Quantity
                              ,[PlateName]=@PlateName
                              ,[Material]=@Material
@@ -257,6 +453,10 @@ namespace Mes.BE.Objects
             SqlParameter pUnit = new SqlParameter("Unit", Convert2DBnull(obj.Unit));
             pUnit.SqlDbType = SqlDbType.NVarChar;
             cmd.Parameters.Add(pUnit);
+
+            SqlParameter pAmount = new SqlParameter("Amount", Convert2DBnull(obj.Amount));
+            pAmount.SqlDbType = SqlDbType.Decimal;
+            cmd.Parameters.Add(pAmount);
 
             SqlParameter pQuantity = new SqlParameter("Quantity", Convert2DBnull(obj.Quantity));
             pQuantity.SqlDbType = SqlDbType.Decimal;
@@ -377,6 +577,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]
                              ,[Specification]
                              ,[Unit]
+                             ,[Amount]
                              ,[Quantity]
                              ,[PlateName]
                              ,[Material]
@@ -423,6 +624,8 @@ namespace Mes.BE.Objects
                         iret.Specification = (string)dr["Specification"];
                     if (!Convert.IsDBNull(dr["Unit"]))
                         iret.Unit = (string)dr["Unit"];
+                    if (!Convert.IsDBNull(dr["Amount"]))
+                        iret.Amount = (decimal)dr["Amount"];
                     if (!Convert.IsDBNull(dr["Quantity"]))
                         iret.Quantity = (decimal)dr["Quantity"];
                     if (!Convert.IsDBNull(dr["PlateName"]))
@@ -478,7 +681,7 @@ namespace Mes.BE.Objects
             }
             return ret;
         }
-         
+
         public List<ComponentMaterial> LoadComponentMaterialByID(ComponentMaterial obj)
         {
             string sql = @"Select 
@@ -488,6 +691,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]
                              ,[Specification]
                              ,[Unit]
+                             ,[Amount]
                              ,[Quantity]
                              ,[PlateName]
                              ,[Material]
@@ -538,6 +742,8 @@ namespace Mes.BE.Objects
                         iret.Specification = (string)dr["Specification"];
                     if (!Convert.IsDBNull(dr["Unit"]))
                         iret.Unit = (string)dr["Unit"];
+                    if (!Convert.IsDBNull(dr["Amount"]))
+                        iret.Amount = (decimal)dr["Amount"];
                     if (!Convert.IsDBNull(dr["Quantity"]))
                         iret.Quantity = (decimal)dr["Quantity"];
                     if (!Convert.IsDBNull(dr["PlateName"]))
@@ -603,6 +809,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]
                              ,[Specification]
                              ,[Unit]
+                             ,[Amount]
                              ,[Quantity]
                              ,[PlateName]
                              ,[Material]
@@ -652,6 +859,8 @@ namespace Mes.BE.Objects
                         obj.Specification = (string)dr["Specification"];
                     if (!Convert.IsDBNull(dr["Unit"]))
                         obj.Unit = (string)dr["Unit"];
+                    if (!Convert.IsDBNull(dr["Amount"]))
+                        obj.Amount = (decimal)dr["Amount"];
                     if (!Convert.IsDBNull(dr["Quantity"]))
                         obj.Quantity = (decimal)dr["Quantity"];
                     if (!Convert.IsDBNull(dr["PlateName"]))
@@ -777,6 +986,7 @@ namespace Mes.BE.Objects
                              ,[MaterialName]
                              ,[Specification]
                              ,[Unit]
+                             ,[Amount]
                              ,[Quantity]
                              ,[PlateName]
                              ,[Material]
@@ -839,6 +1049,7 @@ namespace Mes.BE.Objects
                                               ,[MaterialName]
                                               ,[Specification]
                                               ,[Unit]
+                                              ,[ComponentMaterial].[Amount]
                                               ,[ComponentMaterial].[Quantity]
                                               ,[PlateName]
                                               ,[Material]
@@ -869,7 +1080,7 @@ namespace Mes.BE.Objects
                                         Where 1=1 ");
 
             this.SetParameters_Equals(mbBuilder, cmd, "ComponentMaterial].[ComponentID", "mbComponentID", args.ComponentID);
-            
+
             mbBuilder.AppendFormat(") mb");
 
             string baseSql = string.Format("(SELECT mb.* FROM {0}) baseSql", mbBuilder.ToString());

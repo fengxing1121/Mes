@@ -315,7 +315,7 @@ $.ajaxSetup({
         */
         invokeApi: function (url, param, async, method, callback) {
             if (async === null || async === undefined || async === '') {
-                async = false;
+                async = true;
             }
             if (method === null || method === undefined || method === '') {
                 method = 'post';
@@ -326,6 +326,12 @@ $.ajaxSetup({
                 async: async,
                 data: param,
                 dataType: 'json',
+                beforeSend: function () {
+                    var win = $.messager.progress({
+                        title: '请稍后',
+                        msg: '正在处理中...'
+                    });
+                },
                 success: function (result) {
                     if (callback === null || callback === undefined || callback === '') {
                         if (result['isOk'] == 1) {
@@ -347,6 +353,7 @@ $.ajaxSetup({
                         showError('请求异常!');
                     }
                 }, complete: function (XMLHttpRequest, textStatus) {
+                    $.messager.progress('close');
                 }
             })
         }

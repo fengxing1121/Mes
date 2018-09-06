@@ -145,7 +145,7 @@ $(function () {
             ProductCode: productCode,
             FilePath: attachmentFile
         };
-        $.invokeApi("/Ashx/ProductBOMHandler.ashx?Method=ImportBOM", postData, false, 'POST', function (result) {
+        $.invokeApi("/Ashx/ProductBOMHandler.ashx?Method=ImportBOM", postData, true, 'POST', function (result) {
             if (result) {
                 if (result['Code'] == 1) {
                     showInfo(result['Msg']);

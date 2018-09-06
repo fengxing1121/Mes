@@ -105,12 +105,14 @@ namespace Mes.BE.Services
                     {
                         obj.Created = DateTime.Now;
                         obj.CreatedBy = sender.UserCode + "." + sender.UserName;
+                        obj.Modified = DateTime.Now;
+                        obj.ModifiedBy = sender.UserCode + "." + sender.UserName;
                         op.InsertComponentMaterial(obj);
                     }
                     else
                     {
-                        obj.Created = DateTime.Now;
-                        obj.CreatedBy = sender.UserCode + "." + sender.UserName;
+                        obj.Modified = DateTime.Now;
+                        obj.ModifiedBy = sender.UserCode + "." + sender.UserName;
                         op.UpdateComponentMaterialByID(obj);
                     }
                     op.CommitTransaction();
@@ -131,7 +133,7 @@ namespace Mes.BE.Services
                 {
                     if (op.LoadComponentMaterial(args.ComponentMaterial) == 0)
                     {
-                       // string key = "S" + DateTime.Now.ToString("yy");
+                        // string key = "S" + DateTime.Now.ToString("yy");
                         //int index = this.GetIncrease(sender, key);
                         //args.ComponentMaterial.ProduceNo= key + DateTime.Now.Month.ToString("00") + index.ToString("00000");
                         args.ComponentMaterial.Created = DateTime.Now;
@@ -161,6 +163,48 @@ namespace Mes.BE.Services
                     //    }
                     //}
                     #endregion
+
+                    op.CommitTransaction();
+                }
+            }
+            catch (Exception ex)
+            {
+                PLogger.LogError(ex);
+                throw ex;
+            }
+        }
+
+        public void SaveComponentMaterialAndExtension(Sender sender, SaveComponentMaterialArgs args)
+        {
+            try
+            {
+                using (ObjectProxy op = new ObjectProxy(true))
+                {
+                    if (args.ComponentMaterials != null)
+                    {
+                        foreach (ComponentMaterial Item in args.ComponentMaterials)
+                        {
+                            if (op.LoadComponentMaterial(Item) == 0)
+                            {
+                                Item.Created = DateTime.Now;
+                                Item.CreatedBy = sender.UserCode + "." + sender.UserName;
+                                Item.Modified = DateTime.Now;
+                                Item.ModifiedBy = sender.UserCode + "." + sender.UserName;
+                                int componentMaterialID = op.AddComponentMaterial(Item);
+
+                                Item.ExtensionModel.ComponentMaterialID = componentMaterialID;
+                                Item.ExtensionModel.Created = DateTime.Now;
+                                Item.ExtensionModel.CreatedBy = sender.UserCode + "." + sender.UserName;
+                                op.InsertComponentMaterialExtension(Item.ExtensionModel);
+                            }
+                            else
+                            {
+                                Item.Modified = DateTime.Now;
+                                Item.ModifiedBy = sender.UserCode + "." + sender.UserName;
+                                op.UpdateComponentMaterialByID(Item);
+                            }
+                        }
+                    }
 
                     op.CommitTransaction();
                 }

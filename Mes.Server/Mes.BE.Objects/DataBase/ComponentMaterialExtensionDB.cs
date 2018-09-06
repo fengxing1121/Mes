@@ -15,30 +15,28 @@ namespace Mes.BE.Objects
         public int InsertComponentMaterialExtension(ComponentMaterialExtension obj)
         {
             string sql = @"Insert Into [ComponentMaterialExtension](
-                              [ID]
-                             ,[ComponentMaterialID]
+                             [ComponentMaterialID]
                              ,[Barcode]
                              ,[OutputName]
                              ,[MprA]
                              ,[MprB]
                              ,[MachineFile]
                              ,[Remark]
+                             ,[Created]
+                             ,[CreatedBy]
             )Values (
-                              @ID
-                             ,@ComponentMaterialID
+                             @ComponentMaterialID
                              ,@Barcode
                              ,@OutputName
                              ,@MprA
                              ,@MprB
                              ,@MachineFile
                              ,@Remark
+                             ,@Created
+                             ,@CreatedBy
                     )";
 
             SqlCommand cmd = new SqlCommand(sql, this.conn, this.trans);
-
-            SqlParameter pID = new SqlParameter("ID", Convert2DBnull(obj.ID));
-            pID.SqlDbType = SqlDbType.Int;
-            cmd.Parameters.Add(pID);
 
             SqlParameter pComponentMaterialID = new SqlParameter("ComponentMaterialID", Convert2DBnull(obj.ComponentMaterialID));
             pComponentMaterialID.SqlDbType = SqlDbType.Int;
@@ -68,8 +66,17 @@ namespace Mes.BE.Objects
             pRemark.SqlDbType = SqlDbType.Text;
             cmd.Parameters.Add(pRemark);
 
+            SqlParameter pCreated = new SqlParameter("Created", Convert2DBnull(obj.Created));
+            pCreated.SqlDbType = SqlDbType.DateTime;
+            cmd.Parameters.Add(pCreated);
+
+            SqlParameter pCreatedBy = new SqlParameter("CreatedBy", Convert2DBnull(obj.CreatedBy));
+            pCreatedBy.SqlDbType = SqlDbType.NVarChar;
+            cmd.Parameters.Add(pCreatedBy);
+
             return cmd.ExecuteNonQuery();
         }
+
         #endregion
 
         #region ComponentMaterialExtension UpdateObject()、DeleteObject()

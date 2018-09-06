@@ -132,8 +132,6 @@ namespace Mes.Client.UI.Ashx
                         throw new Exception("BOM文件中的产品ID与要导入的产品编号不一致");
                     }
 
-                    //InsertComponentMaterial(lstAllRow, componentTypeLevel.ToList());
-
                     List<string> lstFistType = lstAllRow.Select(x => x.Field<string>(componentTypeLevel[0])).Where(x => !string.IsNullOrEmpty(x)).Distinct().ToList(); //获取BOM表中第一阶层的组件类型（去重）
 
                     SaveProductComponentArgs args = new SaveProductComponentArgs();
@@ -171,7 +169,14 @@ namespace Mes.Client.UI.Ashx
 
                     p.Client.SaveProductComponents(SenderUser, args); //Insert ProductComponent
 
-                    p.Client.UpdateProductBOMStatusByBOMID(SenderUser, new ProductBOM() { BOMID = bomID, Status = true }); //更新状态为已上传
+                    List<ComponentMaterial> lstComponentMaterial = new List<ComponentMaterial>();
+                    List<ProductComponent> lstProductComponent = p.Client.GetProductComponentByProductCode(SenderUser, productID);
+                    LoadComponentMaterialList(lstAllRow, componentTypeLevel.ToList(), lstProductComponent, ref lstComponentMaterial);
+                    SaveComponentMaterialArgs componentMaterialArgs = new SaveComponentMaterialArgs();
+                    componentMaterialArgs.ComponentMaterials = lstComponentMaterial;
+                    p.Client.SaveComponentMaterialAndExtension(SenderUser, componentMaterialArgs); //Insert ComponentMaterial
+
+                    p.Client.UpdateProductBOMStatusByBOMID(SenderUser, new ProductBOM() { BOMID = bomID, Status = true }); //Update ProductBOM Status更新状态为已上传
 
                     WriteJsonSuccess("导入成功");
                 }
@@ -183,32 +188,74 @@ namespace Mes.Client.UI.Ashx
         }
 
         /// <summary>
-        /// InsertComponentMaterial
+        /// 加载组件物料数据，ComponentMaterialExtension
         /// </summary>
         /// <param name="lstAllRow"></param>
         /// <param name="componentTypeLevel"></param>
-        /// <param name=""></param>
-        protected void InsertComponentMaterial(List<DataRow> lstAllRow, List<string> componentTypeLevel)
+        /// <param name="lstProductComponent"></param>
+        protected void LoadComponentMaterialList(List<DataRow> lstAllRow, List<string> componentTypeLevel, List<ProductComponent> lstProductComponent, ref List<ComponentMaterial> lstComponentMaterial)
         {
             //当前是第几阶层
             string currentTypeLevel = componentTypeLevel[componentTypeLevel.Count - 1];
             //获取每一阶层下所有的组件类型
             List<string> lstChildType = lstAllRow.Select(x => x.Field<string>(currentTypeLevel)).Distinct().ToList();
             Dictionary<string, List<DataRow>> dicTypeListRow = lstAllRow.GroupBy(x => x.Field<string>(currentTypeLevel)).ToDictionary(group => group.Key, group => group.ToList());
-            if (dicTypeListRow.Count > 0)
+            if (dicTypeListRow == null || dicTypeListRow.Count == 0) return;
+            foreach (KeyValuePair<string, List<DataRow>> kvp in dicTypeListRow)
             {
-                foreach (KeyValuePair<string, List<DataRow>> kvp in dicTypeListRow)
+                //如果阶层的组件类型名称为空,则继续循环下一阶层
+                if (string.IsNullOrEmpty(kvp.Key))
                 {
-                    //如果阶层的组件类型名称为空,则继续循环下一阶层
-                    if (string.IsNullOrEmpty(kvp.Key))
+                    componentTypeLevel.Remove(currentTypeLevel);
+                    LoadComponentMaterialList(kvp.Value, componentTypeLevel, lstProductComponent, ref lstComponentMaterial);
+                }
+                else
+                {
+                    //确保该组件类型在数据表ProductComponent中是存在并且有效的，防止错误数据导入
+                    var productComponent = lstProductComponent.FirstOrDefault(x => x.ComponentTypeName.Equals(kvp.Key));
+                    if (productComponent == null) continue;
+                    foreach (DataRow dr in kvp.Value)
                     {
-                        componentTypeLevel.Remove(currentTypeLevel);
-                        InsertComponentMaterial(kvp.Value, componentTypeLevel);
+                        ComponentMaterial model = new ComponentMaterial()
+                        {
+                            ComponentID = productComponent.ComponentID,
+                            MaterialCode = dr["材料编码"].ToString(),
+                            MaterialName = dr["材料名称"].ToString(),
+                            Specification = dr["材料规格"].ToString(),
+                            Unit = dr["单位"].ToString(),
+                            Amount = dr["用量"] == null ? 0 : Convert.ToDecimal(dr["用量"]),
+                            Quantity = dr["数量"] == null ? 0 : Convert.ToDecimal(dr["数量"]),
+                            PlateName = dr["工件名称"].ToString(),
+                            Material = dr["材料"].ToString(),
+                            //Color = dr["颜色"].ToString(),
+                            Length = dr["长"].ToString(),
+                            Width = dr["宽"].ToString(),
+                            Height = dr["厚"].ToString(),
+                            CutLength = dr["开料长"].ToString(),
+                            CutWidth = dr["开料宽"].ToString(),
+                            //CutHeight = dr["开料厚"].ToString(),
+                            CutArea = dr["开料面积"].ToString(),
+                            EdgeFront = dr["前封边"].ToString(),
+                            EdgeBack = dr["后封边"].ToString(),
+                            EdgeLeft = dr["左封边"].ToString(),
+                            EdgeRight = dr["右封边"].ToString(),
+                            Veins = dr["纹路"].ToString(),
+                            Routing = dr["工艺路线"].ToString(),
+                            IsOptimization = dr["是否需要优化"] == null ? false : (dr["是否需要优化"].ToString() == "1" ? true : false),
+                            Status = false,
+                            ExtensionModel = new ComponentMaterialExtension()
+                            {
+                                Barcode = dr["条形码"].ToString(),
+                                OutputName = dr["输出名称"].ToString(),
+                                MprA = dr["A"].ToString(),
+                                MprB = dr["B"].ToString(),
+                                MachineFile = dr["加工程序"].ToString(),
+                                Remark = dr["工件备注"].ToString()
+                            }
+                        };
+                        lstComponentMaterial.Add(model);
                     }
-                    else
-                    {
 
-                    }
                 }
             }
         }

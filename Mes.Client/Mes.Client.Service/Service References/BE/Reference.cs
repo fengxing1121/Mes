@@ -4701,42 +4701,22 @@ namespace Mes.Client.Service.BE {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SearchSolutionArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SaveSolutionArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
     [System.SerializableAttribute()]
-    public partial struct SearchSolutionArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial struct SaveSolutionArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private System.Nullable<System.Guid> CompanyIDField;
+        private Mes.Client.Service.BE.Solution SolutionField;
         
-        private System.Nullable<System.Guid> CustomerIDField;
+        private System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet> Solution2CabinetsField;
         
-        private string CustomerNameField;
+        private System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware> Solution2HardwaresField;
         
-        private string DesignerField;
+        private System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail> SolutionDetailsField;
         
-        private System.Nullable<System.Guid> DesignerIDField;
-        
-        private string OrderByField;
-        
-        private System.Nullable<System.Guid> PartnerIDField;
-        
-        private string PartnerIDsField;
-        
-        private System.Nullable<int> RowNumberFromField;
-        
-        private System.Nullable<int> RowNumberToField;
-        
-        private string SolutionCodeField;
-        
-        private System.Nullable<System.Guid> SolutionIDField;
-        
-        private string SolutionNameField;
-        
-        private string StatusField;
-        
-        private string UserCodesField;
+        private System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers> SolutionOthersField;
         
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -4748,20 +4728,517 @@ namespace Mes.Client.Service.BE {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.Guid> CompanyID {
+        public Mes.Client.Service.BE.Solution Solution {
             get {
-                return this.CompanyIDField;
+                return this.SolutionField;
             }
             set {
-                if ((this.CompanyIDField.Equals(value) != true)) {
-                    this.CompanyIDField = value;
-                    this.RaisePropertyChanged("CompanyID");
+                if ((object.ReferenceEquals(this.SolutionField, value) != true)) {
+                    this.SolutionField = value;
+                    this.RaisePropertyChanged("Solution");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.Guid> CustomerID {
+        public System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet> Solution2Cabinets {
+            get {
+                return this.Solution2CabinetsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Solution2CabinetsField, value) != true)) {
+                    this.Solution2CabinetsField = value;
+                    this.RaisePropertyChanged("Solution2Cabinets");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware> Solution2Hardwares {
+            get {
+                return this.Solution2HardwaresField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Solution2HardwaresField, value) != true)) {
+                    this.Solution2HardwaresField = value;
+                    this.RaisePropertyChanged("Solution2Hardwares");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail> SolutionDetails {
+            get {
+                return this.SolutionDetailsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolutionDetailsField, value) != true)) {
+                    this.SolutionDetailsField = value;
+                    this.RaisePropertyChanged("SolutionDetails");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers> SolutionOthers {
+            get {
+                return this.SolutionOthersField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolutionOthersField, value) != true)) {
+                    this.SolutionOthersField = value;
+                    this.RaisePropertyChanged("SolutionOthers");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Solution", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.Sender))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.SearchResult))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.UserGroup))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchUserGroupArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUserGroupArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseInDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseInMain>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseInMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWarehouseInMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseInDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseInDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseInMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseOutDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseOutMain>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseOutMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWarehouseOutMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseOutDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseOutDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseOutMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkCenter>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkCenter))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkCenterArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkCenterArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkCenterScheduling>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkCenterScheduling))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkCenterSchedulingArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkCenterSchedulingArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkFlow))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkFlow>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkFlowArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkingLine>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkingLine))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkingLineArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkingLineArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShift>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShift))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkShiftArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShiftArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShift2WorkShopArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShift2WorkShop>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShift2WorkShop))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShop>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShop))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkShopArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShopArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Cabinet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Hardware))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionOthers))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolution2HardwareArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionOthersArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionOthersArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SpecialCompanent))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSpecialCompanentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SpecialCompanent2WorkFlow>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SpecialCompanent2WorkFlow))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SpecialCompanent>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSpecialCompanentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSpecialCompanent2WorkFlowArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Supplier))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSupplierArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSupplierArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSysLogArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SysLog))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSysLogArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveTransportArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.TransportDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.TransportDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.TransportMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchTransportMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchTransportDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.User))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchUserArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.User>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUserArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserPassword>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.UserPassword))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUser2RoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.User2Role))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.User2Role>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeCategory>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeCategory))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeCategoryArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeCategoryArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeItemArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeItemArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Role2PrivilegeItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Privilege>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Privilege))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductWarehouseArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductWarehouseDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductWarehouseDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductWarehouseMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductWarehouseMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductWarehouseDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Product2Hardware>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Product2Hardware))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductProcessFile>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductProcessFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProduct2HardwareArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductProcessFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.QuoteMain))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveQuoteMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.QuoteDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.QuoteDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchQuoteMainArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchQuoteDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Role))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Role>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchRoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesigner))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.RoomDesignerFile>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesignerFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.RoomDesigner>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchRoomDesignerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerKJLRelationArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesignerKJLRelation))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSMSLogArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SMSLog))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSMSLogArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PackageDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Partner))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Company))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Partner>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCompanyArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerRole))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerRole>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerRoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerRoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerRole2PrivilegeItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTask))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerTaskArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionFile>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerTaskArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerTaskStep>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTaskStep))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTransDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerTransDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerTransDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerTransDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUser))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUser>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerUserArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUserArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUser2RoleArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUser2Role))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUser2Role>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUserGroup))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUserGroup>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerUserGroupArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUserGroupArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2CabinetLog>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2CabinetLog))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrder2CabinetArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrder2HardwareArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2Hardware))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2Hardware>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrder2HardwareArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchAPSDetailsArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderLog>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderLog))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderLogArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderMadeStateArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderMadeState>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderMadeState))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderProcessFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderProcessFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderProcessFile>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderProcessFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCreatedSchedulingArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderScheduling>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderScheduling))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderWorkFlow>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderWorkFlow))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderSchedulingArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderSchedulingArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderStepLog))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderStepLog>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderWorkFlowArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderWorkFlowArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Package))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Package>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Department))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchDepartmentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveDepartmentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoriteArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Favorite))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoritesArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Favorite>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchFavoriteArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.KeyValue))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.KeyValue>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Location))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveLocationArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchLocationArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveLogisticsEnterpriseArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.LogisticsEnterprise))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchLogisticsEnterpriseArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Material>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Material))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterialArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Material2Supplier>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Material2Supplier))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterialArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterial2SupplierArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterial2SupplierArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.MaterialQuotePrice))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterialQuotePriceArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterialQuotePriceArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Notice))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveNoticeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchNoticeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Cabinet2Door>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Cabinet2Door))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderProduct>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderProduct))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrder2CabinetArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2Cabinet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2Cabinet>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OprationType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrder))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrderProduct))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSet>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionSetArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductionSetArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSetDayDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSetDayDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSetWeekDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSetWeekDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionSetDayDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkOrder))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkOrder>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrder))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkOrderComponent>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkOrderComponent))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveBattchFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.BattchFile))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchBattchFileArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.BattchFile>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCabinet2DoorArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCabinet2DoorArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCarArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Car))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCarArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCategoryArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Category))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Category>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCategoryArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Customer))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Customer>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerFollowUpArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CustomerFollowUp))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CustomerFollowUp>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerFollowUpArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CustomerTransDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerTransDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CustomerTransDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerTransDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CutTemplate>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CutTemplate))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCutTemplateArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCutTemplateArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Department>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterial))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterialExtension))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterial>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterialExtension>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialExtensionArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialExtensionArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentType>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentTypeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentTypeArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderProductArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderStep))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderStep>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderProductArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductBOM))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductBOM>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductBOMArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductBOMArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductComponent))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductComponent>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductComponentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductComponentArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionOrder>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductionOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionOrderComponent>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrderComponent))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SchedulingProductionOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrderScheduling))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ReviewDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ReviewDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<System.Guid>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<string>))]
+    public partial class Solution : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid CustomerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DesignSoftField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DesignerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private object DesignerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ModifiedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModifiedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid PartnerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SolutionCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid SolutionIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SolutionNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string VersionField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid CustomerID {
             get {
                 return this.CustomerIDField;
             }
@@ -4773,20 +5250,20 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string CustomerName {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DesignSoft {
             get {
-                return this.CustomerNameField;
+                return this.DesignSoftField;
             }
             set {
-                if ((object.ReferenceEquals(this.CustomerNameField, value) != true)) {
-                    this.CustomerNameField = value;
-                    this.RaisePropertyChanged("CustomerName");
+                if ((object.ReferenceEquals(this.DesignSoftField, value) != true)) {
+                    this.DesignSoftField = value;
+                    this.RaisePropertyChanged("DesignSoft");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Designer {
             get {
                 return this.DesignerField;
@@ -4799,34 +5276,47 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.Guid> DesignerID {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public object DesignerID {
             get {
                 return this.DesignerIDField;
             }
             set {
-                if ((this.DesignerIDField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.DesignerIDField, value) != true)) {
                     this.DesignerIDField = value;
                     this.RaisePropertyChanged("DesignerID");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string OrderBy {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Modified {
             get {
-                return this.OrderByField;
+                return this.ModifiedField;
             }
             set {
-                if ((object.ReferenceEquals(this.OrderByField, value) != true)) {
-                    this.OrderByField = value;
-                    this.RaisePropertyChanged("OrderBy");
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.Guid> PartnerID {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModifiedBy {
+            get {
+                return this.ModifiedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
+                    this.ModifiedByField = value;
+                    this.RaisePropertyChanged("ModifiedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid PartnerID {
             get {
                 return this.PartnerIDField;
             }
@@ -4838,46 +5328,20 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string PartnerIDs {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Remark {
             get {
-                return this.PartnerIDsField;
+                return this.RemarkField;
             }
             set {
-                if ((object.ReferenceEquals(this.PartnerIDsField, value) != true)) {
-                    this.PartnerIDsField = value;
-                    this.RaisePropertyChanged("PartnerIDs");
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<int> RowNumberFrom {
-            get {
-                return this.RowNumberFromField;
-            }
-            set {
-                if ((this.RowNumberFromField.Equals(value) != true)) {
-                    this.RowNumberFromField = value;
-                    this.RaisePropertyChanged("RowNumberFrom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<int> RowNumberTo {
-            get {
-                return this.RowNumberToField;
-            }
-            set {
-                if ((this.RowNumberToField.Equals(value) != true)) {
-                    this.RowNumberToField = value;
-                    this.RaisePropertyChanged("RowNumberTo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string SolutionCode {
             get {
                 return this.SolutionCodeField;
@@ -4890,8 +5354,8 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<System.Guid> SolutionID {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid SolutionID {
             get {
                 return this.SolutionIDField;
             }
@@ -4903,7 +5367,7 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string SolutionName {
             get {
                 return this.SolutionNameField;
@@ -4916,7 +5380,7 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Status {
             get {
                 return this.StatusField;
@@ -4929,22 +5393,22 @@ namespace Mes.Client.Service.BE {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string UserCodes {
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Version {
             get {
-                return this.UserCodesField;
+                return this.VersionField;
             }
             set {
-                if ((object.ReferenceEquals(this.UserCodesField, value) != true)) {
-                    this.UserCodesField = value;
-                    this.RaisePropertyChanged("UserCodes");
+                if ((object.ReferenceEquals(this.VersionField, value) != true)) {
+                    this.VersionField = value;
+                    this.RaisePropertyChanged("Version");
                 }
             }
         }
         
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
-        void RaisePropertyChanged(string propertyName) {
+        protected void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -5226,6 +5690,275 @@ namespace Mes.Client.Service.BE {
                 if ((this.SolutionIDField.Equals(value) != true)) {
                     this.SolutionIDField = value;
                     this.RaisePropertyChanged("SolutionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Solution2Hardware", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class Solution2Hardware : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid CabinetIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HardwareCategoryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HardwareCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string HardwareNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid ItemIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ModifiedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModifiedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal QtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarksField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid SolutionIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StyleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BarcodeNo {
+            get {
+                return this.BarcodeNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeNoField, value) != true)) {
+                    this.BarcodeNoField = value;
+                    this.RaisePropertyChanged("BarcodeNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid CabinetID {
+            get {
+                return this.CabinetIDField;
+            }
+            set {
+                if ((this.CabinetIDField.Equals(value) != true)) {
+                    this.CabinetIDField = value;
+                    this.RaisePropertyChanged("CabinetID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string HardwareCategory {
+            get {
+                return this.HardwareCategoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HardwareCategoryField, value) != true)) {
+                    this.HardwareCategoryField = value;
+                    this.RaisePropertyChanged("HardwareCategory");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string HardwareCode {
+            get {
+                return this.HardwareCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HardwareCodeField, value) != true)) {
+                    this.HardwareCodeField = value;
+                    this.RaisePropertyChanged("HardwareCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string HardwareName {
+            get {
+                return this.HardwareNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.HardwareNameField, value) != true)) {
+                    this.HardwareNameField = value;
+                    this.RaisePropertyChanged("HardwareName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid ItemID {
+            get {
+                return this.ItemIDField;
+            }
+            set {
+                if ((this.ItemIDField.Equals(value) != true)) {
+                    this.ItemIDField = value;
+                    this.RaisePropertyChanged("ItemID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModifiedBy {
+            get {
+                return this.ModifiedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
+                    this.ModifiedByField = value;
+                    this.RaisePropertyChanged("ModifiedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Qty {
+            get {
+                return this.QtyField;
+            }
+            set {
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Remarks {
+            get {
+                return this.RemarksField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarksField, value) != true)) {
+                    this.RemarksField = value;
+                    this.RaisePropertyChanged("Remarks");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid SolutionID {
+            get {
+                return this.SolutionIDField;
+            }
+            set {
+                if ((this.SolutionIDField.Equals(value) != true)) {
+                    this.SolutionIDField = value;
+                    this.RaisePropertyChanged("SolutionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Style {
+            get {
+                return this.StyleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StyleField, value) != true)) {
+                    this.StyleField = value;
+                    this.RaisePropertyChanged("Style");
                 }
             }
         }
@@ -5739,6 +6472,464 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SolutionOthers", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class SolutionOthers : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CabinetGroupField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid DetailIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ItemTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal LengthField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal QtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid SolutionIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StyleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal WidthField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CabinetGroup {
+            get {
+                return this.CabinetGroupField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CabinetGroupField, value) != true)) {
+                    this.CabinetGroupField = value;
+                    this.RaisePropertyChanged("CabinetGroup");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid DetailID {
+            get {
+                return this.DetailIDField;
+            }
+            set {
+                if ((this.DetailIDField.Equals(value) != true)) {
+                    this.DetailIDField = value;
+                    this.RaisePropertyChanged("DetailID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemCode {
+            get {
+                return this.ItemCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemCodeField, value) != true)) {
+                    this.ItemCodeField = value;
+                    this.RaisePropertyChanged("ItemCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemName {
+            get {
+                return this.ItemNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemNameField, value) != true)) {
+                    this.ItemNameField = value;
+                    this.RaisePropertyChanged("ItemName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ItemType {
+            get {
+                return this.ItemTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ItemTypeField, value) != true)) {
+                    this.ItemTypeField = value;
+                    this.RaisePropertyChanged("ItemType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Length {
+            get {
+                return this.LengthField;
+            }
+            set {
+                if ((this.LengthField.Equals(value) != true)) {
+                    this.LengthField = value;
+                    this.RaisePropertyChanged("Length");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Qty {
+            get {
+                return this.QtyField;
+            }
+            set {
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid SolutionID {
+            get {
+                return this.SolutionIDField;
+            }
+            set {
+                if ((this.SolutionIDField.Equals(value) != true)) {
+                    this.SolutionIDField = value;
+                    this.RaisePropertyChanged("SolutionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Style {
+            get {
+                return this.StyleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StyleField, value) != true)) {
+                    this.StyleField = value;
+                    this.RaisePropertyChanged("Style");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Width {
+            get {
+                return this.WidthField;
+            }
+            set {
+                if ((this.WidthField.Equals(value) != true)) {
+                    this.WidthField = value;
+                    this.RaisePropertyChanged("Width");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SearchSolutionArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial struct SearchSolutionArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private System.Nullable<System.Guid> CompanyIDField;
+        
+        private System.Nullable<System.Guid> CustomerIDField;
+        
+        private string CustomerNameField;
+        
+        private string DesignerField;
+        
+        private System.Nullable<System.Guid> DesignerIDField;
+        
+        private string OrderByField;
+        
+        private System.Nullable<System.Guid> PartnerIDField;
+        
+        private string PartnerIDsField;
+        
+        private System.Nullable<int> RowNumberFromField;
+        
+        private System.Nullable<int> RowNumberToField;
+        
+        private string SolutionCodeField;
+        
+        private System.Nullable<System.Guid> SolutionIDField;
+        
+        private string SolutionNameField;
+        
+        private string StatusField;
+        
+        private string UserCodesField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.Guid> CompanyID {
+            get {
+                return this.CompanyIDField;
+            }
+            set {
+                if ((this.CompanyIDField.Equals(value) != true)) {
+                    this.CompanyIDField = value;
+                    this.RaisePropertyChanged("CompanyID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.Guid> CustomerID {
+            get {
+                return this.CustomerIDField;
+            }
+            set {
+                if ((this.CustomerIDField.Equals(value) != true)) {
+                    this.CustomerIDField = value;
+                    this.RaisePropertyChanged("CustomerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string CustomerName {
+            get {
+                return this.CustomerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomerNameField, value) != true)) {
+                    this.CustomerNameField = value;
+                    this.RaisePropertyChanged("CustomerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string Designer {
+            get {
+                return this.DesignerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DesignerField, value) != true)) {
+                    this.DesignerField = value;
+                    this.RaisePropertyChanged("Designer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.Guid> DesignerID {
+            get {
+                return this.DesignerIDField;
+            }
+            set {
+                if ((this.DesignerIDField.Equals(value) != true)) {
+                    this.DesignerIDField = value;
+                    this.RaisePropertyChanged("DesignerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string OrderBy {
+            get {
+                return this.OrderByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderByField, value) != true)) {
+                    this.OrderByField = value;
+                    this.RaisePropertyChanged("OrderBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.Guid> PartnerID {
+            get {
+                return this.PartnerIDField;
+            }
+            set {
+                if ((this.PartnerIDField.Equals(value) != true)) {
+                    this.PartnerIDField = value;
+                    this.RaisePropertyChanged("PartnerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string PartnerIDs {
+            get {
+                return this.PartnerIDsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerIDsField, value) != true)) {
+                    this.PartnerIDsField = value;
+                    this.RaisePropertyChanged("PartnerIDs");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> RowNumberFrom {
+            get {
+                return this.RowNumberFromField;
+            }
+            set {
+                if ((this.RowNumberFromField.Equals(value) != true)) {
+                    this.RowNumberFromField = value;
+                    this.RaisePropertyChanged("RowNumberFrom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> RowNumberTo {
+            get {
+                return this.RowNumberToField;
+            }
+            set {
+                if ((this.RowNumberToField.Equals(value) != true)) {
+                    this.RowNumberToField = value;
+                    this.RaisePropertyChanged("RowNumberTo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string SolutionCode {
+            get {
+                return this.SolutionCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolutionCodeField, value) != true)) {
+                    this.SolutionCodeField = value;
+                    this.RaisePropertyChanged("SolutionCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<System.Guid> SolutionID {
+            get {
+                return this.SolutionIDField;
+            }
+            set {
+                if ((this.SolutionIDField.Equals(value) != true)) {
+                    this.SolutionIDField = value;
+                    this.RaisePropertyChanged("SolutionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string SolutionName {
+            get {
+                return this.SolutionNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SolutionNameField, value) != true)) {
+                    this.SolutionNameField = value;
+                    this.RaisePropertyChanged("SolutionName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string UserCodes {
+            get {
+                return this.UserCodesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserCodesField, value) != true)) {
+                    this.UserCodesField = value;
+                    this.RaisePropertyChanged("UserCodes");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -6566,480 +7757,6 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Solution2Hardware", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class Solution2Hardware : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid CabinetIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HardwareCategoryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HardwareCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string HardwareNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid ItemIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ModifiedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ModifiedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal QtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarksField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid SolutionIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StyleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string BarcodeNo {
-            get {
-                return this.BarcodeNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeNoField, value) != true)) {
-                    this.BarcodeNoField = value;
-                    this.RaisePropertyChanged("BarcodeNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid CabinetID {
-            get {
-                return this.CabinetIDField;
-            }
-            set {
-                if ((this.CabinetIDField.Equals(value) != true)) {
-                    this.CabinetIDField = value;
-                    this.RaisePropertyChanged("CabinetID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string HardwareCategory {
-            get {
-                return this.HardwareCategoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HardwareCategoryField, value) != true)) {
-                    this.HardwareCategoryField = value;
-                    this.RaisePropertyChanged("HardwareCategory");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string HardwareCode {
-            get {
-                return this.HardwareCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HardwareCodeField, value) != true)) {
-                    this.HardwareCodeField = value;
-                    this.RaisePropertyChanged("HardwareCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string HardwareName {
-            get {
-                return this.HardwareNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.HardwareNameField, value) != true)) {
-                    this.HardwareNameField = value;
-                    this.RaisePropertyChanged("HardwareName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid ItemID {
-            get {
-                return this.ItemIDField;
-            }
-            set {
-                if ((this.ItemIDField.Equals(value) != true)) {
-                    this.ItemIDField = value;
-                    this.RaisePropertyChanged("ItemID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Modified {
-            get {
-                return this.ModifiedField;
-            }
-            set {
-                if ((this.ModifiedField.Equals(value) != true)) {
-                    this.ModifiedField = value;
-                    this.RaisePropertyChanged("Modified");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ModifiedBy {
-            get {
-                return this.ModifiedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
-                    this.ModifiedByField = value;
-                    this.RaisePropertyChanged("ModifiedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Qty {
-            get {
-                return this.QtyField;
-            }
-            set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Remarks {
-            get {
-                return this.RemarksField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarksField, value) != true)) {
-                    this.RemarksField = value;
-                    this.RaisePropertyChanged("Remarks");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid SolutionID {
-            get {
-                return this.SolutionIDField;
-            }
-            set {
-                if ((this.SolutionIDField.Equals(value) != true)) {
-                    this.SolutionIDField = value;
-                    this.RaisePropertyChanged("SolutionID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Style {
-            get {
-                return this.StyleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StyleField, value) != true)) {
-                    this.StyleField = value;
-                    this.RaisePropertyChanged("Style");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SolutionOthers", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class SolutionOthers : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CabinetGroupField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid DetailIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ItemCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ItemNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ItemTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal LengthField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal QtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid SolutionIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StyleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal WidthField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CabinetGroup {
-            get {
-                return this.CabinetGroupField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CabinetGroupField, value) != true)) {
-                    this.CabinetGroupField = value;
-                    this.RaisePropertyChanged("CabinetGroup");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid DetailID {
-            get {
-                return this.DetailIDField;
-            }
-            set {
-                if ((this.DetailIDField.Equals(value) != true)) {
-                    this.DetailIDField = value;
-                    this.RaisePropertyChanged("DetailID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ItemCode {
-            get {
-                return this.ItemCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ItemCodeField, value) != true)) {
-                    this.ItemCodeField = value;
-                    this.RaisePropertyChanged("ItemCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ItemName {
-            get {
-                return this.ItemNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ItemNameField, value) != true)) {
-                    this.ItemNameField = value;
-                    this.RaisePropertyChanged("ItemName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ItemType {
-            get {
-                return this.ItemTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ItemTypeField, value) != true)) {
-                    this.ItemTypeField = value;
-                    this.RaisePropertyChanged("ItemType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Length {
-            get {
-                return this.LengthField;
-            }
-            set {
-                if ((this.LengthField.Equals(value) != true)) {
-                    this.LengthField = value;
-                    this.RaisePropertyChanged("Length");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Qty {
-            get {
-                return this.QtyField;
-            }
-            set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid SolutionID {
-            get {
-                return this.SolutionIDField;
-            }
-            set {
-                if ((this.SolutionIDField.Equals(value) != true)) {
-                    this.SolutionIDField = value;
-                    this.RaisePropertyChanged("SolutionID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Style {
-            get {
-                return this.StyleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StyleField, value) != true)) {
-                    this.StyleField = value;
-                    this.RaisePropertyChanged("Style");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Width {
-            get {
-                return this.WidthField;
-            }
-            set {
-                if ((this.WidthField.Equals(value) != true)) {
-                    this.WidthField = value;
-                    this.RaisePropertyChanged("Width");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -8741,6 +9458,67 @@ namespace Mes.Client.Service.BE {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TransportDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class TransportDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid OrderIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid TransportIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid OrderID {
+            get {
+                return this.OrderIDField;
+            }
+            set {
+                if ((this.OrderIDField.Equals(value) != true)) {
+                    this.OrderIDField = value;
+                    this.RaisePropertyChanged("OrderID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid TransportID {
+            get {
+                return this.TransportIDField;
+            }
+            set {
+                if ((this.TransportIDField.Equals(value) != true)) {
+                    this.TransportIDField = value;
+                    this.RaisePropertyChanged("TransportID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="TransportMain", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
     [System.SerializableAttribute()]
     public partial class TransportMain : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -8882,67 +9660,6 @@ namespace Mes.Client.Service.BE {
                 if ((object.ReferenceEquals(this.TransportNoField, value) != true)) {
                     this.TransportNoField = value;
                     this.RaisePropertyChanged("TransportNo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="TransportDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class TransportDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid OrderIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid TransportIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid OrderID {
-            get {
-                return this.OrderIDField;
-            }
-            set {
-                if ((this.OrderIDField.Equals(value) != true)) {
-                    this.OrderIDField = value;
-                    this.RaisePropertyChanged("OrderID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid TransportID {
-            get {
-                return this.TransportIDField;
-            }
-            set {
-                if ((this.TransportIDField.Equals(value) != true)) {
-                    this.TransportIDField = value;
-                    this.RaisePropertyChanged("TransportID");
                 }
             }
         }
@@ -11408,6 +12125,131 @@ namespace Mes.Client.Service.BE {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ProductWarehouseDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class ProductWarehouseDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid DetailIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid InIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid LocationIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid PackageIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid DetailID {
+            get {
+                return this.DetailIDField;
+            }
+            set {
+                if ((this.DetailIDField.Equals(value) != true)) {
+                    this.DetailIDField = value;
+                    this.RaisePropertyChanged("DetailID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid InID {
+            get {
+                return this.InIDField;
+            }
+            set {
+                if ((this.InIDField.Equals(value) != true)) {
+                    this.InIDField = value;
+                    this.RaisePropertyChanged("InID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid LocationID {
+            get {
+                return this.LocationIDField;
+            }
+            set {
+                if ((this.LocationIDField.Equals(value) != true)) {
+                    this.LocationIDField = value;
+                    this.RaisePropertyChanged("LocationID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid PackageID {
+            get {
+                return this.PackageIDField;
+            }
+            set {
+                if ((this.PackageIDField.Equals(value) != true)) {
+                    this.PackageIDField = value;
+                    this.RaisePropertyChanged("PackageID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ProductWarehouseMain", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
     [System.SerializableAttribute()]
     public partial class ProductWarehouseMain : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -11533,131 +12375,6 @@ namespace Mes.Client.Service.BE {
                 if ((this.OrderIDField.Equals(value) != true)) {
                     this.OrderIDField = value;
                     this.RaisePropertyChanged("OrderID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ProductWarehouseDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class ProductWarehouseDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid DetailIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid InIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid LocationIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid PackageIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid DetailID {
-            get {
-                return this.DetailIDField;
-            }
-            set {
-                if ((this.DetailIDField.Equals(value) != true)) {
-                    this.DetailIDField = value;
-                    this.RaisePropertyChanged("DetailID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid InID {
-            get {
-                return this.InIDField;
-            }
-            set {
-                if ((this.InIDField.Equals(value) != true)) {
-                    this.InIDField = value;
-                    this.RaisePropertyChanged("InID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid LocationID {
-            get {
-                return this.LocationIDField;
-            }
-            set {
-                if ((this.LocationIDField.Equals(value) != true)) {
-                    this.LocationIDField = value;
-                    this.RaisePropertyChanged("LocationID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid PackageID {
-            get {
-                return this.PackageIDField;
-            }
-            set {
-                if ((this.PackageIDField.Equals(value) != true)) {
-                    this.PackageIDField = value;
-                    this.RaisePropertyChanged("PackageID");
                 }
             }
         }
@@ -17217,357 +17934,76 @@ namespace Mes.Client.Service.BE {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Solution", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SavePackageDetailArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
     [System.SerializableAttribute()]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.Sender))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.SearchResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.UserGroup))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchUserGroupArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUserGroupArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseInDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseInMain>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseInMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWarehouseInMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseInDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseInDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseInMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseOutDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseOutMain>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseOutMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWarehouseOutMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WarehouseOutDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WarehouseOutDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseOutMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkCenter>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkCenter))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkCenterArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkCenterArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkCenterScheduling>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkCenterScheduling))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkCenterSchedulingArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkCenterSchedulingArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkFlow))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkFlow>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkFlowArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkingLine>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkingLine))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkingLineArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkingLineArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShift>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShift))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkShiftArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShiftArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShift2WorkShopArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShift2WorkShop>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShift2WorkShop))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkShop>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShop))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkShopArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShopArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Cabinet))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolution2HardwareArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Hardware))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionOthers))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionOthersArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionOthersArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SpecialCompanent))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSpecialCompanentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SpecialCompanent2WorkFlow>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SpecialCompanent2WorkFlow))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SpecialCompanent>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSpecialCompanentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSpecialCompanent2WorkFlowArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Supplier))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSupplierArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSupplierArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSysLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SysLog))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSysLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveTransportArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.TransportDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.TransportDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.TransportMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchTransportMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchTransportDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.User))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchUserArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.User>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUserArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserPassword>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.UserPassword))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUser2RoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.User2Role))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.User2Role>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeCategory>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeCategory))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeCategoryArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeCategoryArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeItemArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeItemArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Role2PrivilegeItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Privilege>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Privilege))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductWarehouseArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductWarehouseDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductWarehouseDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductWarehouseMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductWarehouseMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductWarehouseDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Product2Hardware>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Product2Hardware))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductProcessFile>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductProcessFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProduct2HardwareArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductProcessFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.QuoteMain))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveQuoteMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.QuoteDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.QuoteDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchQuoteMainArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchQuoteDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Role))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Role>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchRoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesigner))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.RoomDesignerFile>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesignerFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.RoomDesigner>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchRoomDesignerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveRoomDesignerKJLRelationArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.RoomDesignerKJLRelation))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSMSLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SMSLog))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSMSLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PackageDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Partner))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Company))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Partner>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCompanyArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerRole))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerRole>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerRoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerRoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerRole2PrivilegeItem))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTask))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerTaskArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionFile>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerTaskArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerTaskStep>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTaskStep))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerTransDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerTransDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerTransDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerTransDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUser))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUser>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerUserArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUserArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUser2RoleArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUser2Role))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUser2Role>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerUserGroup))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerUserGroup>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerUserGroupArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerUserGroupArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2CabinetLog>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2CabinetLog))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrder2CabinetArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrder2HardwareArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2Hardware))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2Hardware>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrder2HardwareArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchAPSDetailsArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderLog>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderLog))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderMadeStateArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderMadeState>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderMadeState))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderProcessFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderProcessFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderProcessFile>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderProcessFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCreatedSchedulingArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderScheduling>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderScheduling))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderWorkFlow>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderWorkFlow))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderSchedulingArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderSchedulingArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderStepLog))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderStepLog>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderWorkFlowArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderWorkFlowArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Package))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Package>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchDepartmentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveDepartmentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Department))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoriteArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Favorite))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoritesArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Favorite>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchFavoriteArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.KeyValue))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.KeyValue>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Location))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveLocationArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchLocationArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveLogisticsEnterpriseArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.LogisticsEnterprise))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchLogisticsEnterpriseArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Material>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Material))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterialArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Material2Supplier>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Material2Supplier))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterialArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterial2SupplierArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterial2SupplierArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.MaterialQuotePrice))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveMaterialQuotePriceArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchMaterialQuotePriceArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Notice))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveNoticeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchNoticeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Cabinet2Door>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Cabinet2Door))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderProduct>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderProduct))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveOrder2CabinetArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2Cabinet))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2Cabinet>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OprationType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSet))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSet>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionSetArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductionSetArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSetDayDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSetDayDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSetWeekDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSetWeekDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionSetDayDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkOrder))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkOrder>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrder))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.WorkOrderComponent>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkOrderComponent))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveBattchFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.BattchFile))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchBattchFileArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.BattchFile>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCabinet2DoorArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCabinet2DoorArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCarArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Car))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCarArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCategoryArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Category))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Category>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCategoryArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Customer))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Customer>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerFollowUpArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CustomerFollowUp))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CustomerFollowUp>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerFollowUpArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CustomerTransDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCustomerTransDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CustomerTransDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCustomerTransDetailArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.CutTemplate>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.CutTemplate))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveCutTemplateArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCutTemplateArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Department>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterial))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterial>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterialExtension))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterialExtension>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialExtensionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialExtensionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentType))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentType>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentTypeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentTypeArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderProductArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderStep))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderStep>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrderProduct))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderProductArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductBOM))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductBOM>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductBOMArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductBOMArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductComponent))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductComponent>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductComponentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductComponentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionOrder>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchProductionOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveProductionOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionOrderComponent>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrderComponent))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SchedulingProductionOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrderScheduling))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ReviewDetail))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ReviewDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrder))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerOrderArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<System.Guid>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<string>))]
-    public partial class Solution : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial struct SavePackageDetailArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private Mes.Client.Service.BE.PackageDetail PackageDetailField;
+        
+        private System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail> PackageDetailsField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public Mes.Client.Service.BE.PackageDetail PackageDetail {
+            get {
+                return this.PackageDetailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PackageDetailField, value) != true)) {
+                    this.PackageDetailField = value;
+                    this.RaisePropertyChanged("PackageDetail");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail> PackageDetails {
+            get {
+                return this.PackageDetailsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PackageDetailsField, value) != true)) {
+                    this.PackageDetailsField = value;
+                    this.RaisePropertyChanged("PackageDetails");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PackageDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class PackageDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BattchNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CheckedByField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime CreatedField;
@@ -17576,16 +18012,28 @@ namespace Mes.Client.Service.BE {
         private string CreatedByField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid CustomerIDField;
+        private System.Guid DetailIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DesignSoftField;
+        private bool IsDisabledField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DesignerField;
+        private bool IsOptimizedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private object DesignerIDField;
+        private bool IsPackagedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool IsPakagedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private bool IsPlanningField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid ItemIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int LayerNumField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime ModifiedField;
@@ -17594,25 +18042,10 @@ namespace Mes.Client.Service.BE {
         private string ModifiedByField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid PartnerIDField;
+        private System.Guid PakageIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SolutionCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid SolutionIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SolutionNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string VersionField;
+        private int QtyField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -17621,6 +18054,32 @@ namespace Mes.Client.Service.BE {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BattchNo {
+            get {
+                return this.BattchNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BattchNoField, value) != true)) {
+                    this.BattchNoField = value;
+                    this.RaisePropertyChanged("BattchNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CheckedBy {
+            get {
+                return this.CheckedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CheckedByField, value) != true)) {
+                    this.CheckedByField = value;
+                    this.RaisePropertyChanged("CheckedBy");
+                }
             }
         }
         
@@ -17651,53 +18110,105 @@ namespace Mes.Client.Service.BE {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid CustomerID {
+        public System.Guid DetailID {
             get {
-                return this.CustomerIDField;
+                return this.DetailIDField;
             }
             set {
-                if ((this.CustomerIDField.Equals(value) != true)) {
-                    this.CustomerIDField = value;
-                    this.RaisePropertyChanged("CustomerID");
+                if ((this.DetailIDField.Equals(value) != true)) {
+                    this.DetailIDField = value;
+                    this.RaisePropertyChanged("DetailID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DesignSoft {
+        public bool IsDisabled {
             get {
-                return this.DesignSoftField;
+                return this.IsDisabledField;
             }
             set {
-                if ((object.ReferenceEquals(this.DesignSoftField, value) != true)) {
-                    this.DesignSoftField = value;
-                    this.RaisePropertyChanged("DesignSoft");
+                if ((this.IsDisabledField.Equals(value) != true)) {
+                    this.IsDisabledField = value;
+                    this.RaisePropertyChanged("IsDisabled");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Designer {
+        public bool IsOptimized {
             get {
-                return this.DesignerField;
+                return this.IsOptimizedField;
             }
             set {
-                if ((object.ReferenceEquals(this.DesignerField, value) != true)) {
-                    this.DesignerField = value;
-                    this.RaisePropertyChanged("Designer");
+                if ((this.IsOptimizedField.Equals(value) != true)) {
+                    this.IsOptimizedField = value;
+                    this.RaisePropertyChanged("IsOptimized");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public object DesignerID {
+        public bool IsPackaged {
             get {
-                return this.DesignerIDField;
+                return this.IsPackagedField;
             }
             set {
-                if ((object.ReferenceEquals(this.DesignerIDField, value) != true)) {
-                    this.DesignerIDField = value;
-                    this.RaisePropertyChanged("DesignerID");
+                if ((this.IsPackagedField.Equals(value) != true)) {
+                    this.IsPackagedField = value;
+                    this.RaisePropertyChanged("IsPackaged");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsPakaged {
+            get {
+                return this.IsPakagedField;
+            }
+            set {
+                if ((this.IsPakagedField.Equals(value) != true)) {
+                    this.IsPakagedField = value;
+                    this.RaisePropertyChanged("IsPakaged");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsPlanning {
+            get {
+                return this.IsPlanningField;
+            }
+            set {
+                if ((this.IsPlanningField.Equals(value) != true)) {
+                    this.IsPlanningField = value;
+                    this.RaisePropertyChanged("IsPlanning");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid ItemID {
+            get {
+                return this.ItemIDField;
+            }
+            set {
+                if ((this.ItemIDField.Equals(value) != true)) {
+                    this.ItemIDField = value;
+                    this.RaisePropertyChanged("ItemID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int LayerNum {
+            get {
+                return this.LayerNumField;
+            }
+            set {
+                if ((this.LayerNumField.Equals(value) != true)) {
+                    this.LayerNumField = value;
+                    this.RaisePropertyChanged("LayerNum");
                 }
             }
         }
@@ -17729,92 +18240,27 @@ namespace Mes.Client.Service.BE {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid PartnerID {
+        public System.Guid PakageID {
             get {
-                return this.PartnerIDField;
+                return this.PakageIDField;
             }
             set {
-                if ((this.PartnerIDField.Equals(value) != true)) {
-                    this.PartnerIDField = value;
-                    this.RaisePropertyChanged("PartnerID");
+                if ((this.PakageIDField.Equals(value) != true)) {
+                    this.PakageIDField = value;
+                    this.RaisePropertyChanged("PakageID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Remark {
+        public int Qty {
             get {
-                return this.RemarkField;
+                return this.QtyField;
             }
             set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SolutionCode {
-            get {
-                return this.SolutionCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolutionCodeField, value) != true)) {
-                    this.SolutionCodeField = value;
-                    this.RaisePropertyChanged("SolutionCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid SolutionID {
-            get {
-                return this.SolutionIDField;
-            }
-            set {
-                if ((this.SolutionIDField.Equals(value) != true)) {
-                    this.SolutionIDField = value;
-                    this.RaisePropertyChanged("SolutionID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SolutionName {
-            get {
-                return this.SolutionNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolutionNameField, value) != true)) {
-                    this.SolutionNameField = value;
-                    this.RaisePropertyChanged("SolutionName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Status {
-            get {
-                return this.StatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
-                    this.StatusField = value;
-                    this.RaisePropertyChanged("Status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Version {
-            get {
-                return this.VersionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.VersionField, value) != true)) {
-                    this.VersionField = value;
-                    this.RaisePropertyChanged("Version");
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
                 }
             }
         }
@@ -17822,109 +18268,6 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SaveSolutionArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial struct SaveSolutionArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private Mes.Client.Service.BE.Solution SolutionField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet> Solution2CabinetsField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware> Solution2HardwaresField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail> SolutionDetailsField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers> SolutionOthersField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.Solution Solution {
-            get {
-                return this.SolutionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolutionField, value) != true)) {
-                    this.SolutionField = value;
-                    this.RaisePropertyChanged("Solution");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet> Solution2Cabinets {
-            get {
-                return this.Solution2CabinetsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Solution2CabinetsField, value) != true)) {
-                    this.Solution2CabinetsField = value;
-                    this.RaisePropertyChanged("Solution2Cabinets");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware> Solution2Hardwares {
-            get {
-                return this.Solution2HardwaresField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Solution2HardwaresField, value) != true)) {
-                    this.Solution2HardwaresField = value;
-                    this.RaisePropertyChanged("Solution2Hardwares");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail> SolutionDetails {
-            get {
-                return this.SolutionDetailsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolutionDetailsField, value) != true)) {
-                    this.SolutionDetailsField = value;
-                    this.RaisePropertyChanged("SolutionDetails");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers> SolutionOthers {
-            get {
-                return this.SolutionOthersField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SolutionOthersField, value) != true)) {
-                    this.SolutionOthersField = value;
-                    this.RaisePropertyChanged("SolutionOthers");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -18656,291 +18999,6 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PackageDetail", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class PackageDetail : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BattchNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CheckedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid DetailIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsDisabledField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsOptimizedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsPackagedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsPakagedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool IsPlanningField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid ItemIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int LayerNumField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ModifiedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ModifiedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid PakageIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int QtyField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string BattchNo {
-            get {
-                return this.BattchNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BattchNoField, value) != true)) {
-                    this.BattchNoField = value;
-                    this.RaisePropertyChanged("BattchNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CheckedBy {
-            get {
-                return this.CheckedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CheckedByField, value) != true)) {
-                    this.CheckedByField = value;
-                    this.RaisePropertyChanged("CheckedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid DetailID {
-            get {
-                return this.DetailIDField;
-            }
-            set {
-                if ((this.DetailIDField.Equals(value) != true)) {
-                    this.DetailIDField = value;
-                    this.RaisePropertyChanged("DetailID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsDisabled {
-            get {
-                return this.IsDisabledField;
-            }
-            set {
-                if ((this.IsDisabledField.Equals(value) != true)) {
-                    this.IsDisabledField = value;
-                    this.RaisePropertyChanged("IsDisabled");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsOptimized {
-            get {
-                return this.IsOptimizedField;
-            }
-            set {
-                if ((this.IsOptimizedField.Equals(value) != true)) {
-                    this.IsOptimizedField = value;
-                    this.RaisePropertyChanged("IsOptimized");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsPackaged {
-            get {
-                return this.IsPackagedField;
-            }
-            set {
-                if ((this.IsPackagedField.Equals(value) != true)) {
-                    this.IsPackagedField = value;
-                    this.RaisePropertyChanged("IsPackaged");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsPakaged {
-            get {
-                return this.IsPakagedField;
-            }
-            set {
-                if ((this.IsPakagedField.Equals(value) != true)) {
-                    this.IsPakagedField = value;
-                    this.RaisePropertyChanged("IsPakaged");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool IsPlanning {
-            get {
-                return this.IsPlanningField;
-            }
-            set {
-                if ((this.IsPlanningField.Equals(value) != true)) {
-                    this.IsPlanningField = value;
-                    this.RaisePropertyChanged("IsPlanning");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid ItemID {
-            get {
-                return this.ItemIDField;
-            }
-            set {
-                if ((this.ItemIDField.Equals(value) != true)) {
-                    this.ItemIDField = value;
-                    this.RaisePropertyChanged("ItemID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int LayerNum {
-            get {
-                return this.LayerNumField;
-            }
-            set {
-                if ((this.LayerNumField.Equals(value) != true)) {
-                    this.LayerNumField = value;
-                    this.RaisePropertyChanged("LayerNum");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Modified {
-            get {
-                return this.ModifiedField;
-            }
-            set {
-                if ((this.ModifiedField.Equals(value) != true)) {
-                    this.ModifiedField = value;
-                    this.RaisePropertyChanged("Modified");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ModifiedBy {
-            get {
-                return this.ModifiedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
-                    this.ModifiedByField = value;
-                    this.RaisePropertyChanged("ModifiedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid PakageID {
-            get {
-                return this.PakageIDField;
-            }
-            set {
-                if ((this.PakageIDField.Equals(value) != true)) {
-                    this.PakageIDField = value;
-                    this.RaisePropertyChanged("PakageID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Qty {
-            get {
-                return this.QtyField;
-            }
-            set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -20768,8 +20826,8 @@ namespace Mes.Client.Service.BE {
     [System.SerializableAttribute()]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.Sender))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(MES.Libraries.SearchResult))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.UserGroup))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchUserGroupArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveUserGroupArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWarehouseInDetailArgs))]
@@ -20812,18 +20870,22 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.WorkShop))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveWorkShopArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchWorkShopArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Cabinet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Cabinet>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Cabinet))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Hardware))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionDetail))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionOthers))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionDetailArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionFileArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionFile))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionFileArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolution2HardwareArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution2Hardware))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SolutionOthers))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionOthers>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionOthersArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSolutionOthersArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SpecialCompanent))]
@@ -20858,8 +20920,8 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeCategory))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeCategoryArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeCategoryArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PrivilegeItem))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePrivilegeItemArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPrivilegeItemArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Role2PrivilegeItem))]
@@ -20905,14 +20967,11 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSMSLogArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SMSLog))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchSMSLogArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Solution))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveSolutionArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Solution2Hardware>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.SolutionDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageDetailArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PackageDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPackageDetailArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Partner))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Company))]
@@ -20981,10 +21040,9 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Package))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Package>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePackageDetailArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Department))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchDepartmentArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveDepartmentArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Department))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoriteArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Favorite))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveFavoritesArgs))]
@@ -21025,6 +21083,10 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.Order2Cabinet))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Order2Cabinet>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OprationType))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerOrderArgs))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrder))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrderProduct))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionSet))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductionSet>))]
@@ -21073,10 +21135,10 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchCutTemplateArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.Department>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterial))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterialExtension))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterial>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialArgs))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ComponentMaterialExtension))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ComponentMaterialExtension>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchComponentMaterialExtensionArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SaveComponentMaterialExtensionArgs))]
@@ -21087,8 +21149,6 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchOrderProductArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.OrderStep))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.OrderStep>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrderProduct))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SearchPartnerOrderProductArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductBOM))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ProductBOM>))]
@@ -21107,8 +21167,6 @@ namespace Mes.Client.Service.BE {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ProductionOrderScheduling))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.ReviewDetail))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<Mes.Client.Service.BE.ReviewDetail>))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.PartnerOrder))]
-    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Mes.Client.Service.BE.SavePartnerOrderArgs))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<System.Guid>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.Generic.List<string>))]
     public partial class PartnerTask : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -29792,240 +29850,6 @@ namespace Mes.Client.Service.BE {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SavePackageDetailArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial struct SavePackageDetailArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private Mes.Client.Service.BE.PackageDetail PackageDetailField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail> PackageDetailsField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.PackageDetail PackageDetail {
-            get {
-                return this.PackageDetailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PackageDetailField, value) != true)) {
-                    this.PackageDetailField = value;
-                    this.RaisePropertyChanged("PackageDetail");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.PackageDetail> PackageDetails {
-            get {
-                return this.PackageDetailsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PackageDetailsField, value) != true)) {
-                    this.PackageDetailsField = value;
-                    this.RaisePropertyChanged("PackageDetails");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SearchDepartmentArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial struct SearchDepartmentArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private System.Collections.Generic.List<string> DepartmentCodesField;
-        
-        private System.Collections.Generic.List<System.Guid> DepartmentIDsField;
-        
-        private System.Collections.Generic.List<string> DepartmentNamesField;
-        
-        private System.Nullable<bool> IsDisabledField;
-        
-        private string OrderByField;
-        
-        private System.Nullable<int> RowNumberFromField;
-        
-        private System.Nullable<int> RowNumberToField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<string> DepartmentCodes {
-            get {
-                return this.DepartmentCodesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DepartmentCodesField, value) != true)) {
-                    this.DepartmentCodesField = value;
-                    this.RaisePropertyChanged("DepartmentCodes");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<System.Guid> DepartmentIDs {
-            get {
-                return this.DepartmentIDsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DepartmentIDsField, value) != true)) {
-                    this.DepartmentIDsField = value;
-                    this.RaisePropertyChanged("DepartmentIDs");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<string> DepartmentNames {
-            get {
-                return this.DepartmentNamesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DepartmentNamesField, value) != true)) {
-                    this.DepartmentNamesField = value;
-                    this.RaisePropertyChanged("DepartmentNames");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<bool> IsDisabled {
-            get {
-                return this.IsDisabledField;
-            }
-            set {
-                if ((this.IsDisabledField.Equals(value) != true)) {
-                    this.IsDisabledField = value;
-                    this.RaisePropertyChanged("IsDisabled");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public string OrderBy {
-            get {
-                return this.OrderByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderByField, value) != true)) {
-                    this.OrderByField = value;
-                    this.RaisePropertyChanged("OrderBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<int> RowNumberFrom {
-            get {
-                return this.RowNumberFromField;
-            }
-            set {
-                if ((this.RowNumberFromField.Equals(value) != true)) {
-                    this.RowNumberFromField = value;
-                    this.RaisePropertyChanged("RowNumberFrom");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Nullable<int> RowNumberTo {
-            get {
-                return this.RowNumberToField;
-            }
-            set {
-                if ((this.RowNumberToField.Equals(value) != true)) {
-                    this.RowNumberToField = value;
-                    this.RaisePropertyChanged("RowNumberTo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SaveDepartmentArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial struct SaveDepartmentArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private Mes.Client.Service.BE.Department DepartmentField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.Department Department {
-            get {
-                return this.DepartmentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DepartmentField, value) != true)) {
-                    this.DepartmentField = value;
-                    this.RaisePropertyChanged("Department");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Department", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
     [System.SerializableAttribute()]
     public partial class Department : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -30222,6 +30046,182 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SearchDepartmentArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial struct SearchDepartmentArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private System.Collections.Generic.List<string> DepartmentCodesField;
+        
+        private System.Collections.Generic.List<System.Guid> DepartmentIDsField;
+        
+        private System.Collections.Generic.List<string> DepartmentNamesField;
+        
+        private System.Nullable<bool> IsDisabledField;
+        
+        private string OrderByField;
+        
+        private System.Nullable<int> RowNumberFromField;
+        
+        private System.Nullable<int> RowNumberToField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<string> DepartmentCodes {
+            get {
+                return this.DepartmentCodesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DepartmentCodesField, value) != true)) {
+                    this.DepartmentCodesField = value;
+                    this.RaisePropertyChanged("DepartmentCodes");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<System.Guid> DepartmentIDs {
+            get {
+                return this.DepartmentIDsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DepartmentIDsField, value) != true)) {
+                    this.DepartmentIDsField = value;
+                    this.RaisePropertyChanged("DepartmentIDs");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<string> DepartmentNames {
+            get {
+                return this.DepartmentNamesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DepartmentNamesField, value) != true)) {
+                    this.DepartmentNamesField = value;
+                    this.RaisePropertyChanged("DepartmentNames");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<bool> IsDisabled {
+            get {
+                return this.IsDisabledField;
+            }
+            set {
+                if ((this.IsDisabledField.Equals(value) != true)) {
+                    this.IsDisabledField = value;
+                    this.RaisePropertyChanged("IsDisabled");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public string OrderBy {
+            get {
+                return this.OrderByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderByField, value) != true)) {
+                    this.OrderByField = value;
+                    this.RaisePropertyChanged("OrderBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> RowNumberFrom {
+            get {
+                return this.RowNumberFromField;
+            }
+            set {
+                if ((this.RowNumberFromField.Equals(value) != true)) {
+                    this.RowNumberFromField = value;
+                    this.RaisePropertyChanged("RowNumberFrom");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Nullable<int> RowNumberTo {
+            get {
+                return this.RowNumberToField;
+            }
+            set {
+                if ((this.RowNumberToField.Equals(value) != true)) {
+                    this.RowNumberToField = value;
+                    this.RaisePropertyChanged("RowNumberTo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SaveDepartmentArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial struct SaveDepartmentArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private Mes.Client.Service.BE.Department DepartmentField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public Mes.Client.Service.BE.Department Department {
+            get {
+                return this.DepartmentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DepartmentField, value) != true)) {
+                    this.DepartmentField = value;
+                    this.RaisePropertyChanged("Department");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -35492,6 +35492,840 @@ namespace Mes.Client.Service.BE {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
         cancelDelete = 5,
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SavePartnerOrderArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial struct SavePartnerOrderArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private Mes.Client.Service.BE.PartnerOrder OrderField;
+        
+        private Mes.Client.Service.BE.OrderLog OrderLogField;
+        
+        private Mes.Client.Service.BE.OrderStepLog OrderStepLogField;
+        
+        private System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct> PartnerOrderProductsField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public Mes.Client.Service.BE.PartnerOrder Order {
+            get {
+                return this.OrderField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderField, value) != true)) {
+                    this.OrderField = value;
+                    this.RaisePropertyChanged("Order");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public Mes.Client.Service.BE.OrderLog OrderLog {
+            get {
+                return this.OrderLogField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderLogField, value) != true)) {
+                    this.OrderLogField = value;
+                    this.RaisePropertyChanged("OrderLog");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public Mes.Client.Service.BE.OrderStepLog OrderStepLog {
+            get {
+                return this.OrderStepLogField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderStepLogField, value) != true)) {
+                    this.OrderStepLogField = value;
+                    this.RaisePropertyChanged("OrderStepLog");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct> PartnerOrderProducts {
+            get {
+                return this.PartnerOrderProductsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerOrderProductsField, value) != true)) {
+                    this.PartnerOrderProductsField = value;
+                    this.RaisePropertyChanged("PartnerOrderProducts");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PartnerOrder", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class PartnerOrder : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AddressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AttachmentFileField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime BookingDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid CustomerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CustomerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MobileField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ModifiedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModifiedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid OrderIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OrderNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OrderTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OutOrderNoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid PartnerIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PartnerNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SalesManField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ShipDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int StepNoField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Address {
+            get {
+                return this.AddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
+                    this.AddressField = value;
+                    this.RaisePropertyChanged("Address");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AttachmentFile {
+            get {
+                return this.AttachmentFileField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AttachmentFileField, value) != true)) {
+                    this.AttachmentFileField = value;
+                    this.RaisePropertyChanged("AttachmentFile");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime BookingDate {
+            get {
+                return this.BookingDateField;
+            }
+            set {
+                if ((this.BookingDateField.Equals(value) != true)) {
+                    this.BookingDateField = value;
+                    this.RaisePropertyChanged("BookingDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid CustomerID {
+            get {
+                return this.CustomerIDField;
+            }
+            set {
+                if ((this.CustomerIDField.Equals(value) != true)) {
+                    this.CustomerIDField = value;
+                    this.RaisePropertyChanged("CustomerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CustomerName {
+            get {
+                return this.CustomerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CustomerNameField, value) != true)) {
+                    this.CustomerNameField = value;
+                    this.RaisePropertyChanged("CustomerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Mobile {
+            get {
+                return this.MobileField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MobileField, value) != true)) {
+                    this.MobileField = value;
+                    this.RaisePropertyChanged("Mobile");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModifiedBy {
+            get {
+                return this.ModifiedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
+                    this.ModifiedByField = value;
+                    this.RaisePropertyChanged("ModifiedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid OrderID {
+            get {
+                return this.OrderIDField;
+            }
+            set {
+                if ((this.OrderIDField.Equals(value) != true)) {
+                    this.OrderIDField = value;
+                    this.RaisePropertyChanged("OrderID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OrderNo {
+            get {
+                return this.OrderNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderNoField, value) != true)) {
+                    this.OrderNoField = value;
+                    this.RaisePropertyChanged("OrderNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OrderType {
+            get {
+                return this.OrderTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OrderTypeField, value) != true)) {
+                    this.OrderTypeField = value;
+                    this.RaisePropertyChanged("OrderType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OutOrderNo {
+            get {
+                return this.OutOrderNoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OutOrderNoField, value) != true)) {
+                    this.OutOrderNoField = value;
+                    this.RaisePropertyChanged("OutOrderNo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid PartnerID {
+            get {
+                return this.PartnerIDField;
+            }
+            set {
+                if ((this.PartnerIDField.Equals(value) != true)) {
+                    this.PartnerIDField = value;
+                    this.RaisePropertyChanged("PartnerID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PartnerName {
+            get {
+                return this.PartnerNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartnerNameField, value) != true)) {
+                    this.PartnerNameField = value;
+                    this.RaisePropertyChanged("PartnerName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Remark {
+            get {
+                return this.RemarkField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SalesMan {
+            get {
+                return this.SalesManField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SalesManField, value) != true)) {
+                    this.SalesManField = value;
+                    this.RaisePropertyChanged("SalesMan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime ShipDate {
+            get {
+                return this.ShipDateField;
+            }
+            set {
+                if ((this.ShipDateField.Equals(value) != true)) {
+                    this.ShipDateField = value;
+                    this.RaisePropertyChanged("ShipDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status {
+            get {
+                return this.StatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
+                    this.StatusField = value;
+                    this.RaisePropertyChanged("Status");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int StepNo {
+            get {
+                return this.StepNoField;
+            }
+            set {
+                if ((this.StepNoField.Equals(value) != true)) {
+                    this.StepNoField = value;
+                    this.RaisePropertyChanged("StepNo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PartnerOrderProduct", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class PartnerOrderProduct : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BattchCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ColorField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialCategoryField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MaterialStyleField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime ModifiedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ModifiedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid OrderIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal PriceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductGroupField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid ProductIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ProductStatusField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal QtyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal SalePriceField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SizeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal TotalArealField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal TotalLengthField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UnitField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string BattchCode {
+            get {
+                return this.BattchCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BattchCodeField, value) != true)) {
+                    this.BattchCodeField = value;
+                    this.RaisePropertyChanged("BattchCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Color {
+            get {
+                return this.ColorField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ColorField, value) != true)) {
+                    this.ColorField = value;
+                    this.RaisePropertyChanged("Color");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaterialCategory {
+            get {
+                return this.MaterialCategoryField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialCategoryField, value) != true)) {
+                    this.MaterialCategoryField = value;
+                    this.RaisePropertyChanged("MaterialCategory");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaterialStyle {
+            get {
+                return this.MaterialStyleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaterialStyleField, value) != true)) {
+                    this.MaterialStyleField = value;
+                    this.RaisePropertyChanged("MaterialStyle");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Modified {
+            get {
+                return this.ModifiedField;
+            }
+            set {
+                if ((this.ModifiedField.Equals(value) != true)) {
+                    this.ModifiedField = value;
+                    this.RaisePropertyChanged("Modified");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ModifiedBy {
+            get {
+                return this.ModifiedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
+                    this.ModifiedByField = value;
+                    this.RaisePropertyChanged("ModifiedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid OrderID {
+            get {
+                return this.OrderIDField;
+            }
+            set {
+                if ((this.OrderIDField.Equals(value) != true)) {
+                    this.OrderIDField = value;
+                    this.RaisePropertyChanged("OrderID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Price {
+            get {
+                return this.PriceField;
+            }
+            set {
+                if ((this.PriceField.Equals(value) != true)) {
+                    this.PriceField = value;
+                    this.RaisePropertyChanged("Price");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductCode {
+            get {
+                return this.ProductCodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductCodeField, value) != true)) {
+                    this.ProductCodeField = value;
+                    this.RaisePropertyChanged("ProductCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductGroup {
+            get {
+                return this.ProductGroupField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductGroupField, value) != true)) {
+                    this.ProductGroupField = value;
+                    this.RaisePropertyChanged("ProductGroup");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid ProductID {
+            get {
+                return this.ProductIDField;
+            }
+            set {
+                if ((this.ProductIDField.Equals(value) != true)) {
+                    this.ProductIDField = value;
+                    this.RaisePropertyChanged("ProductID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductName {
+            get {
+                return this.ProductNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductNameField, value) != true)) {
+                    this.ProductNameField = value;
+                    this.RaisePropertyChanged("ProductName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ProductStatus {
+            get {
+                return this.ProductStatusField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductStatusField, value) != true)) {
+                    this.ProductStatusField = value;
+                    this.RaisePropertyChanged("ProductStatus");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Qty {
+            get {
+                return this.QtyField;
+            }
+            set {
+                if ((this.QtyField.Equals(value) != true)) {
+                    this.QtyField = value;
+                    this.RaisePropertyChanged("Qty");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Remark {
+            get {
+                return this.RemarkField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal SalePrice {
+            get {
+                return this.SalePriceField;
+            }
+            set {
+                if ((this.SalePriceField.Equals(value) != true)) {
+                    this.SalePriceField = value;
+                    this.RaisePropertyChanged("SalePrice");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Size {
+            get {
+                return this.SizeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SizeField, value) != true)) {
+                    this.SizeField = value;
+                    this.RaisePropertyChanged("Size");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal TotalAreal {
+            get {
+                return this.TotalArealField;
+            }
+            set {
+                if ((this.TotalArealField.Equals(value) != true)) {
+                    this.TotalArealField = value;
+                    this.RaisePropertyChanged("TotalAreal");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal TotalLength {
+            get {
+                return this.TotalLengthField;
+            }
+            set {
+                if ((this.TotalLengthField.Equals(value) != true)) {
+                    this.TotalLengthField = value;
+                    this.RaisePropertyChanged("TotalLength");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Unit {
+            get {
+                return this.UnitField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
+                    this.UnitField = value;
+                    this.RaisePropertyChanged("Unit");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -41066,6 +41900,9 @@ namespace Mes.Client.Service.BE {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private decimal AmountField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string ColorField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -41100,6 +41937,9 @@ namespace Mes.Client.Service.BE {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string EdgeRightField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Mes.Client.Service.BE.ComponentMaterialExtension ExtensionModelField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string HeightField;
@@ -41159,6 +41999,19 @@ namespace Mes.Client.Service.BE {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public decimal Amount {
+            get {
+                return this.AmountField;
+            }
+            set {
+                if ((this.AmountField.Equals(value) != true)) {
+                    this.AmountField = value;
+                    this.RaisePropertyChanged("Amount");
+                }
             }
         }
         
@@ -41314,6 +42167,19 @@ namespace Mes.Client.Service.BE {
                 if ((object.ReferenceEquals(this.EdgeRightField, value) != true)) {
                     this.EdgeRightField = value;
                     this.RaisePropertyChanged("EdgeRight");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Mes.Client.Service.BE.ComponentMaterialExtension ExtensionModel {
+            get {
+                return this.ExtensionModelField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ExtensionModelField, value) != true)) {
+                    this.ExtensionModelField = value;
+                    this.RaisePropertyChanged("ExtensionModel");
                 }
             }
         }
@@ -41535,6 +42401,195 @@ namespace Mes.Client.Service.BE {
                 if ((object.ReferenceEquals(this.WidthField, value) != true)) {
                     this.WidthField = value;
                     this.RaisePropertyChanged("Width");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ComponentMaterialExtension", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
+    [System.SerializableAttribute()]
+    public partial class ComponentMaterialExtension : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string BarcodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ComponentMaterialIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime CreatedField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CreatedByField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MachineFileField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MprAField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MprBField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OutputNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string RemarkField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Barcode {
+            get {
+                return this.BarcodeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
+                    this.BarcodeField = value;
+                    this.RaisePropertyChanged("Barcode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ComponentMaterialID {
+            get {
+                return this.ComponentMaterialIDField;
+            }
+            set {
+                if ((this.ComponentMaterialIDField.Equals(value) != true)) {
+                    this.ComponentMaterialIDField = value;
+                    this.RaisePropertyChanged("ComponentMaterialID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Created {
+            get {
+                return this.CreatedField;
+            }
+            set {
+                if ((this.CreatedField.Equals(value) != true)) {
+                    this.CreatedField = value;
+                    this.RaisePropertyChanged("Created");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CreatedBy {
+            get {
+                return this.CreatedByField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
+                    this.CreatedByField = value;
+                    this.RaisePropertyChanged("CreatedBy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MachineFile {
+            get {
+                return this.MachineFileField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MachineFileField, value) != true)) {
+                    this.MachineFileField = value;
+                    this.RaisePropertyChanged("MachineFile");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MprA {
+            get {
+                return this.MprAField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MprAField, value) != true)) {
+                    this.MprAField = value;
+                    this.RaisePropertyChanged("MprA");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MprB {
+            get {
+                return this.MprBField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MprBField, value) != true)) {
+                    this.MprBField = value;
+                    this.RaisePropertyChanged("MprB");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string OutputName {
+            get {
+                return this.OutputNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OutputNameField, value) != true)) {
+                    this.OutputNameField = value;
+                    this.RaisePropertyChanged("OutputName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Remark {
+            get {
+                return this.RemarkField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
+                    this.RemarkField = value;
+                    this.RaisePropertyChanged("Remark");
                 }
             }
         }
@@ -42108,195 +43163,6 @@ namespace Mes.Client.Service.BE {
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ComponentMaterialExtension", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class ComponentMaterialExtension : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BarcodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ComponentMaterialIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MachineFileField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MprAField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MprBField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutputNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Barcode {
-            get {
-                return this.BarcodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BarcodeField, value) != true)) {
-                    this.BarcodeField = value;
-                    this.RaisePropertyChanged("Barcode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ComponentMaterialID {
-            get {
-                return this.ComponentMaterialIDField;
-            }
-            set {
-                if ((this.ComponentMaterialIDField.Equals(value) != true)) {
-                    this.ComponentMaterialIDField = value;
-                    this.RaisePropertyChanged("ComponentMaterialID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ID {
-            get {
-                return this.IDField;
-            }
-            set {
-                if ((this.IDField.Equals(value) != true)) {
-                    this.IDField = value;
-                    this.RaisePropertyChanged("ID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MachineFile {
-            get {
-                return this.MachineFileField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MachineFileField, value) != true)) {
-                    this.MachineFileField = value;
-                    this.RaisePropertyChanged("MachineFile");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MprA {
-            get {
-                return this.MprAField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MprAField, value) != true)) {
-                    this.MprAField = value;
-                    this.RaisePropertyChanged("MprA");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MprB {
-            get {
-                return this.MprBField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MprBField, value) != true)) {
-                    this.MprBField = value;
-                    this.RaisePropertyChanged("MprB");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string OutputName {
-            get {
-                return this.OutputNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutputNameField, value) != true)) {
-                    this.OutputNameField = value;
-                    this.RaisePropertyChanged("OutputName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Remark {
-            get {
-                return this.RemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
             System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
             if ((propertyChanged != null)) {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -43462,387 +44328,6 @@ namespace Mes.Client.Service.BE {
                 if ((this.StepNoField.Equals(value) != true)) {
                     this.StepNoField = value;
                     this.RaisePropertyChanged("StepNo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PartnerOrderProduct", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class PartnerOrderProduct : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string BattchCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ColorField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialCategoryField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MaterialStyleField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ModifiedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ModifiedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid OrderIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal PriceField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductCodeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductGroupField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid ProductIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ProductStatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal QtyField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal SalePriceField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SizeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal TotalArealField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private decimal TotalLengthField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UnitField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string BattchCode {
-            get {
-                return this.BattchCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.BattchCodeField, value) != true)) {
-                    this.BattchCodeField = value;
-                    this.RaisePropertyChanged("BattchCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Color {
-            get {
-                return this.ColorField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ColorField, value) != true)) {
-                    this.ColorField = value;
-                    this.RaisePropertyChanged("Color");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MaterialCategory {
-            get {
-                return this.MaterialCategoryField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialCategoryField, value) != true)) {
-                    this.MaterialCategoryField = value;
-                    this.RaisePropertyChanged("MaterialCategory");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MaterialStyle {
-            get {
-                return this.MaterialStyleField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaterialStyleField, value) != true)) {
-                    this.MaterialStyleField = value;
-                    this.RaisePropertyChanged("MaterialStyle");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Modified {
-            get {
-                return this.ModifiedField;
-            }
-            set {
-                if ((this.ModifiedField.Equals(value) != true)) {
-                    this.ModifiedField = value;
-                    this.RaisePropertyChanged("Modified");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ModifiedBy {
-            get {
-                return this.ModifiedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
-                    this.ModifiedByField = value;
-                    this.RaisePropertyChanged("ModifiedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid OrderID {
-            get {
-                return this.OrderIDField;
-            }
-            set {
-                if ((this.OrderIDField.Equals(value) != true)) {
-                    this.OrderIDField = value;
-                    this.RaisePropertyChanged("OrderID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Price {
-            get {
-                return this.PriceField;
-            }
-            set {
-                if ((this.PriceField.Equals(value) != true)) {
-                    this.PriceField = value;
-                    this.RaisePropertyChanged("Price");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ProductCode {
-            get {
-                return this.ProductCodeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ProductCodeField, value) != true)) {
-                    this.ProductCodeField = value;
-                    this.RaisePropertyChanged("ProductCode");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ProductGroup {
-            get {
-                return this.ProductGroupField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ProductGroupField, value) != true)) {
-                    this.ProductGroupField = value;
-                    this.RaisePropertyChanged("ProductGroup");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid ProductID {
-            get {
-                return this.ProductIDField;
-            }
-            set {
-                if ((this.ProductIDField.Equals(value) != true)) {
-                    this.ProductIDField = value;
-                    this.RaisePropertyChanged("ProductID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ProductName {
-            get {
-                return this.ProductNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ProductNameField, value) != true)) {
-                    this.ProductNameField = value;
-                    this.RaisePropertyChanged("ProductName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ProductStatus {
-            get {
-                return this.ProductStatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ProductStatusField, value) != true)) {
-                    this.ProductStatusField = value;
-                    this.RaisePropertyChanged("ProductStatus");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal Qty {
-            get {
-                return this.QtyField;
-            }
-            set {
-                if ((this.QtyField.Equals(value) != true)) {
-                    this.QtyField = value;
-                    this.RaisePropertyChanged("Qty");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Remark {
-            get {
-                return this.RemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal SalePrice {
-            get {
-                return this.SalePriceField;
-            }
-            set {
-                if ((this.SalePriceField.Equals(value) != true)) {
-                    this.SalePriceField = value;
-                    this.RaisePropertyChanged("SalePrice");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Size {
-            get {
-                return this.SizeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SizeField, value) != true)) {
-                    this.SizeField = value;
-                    this.RaisePropertyChanged("Size");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal TotalAreal {
-            get {
-                return this.TotalArealField;
-            }
-            set {
-                if ((this.TotalArealField.Equals(value) != true)) {
-                    this.TotalArealField = value;
-                    this.RaisePropertyChanged("TotalAreal");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public decimal TotalLength {
-            get {
-                return this.TotalLengthField;
-            }
-            set {
-                if ((this.TotalLengthField.Equals(value) != true)) {
-                    this.TotalLengthField = value;
-                    this.RaisePropertyChanged("TotalLength");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Unit {
-            get {
-                return this.UnitField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.UnitField, value) != true)) {
-                    this.UnitField = value;
-                    this.RaisePropertyChanged("Unit");
                 }
             }
         }
@@ -46167,462 +46652,15 @@ namespace Mes.Client.Service.BE {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PartnerOrder", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial class PartnerOrder : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AddressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AttachmentFileField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime BookingDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime CreatedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CreatedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid CustomerIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CustomerNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MobileField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ModifiedField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ModifiedByField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid OrderIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OrderNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OrderTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OutOrderNoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Guid PartnerIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PartnerNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string RemarkField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string SalesManField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime ShipDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StatusField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int StepNoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Address {
-            get {
-                return this.AddressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
-                    this.AddressField = value;
-                    this.RaisePropertyChanged("Address");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string AttachmentFile {
-            get {
-                return this.AttachmentFileField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AttachmentFileField, value) != true)) {
-                    this.AttachmentFileField = value;
-                    this.RaisePropertyChanged("AttachmentFile");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime BookingDate {
-            get {
-                return this.BookingDateField;
-            }
-            set {
-                if ((this.BookingDateField.Equals(value) != true)) {
-                    this.BookingDateField = value;
-                    this.RaisePropertyChanged("BookingDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Created {
-            get {
-                return this.CreatedField;
-            }
-            set {
-                if ((this.CreatedField.Equals(value) != true)) {
-                    this.CreatedField = value;
-                    this.RaisePropertyChanged("Created");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CreatedBy {
-            get {
-                return this.CreatedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CreatedByField, value) != true)) {
-                    this.CreatedByField = value;
-                    this.RaisePropertyChanged("CreatedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid CustomerID {
-            get {
-                return this.CustomerIDField;
-            }
-            set {
-                if ((this.CustomerIDField.Equals(value) != true)) {
-                    this.CustomerIDField = value;
-                    this.RaisePropertyChanged("CustomerID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CustomerName {
-            get {
-                return this.CustomerNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CustomerNameField, value) != true)) {
-                    this.CustomerNameField = value;
-                    this.RaisePropertyChanged("CustomerName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Mobile {
-            get {
-                return this.MobileField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MobileField, value) != true)) {
-                    this.MobileField = value;
-                    this.RaisePropertyChanged("Mobile");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Modified {
-            get {
-                return this.ModifiedField;
-            }
-            set {
-                if ((this.ModifiedField.Equals(value) != true)) {
-                    this.ModifiedField = value;
-                    this.RaisePropertyChanged("Modified");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string ModifiedBy {
-            get {
-                return this.ModifiedByField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ModifiedByField, value) != true)) {
-                    this.ModifiedByField = value;
-                    this.RaisePropertyChanged("ModifiedBy");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid OrderID {
-            get {
-                return this.OrderIDField;
-            }
-            set {
-                if ((this.OrderIDField.Equals(value) != true)) {
-                    this.OrderIDField = value;
-                    this.RaisePropertyChanged("OrderID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string OrderNo {
-            get {
-                return this.OrderNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderNoField, value) != true)) {
-                    this.OrderNoField = value;
-                    this.RaisePropertyChanged("OrderNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string OrderType {
-            get {
-                return this.OrderTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderTypeField, value) != true)) {
-                    this.OrderTypeField = value;
-                    this.RaisePropertyChanged("OrderType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string OutOrderNo {
-            get {
-                return this.OutOrderNoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OutOrderNoField, value) != true)) {
-                    this.OutOrderNoField = value;
-                    this.RaisePropertyChanged("OutOrderNo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Guid PartnerID {
-            get {
-                return this.PartnerIDField;
-            }
-            set {
-                if ((this.PartnerIDField.Equals(value) != true)) {
-                    this.PartnerIDField = value;
-                    this.RaisePropertyChanged("PartnerID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PartnerName {
-            get {
-                return this.PartnerNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PartnerNameField, value) != true)) {
-                    this.PartnerNameField = value;
-                    this.RaisePropertyChanged("PartnerName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Remark {
-            get {
-                return this.RemarkField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RemarkField, value) != true)) {
-                    this.RemarkField = value;
-                    this.RaisePropertyChanged("Remark");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string SalesMan {
-            get {
-                return this.SalesManField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.SalesManField, value) != true)) {
-                    this.SalesManField = value;
-                    this.RaisePropertyChanged("SalesMan");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime ShipDate {
-            get {
-                return this.ShipDateField;
-            }
-            set {
-                if ((this.ShipDateField.Equals(value) != true)) {
-                    this.ShipDateField = value;
-                    this.RaisePropertyChanged("ShipDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Status {
-            get {
-                return this.StatusField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StatusField, value) != true)) {
-                    this.StatusField = value;
-                    this.RaisePropertyChanged("Status");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int StepNo {
-            get {
-                return this.StepNoField;
-            }
-            set {
-                if ((this.StepNoField.Equals(value) != true)) {
-                    this.StepNoField = value;
-                    this.RaisePropertyChanged("StepNo");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="SavePartnerOrderArgs", Namespace="http://schemas.datacontract.org/2004/07/Mes.BE.Objects")]
-    [System.SerializableAttribute()]
-    public partial struct SavePartnerOrderArgs : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private Mes.Client.Service.BE.PartnerOrder OrderField;
-        
-        private Mes.Client.Service.BE.OrderLog OrderLogField;
-        
-        private Mes.Client.Service.BE.OrderStepLog OrderStepLogField;
-        
-        private System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct> PartnerOrderProductsField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.PartnerOrder Order {
-            get {
-                return this.OrderField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderField, value) != true)) {
-                    this.OrderField = value;
-                    this.RaisePropertyChanged("Order");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.OrderLog OrderLog {
-            get {
-                return this.OrderLogField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderLogField, value) != true)) {
-                    this.OrderLogField = value;
-                    this.RaisePropertyChanged("OrderLog");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public Mes.Client.Service.BE.OrderStepLog OrderStepLog {
-            get {
-                return this.OrderStepLogField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.OrderStepLogField, value) != true)) {
-                    this.OrderStepLogField = value;
-                    this.RaisePropertyChanged("OrderStepLog");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
-        public System.Collections.Generic.List<Mes.Client.Service.BE.PartnerOrderProduct> PartnerOrderProducts {
-            get {
-                return this.PartnerOrderProductsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PartnerOrderProductsField, value) != true)) {
-                    this.PartnerOrderProductsField = value;
-                    this.RaisePropertyChanged("PartnerOrderProducts");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="BE.IServiceBE")]
     public interface IServiceBE {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetUserGroup", ReplyAction="http://tempuri.org/IServiceBE/GetUserGroupResponse")]
+        Mes.Client.Service.BE.UserGroup GetUserGroup(MES.Libraries.Sender sender, System.Guid groupID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetUserGroup", ReplyAction="http://tempuri.org/IServiceBE/GetUserGroupResponse")]
+        System.Threading.Tasks.Task<Mes.Client.Service.BE.UserGroup> GetUserGroupAsync(MES.Libraries.Sender sender, System.Guid groupID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetAllUserGroup", ReplyAction="http://tempuri.org/IServiceBE/GetAllUserGroupResponse")]
         System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup> GetAllUserGroup(MES.Libraries.Sender sender);
@@ -46911,6 +46949,12 @@ namespace Mes.Client.Service.BE {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SearchWorkShop", ReplyAction="http://tempuri.org/IServiceBE/SearchWorkShopResponse")]
         System.Threading.Tasks.Task<MES.Libraries.SearchResult> SearchWorkShopAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchWorkShopArgs args);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveSolution", ReplyAction="http://tempuri.org/IServiceBE/SaveSolutionResponse")]
+        void SaveSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveSolution", ReplyAction="http://tempuri.org/IServiceBE/SaveSolutionResponse")]
+        System.Threading.Tasks.Task SaveSolutionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SearchSolution", ReplyAction="http://tempuri.org/IServiceBE/SearchSolutionResponse")]
         MES.Libraries.SearchResult SearchSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchSolutionArgs args);
@@ -47290,11 +47334,11 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeCategoryIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeCategoryIsDuplicatedResponse")]
         System.Threading.Tasks.Task<bool> PrivilegeCategoryIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeCategory privilegeCategory);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetUserGroup", ReplyAction="http://tempuri.org/IServiceBE/GetUserGroupResponse")]
-        Mes.Client.Service.BE.UserGroup GetUserGroup(MES.Libraries.Sender sender, System.Guid groupID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicatedResponse")]
+        bool PrivilegeItemCodeIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetUserGroup", ReplyAction="http://tempuri.org/IServiceBE/GetUserGroupResponse")]
-        System.Threading.Tasks.Task<Mes.Client.Service.BE.UserGroup> GetUserGroupAsync(MES.Libraries.Sender sender, System.Guid groupID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicatedResponse")]
+        System.Threading.Tasks.Task<bool> PrivilegeItemCodeIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeID", ReplyAction="http://tempuri.org/IServiceBE/GetPrivilegeItemByPrivilegeIDResponse")]
         System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem> GetPrivilegeItemByPrivilegeID(MES.Libraries.Sender sender, System.Guid privilegeID);
@@ -47678,11 +47722,11 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetSolutionBySolutionCode", ReplyAction="http://tempuri.org/IServiceBE/GetSolutionBySolutionCodeResponse")]
         System.Threading.Tasks.Task<Mes.Client.Service.BE.Solution> GetSolutionBySolutionCodeAsync(MES.Libraries.Sender sender, string SolutionCode);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveSolution", ReplyAction="http://tempuri.org/IServiceBE/SaveSolutionResponse")]
-        void SaveSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePackageDetail", ReplyAction="http://tempuri.org/IServiceBE/SavePackageDetailResponse")]
+        void SavePackageDetail(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveSolution", ReplyAction="http://tempuri.org/IServiceBE/SaveSolutionResponse")]
-        System.Threading.Tasks.Task SaveSolutionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePackageDetail", ReplyAction="http://tempuri.org/IServiceBE/SavePackageDetailResponse")]
+        System.Threading.Tasks.Task SavePackageDetailAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SearchPackage", ReplyAction="http://tempuri.org/IServiceBE/SearchPackageResponse")]
         MES.Libraries.SearchResult SearchPackage(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchPackageArgs args);
@@ -48062,11 +48106,11 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeItemNameIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeItemNameIsDuplicatedResponse")]
         System.Threading.Tasks.Task<bool> PrivilegeItemNameIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicatedResponse")]
-        bool PrivilegeItemCodeIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQty", ReplyAction="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQtyResponse")]
+        int GetTotalOrderCabinetQty(MES.Libraries.Sender sender, System.Guid OrderID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/PrivilegeItemCodeIsDuplicatedResponse")]
-        System.Threading.Tasks.Task<bool> PrivilegeItemCodeIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQty", ReplyAction="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQtyResponse")]
+        System.Threading.Tasks.Task<int> GetTotalOrderCabinetQtyAsync(MES.Libraries.Sender sender, System.Guid OrderID);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetOrder2CabinetLog", ReplyAction="http://tempuri.org/IServiceBE/GetOrder2CabinetLogResponse")]
         System.Collections.Generic.List<Mes.Client.Service.BE.Order2CabinetLog> GetOrder2CabinetLog(MES.Libraries.Sender sender, System.Guid CabinetID);
@@ -48448,11 +48492,11 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetMaxPackageNum", ReplyAction="http://tempuri.org/IServiceBE/GetMaxPackageNumResponse")]
         System.Threading.Tasks.Task<int> GetMaxPackageNumAsync(MES.Libraries.Sender sender, System.Guid OrderID, System.Guid CabinetID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePackageDetail", ReplyAction="http://tempuri.org/IServiceBE/SavePackageDetailResponse")]
-        void SavePackageDetail(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/DepartmentIsDuplicatedResponse")]
+        bool DepartmentIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePackageDetail", ReplyAction="http://tempuri.org/IServiceBE/SavePackageDetailResponse")]
-        System.Threading.Tasks.Task SavePackageDetailAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/DepartmentIsDuplicatedResponse")]
+        System.Threading.Tasks.Task<bool> DepartmentIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SearchDepartment", ReplyAction="http://tempuri.org/IServiceBE/SearchDepartmentResponse")]
         MES.Libraries.SearchResult SearchDepartment(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchDepartmentArgs args);
@@ -48832,11 +48876,11 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/DeleteOrder2CabinetByOrderID", ReplyAction="http://tempuri.org/IServiceBE/DeleteOrder2CabinetByOrderIDResponse")]
         System.Threading.Tasks.Task DeleteOrder2CabinetByOrderIDAsync(MES.Libraries.Sender sender, System.Guid OrderID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQty", ReplyAction="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQtyResponse")]
-        int GetTotalOrderCabinetQty(MES.Libraries.Sender sender, System.Guid OrderID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/SavePartnerOrderResponse")]
+        void SavePartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQty", ReplyAction="http://tempuri.org/IServiceBE/GetTotalOrderCabinetQtyResponse")]
-        System.Threading.Tasks.Task<int> GetTotalOrderCabinetQtyAsync(MES.Libraries.Sender sender, System.Guid OrderID);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/SavePartnerOrderResponse")]
+        System.Threading.Tasks.Task SavePartnerOrderAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SearchPartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/SearchPartnerOrderResponse")]
         MES.Libraries.SearchResult SearchPartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchPartnerOrderArgs args);
@@ -49216,12 +49260,6 @@ namespace Mes.Client.Service.BE {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetAllDepartments", ReplyAction="http://tempuri.org/IServiceBE/GetAllDepartmentsResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<Mes.Client.Service.BE.Department>> GetAllDepartmentsAsync(MES.Libraries.Sender sender);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/DepartmentIsDuplicatedResponse")]
-        bool DepartmentIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/DepartmentIsDuplicated", ReplyAction="http://tempuri.org/IServiceBE/DepartmentIsDuplicatedResponse")]
-        System.Threading.Tasks.Task<bool> DepartmentIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetComponentMaterial", ReplyAction="http://tempuri.org/IServiceBE/GetComponentMaterialResponse")]
         Mes.Client.Service.BE.ComponentMaterial GetComponentMaterial(MES.Libraries.Sender sender, int ID);
         
@@ -49263,6 +49301,12 @@ namespace Mes.Client.Service.BE {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveComponentMaterials", ReplyAction="http://tempuri.org/IServiceBE/SaveComponentMaterialsResponse")]
         System.Threading.Tasks.Task SaveComponentMaterialsAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveComponentMaterialAndExtension", ReplyAction="http://tempuri.org/IServiceBE/SaveComponentMaterialAndExtensionResponse")]
+        void SaveComponentMaterialAndExtension(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SaveComponentMaterialAndExtension", ReplyAction="http://tempuri.org/IServiceBE/SaveComponentMaterialAndExtensionResponse")]
+        System.Threading.Tasks.Task SaveComponentMaterialAndExtensionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetComponentMaterialExtension", ReplyAction="http://tempuri.org/IServiceBE/GetComponentMaterialExtensionResponse")]
         Mes.Client.Service.BE.ComponentMaterialExtension GetComponentMaterialExtension(MES.Libraries.Sender sender, int ID);
@@ -49599,12 +49643,6 @@ namespace Mes.Client.Service.BE {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/GetPartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/GetPartnerOrderResponse")]
         System.Threading.Tasks.Task<Mes.Client.Service.BE.PartnerOrder> GetPartnerOrderAsync(MES.Libraries.Sender sender, System.Guid OrderID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/SavePartnerOrderResponse")]
-        void SavePartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceBE/SavePartnerOrder", ReplyAction="http://tempuri.org/IServiceBE/SavePartnerOrderResponse")]
-        System.Threading.Tasks.Task SavePartnerOrderAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -49632,6 +49670,14 @@ namespace Mes.Client.Service.BE {
         
         public ServiceBEClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public Mes.Client.Service.BE.UserGroup GetUserGroup(MES.Libraries.Sender sender, System.Guid groupID) {
+            return base.Channel.GetUserGroup(sender, groupID);
+        }
+        
+        public System.Threading.Tasks.Task<Mes.Client.Service.BE.UserGroup> GetUserGroupAsync(MES.Libraries.Sender sender, System.Guid groupID) {
+            return base.Channel.GetUserGroupAsync(sender, groupID);
         }
         
         public System.Collections.Generic.List<Mes.Client.Service.BE.UserGroup> GetAllUserGroup(MES.Libraries.Sender sender) {
@@ -50016,6 +50062,14 @@ namespace Mes.Client.Service.BE {
         
         public System.Threading.Tasks.Task<MES.Libraries.SearchResult> SearchWorkShopAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchWorkShopArgs args) {
             return base.Channel.SearchWorkShopAsync(sender, args);
+        }
+        
+        public void SaveSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args) {
+            base.Channel.SaveSolution(sender, args);
+        }
+        
+        public System.Threading.Tasks.Task SaveSolutionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args) {
+            return base.Channel.SaveSolutionAsync(sender, args);
         }
         
         public MES.Libraries.SearchResult SearchSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchSolutionArgs args) {
@@ -50522,12 +50576,12 @@ namespace Mes.Client.Service.BE {
             return base.Channel.PrivilegeCategoryIsDuplicatedAsync(sender, privilegeCategory);
         }
         
-        public Mes.Client.Service.BE.UserGroup GetUserGroup(MES.Libraries.Sender sender, System.Guid groupID) {
-            return base.Channel.GetUserGroup(sender, groupID);
+        public bool PrivilegeItemCodeIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem) {
+            return base.Channel.PrivilegeItemCodeIsDuplicated(sender, privilegeItem);
         }
         
-        public System.Threading.Tasks.Task<Mes.Client.Service.BE.UserGroup> GetUserGroupAsync(MES.Libraries.Sender sender, System.Guid groupID) {
-            return base.Channel.GetUserGroupAsync(sender, groupID);
+        public System.Threading.Tasks.Task<bool> PrivilegeItemCodeIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem) {
+            return base.Channel.PrivilegeItemCodeIsDuplicatedAsync(sender, privilegeItem);
         }
         
         public System.Collections.Generic.List<Mes.Client.Service.BE.PrivilegeItem> GetPrivilegeItemByPrivilegeID(MES.Libraries.Sender sender, System.Guid privilegeID) {
@@ -51034,12 +51088,12 @@ namespace Mes.Client.Service.BE {
             return base.Channel.GetSolutionBySolutionCodeAsync(sender, SolutionCode);
         }
         
-        public void SaveSolution(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args) {
-            base.Channel.SaveSolution(sender, args);
+        public void SavePackageDetail(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args) {
+            base.Channel.SavePackageDetail(sender, args);
         }
         
-        public System.Threading.Tasks.Task SaveSolutionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveSolutionArgs args) {
-            return base.Channel.SaveSolutionAsync(sender, args);
+        public System.Threading.Tasks.Task SavePackageDetailAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args) {
+            return base.Channel.SavePackageDetailAsync(sender, args);
         }
         
         public MES.Libraries.SearchResult SearchPackage(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchPackageArgs args) {
@@ -51546,12 +51600,12 @@ namespace Mes.Client.Service.BE {
             return base.Channel.PrivilegeItemNameIsDuplicatedAsync(sender, privilegeItem);
         }
         
-        public bool PrivilegeItemCodeIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem) {
-            return base.Channel.PrivilegeItemCodeIsDuplicated(sender, privilegeItem);
+        public int GetTotalOrderCabinetQty(MES.Libraries.Sender sender, System.Guid OrderID) {
+            return base.Channel.GetTotalOrderCabinetQty(sender, OrderID);
         }
         
-        public System.Threading.Tasks.Task<bool> PrivilegeItemCodeIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.PrivilegeItem privilegeItem) {
-            return base.Channel.PrivilegeItemCodeIsDuplicatedAsync(sender, privilegeItem);
+        public System.Threading.Tasks.Task<int> GetTotalOrderCabinetQtyAsync(MES.Libraries.Sender sender, System.Guid OrderID) {
+            return base.Channel.GetTotalOrderCabinetQtyAsync(sender, OrderID);
         }
         
         public System.Collections.Generic.List<Mes.Client.Service.BE.Order2CabinetLog> GetOrder2CabinetLog(MES.Libraries.Sender sender, System.Guid CabinetID) {
@@ -52058,12 +52112,12 @@ namespace Mes.Client.Service.BE {
             return base.Channel.GetMaxPackageNumAsync(sender, OrderID, CabinetID);
         }
         
-        public void SavePackageDetail(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args) {
-            base.Channel.SavePackageDetail(sender, args);
+        public bool DepartmentIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department) {
+            return base.Channel.DepartmentIsDuplicated(sender, department);
         }
         
-        public System.Threading.Tasks.Task SavePackageDetailAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePackageDetailArgs args) {
-            return base.Channel.SavePackageDetailAsync(sender, args);
+        public System.Threading.Tasks.Task<bool> DepartmentIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department) {
+            return base.Channel.DepartmentIsDuplicatedAsync(sender, department);
         }
         
         public MES.Libraries.SearchResult SearchDepartment(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchDepartmentArgs args) {
@@ -52570,12 +52624,12 @@ namespace Mes.Client.Service.BE {
             return base.Channel.DeleteOrder2CabinetByOrderIDAsync(sender, OrderID);
         }
         
-        public int GetTotalOrderCabinetQty(MES.Libraries.Sender sender, System.Guid OrderID) {
-            return base.Channel.GetTotalOrderCabinetQty(sender, OrderID);
+        public void SavePartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args) {
+            base.Channel.SavePartnerOrder(sender, args);
         }
         
-        public System.Threading.Tasks.Task<int> GetTotalOrderCabinetQtyAsync(MES.Libraries.Sender sender, System.Guid OrderID) {
-            return base.Channel.GetTotalOrderCabinetQtyAsync(sender, OrderID);
+        public System.Threading.Tasks.Task SavePartnerOrderAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args) {
+            return base.Channel.SavePartnerOrderAsync(sender, args);
         }
         
         public MES.Libraries.SearchResult SearchPartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SearchPartnerOrderArgs args) {
@@ -53082,14 +53136,6 @@ namespace Mes.Client.Service.BE {
             return base.Channel.GetAllDepartmentsAsync(sender);
         }
         
-        public bool DepartmentIsDuplicated(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department) {
-            return base.Channel.DepartmentIsDuplicated(sender, department);
-        }
-        
-        public System.Threading.Tasks.Task<bool> DepartmentIsDuplicatedAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.Department department) {
-            return base.Channel.DepartmentIsDuplicatedAsync(sender, department);
-        }
-        
         public Mes.Client.Service.BE.ComponentMaterial GetComponentMaterial(MES.Libraries.Sender sender, int ID) {
             return base.Channel.GetComponentMaterial(sender, ID);
         }
@@ -53144,6 +53190,14 @@ namespace Mes.Client.Service.BE {
         
         public System.Threading.Tasks.Task SaveComponentMaterialsAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args) {
             return base.Channel.SaveComponentMaterialsAsync(sender, args);
+        }
+        
+        public void SaveComponentMaterialAndExtension(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args) {
+            base.Channel.SaveComponentMaterialAndExtension(sender, args);
+        }
+        
+        public System.Threading.Tasks.Task SaveComponentMaterialAndExtensionAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SaveComponentMaterialArgs args) {
+            return base.Channel.SaveComponentMaterialAndExtensionAsync(sender, args);
         }
         
         public Mes.Client.Service.BE.ComponentMaterialExtension GetComponentMaterialExtension(MES.Libraries.Sender sender, int ID) {
@@ -53592,14 +53646,6 @@ namespace Mes.Client.Service.BE {
         
         public System.Threading.Tasks.Task<Mes.Client.Service.BE.PartnerOrder> GetPartnerOrderAsync(MES.Libraries.Sender sender, System.Guid OrderID) {
             return base.Channel.GetPartnerOrderAsync(sender, OrderID);
-        }
-        
-        public void SavePartnerOrder(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args) {
-            base.Channel.SavePartnerOrder(sender, args);
-        }
-        
-        public System.Threading.Tasks.Task SavePartnerOrderAsync(MES.Libraries.Sender sender, Mes.Client.Service.BE.SavePartnerOrderArgs args) {
-            return base.Channel.SavePartnerOrderAsync(sender, args);
         }
     }
 }
